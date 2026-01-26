@@ -1,0 +1,158 @@
+\begin{thebibliography}{10}
+
+\bibitem{ilogcplex}
+{IBM ILOG CPLEX Optimizer}.
+\newblock
+  http://www-01.ibm.com/software/integration/optimization/cplex-optimizer/,
+  2010.
+
+\bibitem{AbergelTachet}
+Fr\'ed\'eric Abergel and R\'emi Tachet.
+\newblock A nonlinear partial integro-differential equation from mathematical
+  finance.
+\newblock {\em Discrete and Continuous Dynamical Systems-Series A},
+  27:907--917, 2010.
+
+\bibitem{AlbaneseTrovatoCMS}
+Claudio Albanese and Manlio Trovato.
+\newblock Monetary policy risk and {CMS} spreads.
+\newblock {\em Preprint}, 2007.
+
+\bibitem{mosek}
+Erling~D. Andersen and Knud~D. Andersen.
+\newblock {The MOSEK optimization software}.
+\newblock http://www.mosek.com/.
+
+\bibitem{cvxopt}
+Martin~S. Andersen, Joachim Dahl, and Lieven Vandenberghe.
+\newblock {CVXOPT}: A {P}ython package for convex optimization, {V}ersion
+  1.1.6. {A}vailable at cvxopt.org, 2013.
+
+\bibitem{JesperVolInterpolation}
+Jesper Andreasen and Brian Huge.
+\newblock Volatility interpolation.
+\newblock {\em Risk}, pages 76--79, 2012.
+
+\bibitem{SmileDynamics2}
+Lorenzo Bergomi.
+\newblock Smile dynamics {II}.
+\newblock {\em Risk}, 18:67--73, 2005.
+
+\bibitem{BlackScholes73}
+Fischer Black and Myron Scholes.
+\newblock The pricing of options and corporate liabilities.
+\newblock {\em Journal of Political Economy}, 81(3):637--654, 1973.
+
+\bibitem{StoepGrzelakOosterlee}
+Anthonie W.~Van der Stoep, Lech~A. Grzelak, and Cornelis~W. Oosterlee.
+\newblock The {H}eston stochastic-local volatility model: efficient {M}onte
+  {C}arlo simulation.
+\newblock {\em Preprint}, 2013.
+
+\bibitem{DupirePricingSmile}
+Bruno Dupire.
+\newblock Pricing with a smile.
+\newblock {\em Risk}, 7:18--20, 1994.
+
+\bibitem{DupireUTV}
+Bruno Dupire.
+\newblock A unified theory of volatility.
+\newblock {\em Paribas working paper}, 1996.
+
+\bibitem{hierarchQuadraticProgramming}
+Adrien Escande, Nicolas Mansard, and Pierre-Brice Wieber.
+\newblock Hierarchical quadratic programming.
+\newblock {\em Preprint}, 2012.
+
+\bibitem{FenglerSmoothing}
+Matthias~R. Fengler.
+\newblock Arbitrage-free smoothing of the implied volatility surface.
+\newblock {\em Quantitative Finance}, 9(4):417--428, 2009.
+
+\bibitem{GatheralJacquierGlobalSVI}
+Jim Gatheral and Antoine Jacquier.
+\newblock Arbitrage-free {S.V.I.} volatility surfaces.
+\newblock {\em Preprint}, 2012.
+
+\bibitem{GolubVanLoan}
+Gene~H. Golub and Charles~F. Van~Loan.
+\newblock {\em Matrix Computations (3rd Ed.)}.
+\newblock {The Johns Hopkins University Press}, Baltimore, MD, USA, 1996.
+
+\bibitem{GuyonAplusB}
+Julien Guyon.
+\newblock Local correlation families.
+\newblock {\em Risk}, 2014.
+
+\bibitem{GuyonLabordereParticular}
+Julien Guyon and Pierre Henry-Labord\`ere.
+\newblock Being particular about calibration.
+\newblock {\em Risk}, pages 92--97, 2012.
+
+\bibitem{GyongyMarkovian}
+Istv\'an Gy\"ongy.
+\newblock Mimicking the one-dimensional marginal distributions of processes
+  having an {I}t\^o differential.
+\newblock {\em Probability theory and related fields}, 71:501--516, 1986.
+
+\bibitem{SABRSmallMaturity}
+Patrick~S. Hagan, Deep Kumar, Andrew~S. Lesniewski, and Diana~E. Woodward.
+\newblock Managing smile risk.
+\newblock {\em Wilmott magazine}, 2002.
+
+\bibitem{HeNgConstrainedSplines}
+Xuming He and Pin Ng.
+\newblock {COBS}: {Q}ualitatively constrained smoothing via {L}inear
+  programming.
+\newblock {\em Computational Statistics}, 14(3):315--337, 1999.
+
+\bibitem{HestonModel}
+Steven~L. Heston.
+\newblock A closed-form solution for options with stochastic volatility with
+  applications to bond and currency options.
+\newblock {\em The Review of Financial Studies}, 6(2):327--343, 1993.
+
+\bibitem{LauriniSplines}
+M\'arcio~P. Laurini.
+\newblock Imposing no-arbitrage conditions in implied volatility surfaces using
+  constrained smoothing splines.
+\newblock {\em Applied Stochastic Models in Business and Industry},
+  27(6):649--659, 2011.
+
+\bibitem{RenMadanQianQian}
+Dilip Madan, Yong Ren, and Michael Qian~Qian.
+\newblock Calibrating and pricing with embedded local volatility models.
+\newblock {\em Risk}, 2007.
+
+\bibitem{MonteiroSplinePDF}
+Ana~Margarida Monteiro, Reha~H. T\"ut\"unc\"u, and Lu\'is~N. Vicente.
+\newblock Recovering risk-neutral probability density functions from options
+  prices using cubic splines.
+\newblock {\em European Journal of Operational Research}, 187(2):525--542,
+  2008.
+
+\bibitem{PappAlizadeh}
+David Papp and Farid Alizadeh.
+\newblock Shape constrained estimation using nonnegative splines.
+\newblock {\em Journal of Computational and Graphical Statistics}, (to appear),
+  2012.
+
+\bibitem{SchumakerSplineBook}
+Larry~L. Schumaker.
+\newblock {\em Spline Functions: Basic Theory, 2nd Edition}.
+\newblock Cambridge Mathematical Library, 2007.
+
+\bibitem{ScottStochasticVolatility87}
+Louis~O. Scott.
+\newblock Option pricing when the variance changes randomly: theory,
+  estimation, and applications.
+\newblock {\em Journal of Finance and Quantitative Analysis}, 22(4):419--438,
+  1987.
+
+\bibitem{VermeulentBartelsHeppler}
+Alan~H. Vermeulen, Richard~H. Bartels, and Glenn~R. Heppler.
+\newblock Integrating products of {B}-splines.
+\newblock {\em SIAM Journal on Scientific and Statistical Computing},
+  13(4):1025--1038, 1992.
+
+\end{thebibliography}

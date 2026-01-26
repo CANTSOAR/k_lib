@@ -1,0 +1,175 @@
+\begin{thebibliography}{32}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\DOIprefix}{doi:}
+\providecommand{\ArXivprefix}{arXiv:}
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid:}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Article
+\bibitem[{Hagan et~al.(2002)Hagan, Kumar, Lesniewski, and Woodward}]{Hagan2002}
+\bibinfo{author}{P.~Hagan}, \bibinfo{author}{D.~Kumar}, \bibinfo{author}{A.~Lesniewski}, \bibinfo{author}{D.~Woodward},
+\newblock \bibinfo{title}{Managing smile risk},
+\newblock \bibinfo{journal}{Wilmott Magazine} \bibinfo{volume}{1} (\bibinfo{year}{2002}) \bibinfo{pages}{84--108}.
+%Type = Article
+\bibitem[{Williams and Rasmussen(2006)}]{refWilliams2006}
+\bibinfo{author}{C.~K. Williams}, \bibinfo{author}{C.~E. Rasmussen},
+\newblock \bibinfo{title}{Gaussian processes for machine learning},
+\newblock \bibinfo{journal}{MIT press Cambridge, MA} \bibinfo{volume}{2} (\bibinfo{year}{2006}).
+%Type = Article
+\bibitem[{Cousin et~al.(2022)Cousin, Deleplace, and Misko}]{cousin2022gaussian}
+\bibinfo{author}{A.~Cousin}, \bibinfo{author}{A.~Deleplace}, \bibinfo{author}{A.~Misko},
+\newblock \bibinfo{title}{Gaussian process regression for swaption cube construction under no-arbitrage constraints},
+\newblock \bibinfo{journal}{Risks} \bibinfo{volume}{10} (\bibinfo{year}{2022}) \bibinfo{pages}{232}.
+%Type = Article
+\bibitem[{Chataigner et~al.(2021)Chataigner, Cousin, Cr{\'e}pey, Dixon, and Gueye}]{chataigner2021beyond}
+\bibinfo{author}{M.~Chataigner}, \bibinfo{author}{A.~Cousin}, \bibinfo{author}{S.~Cr{\'e}pey}, \bibinfo{author}{M.~Dixon}, \bibinfo{author}{D.~Gueye},
+\newblock \bibinfo{title}{Beyond surrogate modeling: Learning the local volatility via shape constraints},
+\newblock \bibinfo{journal}{SIAM Journal on Financial Mathematics} \bibinfo{volume}{12} (\bibinfo{year}{2021}) \bibinfo{pages}{SC58--SC69}.
+%Type = Inproceedings
+\bibitem[{Ackerer et~al.(2020)Ackerer, Tagasovska, and Vatter}]{Ackerer2020}
+\bibinfo{author}{D.~Ackerer}, \bibinfo{author}{N.~Tagasovska}, \bibinfo{author}{T.~Vatter},
+\newblock \bibinfo{title}{Deep smoothing of the implied volatility surface},
+\newblock in: \bibinfo{booktitle}{Proceedings of the 34th International Conference on Neural Information Processing Systems}, NIPS '20, \bibinfo{publisher}{Curran Associates Inc.}, \bibinfo{address}{Red Hook, NY, USA}, \bibinfo{year}{2020}.
+%Type = Inproceedings
+\bibitem[{Zheng et~al.(2021)Zheng, Yang, and Chen}]{zheng2021incorporating}
+\bibinfo{author}{Y.~Zheng}, \bibinfo{author}{Y.~Yang}, \bibinfo{author}{B.~Chen},
+\newblock \bibinfo{title}{Incorporating prior financial domain knowledge into neural networks for implied volatility surface prediction},
+\newblock in: \bibinfo{booktitle}{Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery \& Data Mining}, \bibinfo{year}{2021}, pp. \bibinfo{pages}{3968--3975}.
+%Type = Article
+\bibitem[{Gonon et~al.(2024)Gonon, Jacquier, and Wiedemann}]{gonon2024operator}
+\bibinfo{author}{L.~Gonon}, \bibinfo{author}{A.~Jacquier}, \bibinfo{author}{R.~Wiedemann},
+\newblock \bibinfo{title}{Operator deep smoothing for implied volatility},
+\newblock \bibinfo{journal}{arXiv preprint arXiv:2406.11520}  (\bibinfo{year}{2024}).
+%Type = Article
+\bibitem[{Hoshisashi et~al.(2023)Hoshisashi, Phelan, and Barucca}]{hoshisashi2023no}
+\bibinfo{author}{K.~Hoshisashi}, \bibinfo{author}{C.~E. Phelan}, \bibinfo{author}{P.~Barucca},
+\newblock \bibinfo{title}{No-arbitrage deep calibration for volatility smile and skewness},
+\newblock \bibinfo{journal}{arXiv preprint arXiv:2310.16703}  (\bibinfo{year}{2023}).
+%Type = Article
+\bibitem[{Chen et~al.(2023)Chen, Cheng, Liu, and Tang}]{chen2023teaching}
+\bibinfo{author}{H.~Chen}, \bibinfo{author}{Y.~Cheng}, \bibinfo{author}{Y.~Liu}, \bibinfo{author}{K.~Tang},
+\newblock \bibinfo{title}{Teaching economics to the machines},
+\newblock \bibinfo{journal}{Available at SSRN} \bibinfo{volume}{4642167} (\bibinfo{year}{2023}).
+%Type = Article
+\bibitem[{Bonilla et~al.(2007)Bonilla, Chai, and Williams}]{bonilla2007multi}
+\bibinfo{author}{E.~V. Bonilla}, \bibinfo{author}{K.~Chai}, \bibinfo{author}{C.~Williams},
+\newblock \bibinfo{title}{Multi-task gaussian process prediction},
+\newblock \bibinfo{journal}{Advances in neural information processing systems} \bibinfo{volume}{20} (\bibinfo{year}{2007}).
+%Type = Article
+\bibitem[{Alvarez et~al.(2012)Alvarez, Rosasco, Lawrence et~al.}]{alvarez2012kernels}
+\bibinfo{author}{M.~A. Alvarez}, \bibinfo{author}{L.~Rosasco}, \bibinfo{author}{N.~D. Lawrence}, et~al.,
+\newblock \bibinfo{title}{Kernels for vector-valued functions: A review},
+\newblock \bibinfo{journal}{Foundations and Trends in Machine Learning} \bibinfo{volume}{4} (\bibinfo{year}{2012}) \bibinfo{pages}{195--266}.
+%Type = Article
+\bibitem[{Heston(1993)}]{heston1993closed}
+\bibinfo{author}{S.~L. Heston},
+\newblock \bibinfo{title}{A closed-form solution for options with stochastic volatility with applications to bond and currency options},
+\newblock \bibinfo{journal}{The review of financial studies} \bibinfo{volume}{6} (\bibinfo{year}{1993}) \bibinfo{pages}{327--343}.
+%Type = Article
+\bibitem[{De~Spiegeleer et~al.(2018)De~Spiegeleer, Madan, Reyners, and Schoutens}]{Spiegeleer2018}
+\bibinfo{author}{J.~De~Spiegeleer}, \bibinfo{author}{D.~B. Madan}, \bibinfo{author}{S.~Reyners}, \bibinfo{author}{W.~Schoutens},
+\newblock \bibinfo{title}{Machine learning for quantitative finance: fast derivative pricing, hedging and fitting},
+\newblock \bibinfo{journal}{Quantitative Finance} \bibinfo{volume}{18} (\bibinfo{year}{2018}) \bibinfo{pages}{1635--1643}.
+%Type = Article
+\bibitem[{Roberts and Tegn{\'e}r(2021)}]{roberts2021probabilistic}
+\bibinfo{author}{S.~Roberts}, \bibinfo{author}{M.~Tegn{\'e}r},
+\newblock \bibinfo{title}{Probabilistic machine learning for local volatility},
+\newblock \bibinfo{journal}{Journal of Computational Finance} \bibinfo{volume}{25} (\bibinfo{year}{2021}).
+%Type = Article
+\bibitem[{Cousin et~al.(2016)Cousin, Maatouk, and Rulliere}]{Cousin2016}
+\bibinfo{author}{A.~Cousin}, \bibinfo{author}{H.~Maatouk}, \bibinfo{author}{D.~Rulliere},
+\newblock \bibinfo{title}{Kriging of financial term-structures},
+\newblock \bibinfo{journal}{European Journal of Operational Research} \bibinfo{volume}{255} (\bibinfo{year}{2016}) \bibinfo{pages}{631--648}.
+%Type = Article
+\bibitem[{Ludkovski(2018)}]{Ludkovski2018}
+\bibinfo{author}{M.~Ludkovski},
+\newblock \bibinfo{title}{Kriging metamodels and experimental design for bermudan option pricing},
+\newblock \bibinfo{journal}{Journal of Computational Finance} \bibinfo{volume}{22} (\bibinfo{year}{2018}) \bibinfo{pages}{37--77}.
+%Type = Article
+\bibitem[{Goudenege et~al.(2020)Goudenege, Molent, and Zanette}]{goudenege2020machine}
+\bibinfo{author}{L.~Goudenege}, \bibinfo{author}{A.~Molent}, \bibinfo{author}{A.~Zanette},
+\newblock \bibinfo{title}{Machine learning for pricing american options in high-dimensional markovian and non-markovian models},
+\newblock \bibinfo{journal}{Quantitative Finance} \bibinfo{volume}{20} (\bibinfo{year}{2020}) \bibinfo{pages}{573--591}.
+%Type = Inproceedings
+\bibitem[{Li et~al.(2022)Li, Gong, Zheng, Yu, and Deng}]{li2022effect}
+\bibinfo{author}{L.~Li}, \bibinfo{author}{Z.~Gong}, \bibinfo{author}{L.~Zheng}, \bibinfo{author}{X.~Yu}, \bibinfo{author}{M.~Deng},
+\newblock \bibinfo{title}{The effect of regression methods on the performance of options pricing using machine learning},
+\newblock in: \bibinfo{booktitle}{Proceedings of the 2022 13th International Conference on E-business, Management and Economics}, \bibinfo{year}{2022}, pp. \bibinfo{pages}{374--380}.
+%Type = Article
+\bibitem[{H{\"o}cht et~al.(2024)H{\"o}cht, Schoutens, and Verschueren}]{hocht2024pricing}
+\bibinfo{author}{S.~H{\"o}cht}, \bibinfo{author}{W.~Schoutens}, \bibinfo{author}{E.~Verschueren},
+\newblock \bibinfo{title}{On the pricing of capped volatility swaps using machine learning techniques},
+\newblock \bibinfo{journal}{Quantitative Finance} \bibinfo{volume}{24} (\bibinfo{year}{2024}) \bibinfo{pages}{1287--1300}.
+%Type = Article
+\bibitem[{Crepey and Dixon(2020)}]{Crepey2020}
+\bibinfo{author}{S.~Crepey}, \bibinfo{author}{M.~F. Dixon},
+\newblock \bibinfo{title}{Gaussian process regression for derivative portfolio modeling and application to credit valuation adjustment computations},
+\newblock \bibinfo{journal}{Journal of Computational Finance} \bibinfo{volume}{24} (\bibinfo{year}{2020}) \bibinfo{pages}{47--81}.
+%Type = Article
+\bibitem[{Gouden{\`e}ge et~al.(2021)Gouden{\`e}ge, Molent, and Zanette}]{goudenege2021gaussian}
+\bibinfo{author}{L.~Gouden{\`e}ge}, \bibinfo{author}{A.~Molent}, \bibinfo{author}{A.~Zanette},
+\newblock \bibinfo{title}{Gaussian process regression for pricing variable annuities with stochastic volatility and interest rate},
+\newblock \bibinfo{journal}{Decisions in Economics and Finance} \bibinfo{volume}{44} (\bibinfo{year}{2021}) \bibinfo{pages}{57--72}.
+%Type = Article
+\bibitem[{Ludkovski and Saporito(2021)}]{ludkovski2021}
+\bibinfo{author}{M.~Ludkovski}, \bibinfo{author}{Y.~Saporito},
+\newblock \bibinfo{title}{Krighedge: Gaussian process surrogates for delta hedging},
+\newblock \bibinfo{journal}{Applied Mathematical Finance} \bibinfo{volume}{28} (\bibinfo{year}{2021}) \bibinfo{pages}{330--360}.
+%Type = Article
+\bibitem[{Risk and Ludkovski(2018)}]{risk2018sequential}
+\bibinfo{author}{J.~Risk}, \bibinfo{author}{M.~Ludkovski},
+\newblock \bibinfo{title}{Sequential design and spatial modeling for portfolio tail risk measurement},
+\newblock \bibinfo{journal}{SIAM Journal on Financial Mathematics} \bibinfo{volume}{9} (\bibinfo{year}{2018}) \bibinfo{pages}{1137--1174}.
+%Type = Inproceedings
+\bibitem[{de~Wolff et~al.(2020)de~Wolff, Cuevas, and Tobar}]{de2020gaussian}
+\bibinfo{author}{T.~de~Wolff}, \bibinfo{author}{A.~Cuevas}, \bibinfo{author}{F.~Tobar},
+\newblock \bibinfo{title}{Gaussian process imputation of multiple financial series},
+\newblock in: \bibinfo{booktitle}{ICASSP 2020-2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, \bibinfo{organization}{IEEE}, \bibinfo{year}{2020}, pp. \bibinfo{pages}{8444--8448}.
+%Type = Article
+\bibitem[{Xu and Zhang(2023)}]{xu2023gaussian}
+\bibinfo{author}{X.~Xu}, \bibinfo{author}{Y.~Zhang},
+\newblock \bibinfo{title}{A gaussian process regression machine learning model for forecasting retail property prices with bayesian optimizations and cross-validation},
+\newblock \bibinfo{journal}{Decision Analytics Journal} \bibinfo{volume}{8} (\bibinfo{year}{2023}) \bibinfo{pages}{100267}.
+%Type = Article
+\bibitem[{Clark et~al.(2024)Clark, Huber, Koop, and Marcellino}]{clark2024forecasting}
+\bibinfo{author}{T.~E. Clark}, \bibinfo{author}{F.~Huber}, \bibinfo{author}{G.~Koop}, \bibinfo{author}{M.~Marcellino},
+\newblock \bibinfo{title}{Forecasting us inflation using bayesian nonparametric models},
+\newblock \bibinfo{journal}{The Annals of Applied Statistics} \bibinfo{volume}{18} (\bibinfo{year}{2024}) \bibinfo{pages}{1421--1444}.
+%Type = Article
+\bibitem[{Salvagnin et~al.(2024)Salvagnin, Glielmo, De~Giuli, and Mira}]{salvagnin2024investigating}
+\bibinfo{author}{C.~Salvagnin}, \bibinfo{author}{A.~Glielmo}, \bibinfo{author}{M.~E. De~Giuli}, \bibinfo{author}{A.~Mira},
+\newblock \bibinfo{title}{Investigating the price determinants of the european emission trading system: a non-parametric approach},
+\newblock \bibinfo{journal}{Quantitative Finance} \bibinfo{volume}{24} (\bibinfo{year}{2024}) \bibinfo{pages}{1529--1544}.
+%Type = Article
+\bibitem[{Hauzenberger et~al.(2025)Hauzenberger, Huber, Marcellino, and Petz}]{hauzenberger2025gaussian}
+\bibinfo{author}{N.~Hauzenberger}, \bibinfo{author}{F.~Huber}, \bibinfo{author}{M.~Marcellino}, \bibinfo{author}{N.~Petz},
+\newblock \bibinfo{title}{Gaussian process vector autoregressions and macroeconomic uncertainty},
+\newblock \bibinfo{journal}{Journal of Business \& Economic Statistics} \bibinfo{volume}{43} (\bibinfo{year}{2025}) \bibinfo{pages}{27--43}.
+%Type = Article
+\bibitem[{Black and Scholes(1973)}]{black1973pricing}
+\bibinfo{author}{F.~Black}, \bibinfo{author}{M.~Scholes},
+\newblock \bibinfo{title}{The pricing of options and corporate liabilities},
+\newblock \bibinfo{journal}{Journal of political economy} \bibinfo{volume}{81} (\bibinfo{year}{1973}) \bibinfo{pages}{637--654}.
+%Type = Article
+\bibitem[{Rasmussen and Ghahramani(2000)}]{rasmussen2000occam}
+\bibinfo{author}{C.~Rasmussen}, \bibinfo{author}{Z.~Ghahramani},
+\newblock \bibinfo{title}{Occam's razor},
+\newblock \bibinfo{journal}{Advances in neural information processing systems} \bibinfo{volume}{13} (\bibinfo{year}{2000}).
+%Type = Article
+\bibitem[{Nelder and Mead(1965)}]{nelder1965simplex}
+\bibinfo{author}{J.~A. Nelder}, \bibinfo{author}{R.~Mead},
+\newblock \bibinfo{title}{A simplex method for function minimization},
+\newblock \bibinfo{journal}{The computer journal} \bibinfo{volume}{7} (\bibinfo{year}{1965}) \bibinfo{pages}{308--313}.
+%Type = Article
+\bibitem[{Carr and Madan(1999)}]{carr1999option}
+\bibinfo{author}{P.~Carr}, \bibinfo{author}{D.~Madan},
+\newblock \bibinfo{title}{Option valuation using the fast fourier transform},
+\newblock \bibinfo{journal}{Journal of computational finance} \bibinfo{volume}{2} (\bibinfo{year}{1999}) \bibinfo{pages}{61--73}.
+
+\end{thebibliography}

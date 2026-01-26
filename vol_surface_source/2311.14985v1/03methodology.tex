@@ -1,0 +1,261 @@
+\section{Methodology}\label{sec:Methodology}
+
+This section begins by drawing a parallel between changes in volatility as a risk factor for options portfolios and changes in the interest rate curve for portfolios encompassing bonds. To facilitate this comparison, we will briefly explore the similarities and distinctions between these two phenomena.
+\begin{figure*}
+    \centerline{\includegraphics[width=\linewidth]{figs/IVSscattertwo_dates_2.png}}
+    \caption{Sample points of the state variables for the implied volatility surface and the interest rate curve. The right-hand graph illustrates the dynamic fluctuations of the sample points on the interest rate curve, while the left-hand side displays the sample points of the implied volatility surface on two distinct dates.}
+    \label{fig:YieldCurve_IVS}
+\end{figure*}
+\begin{figure}
+    \centerline{\includegraphics[width=\linewidth]{figs/InterestRate_IVS_models.png}}
+    \caption{This diagram illustrates the methodology used to evaluate risk within option and bond portfolios.}
+    \label{fig:InterestRate_IVS_models}
+\end{figure}
+\begin{figure}
+    \centerline{\includegraphics[width=\linewidth]{figs/YieldCurve2000_07_18.png}}
+    \caption{Swap rate curve of the United States on 07/18/2000}
+    \label{fig:YieldCurve(2000_07_18)}
+\end{figure}
+
+The process commences with creating a database utilizing historical data, which serves as the foundation for subsequent risk assessment techniques (Figure \ref{fig:InterestRate_IVS_models}). Two distinct approaches are employed to construct this database:
+\begin{enumerate}
+    \item \textbf{Fixed Point Approach}: This approach is tailored for bond portfolios characterized by fixed-position sample interest rates plotted along the yield curve. In these scenarios, interest rates at predefined points on the yield curve remain constant throughout the assessment. The interest rate curve\footnote{The swap rate data is obtained from the Federal Reserve Economic Data (FRED) online service.}, as depicted in Figure \ref{fig:YieldCurve(2000_07_18)}, is a two-dimensional representation that displays interest rate values corresponding to specific sample points. These sample points are anchored at fixed time intervals, covering maturities ranging from 1 to 30 years. It is worth noting that while this curve evolves over time, the sample points maintain a constant position, as illustrated in the right diagram of Figure \ref{fig:YieldCurve_IVS}.
+    \item \textbf{Floating Point Approach}: In contrast, the floating-point approach is applied when dealing with option portfolios. In this context, options are positioned on the implied volatility surface. Unlike bond portfolios with fixed positions, the positions of options on the implied volatility surface are not static but rather dynamic, varying over time (Figure \ref{fig:YieldCurve_IVS}). This characteristic poses a challenge when evaluating the risk associated with fluctuations in the volatility surface. The path of sample points traverses through three dimensions, unlike the interest rate curve, which transitions through a single dimension. Furthermore, apart from predictable changes in the time-to-maturity dimension, alterations in moneyness and implied volatility are inherently stochastic. 
+\end{enumerate}
+
+A unique technique is employed to capture historical data for option portfolios, primarily those reliant on implied volatility surfaces. This technique leverages functional representations to transform potential movements' intricate and multidimensional realms into a more manageable set of coefficients. The selection of the degree of freedom determines the precise number of coefficients necessary to represent these historical movements accurately.
+
+This methodology allows for a structured and systematic evaluation of risk within both option and bond portfolios, considering the dynamic nature of implied volatility surfaces in the former and the fixed-position samples along the yield curve in the latter.
+
+Historical scenarios from the first block are transmitted to the second block to assess the impact of changes in target variables on portfolio risk. In this process, two distinct approaches are employed to capture these effects.
+\begin{enumerate}
+    \item \textbf{Model-free}: In the context of interest-rate models, which aligns with the insights provided by \cite{zamani2022pathwise}, a straightforward technique involves using simple linear regression models. These models are instrumental in quantifying the influence of variable changes on portfolio risk within this domain.
+    \item \textbf{Model-based (as applied in this study)}: However, a model-based approach is preferred in more intricate scenarios like option portfolios. Within this study, we focus on option portfolios. Here, model-based techniques are utilized, leveraging option pricing models. These models enable a comprehensive analysis of how variable changes affect the portfolio's risk profile. This approach is precious when dealing with complex financial instruments like options.
+\end{enumerate}
+
+Finally, we calculate VaR using the recovered profit and loss distribution from the previous block. As further elucidated in Section \ref{sec:PSP}, to simplify the intricacies of monitoring the dynamics of individual options, we rely on the price changes of the underlying stock as the sole variable necessary for assessing alterations in moneyness and the volatility surface to model changes in volatility for all options. Consequently, the presentation of the volatility surface poses a unique challenge that we address in this section.
+
+\subsection{Volatility surface based on (non)parametric representations}
+
+Implied volatility is typically represented using two distinct methodologies: parametric and non-parametric models. The parametric approach uses specified variables to parameterize implied volatility within a defined domain. A prominent example of this representation can be traced back to \cite{dumas1998implied} study, where a polynomial representation, as depicted in Equation \eqref{regression_model}, is applied to variables encompassing time-to-maturity ($T-t$) and forward moneyness ($M_t$).
+\begin{align}
+    \sigma^t(M, T) &= \alpha^t_0 + \alpha^t_1M_t + \alpha^t_2M^2_t \nonumber\\
+    &+ \alpha^t_3(T-t) + \alpha^t_4M_t(T-t)\label{regression_model}\\
+    M_t &= \frac{\ln{F_t} / K}{\sqrt{T-t}}, \; \; \nonumber 
+    F_t = S_te^{r(T-t)} \nonumber 
+\end{align}
+However, a primary limitation of this representation is its failure to guarantee the absence of arbitrage opportunities within the implied volatility surface (\cite{homescu2011implied}). 
+
+Generally, no-arbitrage conditions are studied in two distinct spaces: Static arbitrage and Dynamic arbitrage. Static arbitrage, which centers on immediate opportunities based on current market conditions and does not involve ongoing management, is the most widely recognized. It has been the subject of extensive research, including studies by \cite{roper2010arbitrage} and \cite{niu2015no}. These studies have derived sufficient and nearly necessary conditions for an implied volatility surface to be free from static arbitrage and have identified the conditions under which models fail to guarantee this freedom. On the other hand, dynamic arbitrage entails continuous monitoring and adjustments of options positions to adapt to changing implied volatility levels, thereby maintaining arbitrage opportunities. This form of arbitrage is more intricate and has received less attention in research, with \cite{niu2015no} delving into the conditions under which no-arbitrage is guaranteed. Consequently, further research has been dedicated to developing more refined models.
+
+The SVI (Stochastic Volatility Inspired) parametric model (Equation \eqref{SVI}) distinguishes itself from the polynomial model by its capacity to ensure the absence of arbitrage opportunities across broader ranges (\cite{homescu2011implied}).
+\begin{align}
+    \sigma^2(x_t) &= a_t + b_t\Big(\rho_t(x_t - m_t) \nonumber \\
+    &+ \sqrt{(k_tx_t-m_t)^2+s_t^2}\Big) \label{SVI}
+\end{align}
+The variable $x_t$ in Equation \eqref{SVI} represents the forward moneyness, while other parameters are determined through optimization over various time periods. As explained in the study by \cite{aurell2014svi}, the model's ability to condition its parameters plays a crucial role in mitigating arbitrage possibilities. \cite{homescu2011implied} evaluations underscore the potential application of this approach within the energy market, demonstrating its versatility across diverse research investigations. Nevertheless, it is essential to note that this approach has inherent complexities in its optimization and calibration processes. Given the daily need to perform this optimization, we employ more simplified approaches.
+
+Most non-parametric approaches rely on the principle of interpolation to estimate the implied volatility surface. Several interpolation methods have been proposed for this purpose; however, it is essential to note that specific methodologies may fail to satisfy the no-arbitrage condition under certain circumstances.
+
+For instance, \cite{clark2011foreign} highlights that using linear interpolation concerning time can lead to impractical predictions of future volatility, potentially giving rise to calendar arbitrage. Therefore, the selection of an appropriate interpolation methodology is of paramount importance.
+
+\cite{homescu2011implied} comprehensive analysis categorizes the various approaches employed in multiple publications into three overarching categories:
+\begin{enumerate}
+    \item Regular cubic splines
+    \item Cubic B-splines
+    \item Thin splines
+\end{enumerate}
+Cubic B-splines are often favored over regular cubic splines due to their enhanced resilience to erroneous data and ability to maintain crucial properties such as monotonicity and convexity (\cite{wolberg2002energy}). Additionally, they offer a higher degree of flexibility, facilitating the creation of diverse shapes. The ability to construct multiple curves, as further elaborated in section \ref{sec:PSP}, allows for generating a broader range of scenarios concerning the dynamics of the volatility surface. 
+
+This study primarily focuses on identifying the optimal B-spline representation for a volatility surface based on observed implied volatility data points. The cubic B-spline interpolation involves breaking down the IVS into a set of cubic polynomial segments defined by a set of control points. These control points act as anchor values for implied volatilities at specific maturities and strikes. The formula for a cubic B-spline segment can be expressed as:
+\begin{align}
+    S_i(x) = \sum_{j=i-2}^{i+1}\beta_jB_j(x) \label{B-spline}
+\end{align}
+Where:
+\begin{itemize}
+    \item $S_i(x)$ represents the cubic B-spline segment between control points $i$ and $i+1$. 
+    \item $x$ denotes the strike or moneyness at which implied volatility is estimated.
+    \item $B_j(x)$ represents the B-spline basis functions.
+    \item $\beta_j$ are the coefficients that determine the shape of the cubic B-spline segment.
+\end{itemize}
+Constructing an implied volatility surface (IVS) with cubic B-splines involves selecting control points based on market option prices. These control points represent the implied volatilities at specific maturities and moneynesses. The B-spline basis functions, often computed using the Cox-de-Boor recursion formula, are then employed to create cubic B-spline segments between these control points.
+
+These segments smoothly interpolate implied volatilities, ensuring a continuous and differentiable IVS. The entire IVS is constructed by calculating cubic B-spline segments for various moneyness values within the specified maturities. This approach allows for estimating implied volatilities for any moneyness and maturity within the range of control points.
+
+The benefits of this construction process include flexibility in modeling IVS, the creation of smooth and differentiable surfaces, and high precision in estimating implied volatilities, contributing to accurate options pricing and risk management.
+
+In addition, we have applied specific criteria, as outlined in \cite{Verma2008ImpliedVM}, for the interpolation of the volatility surface.
+
+Options with a maturity of fewer than 15 days were excluded from consideration. Ignoring very short-maturity options when constructing an implied volatility surface is typically done for several reasons:
+\begin{enumerate}
+    \item Very short-maturity options tend to have limited trading activity and liquidity, making them less reliable for estimating implied volatilities.
+    \item These options are susceptible to changes in interest rates. They can exhibit erratic price movements due to factors unrelated to the underlying asset's volatility, such as changes in the risk-free rate.
+    \item Including very short-maturity options can introduce noise and instability into the implied volatility surface, making it less useful for risk management and pricing purposes.
+\end{enumerate}
+Therefore, focusing on options with slightly longer maturities, which are more liquid and less affected by interest rate fluctuations, is a common practice when constructing a reliable implied volatility surface.
+
+Options with call prices less than one dollar were likewise omitted from the analysis. Excluding very low-priced options when constructing an implied volatility surface is essential because these options often lack liquidity, have wide bid-ask spreads, and are far out of the money. Their limited sensitivity to market changes and increased model sensitivity can lead to unreliable implied volatility estimates. Additionally, these options may be prone to mispricing and introduce inaccuracies and distortions into the implied volatility surface. Therefore, focusing on liquid and actively traded options enhances the accuracy and reliability of the surface, making it more useful for risk management, pricing, and trading decisions.
+
+The average of the ask and bid price values was utilized to represent the call price. Averaging the bid and ask prices of an option helps determine its market price. This practice is common in financial markets for several reasons. It accounts for buying and selling interest, mitigating the impact of the bid-ask spread. It aligns with market efficiency principles, as efficient markets should reflect actual option values. Averaging also reduces the influence of extreme prices and is considered a fair way to assess market value. Traders often use the mid-price as a reference for executing trades. In options pricing models, the mid-price is a standard input representing a balanced view of supply and demand. However, traders should remain aware of spread variations based on liquidity and market conditions when making trading decisions.
+
+Call prices that fell below the theoretical value, calculated using the BSM model, were disregarded. Excluding options with prices lower than their theoretical BSM prices when constructing an IVS is crucial for several reasons. 
+
+Firstly, low-priced options can introduce noise and inaccuracies into the surface. Such options often have wide bid-ask spreads and limited trading activity, making their prices less reliable market sentiment indicators. By excluding them, the IVS focuses on more liquid and actively traded options, leading to a smoother and more dependable representation of market expectations.
+
+Secondly, very low-priced options may be prone to mispricing or erroneous trades, especially in fast-moving markets. These anomalies can distort the IVS, leading to misleading conclusions about market sentiment. Removing such options helps mitigate these distortions and enhances the surface's accuracy.
+
+Thirdly, including extremely low-priced options on the surface could violate no-arbitrage conditions. The BSM model assumes that options with different strike prices but the same maturity should have consistent implied volatilities. If low-priced options are included without proper screening, this assumption may be violated, opening the door to arbitrage opportunities.
+
+In summary, excluding options with prices lower than their theoretical BSM values when constructing an implied volatility surface ensures the surface's reliability, accuracy, and consistency. It also helps maintain essential no-arbitrage conditions, providing a more robust tool for pricing, risk management, and market analysis.
+
+\subsection{S\&P 500 volatility surface vs. the VIX\protect\footnote{This research is fundamentally grounded in the utilization of the S\&P 500 index. Consequently, every analysis undertaken in this subsection and throughout other sections of this study is contingent upon using this index. The selection of the S\&P 500 index as the core foundation of this research is underpinned by its comprehensive market coverage and well-established status as a benchmark within the market.}}\label{sec:VIX}
+
+Consider a call option with a designated price $C_t$, associated with an underlying security. By the principles of the BSM pricing model, the valuation of this particular option pivots upon the intricate interplay of four pivotal parameters:
+\begin{itemize}
+    \item $S_t$: The price of the underlying asset.
+    \item $T-t$: The temporal gap until maturity.
+    \item $\sigma_t$: The anticipated level of volatility.
+    \item $r_t$: The prevailing risk-free interest rate.
+\end{itemize}
+The significance of these parameters, thoughtfully expounded upon within the bounds of Equation \eqref{eq:EC_price}, cannot be overstated. They wield substantial influence over the dynamics governing the pricing of this option. Consequently, forecasting the future prices of $C_{t+1}$ necessitates our capacity to anticipate alterations in each of these fundamental parameters. Given this study's primary thematic thrust on volatility dynamics, our subsequent discourse will delve deeper into this particular parameter.
+
+As illustrated in Figure \ref{chap:intro}, within the hierarchical framework of VaR calculation methods for option portfolios, a distinct bifurcation is observed under the category of \textit{Volatility Exposure}. Herein, two distinct branches emerge, offering divergent methodologies for comprehending the impact of volatility on option portfolio valuations. These methodologies encompass the \textit{Reference Volatility Approach (RVA)} and the \textit{Localized Volatility Approach (LVA)}, each wielding unique insights into the dynamic interplay between volatility and option portfolio pricing dynamics.
+
+In the RVA, all option contracts $i$ are associated with a single reference dynamics specification, where $\sigma_{t}^{(i)}=\sigma_t$ for all $t$. Conversely, the LVA connects the current fair value of an individual option contract's price to variations in the option's implied volatility. Thus, it is not always the case that $\sigma_{t}^{(i)} = \sigma_{t}^{(j)}$ holds for all $i$ and $j$. In this context, both the VIX index and the IVS of the S\&P 500 take center stage as the primary instruments for each respective approach.
+
+The VIX index, often referred to as the \textit{fear gauge} or \textit{fear index}, plays a pivotal role in forecasting imminent volatility levels for the S\&P 500 index. Its primary function is to quantify the anticipated degree of volatility in the S\&P 500 over a defined period, typically spanning the next 30 consecutive calendar days. Elevated VIX values are indicative of an expectation of heightened market volatility, whereas lower values suggest a reduced anticipation of volatility (\cite{whaley2009understanding}). This index, in line with its representation, can be employed as a reference volatility measure to capture the impact of volatility on the price variations of a portfolio.
+
+In the LVA context, IVS plays a crucial role. At the heart of volatility surfaces lies implied volatility, a forward-looking metric that encapsulates market expectations concerning future price volatility (\cite{chan2017machine}). When market participants anticipate increased uncertainty or exhibit apprehension regarding the future performance of an asset, they tend to seek higher premiums for options associated with that asset. This heightened demand results in an increase in the implied volatility of these options. Conversely, during market stability and confidence periods, option prices and implied volatilities tend to decrease.
+
+LVA and RVA differ in various ways. LVA reflects real-time market expectations and is highly dynamic, whereas RVA relies on predefined model assumptions. Option portfolios are typically priced using implied volatility, making LVA more relevant for P\&L attribution. Model discrepancies between LVA and RVA can lead to pricing mismatches, impacting expected P\&L. LVA provides insights into changing market risk perceptions, while RVA may not accurately reflect actual market dynamics. Portfolio managers often base trading strategies on LVA due to its reflection of actual market conditions, whereas RVA is model-dependent and may not capture market nuances effectively (\cite{daglish2007volatility}). In this study, we have employed the LVA with the IVS as our primary tool for capturing local volatility movements, represented as $\Delta\sigma_t^{(i)}=\sigma_{i,t+1}-\sigma_{i,t}$.
+
+\subsection{Risk measurement}\label{sec:VaR}
+
+Value at Risk (VaR) is an extensively utilized risk management tool across various domains. It offers a quantitative metric for assessing potential financial losses incurred by individuals or organizations concerning their investments or financial positions during a specified timeframe, all while upholding a predetermined confidence level. The significance of Value at Risk (VaR) lies in its pivotal role in the evaluation and mitigation of market risk exposure for entities such as financial institutions, investment managers, and traders (\cite{hull2012risk}).
+
+At the heart of the Value at Risk (VaR) concept lies the central inquiry of ascertaining the highest conceivable loss that a portfolio or position might incur over a specified time frame and with a predetermined level of likelihood. Value at Risk (VaR) seeks to approximate the most adverse financial outcome that could transpire under typical market conditions. Mathematically, this concept pertains to the magnitude of the $(1-\alpha)$ percentile within the projected distribution of alterations in baskets, with $\alpha$ representing the confidence interval of VaR. This magnitude is calculated using Equation \eqref{VaR_def}, where the symbol $t$ denotes the current time under consideration, $X_t$ represents the stochastic variable indicating changes in baskets over this period, and $F_{X_t}$ is the cumulative distribution function of $X_t$.
+\begin{align}
+    \text{VaR}(\alpha, t) = -\text{max}\Big\{x\Big|F_{X_t}(x) \geq 1-\alpha\Big\} \label{VaR_def}
+\end{align}
+\begin{figure}
+    \centerline{\includegraphics[width=\linewidth]{figs/VaRdepiction.png}}
+    \caption{A representation of the Value-at-Risk (VaR) of a hypothetical distribution}
+    \label{fig:VaRdepiction}
+\end{figure}
+Figure \ref{fig:VaRdepiction} visually represents the Value-at-Risk (VaR) linked with the Profit and Loss (P\&L) distribution. Upon reducing the $\alpha$ value, the blue region within the graph experiences a leftward movement, subsequently leading to an augmentation in the Value-at-Risk (VaR).
+
+VaR is a widely used risk measure but has limitations, including subadditivity and a lack of coherence. These limitations were evident during the 2007-2009 financial crisis when VaR-based regulatory capital calculations underestimated risk. The Basel Committee introduced the Fundamental Review of the Trading Book (FRTB) to address these issues, proposing a shift from VaR to Expected Shortfall (ES) as the primary regulatory capital measure (\cite{hull2012risk}).
+
+ES offers a more comprehensive perspective on risk. Unlike VaR, which only considers the threshold for severe losses, ES also accounts for the number of losses exceeding this threshold (Equation \eqref{ES}). It calculates the average of these severe losses, providing a more nuanced risk assessment.
+\begin{align}
+    \text{ES}(\alpha, t) = -\mathbb{E}[X_t|X_t \leq q_{1-\alpha}(X_t)] \label{ES}
+\end{align}
+To reiterate, in this context, $\alpha$ represents the confidence level, $t$ signifies the time horizon, and $X_t$ is the stochastic variable signifying changes in baskets during this timeframe. Furthermore, $q_{1-\alpha}(X_t)$ denotes the ($1-\alpha$)-quantile of the distribution of $X_t$.
+
+However, it is essential to note that VaR remains a standard tool for measuring financial risk in the industry. Moreover, the methods presented in this study can estimate the empirical distribution of portfolio value changes, allowing for the calculation of both VaR and ES. This approach ensures flexibility in risk measurement, accommodating the strengths of both measures.
+
+Multiple approaches are utilized in the calculation of VaR. Determining VaR within the parametric framework (\cite{hull2012risk}) entails using a specified probability distribution, such as the normal distribution, to represent profit and loss. The VaR calculation is derived from the underlying distribution, denoted as $F_{X_t}$, as expressed in Equation \eqref{VaR_def}. An inherent limitation linked with calculating VaR through the parametric approach is the reliance on the normality assumption. Financial markets are susceptible to heightened volatility and non-normal patterns, leading to potentially inaccurate estimations, especially during market crises. Hence, prudent consideration of alternative methodologies becomes imperative.
+
+Historical simulation (HS) is a prevalent and straightforward approach frequently employed in academic research (\cite{hendricks1996evaluation}). This methodology involves extracting feasible scenarios for modifying a portfolio's value by leveraging historical data. The subsequent calculation of VaR involves evaluating the utmost potential loss sustained by the portfolio, factoring in all historical losses while adhering to a designated confidence level. However, a notable limitation inherent to this approach stems from its retrospective nature. The dynamism of market conditions does not comprehensively account for future outcomes.
+
+The Monte Carlo (MC) method is a widely recognized approach employed for calculating VaR. Using a predetermined probability distribution, this technique generates potential outcomes by simulating stochastic future returns (\cite{hull2012risk}). Subsequently, calculating VaR entails pinpointing the loss percentile within the simulated distribution. This methodology proves advantageous when grappling with intricate portfolios harboring non-linear relationships. However, akin to preceding methods, the MC approach also grapples with limitations, notably the inability to identify Black Swan events and the subsequent costs incurred during simulation (\cite{hong2014monte}).
+
+As outlined in \ref{sec:PSP}, our proposed methodology integrates the MC and HS techniques for VaR estimation. This approach holds several inherent advantages, which we will elaborate upon in subsequent deliberations.
+
+\subsection{Parametric Surface Projection (PSP) PnL calculation}\label{sec:PSP}
+
+This section offers a comprehensive guide to the essential steps in calculating option portfolios' one-day Value-at-Risk (VaR), as illustrated in Figure \ref{fig:Model}. It is vital to revisit Equation \eqref{eq:EC_price}, which derives the call option price through the Black-Scholes-Merton (BSM) model. According to this pricing model, the primary determinants of the option price are time-to-maturity ($T-t$), expected volatility ($\sigma_t$), underlying asset price ($S_t$), and interest rate ($r_t$). Moreover, it is essential to clarify that $K$ represents the strike price associated with an option, and $N()$ corresponds to the cumulative density function of the normal distribution.
+\begin{align}
+    C_t &= N(d_1)S_t - N(d_2)Ke^{-r_t(T-t)} \label{eq:EC_price}\\
+    d_1 &= \frac{1}{\sigma_t \sqrt{T-t}} \Big[ln\Big(\frac{S_t}{K}\Big) + \Big(r_t+\frac{\sigma_t^2}{2}\Big)(T-t)\Big] \nonumber \\
+    d_2 &= d_1 - \sigma_t \sqrt{T-t} \nonumber
+\end{align}
+
+\begin{figure*}
+    \centerline{\includegraphics[width=\linewidth]{figs/Model.png}}
+    \caption{The flowchart of the Parametric Surface Projection (PSP) method is structured into two principal components. In the first segment, we leverage the Historical Simulation (HS) method to derive an empirical distribution that characterizes the movements within the volatility surface. This distribution enables the projection of potential movements for the forthcoming day. The second segment of the flowchart integrates the Monte Carlo (MC) method, which generates a distribution encompassing the underlying asset's price. We obtain the next-day option price distribution by combining the HS method's empirical and MC-generated distribution. Subsequently, this distribution facilitates the Value-at-Risk (VaR) calculation.}
+    \label{fig:Model}
+\end{figure*}
+Time-to-maturity is a deterministic variable, making its next-day value straightforward to determine. Similarly, during the periods leading up to the first half of 2013\footnote{For data related to interest rates and their associated volatility, we accessed the Federal Reserve Economic Data (FRED) platform, available at \url{https://fred.stlouisfed.org/series/FEDFUNDS}.}, interest rates were relatively stable due to their limited, low-frequency fluctuations. Additionally, given our primary focus on short-term effects, it is reasonable to assume that the next day's interest rate remains constant. However, alternative methods, as detailed in \cite{zamani2022pathwise}, can be employed for those who require more precise estimations, particularly in periods of heightened interest rate volatility.
+
+However, the situation becomes notably more complex when dealing with variables like the underlying asset price and expected volatility. These variables are inherently stochastic and subject to frequent fluctuations, demanding specialized techniques for estimation.
+
+In this context, it is imperative to encompass all conceivable trajectories and potential next-day perturbations concerning expected volatility and underlying asset price. When expected volatility exhibits stochastic variations over time, evaluating the extent of this variability and its co-movement with fluctuations in security prices becomes essential.
+\begin{figure}
+    \centerline{\includegraphics[width=\linewidth]{figs/IVS_movements_scenarios.png}}
+    \caption{Five random scenarios of Implied Volatility Surface (IVS) movements are depicted. The surfaces are color-coded, with lighter colors indicating older scenarios and gradually transitioning to darker blue shades as we progress to more recent dates.}
+    \label{fig:IVS_movements}
+\end{figure}
+
+The MC component embedded within the PSP method simulates next-day security prices. This simulation process facilitates estimating an empirical distribution for expected volatility and the computation of next-day option prices. The selected model for simulating next-day security prices in this study is the Geometric Brownian motion (GBM) model, which is a fundamental component of the BSM framework.
+\begin{align}
+    dS_t = \mu S_tdt + \sigma S_t dB_t \label{GBM}
+\end{align}
+Here, $B_t$ signifies a standard Wiener process, with $\mathbb{E}[dB_t]=0$ and $V[dB_t]=dt$. The parameters $\mu$ and $\sigma$ denote the instantaneous drift and volatility of the stock's returns. 
+
+The instantaneous drift term, $\mu$, represents the risk-free interest rate ($r$) minus the underlying asset's continuous dividend yield ($q$). It can be expressed as $r - q$. In addition to the instantaneous drift term, denoted as $\mu$, other parameters, such as $\sigma$, are also assumed to be constant. This assumption is made due to the absence of a closed-form solution for time-variant versions of these parameters. Consequently, for the sake of simplicity, it is assumed that these parameters remain constant over the selected time horizon. Furthermore, their values are set to their daily averages from a year before the starting date of the data, providing a stable foundation for the simulations. It is worth noting that the number of samples can be set judiciously, striking a balance that avoids significant underestimations while refraining from excessive use of far-past samples, which may not accurately represent the underlying distribution, especially when it has undergone substantial changes. The parameters $r$ and $q$, which denote the daily averages mentioned earlier, are approximated as follows: $r = 14.06\%$ and $q = 1.94\%$\footnote{The yearly average of the S\&P 500 dividend yield was sourced from the following link: \url{https://www.multpl.com/s-p-500-dividend-yield/table/by-year}}.
+\begin{align}
+    S_t = S_0 \text{exp}\Big(\Big(\mu - \frac{\sigma^2}{2}\Big)(t - t_0) + \sigma(B_t - B_{t_0})\Big) \label{stockprice}
+\end{align}
+
+Equation \eqref{stockprice} is derived by integrating Equation \eqref{GBM} over the time interval $[t_0, t]$, yielding the stock price at time $t$. Here, $S_0$ denotes the known stock price at the initial time $t_0$. Now, we discretize Equation \eqref{stockprice} to make it suitable for simulations. The expression for the stock price at day $t+1$, given the stock price at day $t$, is as follows:
+\begin{align}
+    S_{t+1} = S_t \text{exp}\Big(\mu - \frac{\sigma^2}{2} + \sigma\epsilon_t\Big) \label{stockprice_discrete}
+\end{align}
+Where $\epsilon_t \simiid N(0,1)$ and $\sigma \approx 0.05$ using historical averages mentioned earlier. Ultimately, by generating 1000 pseudo-random numbers at each time step $t$, we simulate the stock price at day $t+1$, denoted as $S_{t+1}$.
+
+The Historical Simulation (HS) component within the PSP method, as depicted in Figure \ref{fig:IVS_movements}, plays a pivotal role in capturing the entirety of plausible movements within the volatility surface, drawing insights from historical data to predict expected volatilities for the forthcoming day. Moreover, it captures the dependency of expected volatilities on security price movements, a crucial factor in determining next-day moneyness, which, in turn, informs the valuation of expected volatilities.
+
+Alternative methods for calculating the dependence between volatility and stock price movements exist. In our approach, we utilize a functional representation of the volatility surface to capture these dependencies. However, model-free techniques, such as the method of moments, can also be applied. For instance, one could focus on first-order shocks, which involve correlated shocks to both the stock price and implied volatility. If we examine the discrete form of GBM using one-day changes, as shown in Equation \eqref{GBM_discrete}, we can also apply a similar assumption to the volatility term, leading to Equation \eqref{GBM_discrete_sigma}. 
+\begin{align}
+    \Delta S_t &= \mu S_t + \sigma_{t}^{(i)} S_t \epsilon_{t, i} \label{GBM_discrete}\\
+    \Delta \sigma_{t}^{(i)} &= \hat{\mu} \sigma_{t}^{(i)} + \widehat{\sigma_i} \sigma_{t}^{(i)} \widehat{\epsilon_{t, i}} \label{GBM_discrete_sigma}
+\end{align}
+Where $\epsilon_{t, i}, \widehat{\epsilon_{t, i}} \simiid N(0,1)$, but $\epsilon_{t, i} \independent \widehat{\epsilon_{t, i}}$ does not necessarily holds. The parameter $\widehat{\sigma_i}$ represents the volatility of implied volatility, which characterizes the volatility of the volatility itself. The covariance between the returns on volatility ($\widehat{r_{t, i}}$) and the stock price ($r_t$) can be expressed as:
+\begin{align}
+    \text{cov}(\widehat{r_{t, i}}, r_t) &= \text{cov}\Big(\frac{\Delta S_t}{S_t}, \frac{\Delta \sigma_{t}^{(i)}}{\sigma_{t}^{(i)}}\Big) \nonumber\\
+    &= \text{cov}(\sigma_{t}^{(i)}\epsilon_{t, i}, \widehat{\sigma_i}\widehat{\epsilon_{t, i}}) \label{cov_sigma_s(1)}
+\end{align}
+Since $\sigma_{t}^{(i)} \independent \epsilon_{t, i}, \widehat{\epsilon_{t, i}}$ Equation \eqref{cov_sigma_s(1)} simplifies to:
+\begin{align}
+    \text{cov}(\widehat{r_{t, i}}, r_t) &= \sigma_{t}^{(i)}\widehat{\sigma_i}\text{cov}(\epsilon_{t, i}, \widehat{\epsilon_{t, i}}) \label{cov_sigma_s(2)}
+\end{align}
+and consequently,
+\begin{align}
+    \text{cov}(\epsilon_{t, i}, \widehat{\epsilon_{t, i}}) &= \text{corr}(\widehat{r_{t, i}}, r_t) = \rho_{t,i}
+\end{align}
+With the obtained correlation between each implied volatility and the underlying price, and given that their distribution of residuals follows a normal distribution, we can proceed to generate random shocks using MC simulation. A similar approach can be employed to model simultaneous shocks to the implied volatility of individual options, capturing their co-movements. However, this process is more intricate, requiring Cholesky decomposition of the correlation matrix of volatility returns to generate pseudo-random numbers. However, employing the HS method through the volatility surface captures dependencies between volatilities and between volatilities and the stock price, primarily due to the inherent structural properties of the surface. Achieving this level of complexity might be more challenging when using the method of moments, as demonstrated earlier. We will now provide a more in-depth explanation of the HS module.
+
+We consider the set $\mathcal{D}^{(n)} = \{\Delta \textit{IVS}_1, \Delta \textit{IVS}_2, \ldots, \Delta \textit{IVS}_{n-1}\}$, encompassing an array of all conceivable scenarios of volatility movements on day $n$. We initiate our scenario generation process on the third day since we require data from the first two days to create at least one scenario for the volatility surface on the subsequent day. From day three onwards, the number of scenarios systematically grows. For instance, on the final day, day 124, we have 122 scenarios. Next, We derive an empirical distribution characterizing expected volatility within each scenario denoted as $\Delta \textit{IVS}_j$. This is achieved by substituting a specific set of variables from Equations \eqref{eq:next-moneyness} and \eqref{eq:next-IVS} into Equation \eqref{eq:next-vol}.
+\begin{align}
+    m_{t+1} &= \frac{S_{t+1}}{K} \label{eq:next-moneyness}\\
+    \textit{IVS}_{t+1} &= \textit{IVS}_t + \Delta \textit{IVS}_j \label{eq:next-IVS}\\
+    \sigma_{t+1}^{(i)} &= \textit{IVS}_{t+1}(m_{t+1}, T-t-1) \label{eq:next-vol}
+\end{align}
+In Equation \eqref{eq:next-moneyness}, we deduce the next-day moneyness by leveraging the distribution of next-day prices of the underlying asset derived from the Monte Carlo (MC) block. Subsequently, for scenario $i$, we construct the next-day volatility surface, as depicted in Equation \eqref{eq:next-IVS}. Within this framework, Equation \eqref{eq:next-vol} plays a pivotal role in computing the distribution that characterizes the next-day expected volatility of scenario $i$.
+
+Furthermore, our analysis delves into the derivation of the next-day volatility surface, a facet achieved by employing historical scenarios as depicted in Equation \eqref{eq:next-IVS}. In this context, we determine the expected volatility distribution affiliated with each scenario. All distributions are amalgamated through a judicious weighting procedure to culminate the process, a step exemplified in Equation \eqref{eq:next-vol-agg}. Uniform weighting has been employed for this specific instance, though it is essential to acknowledge the potential for alternative weighting approaches.
+\begin{align}
+    f_{\sigma_{t+1}}(\sigma_{t+1} = \sigma) &= \sum_{i}P\Big[\sigma_{t+1} \in \sigma_{t+1}^{(i)}\Big] \nonumber\\ 
+    &\times f_{\sigma_{t+1}^{(i)}}\Big(\sigma_{t+1}^{(i)} = \sigma\Big)\label{eq:next-vol-agg}
+\end{align}
+Each $\tiny P\Big[\sigma_{t+1} \in \sigma_{t+1}^{(i)}\Big]$ represents the probability of an event, where $\tiny\sum_{i}P\Big[\sigma_{t+1} \in \sigma_{t+1}^{(i)}\Big]=1$.
+
+In this specific example, historical data from the more distant past remains relevant and applicable to the current situation. Therefore, uniform weighting may be the more appropriate choice. This relevance is attributed to the specific time horizon, which pertains to a short period in 2013 when market turbulence was at its minimum. However, one may assign greater weight to scenarios representing severe market conditions, a strategy particularly valuable during periods of significant turbulence for stress testing. Additionally, if recent data is a better indicator of current market dynamics, exponential weighting could be a better choice.
+
+In the final phase of our analysis, we compute the distribution for each option's price for the forthcoming day. This calculation hinges on the availability of the next-day distribution encompassing expected volatility ($\sigma_{t+1}$) and the underlying asset price ($S_{t+1}$). Furthermore, we incorporate the assumption of a constant interest rate spanning a single day while simultaneously advancing the time-to-maturity by one step. Calculating the distribution for each option price is executed by substituting pertinent variables into Equation \eqref{eq:EC_price}.
+
+\subsection{Alternative models: Const. Vol \& VIX}\label{sec:alternatives}
+
+Two additional models, Const. Vol and VIX are employed to compare results with the PSP method. In the PSP method, the distribution of next-day prices is derived from Phrase \eqref{PSP-updates}, incorporating updates in local volatility.
+\begin{equation}
+    C_{t+1}^{(i)}(S_t, \sigma_{t+1}^{(i)}, r_t, T-t, K) \label{PSP-updates}
+\end{equation}
+For the Const. Vol model, we consider partially constant volatility, where volatility remains unchanged from one day to another, as shown in Phrase \eqref{Const.Vol-updates}.
+\begin{equation}
+    C_{t+1}^{(i)}(S_t, \sigma_{t}^{(i)}, r_t, T-t, K) \label{Const.Vol-updates}
+\end{equation}
+Lastly, the reference volatility model is utilized in the VIX model, where volatility updates are consistent across all option prices. This model uses historical simulation from changes in the VIX index instead of volatility surface shocks while keeping all other factors constant. Phrase \eqref{VIX-updates} illustrates the mathematical formula governing the computation of next-day prices in this model.
+\begin{equation}
+    C_{t+1}^{(i)}(S_t, \sigma_{t}, r_t, T-t, K) \label{VIX-updates}
+\end{equation}

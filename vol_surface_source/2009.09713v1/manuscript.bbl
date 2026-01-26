@@ -1,0 +1,239 @@
+\begin{thebibliography}{37}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Ahn et~al.(2015)Ahn, Haugh, and Jain]{ahn_et_al}
+A.~Ahn, M.~Haugh, and A.~Jain.
+\newblock Consistent pricing of options on leveraged {ETFs}.
+\newblock \emph{SIAM Journal on Financial Mathematics}, 6\penalty0
+  (1):\penalty0 559--593, 2015.
+
+\bibitem[A\"{i}t-Sahalia et~al.(2001)A\"{i}t-Sahalia, Bickel, and
+  Stoker]{ait_sahalia_et_al}
+Y.~A\"{i}t-Sahalia, P.~J. Bickel, and T.~M. Stoker.
+\newblock Goodness-of-fit tests for kernel regression with an application to
+  option implied volatilities.
+\newblock \emph{Journal of Econometrics}, 105\penalty0 (2):\penalty0 363--412,
+  2001.
+
+\bibitem[Avellaneda and Lee(2010)]{avellaneda_lee}
+M.~Avellaneda and J.-H. Lee.
+\newblock Statistical arbitrage in the {US} equities market.
+\newblock \emph{Quantitative Finance}, 10\penalty0 (7):\penalty0 761--782,
+  2010.
+
+\bibitem[Avellaneda and Zhang(2010)]{avellaneda_zhang}
+M.~Avellaneda and S.~Zhang.
+\newblock Path-dependence of leveraged {ETF} returns.
+\newblock \emph{SIAM Journal on Financial Mathematics}, 1\penalty0
+  (1):\penalty0 586--603, 2010.
+
+\bibitem[Broadie and Kaya(2006)]{broadie_kaya}
+M.~Broadie and \"{O}. Kaya.
+\newblock Exact simulation of stochastic volatility and other affine diffusion
+  processes.
+\newblock \emph{Operations Research}, 54\penalty0 (2):\penalty0 217--231, 2006.
+
+\bibitem[Cizek et~al.(2011)Cizek, H\"{a}rdle, and Weron]{cizek_et_al}
+P.~Cizek, W.~H\"{a}rdle, and R.~Weron.
+\newblock \emph{Statistical Tools for Finance and Insurance}.
+\newblock Springer, 2 edition, 2011.
+
+\bibitem[Cont and da~Fonseca(2002)]{cont_da_fonseca}
+R.~Cont and J.~da~Fonseca.
+\newblock Dynamics of implied volatility surfaces.
+\newblock \emph{Quantitative Finance}, 2\penalty0 (1):\penalty0 45--60, 2002.
+
+\bibitem[Cox et~al.(1985)Cox, Ingersoll, and Ross]{cox_et_al}
+J.~C. Cox, J.~E. Ingersoll, and S.~A. Ross.
+\newblock A theory of the term structure of interest rates.
+\newblock \emph{Econometrica}, 53\penalty0 (2):\penalty0 385--407, 1985.
+
+\bibitem[de~Boor(2001)]{de_boor}
+C.~de~Boor.
+\newblock \emph{A Practical Guide to Splines. Revised Edition}.
+\newblock Springer, 2001.
+
+\bibitem[Desai et~al.(1998)Desai, Nimalendran, and
+  Venkataraman]{desai_nimalendran}
+A.~S. Desai, M.~Nimalendran, and S.~Venkataraman.
+\newblock Changes in trading activity following stock splits and their effect
+  on volatility and the adverse-information component of the bid-ask spread.
+\newblock \emph{Journal of Financial Research}, 21\penalty0 (2):\penalty0
+  159--183, 1998.
+
+\bibitem[Dragulescu and Yakovenko(2002)]{dragulescu_yakovenko}
+A.~Dragulescu and V.~Yakovenko.
+\newblock Probability distribution of returns in the {Heston} model with
+  stochastic volatility.
+\newblock \emph{Quantitative Finance}, 2:\penalty0 443--453, 2002.
+
+\bibitem[Etling and Miller(2000)]{etling_miller}
+C.~Etling and T.~W. Miller.
+\newblock The relationship between index option moneyness and relative
+  liquidity.
+\newblock \emph{Journal of Futures Markets}, 20\penalty0 (10):\penalty0
+  971--987, 2000.
+
+\bibitem[Fengler et~al.(2003)Fengler, Härdle, and
+  Villa]{fengler_haerdle_villa}
+M.~R. Fengler, W.~K. Härdle, and C.~Villa.
+\newblock The dynamics of implied volatilities: a common principal components
+  approach.
+\newblock \emph{Review of Derivatives Research}, 6:\penalty0 179--202, 2003.
+
+\bibitem[Fengler et~al.(2007)Fengler, Härdle, and
+  Mammen]{fengler_haerdle_mammen}
+M.~R. Fengler, W.~K. Härdle, and E.~Mammen.
+\newblock A semiparametric factor model for implied volatility surface
+  dynamics.
+\newblock \emph{Journal of Financial Econometrics}, 5\penalty0 (2):\penalty0
+  189--218, 2007.
+
+\bibitem[Figueroa-Lopez et~al.(2016)Figueroa-Lopez, Gong, and
+  Lorig]{figueroa_lopez_et_al}
+J.~E. Figueroa-Lopez, R.~Gong, and M.~Lorig.
+\newblock Short-time expansions for call options on leveraged {ETFs} under
+  exponential {L\'{e}vy} models with local volatility.
+\newblock \emph{Preprint}, 2016.
+
+\bibitem[Glasserman and Kim(2011)]{glasserman_kim}
+P.~Glasserman and K-K. Kim.
+\newblock Gamma expansion of the {Heston} stochastic volatility model.
+\newblock \emph{Finance and Stochastics}, 15\penalty0 (2):\penalty0 267--296,
+  2011.
+
+\bibitem[Hall and Horowitz(2013)]{hall_horowitz}
+P.~Hall and J.~Horowitz.
+\newblock A simple bootstrap method for constructing nonparametric confidence
+  bands for functions.
+\newblock \emph{Annals of Statistics}, 41\penalty0 (4):\penalty0 1892--1921,
+  2013.
+
+\bibitem[H\"{a}rdle(1989)]{haerdle_paper_asy}
+W.~H\"{a}rdle.
+\newblock Asymptotic maximal deviation of {$M$-smoothers}.
+\newblock \emph{Journal of Multivariate Analysis}, 29:\penalty0 163--179, 1989.
+
+\bibitem[H\"{a}rdle(1990)]{haerdle_book_reg}
+W.~H\"{a}rdle.
+\newblock \emph{Applied Nonparametric Regression}.
+\newblock Springer, 1990.
+
+\bibitem[H\"{a}rdle et~al.(2015)H\"{a}rdle, Ritov, and
+  Wang]{haerdle_ritov_wang}
+W.~H\"{a}rdle, Y.~Ritov, and W.~Wang.
+\newblock Tie the straps: uniform bootstrap confidence bands for semiparametric
+  additive models.
+\newblock \emph{Journal of Multivariate Analysis}, 134:\penalty0 129--145,
+  2015.
+
+\bibitem[Heston(1993)]{heston}
+S.~L. Heston.
+\newblock A closed-form solution for options with stochastic volatility with
+  applications to bond and currency options.
+\newblock \emph{Review of Financial Studies}, 6:\penalty0 327--343, 1993.
+
+\bibitem[Higham and Mao(2005)]{higham_mao}
+D.~J. Higham and X.~Mao.
+\newblock Convergence of {Monte Carlo} simulations involving the mean-reverting
+  square root process.
+\newblock \emph{Journal of Computational Finance}, 8\penalty0 (3):\penalty0
+  35--61, 2005.
+
+\bibitem[Huber(1964)]{huber}
+P.~J. Huber.
+\newblock Robust estimation of a location parameter.
+\newblock \emph{Annals of Mathematical Statistics}, 35\penalty0 (1):\penalty0
+  73--101, 1964.
+
+\bibitem[Hull and White(1987)]{hull_white}
+J.~C. Hull and A.~White.
+\newblock The pricing of options on assets with stochastic volatilities.
+\newblock \emph{Journal of Finance}, 42:\penalty0 281--300, 1987.
+
+\bibitem[K\"{u}nsch(1989)]{kuensch}
+H.~R. K\"{u}nsch.
+\newblock The jackknife and the bootstrap for general stationary observations.
+\newblock \emph{The Annals of Statistics}, 17\penalty0 (3):\penalty0
+  1217--1241, 1989.
+
+\bibitem[Lee and Wang(2015)]{lee_wang}
+R.~Lee and R.~Wang.
+\newblock How leverage shifts and scales a volatility skew: Asymptotics for
+  continuous and jump dynamics.
+\newblock \emph{Preprint}, 2015.
+
+\bibitem[Leung and Santoli(2016)]{leung_santoli}
+T.~Leung and M.~Santoli.
+\newblock \emph{Leveraged Exchange-Traded Funds: Price Dynamics and Options
+  Valuation}.
+\newblock Springer, 2016.
+
+\bibitem[Leung and Sircar(2015)]{leung_sircar}
+T.~Leung and R.~Sircar.
+\newblock Implied volatility of leveraged {ETF} options.
+\newblock \emph{Applied Mathematical Finance}, 22\penalty0 (2):\penalty0
+  162--188, 2015.
+
+\bibitem[Leung et~al.(2017)Leung, Lorig, and Pascucci]{leung_et_al}
+T.~Leung, M.~Lorig, and A.~Pascucci.
+\newblock Leveraged {ETF} implied volatilities from {ETF} dynamics.
+\newblock \emph{Mathematical Finance}, 27\penalty0 (4):\penalty0 1035--1068,
+  2017.
+
+\bibitem[Lord et~al.(2010)Lord, Koekkoek, and Van~Dijk]{lord_et_al}
+R.~Lord, R.~Koekkoek, and D.~Van~Dijk.
+\newblock A comparison of biased simulation schemes for stochastic volatility
+  models.
+\newblock \emph{Quantitative Finance}, 10\penalty0 (2):\penalty0 177--194,
+  2010.
+
+\bibitem[Ohlson and Penman(1985)]{ohlson_penman}
+J.~A. Ohlson and S.~H. Penman.
+\newblock Volatility increases subsequent to stock splits: An empirical
+  aberration.
+\newblock \emph{Journal of Financial Economics}, 14\penalty0 (2):\penalty0
+  251--266, 1985.
+
+\bibitem[Park et~al.(2009)Park, Mammen, H\"{a}rdle, and Borak]{park_et_al}
+B.~U. Park, E.~Mammen, W.~H\"{a}rdle, and S.~Borak.
+\newblock Time series modelling with semiparametric factor dynamics.
+\newblock \emph{Journal of the American Statistical Association}, 104\penalty0
+  (485):\penalty0 284--298, 2009.
+
+\bibitem[Rouah(2013)]{rouah}
+F.~Rouah.
+\newblock \emph{The {Heston} model and its extensions in {Matlab} and {C\#}}.
+\newblock Wiley, 2013.
+
+\bibitem[Ruppert and Wand(1994)]{ruppert_wand}
+D.~Ruppert and M.~P. Wand.
+\newblock Multivariate locally weighted least squares regression.
+\newblock \emph{Annals of Statistics}, 22\penalty0 (3):\penalty0 1346--1370,
+  1994.
+
+\bibitem[Sch\"{o}bel and Zhu(1999)]{schoebel_zhu}
+R.~Sch\"{o}bel and J.~Zhu.
+\newblock Stochastic volatility with an {Ornstein-Uhlenbeck} process: An
+  extension.
+\newblock \emph{European Finance Review}, 3:\penalty0 24--46, 1999.
+
+\bibitem[Sheikh(1989)]{aamir_sheikh}
+A.~Sheikh.
+\newblock Stock splits, volatility increases, and implied volatilities.
+\newblock \emph{Journal of Finance}, 44\penalty0 (5):\penalty0 1361--1372,
+  1989.
+
+\bibitem[van~der Stoep et~al.(2014)van~der Stoep, Grzelak, and
+  Oosterlee]{van_der_stoep_et_al}
+A.~W. van~der Stoep, L.~A. Grzelak, and C.~W. Oosterlee.
+\newblock The {Heston} stochastic-local volatility model: efficient
+  {Monte-Carlo} simulation.
+\newblock \emph{International Journal of Theoretical and Applied Finance},
+  17\penalty0 (7):\penalty0 1--30, 2014.
+
+\end{thebibliography}

@@ -1,0 +1,238 @@
+\documentclass{article}
+
+% ready for submission
+\usepackage[nonatbib,final]{neurips_2020}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{hyperref}       % hyperlinks
+\usepackage{url}            % simple URL typesetting
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{amsfonts}       % blackboard math symbols
+\usepackage{nicefrac}       % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% not from NIPS template:
+%\usepackage[nolists,nomarkers,tablesfirst]{endfloat}
+\usepackage{graphicx,caption} 
+\usepackage{amssymb,amsmath} 
+\usepackage{cleveref} % Smart referencing
+\usepackage[numbers]{natbib} %% \PassOptionsToPackage{numbers}{natbib} % does not work
+\usepackage{tikz}
+\usepackage{wrapfig}
+%% to make a clean Online Appendix with references
+\usepackage[page]{appendix}
+\renewcommand{\appendixpagename}{Online Appendix}
+
+\usepackage{multirow}
+\def\arraybackslash{\let\\\tabularnewline}
+\usepackage{booktabs}
+%\usepackage{pdflscape}
+
+%% TO REMOVE
+\usepackage{enumitem}
+
+\usepackage{standalone} %% to input tex files without their preambles
+\usepackage{longtable}
+\usepackage{hyperref}
+
+% reduce space
+\usepackage{titlesec}
+\titlespacing{\section}{0pt}{\parskip}{-\lineskip}
+\titlespacing{\subsection}{0pt}{\parskip}{-\lineskip}
+\titlespacing{\subsubsection}{0pt}{\parskip}{-\lineskip}
+%\setcounter{topnumber}{2} 
+%\setcounter{bottomnumber}{2} 
+%\setcounter{totalnumber}{4} 
+%\renewcommand{\topfraction}{0.85} 
+%\renewcommand{\bottomfraction}{0.85} 
+%\renewcommand{\textfraction}{0.15} 
+%\renewcommand{\floatpagefraction}{0.8} 
+%\renewcommand{\textfraction}{0.1} 
+%\setlength{\floatsep}{5pt plus 2pt minus 2pt} 
+%\setlength{\textfloatsep}{5pt plus 2pt minus 2pt}
+%\setlength{\intextsep}{5pt plus 2pt minus 2pt}
+
+%% figure and text spacing
+%\setlength{\textfloatsep}{1.0pt plus 1.0pt minus 1.0pt}
+%\setlength{\floatsep}{1.0pt plus 1.0pt minus 1.0pt}
+%\setlength{\intextsep}{1.0pt plus 1.0pt minus 1.0pt}
+
+
+%%
+%\setcounter{topnumber}{2} \setcounter{bottomnumber}{2} \setcounter{totalnumber}{4} \renewcommand{\topfraction}{0.85} \renewcommand{\bottomfraction}{0.85} \renewcommand{\textfraction}{0.15} \renewcommand{\floatpagefraction}{0.8} \renewcommand{\textfraction}{0.1} \setlength{\floatsep}{5pt plus 2pt minus 2pt} \setlength{\textfloatsep}{5pt plus 2pt minus 2pt} \setlength{\intextsep}{5pt plus 2pt minus 2pt}
+%%
+%\usepackage{etoolbox}
+%\newcommand{\zerodisplayskips}{%
+% \setlength{\abovedisplayskip}{2pt}%
+% \setlength{\belowdisplayskip}{2pt}%
+% \setlength{\abovedisplayshortskip}{2pt}%
+% \setlength{\belowdisplayshortskip}{2pt}}
+%\appto{\normalsize}{\zerodisplayskips}
+%\appto{\small}{\zerodisplayskips}
+%\appto{\footnotesize}{\zerodisplayskips}
+
+%% figure and text spacing
+%\setlength{\textfloatsep}{1.0pt plus 1.0pt minus 1.0pt}
+%\setlength{\floatsep}{1.0pt plus 1.0pt minus 1.0pt}
+%\setlength{\intextsep}{1.0pt plus 1.0pt minus 1.0pt}
+
+
+
+\newcommand{\A}{{\mathbb A}} 
+\newcommand{\e}{{\rm e}} 
+\newcommand{\im}{{\rm i}} 
+\newcommand{\E}{{\mathbb E}} 
+\newcommand{\Pa}{{\mathbb P}} 
+\newcommand{\Q}{{\mathbb Q}} 
+\newcommand{\C}{{\mathbb C}} 
+\newcommand{\R}{{\mathbb R}} 
+\newcommand{\N}{{\mathbb N}} 
+\newcommand{\Z}{{\mathbb Z}} 
+\newcommand{\Acal}{{\mathcal A}} 
+\newcommand{\Bcal}{{\mathcal B}} 
+\newcommand{\Ccal}{{\mathcal C}} 
+\newcommand{\Dcal}{{\mathcal D}} 
+\newcommand{\Ecal}{{\mathcal E}} 
+\newcommand{\Fcal}{{\mathcal F}} 
+\newcommand{\Gcal}{{\mathcal G}} 
+\newcommand{\Hcal}{{\mathcal H}} 
+\newcommand{\Ical}{{\mathcal I}} 
+\newcommand{\Jcal}{{\mathcal J}} 
+\newcommand{\Kcal}{{\mathcal K}} 
+\newcommand{\Lcal}{{\mathcal L}} 
+\newcommand{\Ucal}{{\mathcal U}} 
+\newcommand{\Mcal}{{\mathcal M}} 
+\newcommand{\Ncal}{{\mathcal N}} 
+\newcommand{\Ocal}{{\mathcal O}} 
+\newcommand{\Pcal}{{\mathcal P}} 
+\newcommand{\Qcal}{{\mathcal Q}} 
+\newcommand{\Rcal}{{\mathcal R}} 
+\newcommand{\Scal}{{\mathcal S}} 
+\newcommand{\Tcal}{{\mathcal T}} 
+\newcommand{\Vcal}{{\mathcal V}} 
+\newcommand{\Wcal}{{\mathcal W}} 
+\newcommand{\Ycal}{{\mathcal Y}} 
+\newcommand{\Zcal}{{\mathcal Z}} 
+
+%\newcommand{\iv}{\sigma_{\rm IV}}
+\newcommand{\iv}{\sigma}
+\newcommand{\ivth}{\sigma_{\theta}}
+\newcommand{\wth}{\omega_{\theta}}
+\newcommand{\ivnn}{\sigma_{\rm nn}}
+\newcommand{\wnn}{\omega_{\rm nn}}
+\newcommand{\ivpr}{\sigma_{\rm prior}}
+\newcommand{\wpr}{\omega_{\rm prior}}
+\newcommand{\lv}{\sigma_{\rm LV}}
+\newcommand{\comp}{\mathop{\bigcirc}}
+\newcommand*\nr[1]{n^{\rm r}_{#1}}
+\newcommand*\nc[1]{n^{\rm c}_{#1}}
+\newcommand{\datamkt}{\Ical_{\rm 0}}
+\newcommand{\datacal}{{\Ical_{\rm C4}}}
+\newcommand{\databut}{{\Ical_{\rm C5}}}
+\newcommand{\datacalbut}{{\Ical_{\rm C45}}}
+\newcommand{\dataasy}{{\Ical_{\rm C6}}}
+\newcommand{\dataatm}{{\Ical_{\rm atm}}}
+\newcommand{\watm}{w_{\rm atm}}
+
+\newtheorem{proposition}{Proposition}[section] 
+\newtheorem{lemma}[proposition]{Lemma} 
+\newtheorem{theorem}[proposition]{Theorem} 
+\newtheorem{definition}[proposition]{Definition} 
+\newtheorem{corollary}[proposition]{Corollary} 
+\newtheorem{remark}[proposition]{Remark} 
+\newtheorem{claim}[proposition]{Claim} 
+\newtheorem{example}[proposition]{Example} 
+
+%% reduce space
+%\usepackage{titlesec}
+%\titlespacing{\section}{0pt}{\parskip}{-\lineskip}
+%\titlespacing{\subsection}{0pt}{\parskip}{-\lineskip}
+%\titlespacing{\subsubsection}{0pt}{\parskip}{-\lineskip}
+%\setcounter{topnumber}{2} \setcounter{bottomnumber}{2} \setcounter{totalnumber}{4} \renewcommand{\topfraction}{0.85} \renewcommand{\bottomfraction}{0.85} \renewcommand{\textfraction}{0.15} \renewcommand{\floatpagefraction}{0.8} \renewcommand{\textfraction}{0.1} \setlength{\floatsep}{5pt plus 2pt minus 2pt} \setlength{\textfloatsep}{5pt plus 2pt minus 2pt} \setlength{\intextsep}{5pt plus 2pt minus 2pt}
+
+\usepackage{float}
+
+%% figure and text spacing
+%\setlength{\textfloatsep}{1.0pt plus 1.0pt minus 1.0pt}
+%\setlength{\floatsep}{1.0pt plus 1.0pt minus 1.0pt}
+%\setlength{\intextsep}{1.0pt plus 1.0pt minus 1.0pt}
+
+
+%%
+%\setcounter{topnumber}{2} \setcounter{bottomnumber}{2} \setcounter{totalnumber}{4} \renewcommand{\topfraction}{0.85} \renewcommand{\bottomfraction}{0.85} \renewcommand{\textfraction}{0.15} \renewcommand{\floatpagefraction}{0.8} \renewcommand{\textfraction}{0.1} \setlength{\floatsep}{5pt plus 2pt minus 2pt} \setlength{\textfloatsep}{5pt plus 2pt minus 2pt} \setlength{\intextsep}{5pt plus 2pt minus 2pt}
+%%
+%\usepackage{etoolbox}
+%\newcommand{\zerodisplayskips}{%
+% \setlength{\abovedisplayskip}{2pt}%
+% \setlength{\belowdisplayskip}{2pt}%
+% \setlength{\abovedisplayshortskip}{2pt}%
+% \setlength{\belowdisplayshortskip}{2pt}}
+%\appto{\normalsize}{\zerodisplayskips}
+%\appto{\small}{\zerodisplayskips}
+%\appto{\footnotesize}{\zerodisplayskips}
+
+%% figure and text spacing
+%\setlength{\textfloatsep}{1.0pt plus 1.0pt minus 1.0pt}
+%\setlength{\floatsep}{1.0pt plus 1.0pt minus 1.0pt}
+%\setlength{\intextsep}{1.0pt plus 1.0pt minus 1.0pt}
+
+\title{Deep Smoothing of the Implied Volatility Surface}
+
+%% NIPS format
+\author{%
+Damien Ackerer \\
+UBS\\
+Z\"urich, Switzerland \\
+\texttt{damien.ackerer@epfl.ch} \\
+\AND
+Natasa Tagasovska\\
+Swiss Data Science Center\\
+Lausanne, Switzerland \\
+\texttt{natasa.tagasovska@sdsc.ch} \\
+\And
+Thibault Vatter \\
+Department of Statistics \\
+Columbia University\\
+New York, USA \\
+ \texttt{thibault.vatter@columbia.edu} \\
+}
+\date{First version : June 2019 \\ \vspace{0.25em} This version : June 2020}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\input{sections/abstract}
+\end{abstract}
+
+
+\input{sections/introduction}
+
+\input{sections/background}
+
+\input{sections/methodology}
+
+\input{sections/results}
+
+\input{sections/conclusion}
+
+\input{sections/broader_impact}
+
+%% acknowledgments
+\begin{ack}
+The authors would like to thank Michael Roper for providing detailed comments and suggestions, as well as Serge Kassibrakis, Charles-Albert Lehalle, Johannes Wiesel, and participants at the 2019 SIAM conference on Financial Mathematics and Engineering in Toronto for helpful discussions.
+
+The statements and opinions expressed in this article are those of the authors and do not represent the views of UBS (and/or any branches) and/or their affiliates.
+\end{ack}
+
+\bibliographystyle{rusnat}
+\bibliography{bibliography}
+
+\newpage
+\begin{appendices}
+\input{sections/online_appendix}
+\end{appendices}
+
+\end{document}

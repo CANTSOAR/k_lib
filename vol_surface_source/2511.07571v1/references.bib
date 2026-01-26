@@ -1,0 +1,170 @@
+@InProceedings{pmlr-v37-sohl-dickstein15,
+  title = 	 {Deep Unsupervised Learning using Nonequilibrium Thermodynamics},
+  author = 	 {Sohl-Dickstein, Jascha and Weiss, Eric and Maheswaranathan, Niru and Ganguli, Surya},
+  booktitle = 	 {Proceedings of the 32nd International Conference on Machine Learning},
+  pages = 	 {2256--2265},
+  year = 	 {2015},
+  editor = 	 {Bach, Francis and Blei, David},
+  volume = 	 {37},
+  series = 	 {Proceedings of Machine Learning Research},
+  address = 	 {Lille, France},
+  month = 	 {07--09 Jul},
+  publisher =    {PMLR},
+  pdf = 	 {http://proceedings.mlr.press/v37/sohl-dickstein15.pdf},
+  url = 	 {https://proceedings.mlr.press/v37/sohl-dickstein15.html},
+  abstract = 	 {A central problem in machine learning involves modeling complex data-sets using highly flexible families of probability distributions in which learning, sampling, inference, and evaluation are still analytically or computationally tractable. Here, we develop an approach that simultaneously achieves both flexibility and tractability. The essential idea, inspired by non-equilibrium statistical physics, is to systematically and slowly destroy structure in a data distribution through an iterative forward diffusion process. We then learn a reverse diffusion process that restores structure in data, yielding a highly flexible and tractable generative model of the data. This approach allows us to rapidly learn, sample from, and evaluate probabilities in deep generative models with thousands of layers or time steps, as well as to compute conditional and posterior probabilities under the learned model. We additionally release an open source reference implementation of the algorithm.}
+}
+
+@article{DBLP:journals/corr/abs-2011-13456,
+  author       = {Yang Song and
+                  Jascha Sohl{-}Dickstein and
+                  Diederik P. Kingma and
+                  Abhishek Kumar and
+                  Stefano Ermon and
+                  Ben Poole},
+  title        = {Score-Based Generative Modeling through Stochastic Differential Equations},
+  journal      = {CoRR},
+  volume       = {abs/2011.13456},
+  year         = {2020},
+  url          = {https://arxiv.org/abs/2011.13456},
+  eprinttype    = {arXiv},
+  eprint       = {2011.13456},
+  timestamp    = {Wed, 02 Dec 2020 10:10:16 +0100},
+  biburl       = {https://dblp.org/rec/journals/corr/abs-2011-13456.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+
+ @article{Anderson_1982, title={Reverse-time diffusion equation models}, volume={12}, ISSN={0304-4149}, url={https://www.sciencedirect.com/science/article/pii/0304414982900515}, DOI={10.1016/0304-4149(82)90051-5}, abstractNote={Reverse-time stochastic diffusion equation models are defined and it is shown how most processes defined via a forward-time or conventional diffusion equation model have an associated reverse-time model.}, number={3}, journal={Stochastic Processes and their Applications}, author={Anderson, Brian D. O.}, year={1982}, month=may, pages={313–326} }
+
+@article{Tang_Lin_Yang_2024, title={Conditional Diffusion Models are Minimax-Optimal and Manifold-Adaptive for Conditional Distribution Estimation}, url={http://arxiv.org/abs/2409.20124}, DOI={10.48550/arXiv.2409.20124}, abstractNote={We consider a class of conditional forward-backward diffusion models for conditional generative modeling, that is, generating new data given a covariate (or control variable). To formally study the theoretical properties of these conditional generative models, we adopt a statistical framework of distribution regression to characterize the large sample properties of the conditional distribution estimators induced by these conditional forward-backward diffusion models. Here, the conditional distribution of data is assumed to smoothly change over the covariate. In particular, our derived convergence rate is minimax-optimal under the total variation metric within the regimes covered by the existing literature. Additionally, we extend our theory by allowing both the data and the covariate variable to potentially admit a low-dimensional manifold structure. In this scenario, we demonstrate that the conditional forward-backward diffusion model can adapt to both manifold structures, meaning that the derived estimation error bound (under the Wasserstein metric) depends only on the intrinsic dimensionalities of the data and the covariate.}, note={arXiv:2409.20124}, number={arXiv:2409.20124}, publisher={arXiv}, author={Tang, Rong and Lin, Lizhen and Yang, Yun}, year={2024}, month=sep }
+
+ @article{Gatheral_Jacquier_2014, title={Arbitrage-free SVI volatility surfaces}, volume={14}, ISSN={1469-7688, 1469-7696}, url={http://www.tandfonline.com/doi/abs/10.1080/14697688.2013.819986}, DOI={10.1080/14697688.2013.819986}, number={1}, journal={Quantitative Finance}, author={Gatheral, Jim and Jacquier, Antoine}, year={2014}, month=jan, pages={59–71}, language={en} }
+
+@article{Vuletić_Cont_2024, title={VolGAN: A Generative Model for Arbitrage-Free Implied Volatility Surfaces}, volume={31}, ISSN={1350-486X, 1466-4313}, url={https://www.tandfonline.com/doi/full/10.1080/1350486X.2025.2471317}, DOI={10.1080/1350486X.2025.2471317}, number={4}, journal={Applied Mathematical Finance}, author={Vuletić, Milena and Cont, Rama}, year={2024}, month=jul, pages={203–238}, language={en} }
+
+@article{Cont_Da_Fonseca_2002, title={Dynamics of implied volatility surfaces}, volume={2}, ISSN={1469-7688, 1469-7696}, url={http://www.tandfonline.com/doi/abs/10.1088/1469-7688/2/1/304}, DOI={10.1088/1469-7688/2/1/304}, number={1}, journal={Quantitative Finance}, author={Cont, Rama and Da Fonseca, José}, year={2002}, month=feb, pages={45–60}, language={en} }
+
+@article{Perez_Strub_Vries_Dumoulin_Courville_2017, title={FiLM: Visual Reasoning with a General Conditioning Layer}, url={http://arxiv.org/abs/1709.07871}, DOI={10.48550/arXiv.1709.07871}, abstractNote={We introduce a general-purpose conditioning method for neural networks called FiLM: Feature-wise Linear Modulation. FiLM layers influence neural network computation via a simple, feature-wise affine transformation based on conditioning information. We show that FiLM layers are highly effective for visual reasoning - answering image-related questions which require a multi-step, high-level process - a task which has proven difficult for standard deep learning methods that do not explicitly model reasoning. Specifically, we show on visual reasoning tasks that FiLM layers 1) halve state-of-the-art error for the CLEVR benchmark, 2) modulate features in a coherent manner, 3) are robust to ablations and architectural modifications, and 4) generalize well to challenging, new data from few examples or even zero-shot.}, note={arXiv:1709.07871}, number={arXiv:1709.07871}, publisher={arXiv}, author={Perez, Ethan and Strub, Florian and Vries, Harm de and Dumoulin, Vincent and Courville, Aaron}, year={2017}, month=dec }
+
+@article{Ronneberger_Fischer_Brox_2015, title={U-Net: Convolutional Networks for Biomedical Image Segmentation}, url={http://arxiv.org/abs/1505.04597}, DOI={10.48550/arXiv.1505.04597}, abstractNote={There is large consent that successful training of deep networks requires many thousand annotated training samples. In this paper, we present a network and training strategy that relies on the strong use of data augmentation to use the available annotated samples more efficiently. The architecture consists of a contracting path to capture context and a symmetric expanding path that enables precise localization. We show that such a network can be trained end-to-end from very few images and outperforms the prior best method (a sliding-window convolutional network) on the ISBI challenge for segmentation of neuronal structures in electron microscopic stacks. Using the same network trained on transmitted light microscopy images (phase contrast and DIC) we won the ISBI cell tracking challenge 2015 in these categories by a large margin. Moreover, the network is fast. Segmentation of a 512x512 image takes less than a second on a recent GPU. The full implementation (based on Caffe) and the trained networks are available at http://lmb.informatik.uni-freiburg.de/people/ronneber/u-net .}, note={arXiv:1505.04597}, number={arXiv:1505.04597}, publisher={arXiv}, author={Ronneberger, Olaf and Fischer, Philipp and Brox, Thomas}, year={2015}, month=may }
+
+@article{Vaswani_Shazeer_Parmar_Uszkoreit_Jones_Gomez_Kaiser_Polosukhin_2023, title={Attention Is All You Need}, url={http://arxiv.org/abs/1706.03762}, DOI={10.48550/arXiv.1706.03762}, abstractNote={The dominant sequence transduction models are based on complex recurrent or convolutional neural networks in an encoder-decoder configuration. The best performing models also connect the encoder and decoder through an attention mechanism. We propose a new simple network architecture, the Transformer, based solely on attention mechanisms, dispensing with recurrence and convolutions entirely. Experiments on two machine translation tasks show these models to be superior in quality while being more parallelizable and requiring significantly less time to train. Our model achieves 28.4 BLEU on the WMT 2014 English-to-German translation task, improving over the existing best results, including ensembles by over 2 BLEU. On the WMT 2014 English-to-French translation task, our model establishes a new single-model state-of-the-art BLEU score of 41.8 after training for 3.5 days on eight GPUs, a small fraction of the training costs of the best models from the literature. We show that the Transformer generalizes well to other tasks by applying it successfully to English constituency parsing both with large and limited training data.}, note={arXiv:1706.03762}, number={arXiv:1706.03762}, publisher={arXiv}, author={Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N. and Kaiser, Lukasz and Polosukhin, Illia}, year={2023}, month=aug }
+
+@article{Gazzani_Guyon_2025, title={Pricing and calibration in the 4-factor path-dependent volatility model}, volume={25}, ISSN={1469-7688, 1469-7696}, url={https://www.tandfonline.com/doi/full/10.1080/14697688.2025.2472892}, DOI={10.1080/14697688.2025.2472892}, number={3}, journal={Quantitative Finance}, author={Gazzani, Guido and Guyon, Julien}, year={2025}, month=mar, pages={471–489}, language={en} }
+
+@article{Salimans_Ho_2022, title={Progressive Distillation for Fast Sampling of Diffusion Models}, url={http://arxiv.org/abs/2202.00512}, DOI={10.48550/arXiv.2202.00512}, abstractNote={Diffusion models have recently shown great promise for generative modeling, outperforming GANs on perceptual quality and autoregressive models at density estimation. A remaining downside is their slow sampling time: generating high quality samples takes many hundreds or thousands of model evaluations. Here we make two contributions to help eliminate this downside: First, we present new parameterizations of diffusion models that provide increased stability when using few sampling steps. Second, we present a method to distill a trained deterministic diffusion sampler, using many steps, into a new diffusion model that takes half as many sampling steps. We then keep progressively applying this distillation procedure to our model, halving the number of required sampling steps each time. On standard image generation benchmarks like CIFAR-10, ImageNet, and LSUN, we start out with state-of-the-art samplers taking as many as 8192 steps, and are able to distill down to models taking as few as 4 steps without losing much perceptual quality; achieving, for example, a FID of 3.0 on CIFAR-10 in 4 steps. Finally, we show that the full progressive distillation procedure does not take more time than it takes to train the original model, thus representing an efficient solution for generative modeling using diffusion at both train and test time.}, note={arXiv:2202.00512}, number={arXiv:2202.00512}, publisher={arXiv}, author={Salimans, Tim and Ho, Jonathan}, year={2022}, month=jun }
+
+@article{Loshchilov_Hutter_2019, title={Decoupled Weight Decay Regularization}, url={http://arxiv.org/abs/1711.05101}, DOI={10.48550/arXiv.1711.05101}, abstractNote={L$_2$ regularization and weight decay regularization are equivalent for standard stochastic gradient descent (when rescaled by the learning rate), but as we demonstrate this is emph{not} the case for adaptive gradient algorithms, such as Adam. While common implementations of these algorithms employ L$_2$ regularization (often calling it “weight decay” in what may be misleading due to the inequivalence we expose), we propose a simple modification to recover the original formulation of weight decay regularization by emph{decoupling} the weight decay from the optimization steps taken w.r.t. the loss function. We provide empirical evidence that our proposed modification (i) decouples the optimal choice of weight decay factor from the setting of the learning rate for both standard SGD and Adam and (ii) substantially improves Adam’s generalization performance, allowing it to compete with SGD with momentum on image classification datasets (on which it was previously typically outperformed by the latter). Our proposed decoupled weight decay has already been adopted by many researchers, and the community has implemented it in TensorFlow and PyTorch; the complete source code for our experiments is available at https://github.com/loshchil/AdamW-and-SGDW}, note={arXiv:1711.05101}, number={arXiv:1711.05101}, publisher={arXiv}, author={Loshchilov, Ilya and Hutter, Frank}, year={2019}, month=jan }
+
+@misc{wiedemann2025operatordeepsmoothingimplied,
+      title={Operator Deep Smoothing for Implied Volatility}, 
+      author={Ruben Wiedemann and Antoine Jacquier and Lukas Gonon},
+      year={2025},
+      eprint={2406.11520},
+      archivePrefix={arXiv},
+      primaryClass={q-fin.CP},
+      url={https://arxiv.org/abs/2406.11520}, 
+}
+
+@article{ChadhaJaimungal2023,
+    author = {Choudhary, Vedant and Jaimungal, Sebastian and Bergeron, Maxime},
+    title = {{FuNVol: A Multi-Asset Implied Volatility Market Simulator using Functional Principal Components and Neural SDEs}},
+    journal = {Available at SSRN 4488346},
+    year = {2023}
+}
+
+ @article{Vuletić_Cont_2023, title={VolGAN: a generative model for arbitrage-free implied volatility surfaces}, ISSN={1556-5068}, url={https://www.ssrn.com/abstract=4617536}, DOI={10.2139/ssrn.4617536}, journal={SSRN Electronic Journal}, author={Vuletić, Milena and Cont, Rama}, year={2023}, language={en} }
+
+
+@article{Bergeron2022,
+    author = {Bergeron, Maxime and Dufresne-Aubertin, Jordan and Ghattas, Bachir and Jacquier, Antoine and MogBader, Yves},
+    title = {A variational autoencoder approach to conditional generation of possible future volatility surfaces},
+    journal = {Quantitative Finance},
+    volume = {22},
+    number = {7},
+    pages = {1167--1190},
+    year = {2022}
+}
+
+@article{Gazzani04032025,
+author = {Guido Gazzani and Julien Guyon},
+title = {Pricing and calibration in the 4-factor path-dependent volatility model},
+journal = {Quantitative Finance},
+volume = {25},
+number = {3},
+pages = {471--489},
+year = {2025},
+publisher = {Routledge},
+doi = {10.1080/14697688.2025.2472892},
+URL = {https://doi.org/10.1080/14697688.2025.2472892},
+eprint = {https://doi.org/10.1080/14697688.2025.2472892}
+}
+
+@book{Tsybakov_2009, address={New York, NY}, series={Springer Series in Statistics}, title={Introduction to Nonparametric Estimation}, rights={https://www.springernature.com/gp/researchers/text-and-data-mining}, ISBN={9780387790510}, url={https://link.springer.com/10.1007/b13794}, DOI={10.1007/b13794}, publisher={Springer}, author={Tsybakov, Alexandre B.}, year={2009}, collection={Springer Series in Statistics}, language={en} }
+
+ @article{Ho_Jain_Abbeel_2020, title={Denoising Diffusion Probabilistic Models}, url={http://arxiv.org/abs/2006.11239}, DOI={10.48550/arXiv.2006.11239}, abstractNote={We present high quality image synthesis results using diffusion probabilistic models, a class of latent variable models inspired by considerations from nonequilibrium thermodynamics. Our best results are obtained by training on a weighted variational bound designed according to a novel connection between diffusion probabilistic models and denoising score matching with Langevin dynamics, and our models naturally admit a progressive lossy decompression scheme that can be interpreted as a generalization of autoregressive decoding. On the unconditional CIFAR10 dataset, we obtain an Inception score of 9.46 and a state-of-the-art FID score of 3.17. On 256x256 LSUN, we obtain sample quality similar to ProgressiveGAN. Our implementation is available at https://github.com/hojonathanho/diffusion}, note={arXiv:2006.11239}, number={arXiv:2006.11239}, publisher={arXiv}, author={Ho, Jonathan and Jain, Ajay and Abbeel, Pieter}, year={2020}, month=dec }
+
+
+@article{Takahashi05082025,
+author = {Tomonori Takahashi and Takayuki Mizuno},
+title = {Generation of synthetic financial time series by diffusion models},
+journal = {Quantitative Finance},
+volume = {0},
+number = {0},
+pages = {1--10},
+year = {2025},
+publisher = {Routledge},
+doi = {10.1080/14697688.2025.2528697},
+URL = {https://doi.org/10.1080/14697688.2025.2528697},
+eprint = {https://doi.org/10.1080/14697688.2025.2528697}
+}
+
+@misc{chen2025diffusionfactormodelsgenerating,
+      title={Diffusion Factor Models: Generating High-Dimensional Returns with Factor Structure}, 
+      author={Minshuo Chen and Renyuan Xu and Yumin Xu and Ruixun Zhang},
+      year={2025},
+      eprint={2504.06566},
+      archivePrefix={arXiv},
+      primaryClass={q-fin.ST},
+      url={https://arxiv.org/abs/2504.06566}, 
+}
+
+@article{Nakano_2025,
+  title={Convergence of the denoising diffusion probabilistic models for general noise schedules},
+  url={http://arxiv.org/abs/2406.01320},
+  DOI={10.48550/arXiv.2406.01320},
+  abstractNote={This paper presents a theoretical convergence analysis of a denoising diffusion probabilistic model (DDPM) in its original discrete-time formulation introduced by Ho, Jain, and Abbeel (Advances in Neural Information Processing Systems, 33 (2020), 6840-6851). We derive an explicit upper bound for the total variation distance between the sampling distribution of the discrete-time DDPM algorithm and a given target data distribution, under general noise schedule parameters. Our analysis requires only mild regularity assumptions on the data distribution and a linear growth condition on the estimated score function. The sampling scheme is interpreted as an exponential-integrator-type approximation of a reverse-time stochastic differential equation (SDE) over a finite time horizon. Tools from the Schr"odinger problem are employed to control the distributional error in reverse time and connect it to its forward-time counterpart. Moreover, the score function in DDPMs naturally appears as an adapted solution of a forward-backward SDE, providing a basis for analyzing the time-discretization error in reverse-time SDE sampling.},
+  note={arXiv:2406.01320},
+  number={arXiv:2406.01320},
+  publisher={arXiv},
+  author={Nakano, Yumiharu},
+  year={2025},
+  month={aug}
+}
+
+@article{Hang_Gu_Li_Bao_Chen_Hu_Geng_Guo_2024, title={Efficient Diffusion Training via Min-SNR Weighting Strategy}, url={http://arxiv.org/abs/2303.09556}, DOI={10.48550/arXiv.2303.09556}, abstractNote={Denoising diffusion models have been a mainstream approach for image generation, however, training these models often suffers from slow convergence. In this paper, we discovered that the slow convergence is partly due to conflicting optimization directions between timesteps. To address this issue, we treat the diffusion training as a multi-task learning problem, and introduce a simple yet effective approach referred to as Min-SNR-$gamma$. This method adapts loss weights of timesteps based on clamped signal-to-noise ratios, which effectively balances the conflicts among timesteps. Our results demonstrate a significant improvement in converging speed, 3.4$times$ faster than previous weighting strategies. It is also more effective, achieving a new record FID score of 2.06 on the ImageNet $256times256$ benchmark using smaller architectures than that employed in previous state-of-the-art. The code is available at https://github.com/TiankaiHang/Min-SNR-Diffusion-Training.}, note={arXiv:2303.09556}, number={arXiv:2303.09556}, publisher={arXiv}, author={Hang, Tiankai and Gu, Shuyang and Li, Chen and Bao, Jianmin and Chen, Dong and Hu, Han and Geng, Xin and Guo, Baining}, year={2024}, month=mar }
+
+@article{Nichol_Dhariwal_2021, title={Improved Denoising Diffusion Probabilistic Models}, url={http://arxiv.org/abs/2102.09672}, DOI={10.48550/arXiv.2102.09672}, abstractNote={Denoising diffusion probabilistic models (DDPM) are a class of generative models which have recently been shown to produce excellent samples. We show that with a few simple modifications, DDPMs can also achieve competitive log-likelihoods while maintaining high sample quality. Additionally, we find that learning variances of the reverse diffusion process allows sampling with an order of magnitude fewer forward passes with a negligible difference in sample quality, which is important for the practical deployment of these models. We additionally use precision and recall to compare how well DDPMs and GANs cover the target distribution. Finally, we show that the sample quality and likelihood of these models scale smoothly with model capacity and training compute, making them easily scalable. We release our code at https://github.com/openai/improved-diffusion}, note={arXiv:2102.09672}, number={arXiv:2102.09672}, publisher={arXiv}, author={Nichol, Alex and Dhariwal, Prafulla}, year={2021}, month=feb }
+
+@article{Heston_1993,
+    author = {Heston, Steven L.},
+    title = {A Closed-Form Solution for Options with Stochastic Volatility with Applications to Bond and Currency Options},
+    journal = {The Review of Financial Studies},
+    volume = {6},
+    number = {2},
+    pages = {327--343},
+    year = {1993},
+    doi = {10.1093/rfs/6.2.327}
+}
+
+@techreport{Hu_2024_tech,
+  author      = {Yihan Hu},
+  title       = {Towards Arbitrage-free Implied Volatility Surfaces with Diffusion Probabilistic Models},
+  institution = {Delft University of Technology},
+  type        = {MSc Thesis},
+  year        = {2024},
+  month       = {oct},
+  address     = {Delft}
+}
+
+@inbook{Revuz_Yor_1999, address={Berlin, Heidelberg}, title={Girsanov’s Theorem and First Applications}, ISBN={9783662064009}, url={https://doi.org/10.1007/978-3-662-06400-9_9}, DOI={10.1007/978-3-662-06400-9_9}, abstractNote={In this chapter we study the effect on the space of continuous semimartingales of an absolutely continuous change of probability measure. The results we describe have far-reaching consequences from the theoretical point of view as is hinted at in Sect. 2; they also permit many explicit computations as is seen in Sect. 3.}, booktitle={Continuous Martingales and Brownian Motion}, publisher={Springer}, author={Revuz, Daniel and Yor, Marc}, editor={Revuz, Daniel and Yor, Marc}, year={1999}, pages={325–364}, language={en} }

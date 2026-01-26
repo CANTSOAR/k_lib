@@ -1,0 +1,117 @@
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[left=2.5cm,right=2.5cm,top=3cm,bottom=3cm]{geometry}
+\usepackage[toc,page]{appendix}
+\usepackage{amsfonts,amssymb,amsthm,graphicx,dsfont,xcolor,stmaryrd,subcaption}
+\usepackage{amsmath, mathtools}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{float} % for the figures
+\usepackage{multirow}
+% \usepackage{pifont} % usefull for \ding{}
+\usepackage[normalem]{ulem} % usefull for underlying
+\usepackage{array, booktabs}
+
+\usepackage{mathabx}
+
+
+% \pdfoutput=1
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\DeclareMathOperator{\e}{e}
+
+\DeclareMathOperator{\Proj}{\mathrm{Proj}}
+\DeclareMathOperator{\dist}{\mathrm{dist}}
+\DeclareMathOperator{\card}{\mathrm{card}}
+\DeclareMathOperator{\sign}{\mathrm{sign}}
+\DeclareMathOperator{\Conv}{\mathrm{Conv}}
+
+
+\DeclareMathOperator{\A}{\mathcal{A}}
+% \DeclareMathOperator{\L}{\mathcal{L}}
+\DeclareMathOperator{\F}{\mathcal{F}}
+\DeclareMathOperator{\N}{\mathcal{N}}
+
+% \DeclareMathOperator{\U}{\mathcal{U}}
+
+\DeclareMathOperator{\R}{\mathds{R}}
+% \DeclareMathOperator{\R^d}{\R^d}
+\DeclareMathOperator{\Integer}{\mathds{N}}
+\DeclareMathOperator{\V}{\mathds{V}\mathrm{ar}}
+\DeclareMathOperator{\E}{\mathds{E}}
+\DeclareMathOperator{\Cov}{\mathds{C}\mathrm{ov}}
+\DeclareMathOperator{\Corr}{\mathds{C}\mathrm{orr}}
+\DeclareMathOperator{\Prob}{\mathds{P}}
+\DeclareMathOperator{\Law}{\mathcal{L}}
+\DeclareMathOperator{\Tr}{Tr}
+
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+\DeclareMathOperator{\1}{\mathds{1}}
+
+\DeclareMathOperator{\C1}{\mathcal{C}^1}
+\DeclareMathOperator{\C1Lip}{\mathcal{C}^1_{_{Lip}}}
+\DeclareMathOperator\supp{supp}
+
+
+\DeclareMathOperator{\Distortion}{\mathcal{Q}_{2,N}}
+
+\newcommand\indep{\protect\mathpalette{\protect\indeT}{\perp}}
+\def\indeT#1#2{\mathrel{\rlap{$#1#2$}\mkern2mu{#1#2}}}
+
+\newcommand{\vertiii}[1]{{\left\vert\kern-0.25ex\left\vert\kern-0.25ex\left\vert #1
+\right\vert\kern-0.25ex\right\vert\kern-0.25ex\right\vert}}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemme}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{cor}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{conj}[theorem]{Conjecture}
+\newtheorem{example}[theorem]{Example}
+
+% \theoremstyle{remark}
+\newtheorem{remark}[theorem]{\noindent \textbf{Remark}}
+\newtheorem{remarks}[theorem]{\noindent \textbf{Remarks}}
+\newtheorem*{note}{Note}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\numberwithin{equation}{section}
+
+\renewenvironment{abstract}
+ {\small
+	\begin{center}
+		\bfseries \abstractname\vspace{-.5em}\vspace{0pt}
+	\end{center}
+	\list{}{%
+	\setlength{\leftmargin}{20mm}% <---------- CHANGE HERE
+	\setlength{\rightmargin}{\leftmargin}%
+ }%
+ \item\relax}
+ {\endlist}
+
+
+
+
+% Keywords command
+\providecommand{\keywords}[1]
+{
+  {
+  \small
+  \textbf{\textit{Keywords---}} #1
+  }
+}
+
+
+
+\newcommand*\samethanks[1][\value{footnote}]{\footnotemark[#1]}

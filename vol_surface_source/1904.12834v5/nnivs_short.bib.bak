@@ -1,0 +1,770 @@
+% Encoding: UTF-8
+
+
+@Misc{tensorflow2015-whitepaper,
+  Title                    = {{TensorFlow: large-scale machine learning on heterogeneous systems}},
+
+  Author                   = {Mart\'{\i}n~Abadi and Ashish~Agarwal and Paul~Barham and Eugene~Brevdo and Zhifeng~Chen and Craig~Citro and Greg~S.~Corrado and Andy~Davis and Jeffrey~Dean and Matthieu~Devin and Sanjay~Ghemawat and Ian~Goodfellow and Andrew~Harp and Geoffrey~Irving and Michael~Isard and Yangqing Jia and Rafal~Jozefowicz and Lukasz~Kaiser and Manjunath~Kudlur and Josh~Levenberg and Dan~Man\'{e} and Rajat~Monga and Sherry~Moore and Derek~Murray and Chris~Olah and Mike~Schuster and Jonathon~Shlens and Benoit~Steiner and Ilya~Sutskever and Kunal~Talwar and Paul~Tucker and Vincent~Vanhoucke and Vijay~Vasudevan and Fernanda~Vi\'{e}gas and Oriol~Vinyals and Pete~Warden and Martin~Wattenberg and Martin~Wicke and Yuan~Yu and Xiaoqiang~Zheng},
+  HowPublished             = {\emph{Google Research}},
+  Note                     = {URL: \url{https://www.tensorflow.org}},
+  Year                     = {2015}
+}
+
+@Article{AbuMostafa93,
+  author  = {Yaser {Abu-Mostafa}},
+  title   = {{A method for learning from hints}},
+  journal = {Advances in Neural Information Processing Systems},
+  year    = {1993},
+  pages   = {73-80},
+}
+
+@Misc{Ametrano2013,
+  author       = {Ametrano, Ferdinando and Bianchetti, Marco},
+  title        = {{Everything you always wanted to know about multiple interest rate curve bootstrapping but were afraid to ask}},
+  howpublished = {SSRN},
+  year         = {2013},
+  note         = {\url{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2219548}},
+  abstract     = {After the credit and liquidity crisis started in summer 2007 the market has recognized that multiple yield curves are required for estimation of both discount and FRA rates with dfferent tenors (eg Overnight, Libor 3 months, etc.), consistently with the large basis spreads and the wide diffusion of bilateral collateral agreements and central counterparties for derivatives transactions observed on the market.},
+}
+
+@Article{Andersen2017,
+  author  = {Andersen, Torben and Fusari, Nicola and Todorov, Viktor},
+  title   = {{Short-term market risks implied by weekly options}},
+  journal = {Journal of Finance},
+  year    = {2017},
+  volume  = {72},
+  number  = {3},
+  pages   = {1335--1386},
+}
+
+@Article{Audrino2010,
+  Title                    = {Semi-parametric forecasts of the implied volatility surface using regression trees},
+  Author                   = {Audrino, Francesco and Colangelo, Dominik},
+  Journal                  = {Statistics and Computing},
+  Year                     = {2010},
+  Number                   = {4},
+  Pages                    = {421--434},
+  Volume                   = {20}
+}
+
+@Book{Barber2012Bayesian,
+  Title                    = {Bayesian Reasoning and Machine Learning},
+  Author                   = {Barber, David},
+  Publisher                = {Cambridge University Press},
+  Year                     = {2012}
+}
+
+@Article{Bilson2015,
+  Title                    = {{The term structure of implied dividend yields and expected returns}},
+  Author                   = {Bilson, John and Kang, Sang and Luo, Hong},
+  Journal                  = {Economics Letters},
+  Year                     = {2015},
+  Pages                    = {9--13},
+  Volume                   = {128},
+
+  Keywords                 = {Predictive regression; Dividend yield; Dividend price ratio; Sharpe ratio; Stochastic dominance}
+}
+
+@Book{Bishop2006Pattern,
+  Title                    = {Pattern Recognition and Machine Learning},
+  Author                   = {Bishop, Christopher},
+  Publisher                = {Springer},
+  Year                     = {2006}
+}
+
+@Article{Black_1973,
+  author  = {Fischer Black and Myron Scholes},
+  title   = {{The pricing of options and corporate liabilities}},
+  journal = {Journal of Political Economy},
+  year    = {1973},
+  volume  = {81},
+  number  = {3},
+  pages   = {637-654},
+}
+
+@Article{Bliss2005,
+  author   = {Bliss, Robert and Panigirtzoglou, Nikolaos},
+  title    = {{Option-implied risk aversion estimates}},
+  journal  = {Journal of Finance},
+  year     = {2005},
+  volume   = {59},
+  number   = {1},
+  pages    = {407--446},
+  abstract = {ABSTRACT Using a utility function to adjust the risk-neutral PDF embedded in cross sections of options, we obtain measures of the risk aversion implied in option prices. Using FTSE 100 and S&P 500 options, and both power and exponential-utility functions, we estimate the representative agent’s relative risk aversion (RRA) at different horizons. The estimated coefficients of RRA are all reasonable. The RRA estimates are remarkably consistent across utility functions and across markets for given horizons. The degree of RRA declines broadly with the forecast horizon and is lower during periods of high market volatility.},
+}
+
+@Misc{Carr2010,
+  Title                    = {A new simple approach for constructing implied volatility surfaces},
+
+  Author                   = {Carr, Peter and Wu, Liuren},
+  HowPublished             = {SSRN},
+  Note                     = {\url{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1701685}},
+  Year                     = {2010}
+}
+
+@Article{Carr_2007,
+  author  = {Carr, Peter and Wu, Liuren},
+  title   = {{Stochastic skew in currency options}},
+  journal = {Journal of Financial Economics},
+  year    = {2007},
+  volume  = {86},
+  number  = {1},
+  pages   = {213-247},
+}
+
+@Article{Choe_2017,
+  author  = {Junsuk Choe and Song Park and Kyungmin Kim and Joo Hyun Park and Dongseob Kim and Hyunjung Shim},
+  journal = {ICCV Workshops},
+  title   = {{Face generation for low-shot learning using generative adversarial networks}},
+  year    = {2017},
+  pages   = {1940--1948},
+}
+
+@Article{Coleman2013,
+  author  = {Coleman, Thomas and Li, Yuying and Wang, Cheng},
+  title   = {{Stable local volatility function calibration using spline kernel}},
+  journal = {Computational Optimization and Applications},
+  year    = {2013},
+  volume  = {55},
+  number  = {3},
+  pages   = {675-702},
+}
+
+@Article{Cont_2002,
+  Title                    = {{Dynamics of implied volatility surfaces}},
+  Author                   = {Rama Cont and Jos\'{e} {Da Fonseca}},
+  Journal                  = {Quantitative Finance},
+  Year                     = {2002},
+  Number                   = {1},
+  Pages                    = {45--60},
+  Volume                   = {2},
+
+  Abstract                 = {Abstract The prices of index options at a given date are usually represented via the corresponding implied volatility surface, presenting skew/smile features and term structure which several models have attempted to reproduce. However, the implied volatility surface.}
+}
+
+@Article{Corlay2016,
+  Title                    = {{B-spline techniques for volatility modeling}},
+  Author                   = {Corlay, Sylvain},
+  Journal                  = {Journal of Computational Finance},
+  Year                     = {2016},
+  Number                   = {3},
+  Pages                    = {97--135},
+  Volume                   = {19},
+
+  Abstract                 = {Abstract: This paper is devoted to the application of B-splines to volatility modeling, specifically the calibration of the leverage function in stochastic local volatility models and the parameterization of an arbitrage-free implied volatility surface calibrated to sparse.}
+}
+
+@Article{Cybenko1989,
+  author  = {Cybenko, G.},
+  title   = {{Approximation by superpositions of a sigmoidal function}},
+  journal = {Mathematics of Control, Signals and Systems},
+  year    = {1989},
+  volume  = {2},
+  number  = {4},
+  pages   = {303-314},
+}
+
+@Article{Friz_2005,
+  Title                    = {{Valuation of volatility derviatives as an inverse problem}},
+  Author                   = {Peter Friz and Jim Gatheral},
+  Journal                  = {Quantitative Finance},
+  Year                     = {2005},
+  Number                   = {6},
+  Pages                    = {531--542},
+  Volume                   = {5}
+}
+
+@Misc{Gatheral2004,
+  Title                    = {{A parsimonious arbitrage-free implied volatility parameterization with application to the valuation of volatility derivatives}},
+
+  Author                   = {Gatheral, Jim},
+  HowPublished             = {\emph{Presentation at Global Derivatives \& Risk Management}, Madrid},
+  Year                     = {2004}
+}
+
+@Article{Gatheral2014,
+  Title                    = {Arbitrage-free SVI volatility surfaces},
+  Author                   = {Gatheral, Jim and Jacquier, Antoine},
+  Journal                  = {Quantitative Finance},
+  Year                     = {2014},
+  Number                   = {1},
+  Pages                    = {59--71},
+  Volume                   = {14},
+
+  Abstract                 = {In this article, we show how to calibrate the widely used SVI parameterization of the implied volatility smile in such a way as to guarantee the absence of static arbitrage. In particular, we exhibit a large class of arbitrage-free SVI volatility surfaces with a simple closed-form.}
+}
+
+@InBook{Gavrishchaka2006,
+  Title                    = {Econometric Analysis of Financial and Economic Time Series},
+  Author                   = {Valeriy Gavrishchaka},
+  Chapter                  = {{Boosting-based Frameworks in financial modeling: application to symbolic volatility forecasting}},
+  Pages                    = {123--151},
+  Publisher                = {Emerald},
+  Year                     = {2006}
+}
+
+@Book{Goodfellow_2016,
+  Title                    = {Deep Learning},
+  Author                   = {Ian Goodfellow and Yoshua Bengio and Aaron Courville},
+  Publisher                = {MIT Press},
+  Year                     = {2016},
+
+  Owner                    = {bchenglasgow},
+  Timestamp                = {2018.10.20}
+}
+
+@Book{Gulisashvili_2012,
+  Title                    = {Analytically Tractable Stochastic Stock Price Models},
+  Author                   = {Archil Gulisashvili},
+  Publisher                = {Springer},
+  Year                     = {2012}
+}
+
+@Book{Hastie2001Elements,
+  Title                    = {The Elements of Statistical Learning},
+  Author                   = {Hastie, Trevor and Tibshirani, Robert and Friedman, Jerome},
+  Publisher                = {Springer New York Inc.},
+  Year                     = {2001}
+}
+
+@Article{Heston1993,
+  Title                    = {{A closed-form solution for options with stochastic volatility with applications to bond and currency options}},
+  Author                   = {Heston, Steven},
+  Journal                  = {Review of Financial Studies},
+  Year                     = {1993},
+  Number                   = {2},
+  Pages                    = {327--343},
+  Volume                   = {6},
+
+  Abstract                 = {Abstract I use a new technique to derive a closed-form solution for the price of a European call option on an asset with stochastic volatility. The model allows arbitrary correlation between volatility and spot-asset returns. I introduce stochastic interest rates and show.}
+}
+
+@Misc{Homescu2011,
+  Title                    = {{Implied volatility surface: construction methodologies and characteristics}},
+
+  Author                   = {Homescu, Cristian},
+  HowPublished             = {arXiv},
+  Note                     = {\url{https://arxiv.org/abs/1107.1834}},
+  Year                     = {2011}
+}
+
+@Article{Hornik1991,
+  author  = {Kurt Hornik},
+  title   = {{Approximation capabilities of multilayer feedforward networks}},
+  journal = {Neural Networks},
+  year    = {1991},
+  volume  = {4},
+  number  = {2},
+  pages   = {251-257},
+}
+
+@Article{Itkin2015,
+  Title                    = {{To sigmoid-based functional description of the volatility smile}},
+  Author                   = {Itkin, Andrey},
+  Journal                  = {The North American Journal of Economics and Finance},
+  Year                     = {2015},
+  Pages                    = {264--291},
+  Volume                   = {31},
+
+  Abstract                 = {Abstract We propose a new static parameterization of the implied volatility surface which is constructed by using polynomials of sigmoid functions combined with some other terms. This parameterization is flexible enough to fit market implied volatilities which demonstrate.}
+}
+
+@Article{Khandani_2010,
+  Title                    = {{Consumer credit-risk models via machine-learning algorithms}},
+  Author                   = {Amir Khandani and Adlar Kim and Andrew Lo},
+  Journal                  = {Journal of Banking \& Finance},
+  Year                     = {2010},
+  Pages                    = {2767--2787},
+  Volume                   = {34}
+}
+
+@Article{Kingma15adam,
+  author  = {Kingma, Diederik and Ba, Jimmy},
+  journal = {ICLR},
+  title   = {{Adam: a method for stochastic optimization}},
+  year    = {2015},
+  pages   = {1--13},
+}
+
+@Article{Kotze2013,
+  Title                    = {{Arbitrage-free implied volatility surfaces for options on single stock futures}},
+  Author                   = {Kotz\'{e}, Antonie and Labuschagne, Coenraad and Nair, Merell and Padayachi, Nadine},
+  Journal                  = {The North American Journal of Economics and Finance},
+  Year                     = {2013},
+  Pages                    = {380--399},
+  Volume                   = {26}
+}
+
+@Article{Kou2002jump,
+  Title                    = {{A jump-diffusion model for option pricing}},
+  Author                   = {Steven Kou},
+  Journal                  = {Management Science},
+  Year                     = {2002},
+  Number                   = {8},
+  Pages                    = {1086--1101},
+  Volume                   = {48}
+}
+
+@Article{dlnature,
+  author  = {Yann Lecun and Yoshua Bengio and Geoffrey Hinton},
+  title   = {{Deep learning}},
+  journal = {Nature},
+  year    = {2015},
+  volume  = {521},
+  number  = {7553},
+  pages   = {436-444},
+}
+
+@Article{Lee_2004,
+  author  = {Lee, Roger},
+  title   = {{The moment formula for implied volatility at extreme strikes}},
+  journal = {Mathematical Finance},
+  year    = {2004},
+  volume  = {14},
+  number  = {3},
+  pages   = {469-480},
+}
+
+@Article{Liew_2018,
+  Title                    = {{Forecasting ETFs with machine learning algorithms}},
+  Author                   = {Jim Liew and Boris Mayster},
+  Journal                  = {The Journal of Alternative Investments},
+  Year                     = {2018},
+  Number                   = {3},
+  Pages                    = {58--78},
+  Volume                   = {20}
+}
+
+@Article{Liu_2017,
+  author    = {Ting Liu and Yiming Cui and Qingyu Yin and Weinan Zhang and Shijin Wang and Guoping Hu},
+  journal   = {ACL},
+  title     = {{Generating and exploiting large-scale pseudo training data for zero pronoun resolution}},
+  year      = {2017},
+  pages     = {102--111},
+  owner     = {bchenglasgow},
+  timestamp = {2018.10.19},
+}
+
+@Article{Merton76optionpricing,
+  Title                    = {{Option pricing when underlying stock returns are discontinuous}},
+  Author                   = {Robert Merton},
+  Journal                  = {Journal of Financial Economics},
+  Year                     = {1976},
+  Pages                    = {125--144},
+  Volume                   = {3}
+}
+
+@Book{Murphy2012Machine,
+  Title                    = {Machine Learning: A Probabilistic Perspective},
+  Author                   = {Murphy, Kevin P.},
+  Publisher                = {The MIT Press},
+  Year                     = {2012}
+}
+
+@Article{dlnn,
+  Title                    = {{Deep learning in neural networks: An overview}},
+  Author                   = {J\"{u}rgen Schmidhuber},
+  Journal                  = {Neural Networks},
+  Year                     = {2015},
+  Pages                    = {85--117},
+  Volume                   = {61}
+}
+
+@Book{Vapn2000,
+  title     = {The Nature of Statistical Learning Theory},
+  publisher = {Springer},
+  year      = {2000},
+  author    = {Vapnik, Vladimir},
+  edition   = {2nd},
+  type      = {Book},
+}
+
+@Article{Yang_2017,
+  author  = {Yongxin Yang and Yu Zheng and Timothy Hospedales},
+  journal = {AAAI},
+  title   = {{Gated neural networks for option pricing: rationality by design}},
+  year    = {2017},
+}
+
+@Article{EY_2018_Fintech,
+  author  = {{Ernst and Young}},
+  title   = {{The future of FinTech and financial services: what’s the next big bet?}},
+  journal = {Technical Report},
+  year    = {2018},
+}
+
+@Article{Malliaris_1993,
+  author  = {Mary Malliaris and Linda Salchenberger},
+  title   = {{A neural network model for estimating option prices}},
+  journal = {Applied Intelligence},
+  year    = {1993},
+  volume  = {3},
+  number  = {3},
+  pages   = {193--206},
+}
+
+@Article{Malliaris_1996,
+  author  = {Mary Malliaris and Linda Salchenberger},
+  title   = {{Using neural networks to forecast the S\&P 100 implied volatility}},
+  journal = {Neurocomputing},
+  year    = {1996},
+  volume  = {10},
+  number  = {2},
+  pages   = {183-195},
+}
+
+@Article{Gradojevic_2009,
+  author  = {Nikola Gradojevic and Ramazan Gencay and Dragan Kukolj},
+  title   = {{Option pricing with modular neural networks}},
+  journal = {IEEE Transactions on Neural Networks},
+  year    = {2009},
+  volume  = {20},
+  number  = {4},
+  pages   = {626-637},
+}
+
+@PhdThesis{Zheng_2018,
+  author = {Yu Zheng},
+  title  = {{Machine Learning and Option Implied Information}},
+  school = {Imperial College London},
+  year   = {2018},
+}
+
+@Article{Hendershott_2017,
+  author  = {Terrence Hendershott and Michael Zhang and Leon Zhao and Eric Zheng},
+  title   = {{Special issue of information systems research fintech – innovating the financial industry through emerging information technologies}},
+  journal = {Information Systems Research},
+  year    = {2017},
+  volume  = {28},
+  number  = {4},
+  pages   = {885-886},
+}
+
+@Article{Chockalingam_2011,
+  author  = {Arun Chockalingam and Kumar Muthuraman},
+  title   = {{American options under stochastic volatility}},
+  journal = {Operations Research},
+  year    = {2011},
+  volume  = {59},
+  number  = {4},
+  pages   = {793-809},
+}
+
+@Article{Shiraya_2018,
+  author  = {Kenichiro Shiraya and Akihiko Takahashi},
+  title   = {{Pricing average and spread options under local-stochastic volatility jump-diffusion models}},
+  journal = {Mathematics of Operations Research},
+  year    = {2018},
+  volume  = {4},
+  number  = {11},
+}
+
+@Article{Kang_2017,
+  author  = {Chulmin Kang and Wanmo Kang and {Jong Mun} Lee},
+  title   = {{Exact simulation of the Wishart multidimensional stochastic volatility model}},
+  journal = {Operations Research},
+  year    = {2017},
+  volume  = {65},
+  number  = {5},
+  pages   = {1190-1206},
+}
+
+@Article{Roy_2019,
+  author  = {Asim Roy and Shiban Qureshi and Kartikeya Pande and Divitha Nair and Kartik Gairola and Pooja Jain and Suraj Singh and Kirti Sharma and Akshay Jagadale and Yi-Yang Lin and Shashank Sharma and Ramya Gotety and Yuexin Zhang and Ji Tang and Tejas Mehta and Hemanth Sindhanuru and Nonso Okafor and Santak Das and Chidabara Gopal and Srinivasa Rudraraju and Avinash Kakarlapudi},
+  title   = {{Performance comparison of machine learning platforms}},
+  journal = {INFORMS Journal on Computing},
+  year    = {2019},
+  volume  = {31},
+  number  = {2},
+  pages   = {207–225},
+}
+
+@Article{Gupta_2000,
+  author  = {Jatinder Gupta and Randall Sexton and Enar Tunc},
+  title   = {{Selecting scheduling heuristics using neural networks}},
+  journal = {INFORMS Journal on Computing},
+  year    = {2000},
+  volume  = {12},
+  number  = {2},
+  pages   = {150-162},
+}
+
+@Article{Franklin_2019,
+  author  = {Judy Franklin},
+  title   = {{Recurrent neural networks for music computation}},
+  journal = {INFORMS Journal on Computing},
+  year    = {2019},
+  volume  = {18},
+  number  = {3},
+  pages   = {321–338},
+}
+
+@Article{Belloni_2009,
+  author  = {Alexandre Belloni and Robert Freund and Santosh Vempala},
+  title   = {{An efficient rescaled perceptron algorithm for conic systems}},
+  journal = {Mathematics of Operations Research},
+  year    = {2009},
+  volume  = {34},
+  number  = {3},
+  pages   = {621–641},
+}
+
+@Article{Agarwal_2006,
+  author  = {Anurag Agarwal and Varghese Jacob and Hasan Pirkul},
+  title   = {{An improved augmented neural-network approach for scheduling problems}},
+  journal = {INFORMS Journal on Computing},
+  year    = {2006},
+  volume  = {18},
+  number  = {1},
+  pages   = {119-128},
+}
+
+@Article{Smith_1999,
+  author  = {Kate Smith},
+  title   = {{Neural networks for combinatorial optimization: a review of more than a decade of research}},
+  journal = {INFORMS Journal on Computing},
+  year    = {1999},
+  volume  = {11},
+  number  = {1},
+  pages   = {15-34},
+}
+
+@Article{Mangasarian_1993,
+  author  = {Olvi Mangasarian},
+  title   = {{Mathematical programming in neural networks}},
+  journal = {ORSA Journal on Computing},
+  year    = {1993},
+  volume  = {5},
+  number  = {4},
+  pages   = {327-434},
+}
+
+@Article{Sundaresan_2000,
+  author    = {Suresh Sundaresan},
+  title     = {Continuous-Time Methods in Finance: {a} Review and an Assessment},
+  journal   = {Journal of Finance},
+  year      = {2000},
+  volume    = {13},
+  number    = {4},
+  pages     = {1057--1099},
+  owner     = {bowei_000},
+  timestamp = {2014.09.07},
+}
+
+@Article{Samuelson_1965,
+  author    = {Paul Samuelson},
+  title     = {Proof that Properly Anticipated Prices Fluctuate Randomly},
+  journal   = {Industrial Management Review},
+  year      = {1965},
+  pages     = {41--49},
+  owner     = {CS},
+  timestamp = {2012.07.28},
+}
+
+@Unpublished{Sewell_2011,
+  author    = {Martin Sewell},
+  title     = {Characterization of Financial Time Series},
+  note      = {Research Note, University College London},
+  year      = {2011},
+  owner     = {bowei_000},
+  timestamp = {2016.06.20},
+}
+
+@Misc{Marr_2019,
+  author       = {Bernard Marr},
+  title        = {{The 7 biggest technology trends to disrupt banking and financial services In 2020}},
+  howpublished = {Forbes},
+  year         = {2019},
+  comment      = {\url{https://www.forbes.com/sites/bernardmarr/2019/11/08/the-7-biggest-technology-trends-to-disrupt-banking--financial-services-in-2020/#7956dab52c42}},
+}
+
+@Article{Baesens_2016,
+  author  = {Bart Baesens and Ravi Bapna and James Marsden and Jan Vanthienen and Leon Zhao},
+  title   = {{Transformational issues of big data and analytics in networked business}},
+  journal = {MIS Quarterly},
+  year    = {2016},
+  volume  = {40},
+  number  = {40},
+  pages   = {807-818},
+}
+
+@Article{Lessmann_2020,
+  author  = {Stefan Lessmann and Johannes Haupt and Kristof Coussement and Koen Bock},
+  title   = {{Targeting customers for profit: An ensemble learning framework to support marketing decision-making}},
+  journal = {Information Sciences},
+  year    = {2020},
+}
+
+@Article{Chen_2020_1,
+  author  = {Bowei Chen and Jingmin Huang and Yufei Huang and Stefanos Kollias and Shigang Yue},
+  title   = {{Combining guaranteed and spot markets in display advertising: selling guaranteed page views with stochastic demand}},
+  journal = {European Journal of Operational Research},
+  year    = {2020},
+  volume  = {280},
+  number  = {3},
+  pages   = {1144--1159},
+}
+
+@Article{Zheng_2020_1,
+  author  = {Yu Zheng and Bowei Chen and Timothy Hospedales and Yongxin Yang},
+  journal = {AAAI},
+  title   = {{Index tracking with cardinality constraints: a stochastic neural networks approach}},
+  year    = {2020},
+}
+
+@Article{Chen_2020_2,
+  author  = {Ji Ni and Bowei Chen and Nigel Allinson and Xujiong Ye},
+  title   = {{A hybrid model for predicting human physical activity status from lifelogging data}},
+  journal = {European Journal of Operational Research},
+  year    = {2020},
+  volume  = {281},
+  number  = {3},
+  pages   = {532-542},
+}
+
+@Article{DeCaigny_2020,
+  author  = {Arno {De Caigny} and Kristof Coussement and Koen {De Bock}},
+  title   = {{Leveraging fine-grained transaction data for customer life event predictions}},
+  journal = {Decision Support Systems},
+  year    = {2020},
+  volume  = {130},
+  pages   = {1-12},
+}
+
+@Article{Debaere_2018,
+  author  = {Steven Debaere and Kristof Coussement and Tom {De Ruyckc}},
+  title   = {{Multi-label classification of member participation in online innovation communities}},
+  journal = {European Journal of Operational Research},
+  year    = {2018},
+  volume  = {270},
+  number  = {2},
+  pages   = {761--774},
+}
+
+@Article{DeCaigny_2018,
+  author  = {Arno {De Caigny} and Kristof Coussement and Koen {De Bock}},
+  title   = {{A new hybrid classification algorithm for customer churn prediction based on logistic regression and decision trees}},
+  journal = {European Journal of Operational Research},
+  year    = {2018},
+  volume  = {269},
+  number  = {2},
+  pages   = {760--772},
+}
+
+@Article{Dag_2016,
+  author  = {Ali Dag and Kazim Topuz and Asil Oztekin and Serkan Bulur and Fadel Megahed},
+  title   = {{A probabilistic data-driven framework for scoring the preoperative recipient-donor heart transplant survival}},
+  journal = {Decision Support Systems},
+  year    = {2016},
+  volume  = {86},
+  pages   = {1--12},
+}
+
+@Article{Dag_2017,
+  author  = {Ali Dag and Asil Oztekin and Ahmet Yucel and Serkan Bulur and Fadel Megahed},
+  title   = {{Predicting heart transplantation outcomes through data analytics}},
+  journal = {Decision Support Systems},
+  year    = {2017},
+  volume  = {94},
+  pages   = {42--52},
+}
+
+@Article{Rouyendegh_2018,
+  author  = {Babak Rouyendegh and Asil Oztekin and Joseph Ekong and Ali Dag},
+  title   = {{Measuring the efficiency of hospitals: a fully-ranking DEA–FAHP approach}},
+  journal = {Annals of Operations Research},
+  year    = {2018},
+  volume  = {263},
+  number  = {1-2},
+  pages   = {1--18},
+}
+
+@Article{LeCun_2015,
+  author  = {Yann LeCun and Yoshua Bengio and Geoffrey Hinton},
+  title   = {{Deep learning}},
+  journal = {Nature},
+  year    = {2015},
+  volume  = {521},
+  pages   = {436-444},
+}
+
+@Book{Domingos_2015,
+  title     = {The Master Algorithm: How the Quest for the Ultimate Learning Machine Will Remake Our World},
+  publisher = {Allen Lane},
+  year      = {2015},
+  author    = {Pedro Domingos},
+}
+
+@Article{Luo_2018,
+  author  = {Rui Luo and Weinan Zhang and Xiaojun Xu and Jun Wang},
+  journal = {AAAI},
+  title   = {{A neural stochastic volatility model}},
+  year    = {2018},
+}
+
+@Article{Yang_2020,
+  author  = {Linyi Yang and Tin Lok James Ng and Barry Smyth and Ruihai Dong},
+  journal = {WWW},
+  title   = {{HTML: hierarchical transformer-based multi-task learning for volatility prediction}},
+  year    = {2020},
+}
+
+@Article{Wu_2014,
+  author  = {Yue Wu and Jos\'e Miguel Hern\'{a}ndez-Lobato and Zoubin Ghahramani},
+  journal = {NIPS},
+  title   = {{Gaussian process volatility model}},
+  year    = {2014},
+}
+
+@Article{Kristjanpoller_2014,
+  author  = {Werner Kristjanpoller and Anton Fadic and Marcel Minutolo},
+  journal = {Expert Systems with Applications},
+  title   = {{Volatility forecast using hybrid neural network models}},
+  year    = {2014},
+  number  = {5},
+  pages   = {2437-2442},
+  volume  = {41},
+}
+
+@Article{Qin_2019,
+  author  = {Yu Qin and Yi Yang},
+  journal = {ACL},
+  title   = {{What you say and how you say it matters: predicting financial risk using verbal and vocal cues}},
+  year    = {2019},
+}
+
+@Article{Rekabsaz_2017,
+  author  = {Navid Rekabsaz and Mihai Lupu and Artem Baklanov and Alexander D\"ur and Linda Andersson and Allan Hanbury},
+  journal = {ACL},
+  title   = {{Volatility prediction using financial disclosures sentiments with word embedding-based IR models}},
+  year    = {2017},
+}
+
+@Article{Zheng_2019,
+  author  = {Jie Zheng and Andi Xia and Lin Shao and Tao Wan and Zengchang Qin},
+  journal = {CIFEr},
+  title   = {{Stock volatility prediction based on self-attention networks with social information}},
+  year    = {2019},
+}
+
+@Book{Gatheral_2006,
+  author    = {Jim Gatheral},
+  publisher = {John Wiley},
+  title     = {{The Volatility Surface: A Practioner's Guide}},
+  year      = {2006},
+}
+
+@Article{KPMG_Fintech_2020,
+  author  = {KPMG},
+  journal = {KPMG Biannual Analysis of Global Fintech Investments},
+  title   = {{Pulse of fintech}},
+  year    = {2020},
+}
+
+@Article{BoE_2020,
+  author = {{Bank of England}},
+  title  = {{The impact of Covid on machine learning and data science in UK banking}},
+  year   = {2020},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

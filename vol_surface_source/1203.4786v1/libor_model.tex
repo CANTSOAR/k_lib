@@ -1,0 +1,119 @@
+
+\section{A Libor model on $S_{d}^{++}$ }
+To outline the general framework for Libor models, we start by considering a filtered measurable space $\left(\Omega,\mathcal{F},\mathcal{F}_t\right)$ and a family of probability measures $\left(\mathbb{P}_{T_k}\right)_{1\leq k\leq N}$. Under the measure $\mathbb{P}_{T_N}$ we introduce a stochastic process $\Sigma$ taking values on the cone state space $S_d^{++}$. At this stage the process may be a diffusion, a pure jump or a jump-diffusion process taking values on $S_d^{++}$.
+Consider a discrete tenor structure $0=T_{0} \leq T_{1} \leq...\leq T_{N} =T$.  We recall that the Libor rate is defined via quotients of bonds:
+\begin{align}
+L(t, T_{k}):=\frac{1}{\Delta T}\left(\frac{B(t,T_{k-1})}{B(t,T_{k})}-1\right),
+\end{align}
+where $\Delta T$ is assumed to be constant and $\Delta T=T_{k}-T_{k-1}$. The relation between the Libor rate and the forward price is given by:
+\begin{align}
+F(t,T_{k-1},T_k)=1+\Delta T L(t, T_{k}).
+\end{align}
+We proceed in full analogy with \cite{article_KRPT2009} by extending their results to processes taking values on the cone of positive definite matrices. The intuition is simple: to build up a Libor model with positive rates, quotients of bonds should be strictly greater than one. On the other hand, a no-arbitrage argument (see e.g. \cite{Geman_1995}) implies that quotients of bonds must be martingales under the forward risk neutral measure indexed by the maturity of the denominator, so that the key ingredient in the approach of \cite{article_KRPT2009} consists in the possibility of constructing a family of martingales that stay greater than one up to a bounded time horizon. This will be possible thanks to the affine structure of the model, since in this framework bond prices are exponentially affine in the positive (definite) factors, as well as their quotients.\\
+
+
+\subsection{Martingales strictly greater than one}
+
+
+Let us first define the set
+\begin{center}
+$\mathcal{I}_{T}:=\left\{ u\in S_{d}:\mathbb{E}\left[ e^{-\tr\left[u\Sigma_{T}\right]}\right]<\infty, \forall \Sigma_{0	} \in   S_{d}^{++}\right\}.$
+\end{center}
+ By the affine property of the process $\Sigma$ we have
+\begin{align}
+\mathbb{E}\left[ e^{-\tr\left[u\Sigma_{t}\right]}\right]&=e^{-\phi_t(u)-\tr\left[\psi_t(u)\Sigma_0\right]},\nonumber\\
+\phi:&\left[0,T\right]\times\mathcal{I}_{T}\rightarrow \mathbb{R},\nonumber\\
+\psi:&\left[0,T\right]\times\mathcal{I}_{T}\rightarrow S_d.
+\end{align}
+
+Within this setting we are able to construct martingales that stay greater than one up to a bounded time horizon $T$.
+\begin{theorem}
+Let $\Sigma$ be an affine process, and let $u\in\mathcal{I}_{T}\cap S_{d}^{--}$, then the process $M^{u}$ defined by
+\begin{equation}
+M^{u}_{t}=\exp\left\{ -\phi_{T-t}(u)-\tr \left[ \psi_{T-t}(u)\Sigma_{t} \right] \right\}\label{martingale}
+\end{equation}
+is a martingale and $M^{u}_{t}>1$ a.s. $\forall t \in \left[0,T \right].$
+\label{TeoremaMartingale}\end{theorem}
+
+\begin{proof} See Appendix. \end{proof}
+
+Equipped with this positivity result, we can proceed by considering a tenor structure of non negative Libor rates $L(0, T_{k})$ for $k=\left\{ 1,...,N-1\right\}$. Standard arbitrage arguments (see e.g. \cite{Geman_1995}) imply that discounted traded assets, in our case bonds, are martingales under the terminal martingale measure:
+\begin{equation}
+\frac{B(*,T_{k})}{B(*,T_{N})}\in \mathcal{M}\left( \mathbb{P}_{T_{N}}\right)\quad\forall k \in \left\{ 1,...,N-1\right\},
+\end{equation}
+where $\mathcal{M}\left( \mathbb{P}_{T_{N}}\right)$ denotes the set of martingales with respect to the forward risk neutral probability $\mathbb{P}_{T_{N}}$. The idea in \cite{article_KRPT2009} is then to model quotients of bond prices using the martingales $M^{u}$ defined as follows:
+\begin{align}
+\frac{B(t,T_{1})}{B(t,T_{N})}&=M^{u_{1}}_{t}\label{bondstructure1}\\
+&\vdots\nonumber\\
+\frac{B(t,T_{N-1})}{B(t,T_{N})}&=M^{u_{N-1}}_{t}	\label{bondstructureN}
+\end{align}
+$\forall t \in \left[ 0, T_{1}\right],...,t \in \left[0,T_{N-1} \right]$ respectively. As a consequence, the initial values of the martingales $M_{0}^{u_{k}}$ must satisfy the relation
+\begin{equation}
+M_{0}^{u_{k}}=\exp\left\{ -\phi_{T}(u_{k})-\tr\left[\psi_{T}(u_{k})\Sigma_{0} \right]\right\}=\frac{B(0,T_{k})}{B(0,T_{N})},
+\label{initialbondstructure}\end{equation}
+for all $k \in \left\{ 1,...,N-1\right\}$, so that it is possible to set $u_{N}=0$ as we have $M_{0}^{u_{N}}=1$.\\
+
+
+In the following proposition, we show that it is possible to fit (basically) any initial term structure of bond rates. The state space we are considering offers a wide range of possibilities to perform this task. However, since we are interested in applications, we adopt the simplest choice directly coming from the scalar case and we focus on the particular (but realistic) case where all Libor rates are positive.
+
+\begin{proposition}
+Let $L(0, T_{1}),...,L(0, T_{N})$ be a tenor structure of positive initial Libor rates, and let $\Sigma$ be an affine process on $S_{d}^{++}$. Define
+\begin{equation}
+\gamma_{\Sigma}:=\sup_{u \in \mathcal{I}_{T} \cap S_{d}^{--}}\mathbb{E}\left[ e^{-\tr\left[u\Sigma_{T}\right]}\right].
+\label{gammasigma}\end{equation}
+%\begin{enumerate}
+If $\gamma_{\Sigma}>\frac{B(0,T_{1})}{B(0,T_{N})}$ then there exists a strictly increasing sequence of matrices (i.e. $u_{k} \prec u_{k+1}$ if and only if $u_{k}-u_{k+1} \in S_{d}^{--}$) $u_{1} \prec u_{2} \prec ...\prec u_{N-1} \prec 0$ in $\mathcal{I}_{T} \cap S_{d}^{--}$ and $u_N=0$ such that
+\begin{equation}
+M_{0}^{u_{k}}=\frac{B(0,T_{k})}{B(0,T_{N})},\hspace{10mm}\forall k \in \left\{ 1,...,N\right\}.
+\end{equation}
+Conversely, let the bond prices be given by (\ref{bondstructure1})-(\ref{bondstructureN})  and satisfy the initial condition (\ref{initialbondstructure}). Then the Libor rates $L(t,T_{k})$ are positive a.s. $\forall t \in \left[0, T_{k} \right]$ and $k\in \left\{ 1,...,N-1\right\}.$
+%In particular, if $\gamma_{\Sigma}=\infty$ then the affine Libor model can fit any term structure of non-negative initial Libor rates.
+%\item If all Libor rates are positive, then the sequence $\left( u_{k} \right)_{k \in \left\{ 1,...,N\right\}}$ is strictly decreasing.
+%\end{enumerate}
+\label{propgamma}\end{proposition}
+\begin{proof} See Appendix. \end{proof}
+
+
+
+\subsection{A fully-affine arbitrage-free model}
+
+If we look at the definition of the Libor rate we realize that it is quite natural to require quotients of bonds to be driven by an exponentially affine function of the state: in fact, in this case also bond prices as well as forward prices will be affine functions. This is also in line with the previous approaches of \cite{article_Constantinides92} and \cite{gou11} based on the stochastic discount factor. In other words, the approach of \cite{article_KRPT2009} is able to provide a fully affine structure\footnote{This is the reason why we will be able to apply the approach  by \cite{article_CollinDufresneGoldstein2002}, who originally started from an affine short rate in order to price swaptions: in fact, also in their framework bond prices are affine functions of the state variables.}. To prove the affine structure or our model, we first show that under (\ref{bondstructure1})-(\ref{bondstructureN}), forward prices are of exponential-affine form
+under any forward measure. To do this, first we notice that in this framework quotients of bonds are exponentially affine in the state factors, so that also forward prices will be: for $k=1,...,N-1$
+\begin{align}
+\frac{B(t,T_{k})}{B(t,T_{k+1})}&=\frac{B(t,T_{k})}{B(t,T_{N})}\frac{B(t,T_{N})}{B(t,T_{k+1})}=\frac{M_{t}^{u_{k}}}{M_{t}^{u_{k+1}}}\nonumber\\
+&=\exp\left\{ -\phi_{T_{N}-t}(u_{k})+\phi_{T_{N}-t}(u_{k+1})\right\} \nonumber\\
+&\exp\left\{\tr\left[\left(-\psi_{T_{N}-t}(u_{k})+\psi_{T_{N}-t}(u_{k+1})\right)\Sigma_{t}\right]\right\}\nonumber\\
+&=:\exp\left\{A_{T_{N}-t}(u_{k},u_{k+1})+\tr\left[B_{T_{N}-t}(u_{k},u_{k+1})\Sigma_{t}\right]\right\}.\label{exponentiallyAB}
+\end{align}
+With this result, we are able to show very easily that the model is arbitrage free, that is forward prices are martingales with respect to their corresponding forward measures (see \cite{Geman_1995}):
+\begin{equation}
+\frac{B(*,T_{k})}{B(*,T_{N})}\in \mathcal{M}\left( \mathbb{P}_{T_{N}}\right).
+\end{equation}
+This comes from the fact that forward measures are related one another via the quotients of the martingales $M^{u}$:
+\begin{equation}
+\frac{\partial \mathbb{P}_{T_{k}}}{\partial \mathbb{P}_{T_{k+1}}} \arrowvert_{\mathcal{F}_{t}}=\frac{F(t,T_{k},T_{k+1})}{F(0,T_{k},T_{k+1})}=\frac{B(0,T_{k+1})}{B(0,T_{k})}\frac{M^{u_{k}}_{t}}{M^{u_{k+1}}_{t}},
+\end{equation}
+$\forall k \in \left\{ 1,...,N\right\}$. Then $L(*,T_{k})$ is a martingale under the forward measure $\mathbb{P}_{T_{k+1}}$ since the successive densities from $\mathbb{P}_{T_{k+1}}$ to $\mathbb{P}_{T_{N}}$ yield a telescoping product and a $\mathbb{P}_{T_{N}}$ martingale (see \cite{article_KRPT2009}). More precisely:
+\begin{equation}
+1+\Delta T L(*,T_{k})=\frac{B(*,T_{k})}{B(*,T_{k+1})}=\frac{M^{u_{k}}}{M^{u_{k+1}}}\in \mathcal{M}\left( \mathbb{P}_{T_{k+1}}\right)
+\end{equation}
+since
+\begin{equation}
+\frac{M^{u_{k}}}{M^{u_{k+1}}}\prod_{l=k+1}^{N-1}\frac{M^{u_{l}}}{M^{u_{l+1}}}= M^{u_{k}} \in \mathcal{M} \left( \mathbb{P}_{T_{N}}\right).
+\end{equation}
+Also, the density between the $\mathbb{P}_{T_{k}}$-forward measure and the terminal forward measure $\mathbb{P}_{T_{N}}$ is given by the martingale $M^{u_{k}}$ as indicated by (\ref{bondstructure1})-(\ref{bondstructureN}):
+\begin{equation}
+\frac{\partial \mathbb{P}_{T_{k}}}{\partial \mathbb{P}_{T_{N}}} \arrowvert_{\mathcal{F}_{t}}=\frac{B(0,T_{N})}{B(0,T_{k})}\frac{B(t,T_{k})}{B(t,T_{N})}=\frac{B(0,T_{N})}{B(0,T_{k})}M^{u_{k}}_{t}=\frac{M^{u_{k}}_{t}}{M^{u_{k}}_{0}}.\label{change_measure}
+\end{equation}
+
+In this arbitrage-free model with positive Libor rates, the affine structure is preserved: that is, it is possible to extend to the state space $S_d^{++}$ the analogous result of \cite{article_KRPT2009}.
+
+\begin{proposition}Let the bond structure be defined through (\ref{bondstructure1})-(\ref{bondstructureN}), where the process $M^{u_.}$ is given by (\ref{martingale}). Then forward prices are exponentially affine in the state variable $\Sigma$ under any forward measure.
+\end{proposition}
+
+\begin{proof} The result comes directly from formula (6.23) in \cite{article_KRPT2009} once the scalar product is replaced  by the trace operator. \end{proof}
+
+
+
+
+

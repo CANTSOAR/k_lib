@@ -1,0 +1,359 @@
+\begin{thebibliography}{56}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Amrani et~al.(2021)Amrani, Jacquier, and Martini]{amrani2021dynamics}
+M.~E. Amrani, A.~Jacquier, and C.~Martini.
+\newblock Dynamics of symmetric {SSVI} smiles and implied volatility bubbles.
+\newblock \emph{SIAM Journal on Financial Mathematics}, 12\penalty0
+  (2):\penalty0 SC1--SC15, 2021.
+
+\bibitem[Andr{\`e}s and Jourdain(2024)]{andres2024existence}
+H.~Andr{\`e}s and B.~Jourdain.
+\newblock Existence, uniqueness and positivity of solutions to the
+  guyon-lekeufack path-dependent volatility model with general kernels.
+\newblock \emph{arXiv preprint arXiv:2408.02477}, 2024.
+
+\bibitem[Bakshi et~al.(2000)Bakshi, Cao, and Chen]{bakshi2000call}
+G.~Bakshi, C.~Cao, and Z.~Chen.
+\newblock Do call prices and the underlying stock always move in the same
+  direction?
+\newblock \emph{The Review of Financial Studies}, 13\penalty0 (3):\penalty0
+  549--584, 2000.
+
+\bibitem[Black and Scholes(1973)]{black1973pricing}
+F.~Black and M.~Scholes.
+\newblock The pricing of options and corporate liabilities.
+\newblock \emph{J. Polit. Econ.}, 81\penalty0 (3):\penalty0 637--654, 1973.
+
+\bibitem[Bloch and B{\"o}{\"o}k(2021)]{bloch2021deep}
+D.~A. Bloch and A.~B{\"o}{\"o}k.
+\newblock Deep learning based dynamic implied volatility surface.
+\newblock \emph{Available at SSRN 3952842}, 2021.
+
+\bibitem[Brace et~al.(1997)Brace, Gatarek, and Musiela]{brace1997market}
+A.~Brace, D.~Gatarek, and M.~Musiela.
+\newblock The market model of interest rate dynamics.
+\newblock \emph{Math. Finance}, 7\penalty0 (2):\penalty0 127--155, 1997.
+
+\bibitem[Brace et~al.(2001)Brace, Goldys, Klebaner, and
+  Womersley]{brace2001market}
+A.~Brace, B.~Goldys, F.~Klebaner, and R.~Womersley.
+\newblock Market model of stochastic implied volatility with application to the
+  bgm model.
+\newblock \emph{Preprint, available at the page http://www. maths. unsw. edu.
+  au/statistics/files/preprint-2001-01. pdf}, 2001.
+
+\bibitem[Cao et~al.(2020)Cao, Chen, and Hull]{cao2020}
+J.~Cao, J.~Chen, and J.~Hull.
+\newblock A neural network approach to understanding implied volatility
+  movements.
+\newblock \emph{Quant. Finance}, 20\penalty0 (9):\penalty0 1405--1413, 2020.
+\newblock ISSN 1469-7688,1469-7696.
+
+\bibitem[Carmona and Nadtochiy(2011)]{carmon2011tangent}
+R.~Carmona and S.~Nadtochiy.
+\newblock Tangent models as a mathematical framework for dynamic calibration.
+\newblock \emph{Int. J. Theor. Appl. Finance}, 14\penalty0 (1):\penalty0
+  107--135, 2011.
+
+\bibitem[Carmona et~al.(2017)Carmona, Ma, and Nadtochiy]{carmona2017levy}
+R.~Carmona, Y.~Ma, and S.~Nadtochiy.
+\newblock Simulation of implied volatility surfaces via tangent {L}\'{e}vy
+  models.
+\newblock \emph{SIAM J. Financial Math.}, 8\penalty0 (1):\penalty0 171--213,
+  2017.
+
+\bibitem[Carr and Madan(2001)]{carr2001formula}
+P.~Carr and D.~Madan.
+\newblock Towards a theory of volatility trading.
+\newblock In \emph{Option pricing, interest rates and risk management}, Handb.
+  Math. Finance, pages 458--476. Cambridge Univ. Press, Cambridge, 2001.
+
+\bibitem[{CBOE}(2023)]{vixwp}
+{CBOE}.
+\newblock Volatility index methodology: Cboe volatility index.
+\newblock
+  \url{https://cdn.cboe.com/api/global/us_indices/governance/Volatility_Index_Methodology_Cboe_Volatility_Index.pdf},
+  2023.
+\newblock Accessed on: 2023-07-21.
+
+\bibitem[Cerqueira et~al.(2020)Cerqueira, Torgo, and
+  Mozeti{\v{c}}]{cerqueira2020evaluating}
+V.~Cerqueira, L.~Torgo, and I.~Mozeti{\v{c}}.
+\newblock Evaluating time series forecasting models: An empirical study on
+  performance estimation methods.
+\newblock \emph{Machine Learning}, 109:\penalty0 1997--2028, 2020.
+
+\bibitem[Choudhary et~al.(2024)Choudhary, Jaimungal, and
+  Bergeron]{choudhary2024}
+V.~Choudhary, S.~Jaimungal, and M.~Bergeron.
+\newblock Funvol: multi-asset implied volatility market simulator using
+  functional principal components and neural sdes.
+\newblock \emph{Quantitative Finance}, 24\penalty0 (8):\penalty0 1077--1103,
+  2024.
+
+\bibitem[Cohen et~al.(2020)Cohen, Reisinger, and Wang]{cohen2020repairing}
+S.~N. Cohen, C.~Reisinger, and S.~Wang.
+\newblock Detecting and repairing arbitrage in traded option prices.
+\newblock \emph{Appl. Math. Finance}, 27\penalty0 (5):\penalty0 345--373, 2020.
+\newblock ISSN 1350-486X,1466-4313.
+
+\bibitem[Cohen et~al.(2021)Cohen, Reisinger, and Wang]{cohen2021arbitrage}
+S.~N. Cohen, C.~Reisinger, and S.~Wang.
+\newblock Arbitrage-free neural-sde market models.
+\newblock \emph{arXiv preprint arXiv:2105.11053}, 2021.
+
+\bibitem[Cont and da~Fonseca(2002)]{cont2002dynamics}
+R.~Cont and J.~da~Fonseca.
+\newblock Dynamics of implied volatility surfaces.
+\newblock volume~2, pages 45--60. 2002.
+\newblock Special issue on volatility modelling.
+
+\bibitem[Cont and Vuleti{\'c}(2023)]{cont2022simulation}
+R.~Cont and M.~Vuleti{\'c}.
+\newblock Simulation of arbitrage-free implied volatility surfaces.
+\newblock \emph{Applied Mathematical Finance}, pages 1--28, 2023.
+
+\bibitem[Cont et~al.(2002)Cont, da~Fonseca, and Durrleman]{cont2002stochastic}
+R.~Cont, J.~da~Fonseca, and V.~Durrleman.
+\newblock Stochastic models of implied volatility surfaces.
+\newblock \emph{Economic Notes}, 31\penalty0 (2):\penalty0 361--377, 2002.
+
+\bibitem[Corbetta et~al.(2019)Corbetta, Cohort, Laachir, and
+  Martini]{corbetta2019robust}
+J.~Corbetta, P.~Cohort, I.~Laachir, and C.~Martini.
+\newblock Robust calibration and arbitrage-free interpolation of {SSVI} slices.
+\newblock \emph{Decisions in Economics and Finance}, 42\penalty0 (2):\penalty0
+  665--677, 2019.
+
+\bibitem[Davis and Hobson(2007)]{davis2007range}
+M.~H.~A. Davis and D.~G. Hobson.
+\newblock The range of traded option prices.
+\newblock \emph{Math. Finance}, 17\penalty0 (1):\penalty0 1--14, 2007.
+
+\bibitem[Delemotte et~al.(2023)Delemotte, Marco, and Segonne]{delemotte2023yet}
+J.~Delemotte, S.~D. Marco, and F.~Segonne.
+\newblock Yet another analysis of the {SP}500 at-the-money skew: Crossover of
+  different power-law behaviours.
+\newblock \emph{Available at SSRN 4428407}, 2023.
+
+\bibitem[Fengler et~al.(2003)Fengler, H{\"a}rdle, and
+  Villa]{fengler2003dynamics}
+M.~R. Fengler, W.~K. H{\"a}rdle, and C.~Villa.
+\newblock The dynamics of implied volatilities: A common principal components
+  approach.
+\newblock \emph{Review of Derivatives Research}, 6:\penalty0 179--202, 2003.
+
+\bibitem[Fengler et~al.(2007)Fengler, H{\"a}rdle, and
+  Mammen]{fengler2007semiparametric}
+M.~R. Fengler, W.~K. H{\"a}rdle, and E.~Mammen.
+\newblock A semiparametric factor model for implied volatility surface
+  dynamics.
+\newblock \emph{Journal of Financial Econometrics}, 5\penalty0 (2):\penalty0
+  189--218, 2007.
+
+\bibitem[Fisher(1915)]{fisher1915frequency}
+R.~A. Fisher.
+\newblock Frequency distribution of the values of the correlation coefficient
+  in samples from an indefinitely large population.
+\newblock \emph{Biometrika}, 10\penalty0 (4):\penalty0 507--521, 1915.
+
+\bibitem[François et~al.(2023)François, Galarneau-Vincent, Gauthier, and
+  Godin]{francois2023joint}
+P.~François, R.~Galarneau-Vincent, G.~Gauthier, and F.~Godin.
+\newblock Joint dynamics for the underlying asset and its implied volatility
+  surface: a new methodology for option risk management.
+\newblock \emph{Available at SSRN 4319972}, 2023.
+
+\bibitem[Gatheral(2004)]{gatheral2004parsimonious}
+J.~Gatheral.
+\newblock A parsimonious arbitrage-free implied volatility parameterization
+  with application to the valuation of volatility derivatives.
+\newblock \emph{Presentation at Global Derivatives \& Risk Management, Madrid},
+  page~0, 2004.
+
+\bibitem[Gatheral and Jacquier(2011)]{gatheral2011convergence}
+J.~Gatheral and A.~Jacquier.
+\newblock Convergence of {H}eston to {SVI}.
+\newblock \emph{Quant. Finance}, 11\penalty0 (8):\penalty0 1129--1132, 2011.
+
+\bibitem[Gatheral and Jacquier(2014)]{gatheral2014arbitrage}
+J.~Gatheral and A.~Jacquier.
+\newblock Arbitrage-free svi volatility surfaces.
+\newblock \emph{Quantitative Finance}, 14\penalty0 (1):\penalty0 59--71, 2014.
+
+\bibitem[Gatheral et~al.(2018)Gatheral, Jaisson, and
+  Rosenbaum]{gatheral2018volatility}
+J.~Gatheral, T.~Jaisson, and M.~Rosenbaum.
+\newblock Volatility is rough.
+\newblock \emph{Quantitative finance}, 18\penalty0 (6):\penalty0 933--949,
+  2018.
+
+\bibitem[Gazzani and Guyon(2024)]{gazzani2024pricing}
+G.~Gazzani and J.~Guyon.
+\newblock Pricing and calibration in the 4-factor path-dependent volatility
+  model.
+\newblock \emph{arXiv preprint arXiv:2406.02319}, 2024.
+
+\bibitem[Guyon and El~Amrani(2023)]{guyon2023does}
+J.~Guyon and M.~El~Amrani.
+\newblock Does the term-structure of equity at-the-money skew really follow a
+  power law?
+\newblock \emph{Risk Magazine}, 2023.
+
+\bibitem[Guyon and Lekeufack(2023)]{guyon2022volatility}
+J.~Guyon and J.~Lekeufack.
+\newblock Volatility is (mostly) path-dependent.
+\newblock \emph{Quant. Finance}, 23\penalty0 (9):\penalty0 1221--1258, 2023.
+\newblock ISSN 1469-7688,1469-7696.
+
+\bibitem[Hafner and Schmid(2005)]{hafner2005factor}
+R.~Hafner and B.~Schmid.
+\newblock A factor-based stochastic implied volatility model.
+\newblock \emph{Technical report}, 2005.
+
+\bibitem[H{\"a}rdle and Mungo(2007)]{hardle2007long}
+W.~K. H{\"a}rdle and J.~Mungo.
+\newblock Long memory persistence in the factor of implied volatility dynamics.
+\newblock \emph{Available at SSRN 2894358}, 2007.
+
+\bibitem[Heath et~al.(1992)Heath, Jarrow, and Morton]{heath1992bond}
+D.~Heath, R.~Jarrow, and A.~Morton.
+\newblock Bond pricing and the term structure of interest rates: A new
+  methodology for contingent claims valuation.
+\newblock \emph{Econometrica: Journal of the Econometric Society}, pages
+  77--105, 1992.
+
+\bibitem[Heber et~al.(2009)Heber, Lunde, Shephard, and
+  Sheppard]{heber2009oxford}
+G.~Heber, A.~Lunde, N.~Shephard, and K.~Sheppard.
+\newblock Oxford-man institute’s realized library.
+\newblock \emph{Version 0.1, Oxford\&Man Institute, University of Oxford},
+  2009.
+
+\bibitem[Hendriks and Martini(2017)]{hendriks2017extended}
+S.~Hendriks and C.~Martini.
+\newblock The extended {SSVI} volatility surface.
+\newblock \emph{Available at SSRN 2971502}, 2017.
+
+\bibitem[Jacod and Protter(2010)]{jacod2010risk}
+J.~Jacod and P.~Protter.
+\newblock Risk-neutral compatibility with option prices.
+\newblock \emph{Finance and Stochastics}, 14\penalty0 (2):\penalty0 285--315,
+  2010.
+
+\bibitem[Ledoit and Santa-Clara(1998)]{ledoit1998relative}
+O.~Ledoit and P.~Santa-Clara.
+\newblock Relative pricing of options with stochastic volatility.
+\newblock \emph{University of California-Los Angeles finance working paper},
+  pages 9--98, 1998.
+
+\bibitem[Lee(2004)]{lee2004moment}
+R.~W. Lee.
+\newblock The moment formula for implied volatility at extreme strikes.
+\newblock \emph{Math. Finance}, 14\penalty0 (3):\penalty0 469--480, 2004.
+
+\bibitem[Lord et~al.(2010)Lord, Koekkoek, and Van~Dijk]{lord2010}
+R.~Lord, R.~Koekkoek, and D.~Van~Dijk.
+\newblock A comparison of biased simulation schemes for stochastic volatility
+  models.
+\newblock \emph{Quant. Finance}, 10\penalty0 (2):\penalty0 177--194, 2010.
+\newblock ISSN 1469-7688,1469-7696.
+
+\bibitem[Martini and Mingone(2022)]{martini2022svi}
+C.~Martini and A.~Mingone.
+\newblock No arbitrage {SVI}.
+\newblock \emph{SIAM J. Financial Math.}, 13\penalty0 (1):\penalty0 227--261,
+  2022.
+
+\bibitem[Martini and Mingone(2023)]{martini2023refined}
+C.~Martini and A.~Mingone.
+\newblock Refined analysis of the no-butterfly-arbitrage domain for {SSVI}
+  slices.
+\newblock \emph{Journal of Computational Finance}, 27\penalty0 (2), 2023.
+
+\bibitem[Mingone(2022)]{mingone2022no}
+A.~Mingone.
+\newblock No arbitrage global parametrization for the e{SSVI} volatility
+  surface.
+\newblock \emph{Quantitative Finance}, 22\penalty0 (12):\penalty0 2205--2217,
+  2022.
+
+\bibitem[Morel et~al.(2024)Morel, Mallat, and Bouchaud]{morel2024path}
+R.~Morel, S.~Mallat, and J.-P. Bouchaud.
+\newblock Path shadowing monte carlo.
+\newblock \emph{Quantitative Finance}, 24\penalty0 (9):\penalty0 1199--1225,
+  2024.
+
+\bibitem[Nutz and Riveros~Valdevenito(2024)]{nutz2024}
+M.~Nutz and A.~Riveros~Valdevenito.
+\newblock On the {G}uyon--{L}ekeufack volatility model.
+\newblock \emph{Finance Stoch.}, 28\penalty0 (4):\penalty0 1203--1223, 2024.
+\newblock ISSN 0949-2984,1432-1122.
+\newblock \doi{10.1007/s00780-024-00544-2}.
+\newblock URL \url{https://doi.org/10.1007/s00780-024-00544-2}.
+
+\bibitem[Sch\"{o}nbucher(1999)]{schonbucher1999marketmodel}
+P.~J. Sch\"{o}nbucher.
+\newblock A market model for stochastic implied volatility.
+\newblock \emph{R. Soc. Lond. Philos. Trans. Ser. A Math. Phys. Eng. Sci.},
+  357\penalty0 (1758):\penalty0 2071--2092, 1999.
+
+\bibitem[Schweizer and Wissel(2008)]{schweizer2008term}
+M.~Schweizer and J.~Wissel.
+\newblock Term structures of implied volatilities: Absence of arbitrage and
+  existence results.
+\newblock \emph{Mathematical Finance: An International Journal of Mathematics,
+  Statistics and Financial Economics}, 18\penalty0 (1):\penalty0 77--114, 2008.
+
+\bibitem[Skiadopoulos et~al.(2000)Skiadopoulos, Hodges, and
+  Clewlow]{skiadopoulos2000dynamics}
+G.~Skiadopoulos, S.~Hodges, and L.~Clewlow.
+\newblock The dynamics of the {S}\&{P} 500 implied volatility surface.
+\newblock \emph{Review of derivatives research}, 3:\penalty0 263--282, 2000.
+
+\bibitem[{STOXX}(2023)]{vstoxxwp}
+{STOXX}.
+\newblock Stoxx strategy index guide.
+\newblock
+  \url{https://www.stoxx.com/document/Indices/Common/Indexguide/stoxx_strategy_guide.pdf},
+  2023.
+\newblock Accessed on: 2023-07-21.
+
+\bibitem[Tang and Chen(2009)]{tang2009parameter}
+C.~Y. Tang and S.~X. Chen.
+\newblock Parameter estimation and bias correction for diffusion processes.
+\newblock \emph{Journal of Econometrics}, 149\penalty0 (1):\penalty0 65--81,
+  2009.
+
+\bibitem[Wei et~al.(2016)Wei, Shu, and Liu]{wei2016}
+C.~Wei, H.~Shu, and Y.~Liu.
+\newblock Gaussian estimation for discretely observed {C}ox-{I}ngersoll-{R}oss
+  model.
+\newblock \emph{Int. J. Gen. Syst.}, 45\penalty0 (5):\penalty0 561--574, 2016.
+\newblock ISSN 0308-1079,1563-5104.
+
+\bibitem[Wen et~al.(2024)Wen, Zhai, Wang, and Cao]{wen2024implied}
+C.~Wen, J.~Zhai, Y.~Wang, and Y.~Cao.
+\newblock Implied volatility is (almost) past-dependent: Linear vs non-linear
+  models.
+\newblock \emph{International Review of Financial Analysis}, 95:\penalty0
+  103406, 2024.
+
+\bibitem[Wiese et~al.(2019)Wiese, Bai, Wood, and Buehler]{wiese2019deep}
+M.~Wiese, L.~Bai, B.~Wood, and H.~Buehler.
+\newblock Deep hedging: learning to simulate equity option markets.
+\newblock \emph{arXiv preprint arXiv:1911.01700}, 2019.
+
+\bibitem[Zhang et~al.(2023)Zhang, Li, and Zhang]{zhang2023}
+W.~Zhang, L.~Li, and G.~Zhang.
+\newblock A two-step framework for arbitrage-free prediction of the implied
+  volatility surface.
+\newblock \emph{Quant. Finance}, 23\penalty0 (1):\penalty0 21--34, 2023.
+\newblock ISSN 1469-7688,1469-7696.
+
+\end{thebibliography}

@@ -1,0 +1,228 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\astroncite{Andersen and Andreasen}{2000}]{Andersen2000}
+Andersen, L. and Andreasen, J. (2000).
+\newblock Jump diffusion models: volatility smile fitting and numerical methods
+  for pricing.
+\newblock {\em Review of Derivatives Research}, 4:231--262.
+
+\bibitem[\protect\astroncite{Barone-Adesi and Whaley}{1987}]{Barone-Adesi1987}
+Barone-Adesi, G. and Whaley, R. (1987).
+\newblock Efficient analytic approximation of {A}merican option values.
+\newblock {\em The Journal of Finance}, 17(2):301--320.
+
+\bibitem[\protect\astroncite{Barth et~al.}{2011}]{Barth2011}
+Barth, M., Johnson, T., and So, C. (2011).
+\newblock Dynamics of earnings announcement news: Evidence from option prices.
+\newblock {\em Working paper}.
+
+\bibitem[\protect\astroncite{Bates}{1996}]{Bates1996}
+Bates, D. (1996).
+\newblock Jumps and stochastic volatility: {T}he exchange rate processes
+  implicit in {D}eutschemark options.
+\newblock {\em Review of Financial Studies}, 9(1):69--107.
+
+\bibitem[\protect\astroncite{Benaim and Friz}{2008}]{Benaim2008}
+Benaim, S. and Friz, P. (2008).
+\newblock Smile asymptotics {II}: models with known moment generating
+  functions.
+\newblock {\em Journal of Applied Probability}, 45 (1):1--291.
+
+\bibitem[\protect\astroncite{Benaim et~al.}{2012}]{Benaim2008a}
+Benaim, S., Friz, P., and Lee, R. (2012).
+\newblock On the {B}lack-{S}choles implied volatility at extreme strikes.
+\newblock In Cont, R., editor, {\em Frontiers in Quantitative Finance:
+  Volatility and Credit Risk Modeling}, pages 19--45. Wiley \& Sons.
+
+\bibitem[\protect\astroncite{Bensoussan and Lions}{1984}]{Bensoussan1984}
+Bensoussan, A. and Lions, J. (1984).
+\newblock {\em Impulse control and quasivariational inequalities.}
+\newblock Gaunthier-Villars.
+
+\bibitem[\protect\astroncite{Billings and Jennings}{2011}]{Billings2010}
+Billings, M. and Jennings, R. (2011).
+\newblock The option market’s anticipation of information content in earnings
+  announcements.
+\newblock {\em Review of Accounting Studies Conference Version}, 16:587--619.
+
+\bibitem[\protect\astroncite{Black and Scholes}{1973}]{Black1973}
+Black, F. and Scholes, M. (1973).
+\newblock The pricing of options and corporate liabilities.
+\newblock {\em Journal of Political Economy}, 81:637--654.
+
+\bibitem[\protect\astroncite{Broadie et~al.}{2009}]{Broadie2009}
+Broadie, M., Chernov, M., and Johannes, M. (2009).
+\newblock Understanding index option returns.
+\newblock {\em Review of Financial Studies}, 22(11):4493--4529.
+
+\bibitem[\protect\astroncite{Carr et~al.}{2002}]{Carr2002}
+Carr, P., Geman, H., Madan, D., and Yor, M. (2002).
+\newblock The fine structure of asset returns: An empirical investigation.
+\newblock {\em Journal of Business}, 75(2):305--332.
+
+\bibitem[\protect\astroncite{Carr and Madan}{1999}]{Carr1999}
+Carr, P. and Madan, D. (1999).
+\newblock Option pricing and the fast {F}ourier transform.
+\newblock {\em Journal of Computational Finance}, 2:61--73.
+
+\bibitem[\protect\astroncite{Chatrah et~al.}{2009}]{Kiseop}
+Chatrah, A., Christie-David, R., and Lee, K. (2009).
+\newblock How potent are news reversals?: {E}vidence from the futures markets.
+\newblock {\em Journal of Futures Market}, 29:42--73.
+
+\bibitem[\protect\astroncite{Chordia and Shivakumar}{2006}]{Chordia2006}
+Chordia, T. and Shivakumar, L. (2006).
+\newblock Earnings and price momentum.
+\newblock {\em Journal of Financial Economics}, 80(3):627--656.
+
+\bibitem[\protect\astroncite{Coleman and Li}{1994}]{Coleman1994}
+Coleman, T. and Li, Y. (1994).
+\newblock On the convergence of reflective {N}ewton methods for large-scale
+  nonlinear minimization subject to bounds.
+\newblock {\em Mathematical Programming}, 67, 2:189--224.
+
+\bibitem[\protect\astroncite{Coleman and Li}{1996}]{Coleman1996}
+Coleman, T. and Li, Y. (1996).
+\newblock An interior, trust region approach for nonlinear minimization subject
+  to bounds.
+\newblock {\em SIAM Journal on Optimization}, 6:418--445.
+
+\bibitem[\protect\astroncite{Cont and Tankov}{2002}]{Cont2002}
+Cont, R. and Tankov, P. (2002).
+\newblock Calibration of jump-diffusion option-pricing models: a robust
+  non-parametric approach.
+\newblock {\em Working paper}.
+
+\bibitem[\protect\astroncite{Cont and Voltchkova}{2005}]{Cont2005}
+Cont, R. and Voltchkova, E. (2005).
+\newblock A finite difference scheme for option pricing in jump diffusions and
+  exponential {L}\'{e}vy models.
+\newblock {\em SIAM Journal on Numerical Analysis}, 43:1596--1626.
+
+\bibitem[\protect\astroncite{del Ba{\~{n}}o~Rollin
+  et~al.}{2009}]{BanoRollin2009}
+del Ba{\~{n}}o~Rollin, S., Ferreiro-Castilla, A., and Utzet, F. (2009).
+\newblock A new look at the {H}eston characteristic function.
+\newblock Preprint.
+
+\bibitem[\protect\astroncite{Dennis}{1977}]{Dennis1977}
+Dennis, J. (1977).
+\newblock Nonlinear least-squares and equations.
+\newblock In Jacobs, D., editor, {\em State of the Art in Numerical Analysis},
+  pages 269--312. Academic Press.
+
+\bibitem[\protect\astroncite{Donders and Vorst}{1996}]{Donders1996}
+Donders, M. and Vorst, T. (1996).
+\newblock The impact of firm specific news on {IV}s.
+\newblock {\em Journal of Banking and Finance}, 20:1447--1461.
+
+\bibitem[\protect\astroncite{Dubinsky and Johannes}{2006}]{Dubinsky2006}
+Dubinsky, A. and Johannes, M. (2006).
+\newblock Fundamental uncertainty, earning announcements and equity options.
+\newblock Working paper.
+
+\bibitem[\protect\astroncite{Duffie and Singleton}{2000}]{Duffie2000}
+Duffie, D., J.~P. and Singleton, K. (2000).
+\newblock Transform analysis and option pricing for affine jump-diffusions.
+\newblock {\em Econometrica}, 68:1343--1376.
+
+\bibitem[\protect\astroncite{Isakov and Perignon}{2001}]{Isakov2001}
+Isakov, D. and Perignon, C. (2001).
+\newblock Evolution of market uncertainty around earnings announcements.
+\newblock {\em Journal of Banking and Finance}, 25:1769--1788.
+
+\bibitem[\protect\astroncite{Jackson et~al.}{2008}]{Jackson2008}
+Jackson, K., Jaimungal, S., and Surkov, V. (2008).
+\newblock Fourier space time-stepping for option pricing with {L}\'{e}vy
+  models.
+\newblock {\em Journal of Computational Finance}, 12(2):1--29.
+
+\bibitem[\protect\astroncite{Kou}{2002}]{Kou2002}
+Kou, S. (2002).
+\newblock A jump-diffusion model for option pricing.
+\newblock {\em Management Science}, 48:1086--1101.
+
+\bibitem[\protect\astroncite{Kou and Wang}{2004}]{Kou2004}
+Kou, S.~G. and Wang, H. (2004).
+\newblock Option pricing under a double exponential jump diffusion model.
+\newblock {\em Management Science}, 50(9):1178--1192.
+
+\bibitem[\protect\astroncite{Lee}{2004}]{Lee2004}
+Lee, R. (2004).
+\newblock Option pricing by transform methods: extensions, unification, and
+  error control.
+\newblock {\em Journal of Computational Finance}, 7:51--86.
+
+\bibitem[\protect\astroncite{Lee and Mykland}{2008}]{Lee2008}
+Lee, S. and Mykland, P. (2008).
+\newblock Jumps in financial markets: A new nonparametric test and jump
+  dynamics.
+\newblock {\em Review of Financial Studies}, 21(6):2535--2563.
+
+\bibitem[\protect\astroncite{Lord et~al.}{2008}]{Lord08afast}
+Lord, R., Fang, F., Bervoets, F., and Oosterlee, C.~W. (2008).
+\newblock A fast and accurate {FFT}-based method for pricing early-exercise
+  options under {L}\'{e}vy processes.
+\newblock {\em SIAM Journal of Scientific Computing}, 30(4):1678--1705.
+
+\bibitem[\protect\astroncite{Madan et~al.}{1998}]{Madan1998}
+Madan, D., Carr, P., and Chang, E. (1998).
+\newblock The variance gamma process and option pricing.
+\newblock {\em European Finance Review}, 2(8):79--105.
+
+\bibitem[\protect\astroncite{Maheu and McCurdy}{2004}]{Maheu2004}
+Maheu, J. and McCurdy, T. (2004).
+\newblock News arrival, jump dynamics and volatility components for individual
+  stock returns.
+\newblock {\em Journal of Finance}, 59:755--793.
+
+\bibitem[\protect\astroncite{Mehra et~al.}{2014}]{jpmorgan}
+Mehra, A., Kolanovic, M., and Kaplan, B. (2014).
+\newblock Earnings and option volatility monitor.
+\newblock Technical report, J.P. Morgan.
+
+\bibitem[\protect\astroncite{Merton}{1973}]{Merton1973}
+Merton, R. (1973).
+\newblock Theory of rational option pricing.
+\newblock {\em Bell Journal of Economics and Management Science}, 4:141--183.
+
+\bibitem[\protect\astroncite{Merton}{1976}]{Merton1976}
+Merton, R. (1976).
+\newblock Option pricing when underlying stock returns are discontinuous.
+\newblock {\em Journal of Financial Economics}, 3:125--144.
+
+\bibitem[\protect\astroncite{{\O}ksendal}{2003}]{Oeksendal2003}
+{\O}ksendal, B. (2003).
+\newblock {\em Stochastic Differential Equations: An Introduction with
+  Applications}.
+\newblock Springer.
+
+\bibitem[\protect\astroncite{Patell and Wolfson}{1981}]{Patell1981}
+Patell, J. and Wolfson, M. (1981).
+\newblock The ex ante and ex post price effect of quarterly earnings
+  announcements reflected in option and stock prices.
+\newblock {\em Journal of Accounting Research}, 19:434--458.
+
+\bibitem[\protect\astroncite{Patell and Wolfson}{1984}]{Patell1984}
+Patell, J. and Wolfson, M. (1984).
+\newblock The intraday speed of adjustment of stock prices to earnings and
+  dividend announcements.
+\newblock {\em Journal of Financial Economics}, 13:223--252.
+
+\bibitem[\protect\astroncite{Piazzesi}{2005}]{Piazzesi2005}
+Piazzesi, M. (2005).
+\newblock Bond yields and the {F}ederal {R}eserve.
+\newblock {\em Journal of Political Economy}, 113:311--344.
+
+\bibitem[\protect\astroncite{Raible}{2000}]{Raible2000}
+Raible, S. (2000).
+\newblock {\em {L}\'{e}vy processes in finance: Theory, numerics, and empirical
+  facts}.
+\newblock PhD thesis, Univ. Freiburg.
+
+\bibitem[\protect\astroncite{Rogers et~al.}{2009}]{Rogers2009}
+Rogers, J., Skinner, D., and Van~Buskirk, A. (2009).
+\newblock Earnings guidance and market uncertainty.
+\newblock {\em Journal of Accounting and Economics}, 48:90--109.
+
+\end{thebibliography}

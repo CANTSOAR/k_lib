@@ -1,0 +1,242 @@
+\begin{thebibliography}{10}
+
+\bibitem{Ametrano2013}
+{\sc Ametrano, F., and Bianchetti, M.}
+\newblock {Everything you always wanted to know about multiple interest rate
+  curve bootstrapping but were afraid to ask}.
+\newblock SSRN, 2013.
+\newblock \url{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2219548}.
+
+\bibitem{Andersen2017}
+{\sc Andersen, T., Fusari, N., and Todorov, V.}
+\newblock {Short-term market risks implied by weekly options}.
+\newblock {\em Journal of Finance 72}, 3 (2017), 1335--1386.
+
+\bibitem{Audrino2010}
+{\sc Audrino, F., and Colangelo, D.}
+\newblock Semi-parametric forecasts of the implied volatility surface using
+  regression trees.
+\newblock {\em Statistics and Computing 20}, 4 (2010), 421--434.
+
+\bibitem{BoE_2020}
+{\sc {Bank of England}}.
+\newblock {The impact of Covid on machine learning and data science in UK
+  banking}.
+\newblock {\em Quarterly Bulletin\/} (2020).
+
+\bibitem{Bilson2015}
+{\sc Bilson, J., Kang, S., and Luo, H.}
+\newblock {The term structure of implied dividend yields and expected returns}.
+\newblock {\em Economics Letters 128\/} (2015), 9--13.
+
+\bibitem{Black_1973}
+{\sc Black, F., and Scholes, M.}
+\newblock {The pricing of options and corporate liabilities}.
+\newblock {\em Journal of Political Economy 81}, 3 (1973), 637--654.
+
+\bibitem{Bliss2005}
+{\sc Bliss, R., and Panigirtzoglou, N.}
+\newblock {Option-implied risk aversion estimates}.
+\newblock {\em Journal of Finance 59}, 1 (2005), 407--446.
+
+\bibitem{Carr_2007}
+{\sc Carr, P., and Wu, L.}
+\newblock {Stochastic skew in currency options}.
+\newblock {\em Journal of Financial Economics 86}, 1 (2007), 213--247.
+
+\bibitem{Carr2010}
+{\sc Carr, P., and Wu, L.}
+\newblock A new simple approach for constructing implied volatility surfaces.
+\newblock SSRN, 2010.
+\newblock \url{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1701685}.
+
+\bibitem{Choe_2017}
+{\sc Choe, J., Park, S., Kim, K., Park, J.~H., Kim, D., and Shim, H.}
+\newblock {Face generation for low-shot learning using generative adversarial
+  networks}.
+\newblock {\em ICCV Workshops\/} (2017), 1940--1948.
+
+\bibitem{Coleman2013}
+{\sc Coleman, T., Li, Y., and Wang, C.}
+\newblock {Stable local volatility function calibration using spline kernel}.
+\newblock {\em Computational Optimization and Applications 55}, 3 (2013),
+  675--702.
+
+\bibitem{Cont_2002}
+{\sc Cont, R., and {Da Fonseca}, J.}
+\newblock {Dynamics of implied volatility surfaces}.
+\newblock {\em Quantitative Finance 2}, 1 (2002), 45--60.
+
+\bibitem{Corlay2016}
+{\sc Corlay, S.}
+\newblock {B-spline techniques for volatility modeling}.
+\newblock {\em Journal of Computational Finance 19}, 3 (2016), 97--135.
+
+\bibitem{EY_2018_Fintech}
+{\sc {Ernst and Young}}.
+\newblock {The future of FinTech and financial services: what’s the next big
+  bet?}
+\newblock {\em Technical Report\/} (2018).
+
+\bibitem{Friz_2005}
+{\sc Friz, P., and Gatheral, J.}
+\newblock {Valuation of volatility derviatives as an inverse problem}.
+\newblock {\em Quantitative Finance 5}, 6 (2005), 531--542.
+
+\bibitem{Gatheral2004}
+{\sc Gatheral, J.}
+\newblock {A parsimonious arbitrage-free implied volatility parameterization
+  with application to the valuation of volatility derivatives}.
+\newblock \emph{Presentation at Global Derivatives \& Risk Management}, Madrid,
+  2004.
+
+\bibitem{Gatheral2014}
+{\sc Gatheral, J., and Jacquier, A.}
+\newblock Arbitrage-free svi volatility surfaces.
+\newblock {\em Quantitative Finance 14}, 1 (2014), 59--71.
+
+\bibitem{Gavrishchaka2006}
+{\sc Gavrishchaka, V.}
+\newblock {\em Econometric Analysis of Financial and Economic Time Series}.
+\newblock Emerald, 2006, ch.~{Boosting-based Frameworks in financial modeling:
+  application to symbolic volatility forecasting}, pp.~123--151.
+
+\bibitem{Goodfellow_2016}
+{\sc Goodfellow, I., Bengio, Y., and Courville, A.}
+\newblock {\em Deep Learning}.
+\newblock MIT Press, 2016.
+
+\bibitem{Gulisashvili_2012}
+{\sc Gulisashvili, A.}
+\newblock {\em Analytically Tractable Stochastic Stock Price Models}.
+\newblock Springer, 2012.
+
+\bibitem{Heston1993}
+{\sc Heston, S.}
+\newblock {A closed-form solution for options with stochastic volatility with
+  applications to bond and currency options}.
+\newblock {\em Review of Financial Studies 6}, 2 (1993), 327--343.
+
+\bibitem{Homescu2011}
+{\sc Homescu, C.}
+\newblock {Implied volatility surface: construction methodologies and
+  characteristics}.
+\newblock arXiv, 2011.
+\newblock \url{https://arxiv.org/abs/1107.1834}.
+
+\bibitem{Itkin2015}
+{\sc Itkin, A.}
+\newblock {To sigmoid-based functional description of the volatility smile}.
+\newblock {\em The North American Journal of Economics and Finance 31\/}
+  (2015), 264--291.
+
+\bibitem{Kang_2017}
+{\sc Kang, C., Kang, W., and Lee, J.}
+\newblock {Exact simulation of the Wishart multidimensional stochastic
+  volatility model}.
+\newblock {\em Operations Research 65}, 5 (2017), 1190--1206.
+
+\bibitem{Kingma15adam}
+{\sc Kingma, D., and Ba, J.}
+\newblock {Adam: a method for stochastic optimization}.
+\newblock {\em ICLR\/} (2015), 1--13.
+
+\bibitem{Kotze2013}
+{\sc Kotz\'{e}, A., Labuschagne, C., Nair, M., and Padayachi, N.}
+\newblock {Arbitrage-free implied volatility surfaces for options on single
+  stock futures}.
+\newblock {\em The North American Journal of Economics and Finance 26\/}
+  (2013), 380--399.
+
+\bibitem{Kou2002jump}
+{\sc Kou, S.}
+\newblock {A jump-diffusion model for option pricing}.
+\newblock {\em Management Science 48}, 8 (2002), 1086--1101.
+
+\bibitem{Kristjanpoller_2014}
+{\sc Kristjanpoller, W., Fadic, A., and Minutolo, M.}
+\newblock {Volatility forecast using hybrid neural network models}.
+\newblock {\em Expert Systems with Applications 41}, 5 (2014), 2437--2442.
+
+\bibitem{Lee_2004}
+{\sc Lee, R.}
+\newblock {The moment formula for implied volatility at extreme strikes}.
+\newblock {\em Mathematical Finance 14}, 3 (2004), 469--480.
+
+\bibitem{Liu_2017}
+{\sc Liu, T., Cui, Y., Yin, Q., Zhang, W., Wang, S., and Hu, G.}
+\newblock {Generating and exploiting large-scale pseudo training data for zero
+  pronoun resolution}.
+\newblock {\em ACL\/} (2017), 102--111.
+
+\bibitem{Luo_2018}
+{\sc Luo, R., Zhang, W., Xu, X., and Wang, J.}
+\newblock {A neural stochastic volatility model}.
+\newblock {\em AAAI\/} (2018).
+
+\bibitem{Malliaris_1993}
+{\sc Malliaris, M., and Salchenberger, L.}
+\newblock {A neural network model for estimating option prices}.
+\newblock {\em Applied Intelligence 3}, 3 (1993), 193--206.
+
+\bibitem{Malliaris_1996}
+{\sc Malliaris, M., and Salchenberger, L.}
+\newblock {Using neural networks to forecast the S\&P 100 implied volatility}.
+\newblock {\em Neurocomputing 10}, 2 (1996), 183--195.
+
+\bibitem{Merton76optionpricing}
+{\sc Merton, R.}
+\newblock {Option pricing when underlying stock returns are discontinuous}.
+\newblock {\em Journal of Financial Economics 3\/} (1976), 125--144.
+
+\bibitem{Qin_2019}
+{\sc Qin, Y., and Yang, Y.}
+\newblock {What you say and how you say it matters: predicting financial risk
+  using verbal and vocal cues}.
+\newblock {\em ACL\/} (2019).
+
+\bibitem{Rekabsaz_2017}
+{\sc Rekabsaz, N., Lupu, M., Baklanov, A., D\"ur, A., Andersson, L., and
+  Hanbury, A.}
+\newblock {Volatility prediction using financial disclosures sentiments with
+  word embedding-based IR models}.
+\newblock {\em ACL\/} (2017).
+
+\bibitem{Samuelson_1965}
+{\sc Samuelson, P.}
+\newblock Proof that properly anticipated prices fluctuate randomly.
+\newblock {\em Industrial Management Review\/} (1965), 41--49.
+
+\bibitem{Shiraya_2018}
+{\sc Shiraya, K., and Takahashi, A.}
+\newblock {Pricing average and spread options under local-stochastic volatility
+  jump-diffusion models}.
+\newblock {\em Mathematics of Operations Research 4}, 11 (2018).
+
+\bibitem{Sundaresan_2000}
+{\sc Sundaresan, S.}
+\newblock Continuous-time methods in finance: {a} review and an assessment.
+\newblock {\em Journal of Finance 13}, 4 (2000), 1057--1099.
+
+\bibitem{Wu_2014}
+{\sc Wu, Y., Hern\'{a}ndez-Lobato, J.~M., and Ghahramani, Z.}
+\newblock {Gaussian process volatility model}.
+\newblock {\em NIPS\/} (2014).
+
+\bibitem{Yang_2017}
+{\sc Yang, Y., Zheng, Y., and Hospedales, T.}
+\newblock {Gated neural networks for option pricing: rationality by design}.
+\newblock {\em AAAI\/} (2017).
+
+\bibitem{Zheng_2019}
+{\sc Zheng, J., Xia, A., Shao, L., Wan, T., and Qin, Z.}
+\newblock {Stock volatility prediction based on self-attention networks with
+  social information}.
+\newblock {\em CIFEr\/} (2019).
+
+\bibitem{Zheng_2018}
+{\sc Zheng, Y.}
+\newblock {\em {Machine Learning and Option Implied Information}}.
+\newblock PhD thesis, Imperial College London, 2018.
+
+\end{thebibliography}

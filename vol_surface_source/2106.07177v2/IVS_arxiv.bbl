@@ -1,0 +1,308 @@
+\begin{thebibliography}{}
+
+\bibitem[\protect\citeauthoryear{Ackerer, Tagasovska, and Vatter}{Ackerer
+  et~al.}{2020}]{deep_IVS}
+Ackerer, D., N.~Tagasovska, and T.~Vatter (2020).
+\newblock Deep smoothing of the implied volatility surface.
+\newblock In H.~Larochelle, M.~Ranzato, R.~Hadsell, M.~F. Balcan, and H.~Lin
+  (Eds.), {\em Advances in Neural Information Processing Systems}, Volume~33,
+  pp.\  11552--11563. Curran Associates, Inc.
+
+\bibitem[\protect\citeauthoryear{Almeida, Fan, and Tang}{Almeida
+  et~al.}{2021}]{almeida2021can}
+Almeida, C., J.~Fan, and F.~Tang (2021).
+\newblock Can a machine correct option pricing models?
+\newblock {\em Available at SSRN 3835108\/}.
+
+
+\bibitem[\protect\citeauthoryear{Audrino and Colangelo}{Audrino and
+  Colangelo}{2010}]{audrino2010semi}
+Audrino, F. and D.~Colangelo (2010).
+\newblock Semi-parametric forecasts of the implied volatility surface using
+  regression trees.
+\newblock {\em Statistics and Computing\/}~{\em 20\/}(4), 421--434.
+
+
+\bibitem[\protect\citeauthoryear{Bergeron, Fung, Poulos, Hull, and
+  Veneris}{Bergeron et~al.}{2021}]{bergeron2021variational}
+Bergeron, M., N.~Fung, Z.~Poulos, J.~C. Hull, and A.~Veneris (2021).
+\newblock Variational autoencoders: A hands-off approach to volatility.
+\newblock Available from https://dx.doi.org/10.2139/ssrn.3827447.
+
+
+\bibitem[\protect\citeauthoryear{Bernales and Guidolin}{Bernales and
+  Guidolin}{2014}]{bernales2014can}
+Bernales, A. and M.~Guidolin (2014).
+\newblock Can we forecast the implied volatility surface dynamics of equity
+  options? predictability and economic value tests.
+\newblock {\em Journal of Banking \& Finance\/}~{\em 46}, 326--342.
+
+
+\bibitem[\protect\citeauthoryear{Bloch}{Bloch}{2019}]{bloch2019neural}
+Bloch, D.~A. (2019).
+\newblock Neural networks based dynamic implied volatility surface.
+\newblock Available from
+  https://papers.ssrn.com/sol3/papers.cfm?abstract\textunderscore id=3492662.
+
+
+\bibitem[\protect\citeauthoryear{Bloch and B{\"o}{\"o}k}{Bloch and
+  B{\"o}{\"o}k}{2020}]{bloch2020predicting}
+Bloch, D.~A. and A.~B{\"o}{\"o}k (2020).
+\newblock Predicting future implied volatility surface using {TDBP}-learning.
+\newblock Available from https: //dx.doi.org/10.2139/ssrn.3739514.
+
+
+\bibitem[\protect\citeauthoryear{Borovykh, Bohte, and Oosterlee}{Borovykh
+  et~al.}{2017}]{borovykh2017conditional}
+Borovykh, A., S.~Bohte, and C.~W. Oosterlee (2017).
+\newblock Conditional time series forecasting with convolutional neural
+  networks.
+\newblock Avaliable from https://arxiv.org/pdf/1703.04691v1.pdf.
+
+
+\bibitem[\protect\citeauthoryear{Cao, Chen, and Hull}{Cao
+  et~al.}{2020}]{cao2020neural}
+Cao, J., J.~Chen, and J.~Hull (2020).
+\newblock A neural network approach to understanding implied volatility
+  movements.
+\newblock {\em Quantitative Finance\/}~{\em 20\/}(9), 1405--1413.
+
+
+\bibitem[\protect\citeauthoryear{Chen and Zhang}{Chen and
+  Zhang}{2019}]{chen2019forecasting}
+Chen, S. and Z.~Zhang (2019).
+\newblock Forecasting implied volatility smile surface via deep learning and
+  attention mechanism.
+\newblock Available from https://dx.doi.org/10.2139/ssrn.3508585.
+
+
+\bibitem[\protect\citeauthoryear{Cont and Da~Fonseca}{Cont and
+  Da~Fonseca}{2002}]{cont2002dynamics}
+Cont, R. and J.~Da~Fonseca (2002).
+\newblock Dynamics of implied volatility surfaces.
+\newblock {\em Quantitative Finance\/}~{\em 2}, 45--60.
+
+
+\bibitem[\protect\citeauthoryear{Corsi}{Corsi}{2009}]{corsi2009simple}
+Corsi, F. (2009).
+\newblock A simple approximate long-memory model of realized volatility.
+\newblock {\em Journal of Financial Econometrics\/}~{\em 7\/}(2), 174--196.
+
+
+\bibitem[\protect\citeauthoryear{Dellaportas and Mijatovi{\'c}}{Dellaportas and
+  Mijatovi{\'c}}{2014}]{dellaportas2014arbitrage}
+Dellaportas, P. and A.~Mijatovi{\'c} (2014).
+\newblock Arbitrage-free prediction of the implied volatility smile.
+\newblock Available from https://arxiv.org/abs/1407.5528.
+
+
+\bibitem[\protect\citeauthoryear{Diebold and Mariano}{Diebold and
+  Mariano}{2002}]{diebold2002comparing}
+Diebold, F.~X. and R.~S. Mariano (2002).
+\newblock Comparing predictive accuracy.
+\newblock {\em Journal of Business \& Economic Statistics\/}~{\em 20\/}(1),
+  134--144.
+
+
+\bibitem[\protect\citeauthoryear{Dumas, Fleming, and Whaley}{Dumas
+  et~al.}{1998}]{dumas1998implied}
+Dumas, B., J.~Fleming, and R.~E. Whaley (1998).
+\newblock Implied volatility functions: Empirical tests.
+\newblock {\em The Journal of Finance\/}~{\em 53\/}(6), 2059--2106.
+
+
+\bibitem[\protect\citeauthoryear{Fengler}{Fengler}{2009}]{fengler2009arbitrage}
+Fengler, M.~R. (2009).
+\newblock Arbitrage-free smoothing of the implied volatility surface.
+\newblock {\em Quantitative Finance\/}~{\em 9\/}(4), 417--428.
+
+
+\bibitem[\protect\citeauthoryear{Fengler, H{\"a}rdle, and Mammen}{Fengler
+  et~al.}{2007}]{fengler2007semiparametric}
+Fengler, M.~R., W.~K. H{\"a}rdle, and E.~Mammen (2007).
+\newblock A semiparametric factor model for implied volatility surface
+  dynamics.
+\newblock {\em Journal of Financial Econometrics\/}~{\em 5\/}(2), 189--218.
+
+
+\bibitem[\protect\citeauthoryear{Fengler, H{\"a}rdle, and Villa}{Fengler
+  et~al.}{2003}]{fengler2003dynamics}
+Fengler, M.~R., W.~K. H{\"a}rdle, and C.~Villa (2003).
+\newblock The dynamics of implied volatilities: A common principal components
+  approach.
+\newblock {\em Review of Derivatives Research\/}~{\em 6\/}(3), 179--202.
+
+
+\bibitem[\protect\citeauthoryear{Fengler and Hin}{Fengler and
+  Hin}{2015}]{fengler2015semi}
+Fengler, M.~R. and L.-Y. Hin (2015).
+\newblock Semi-nonparametric estimation of the call-option price surface under
+  strike and time-to-expiry no-arbitrage constraints.
+\newblock {\em Journal of Econometrics\/}~{\em 184\/}(2), 242--261.
+
+
+\bibitem[\protect\citeauthoryear{Gatheral}{Gatheral}{2004}]{gatheral2004parsimonious}
+Gatheral, J. (2004).
+\newblock A parsimonious arbitrage-free implied volatility parameterization
+  with application to the valuation of volatility derivatives.
+\newblock Presentation at Global Derivatives \& Risk Management, Madrid.
+
+
+\bibitem[\protect\citeauthoryear{Gatheral and Jacquier}{Gatheral and
+  Jacquier}{2014}]{gatheral2014arbitrage}
+Gatheral, J. and A.~Jacquier (2014.).
+\newblock Arbitrage-free {SVI} volatility surfaces.
+\newblock {\em Quantitative Finance\/}~{\em 14\/}(1), 59--71.
+
+
+\bibitem[\protect\citeauthoryear{Glorot and Bengio}{Glorot and
+  Bengio}{2010}]{glorot2010understanding}
+Glorot, X. and Y.~Bengio (2010).
+\newblock Understanding the difficulty of training deep feedforward neural
+  networks.
+\newblock In {\em Proceedings of the thirteenth international conference on
+  artificial intelligence and statistics}, pp.\  249--256. JMLR Workshop and
+  Conference Proceedings.
+
+\bibitem[\protect\citeauthoryear{Goncalves and Guidolin}{Goncalves and
+  Guidolin}{2006}]{goncalves2006predictable}
+Goncalves, S. and M.~Guidolin (2006).
+\newblock Predictable dynamics in the s\&p 500 index options implied volatility
+  surface.
+\newblock {\em The Journal of Business\/}~{\em 79\/}(3), 1591--1635.
+
+
+\bibitem[\protect\citeauthoryear{Gulisashvili}{Gulisashvili}{2012}]{gulisashvili2012analytically}
+Gulisashvili, A. (2012).
+\newblock {\em Analytically Tractable Stochastic Stock Price Models}.
+\newblock Springer Science \& Business Media.
+
+
+\bibitem[\protect\citeauthoryear{H{\"a}rdle}{H{\"a}rdle}{1990}]{hardle1990applied}
+H{\"a}rdle, W. (1990).
+\newblock {\em Applied Nonparametric Regression}.
+\newblock Cambridge University Press.
+
+
+\bibitem[\protect\citeauthoryear{Hochreiter and Schmidhuber}{Hochreiter and
+  Schmidhuber}{1997}]{hochreiter1997long}
+Hochreiter, S. and J.~Schmidhuber (1997).
+\newblock Long short-term memory.
+\newblock {\em Neural Computation\/}~{\em 9\/}(8), 1735--1780.
+
+
+\bibitem[\protect\citeauthoryear{Horvath, Muguruza, and Tomas}{Horvath
+  et~al.}{2021}]{horvath2021deep}
+Horvath, B., A.~Muguruza, and M.~Tomas (2021).
+\newblock Deep learning volatility: a deep neural network perspective on
+  pricing and calibration in (rough) volatility models.
+\newblock {\em Quantitative Finance\/}~{\em 21\/}(1), 11--27.
+
+
+\bibitem[\protect\citeauthoryear{Ioffe and Szegedy}{Ioffe and
+  Szegedy}{2015}]{ioffe2015batch}
+Ioffe, S. and C.~Szegedy (2015).
+\newblock Batch normalization: Accelerating deep network training by reducing
+  internal covariate shift.
+\newblock In {\em International conference on machine learning}, pp.\
+  448--456. PMLR.
+
+\bibitem[\protect\citeauthoryear{Kingma and Ba}{Kingma and
+  Ba}{2014}]{kingma2014adam}
+Kingma, D.~P. and J.~Ba (2014).
+\newblock Adam: A method for stochastic optimization.
+\newblock {\em arXiv preprint arXiv:1412.6980,
+  https://doi.org/10.1016/j.asoc.2020.106181\/}.
+
+
+\bibitem[\protect\citeauthoryear{Kingma and Welling}{Kingma and
+  Welling}{2013}]{kingma2013auto}
+Kingma, D.~P. and M.~Welling (2013).
+\newblock Auto-encoding variational {B}ayes.
+\newblock Available from https://arxiv.org/abs/1312.6114.
+
+
+\bibitem[\protect\citeauthoryear{Ning, Jaimungal, Zhang, and Bergeron}{Ning
+  et~al.}{2021}]{ning2021arbitrage}
+Ning, B., S.~Jaimungal, X.~Zhang, and M.~Bergeron (2021).
+\newblock Arbitrage-free implied volatility surface generation with variational
+  autoencoders.
+\newblock {\em arXiv preprint arXiv:2108.04941\/}.
+
+
+\bibitem[\protect\citeauthoryear{Orosi}{Orosi}{2015}]{orosi2015arbitrage}
+Orosi, G. (2015).
+\newblock Arbitrage-free call option surface construction using regression
+  splines.
+\newblock {\em Applied Stochastic Models in Business and Industry\/}~{\em
+  31\/}(4), 515--527.
+
+
+\bibitem[\protect\citeauthoryear{Roper}{Roper}{2010}]{roper2010arbitrage}
+Roper, M. (2010).
+\newblock Arbitrage free implied volatility surfaces.
+\newblock Available from
+  https://talus.maths.usyd.edu.au/u/pubs/publist/preprints/2010/roper-9.pdf.
+
+
+\bibitem[\protect\citeauthoryear{Sezer, Gudelek, and Ozbayoglu}{Sezer
+  et~al.}{2020}]{sezer2020financial}
+Sezer, O.~B., M.~U. Gudelek, and A.~M. Ozbayoglu (2020).
+\newblock Financial time series forecasting with deep learning: A systematic
+  literature review: 2005--2019.
+\newblock {\em Applied Soft Computing\/}~{\em 90}, 106181.
+
+
+\bibitem[\protect\citeauthoryear{Sirignano and Cont}{Sirignano and
+  Cont}{2019}]{sirignano2019universal}
+Sirignano, J. and R.~Cont (2019).
+\newblock Universal features of price formation in financial markets:
+  perspectives from deep learning.
+\newblock {\em Quantitative Finance\/}~{\em 19\/}(9), 1449--1459.
+
+
+\bibitem[\protect\citeauthoryear{Sirignano, Sadhwani, and Giesecke}{Sirignano
+  et~al.}{2018}]{sirignano2018deep}
+Sirignano, J., A.~Sadhwani, and K.~Giesecke (2018).
+\newblock Deep learning for mortgage risk.
+\newblock Available from https://dx.doi.org/10.2139/ssrn.2799443.
+
+
+\bibitem[\protect\citeauthoryear{Sirignano}{Sirignano}{2019}]{sirignano2019deep}
+Sirignano, J.~A. (2019).
+\newblock Deep learning for limit order books.
+\newblock {\em Quantitative Finance\/}~{\em 19\/}(4), 549--570.
+
+
+\bibitem[\protect\citeauthoryear{Skiadopoulos, Hodges, and
+  Clewlow}{Skiadopoulos et~al.}{2000}]{skiadopoulos2000dynamics}
+Skiadopoulos, G., S.~Hodges, and L.~Clewlow (2000).
+\newblock The dynamics of the {S\&P} 500 implied volatility surface.
+\newblock {\em Review of Derivatives Research\/}~{\em 3\/}(3), 263--282.
+
+
+\bibitem[\protect\citeauthoryear{Yan, Zhang, Ma, Liu, and Wu}{Yan
+  et~al.}{2018}]{yan2018}
+Yan, X., W.~Zhang, L.~Ma, W.~Liu, and Q.~Wu (2018).
+\newblock Parsimonious quantile regression of financial asset tail dynamics via
+  sequential learning.
+\newblock In S.~Bengio, H.~Wallach, H.~Larochelle, K.~Grauman, N.~Cesa-Bianchi,
+  and R.~Garnett (Eds.), {\em Advances in Neural Information Processing
+  Systems}, Volume~31. Curran Associates, Inc.
+
+\bibitem[\protect\citeauthoryear{Zeng and Klabjan}{Zeng and
+  Klabjan}{2019}]{zeng2019online}
+Zeng, Y. and D.~Klabjan (2019).
+\newblock Online adaptive machine learning based algorithm for implied
+  volatility surface modeling.
+\newblock {\em Knowledge-Based Systems\/}~{\em 163}, 376--391.
+
+
+\bibitem[\protect\citeauthoryear{Zheng, Yang, and Chen}{Zheng
+  et~al.}{2019}]{zheng2019gated}
+Zheng, Y., Y.~Yang, and B.~Chen (2019.).
+\newblock Gated deep neural networks for implied volatility surfaces.
+\newblock Available from https://arxiv.org/pdf/1904.12834.pdf.
+
+
+\end{thebibliography}

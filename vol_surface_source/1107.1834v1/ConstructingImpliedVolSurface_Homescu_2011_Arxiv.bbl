@@ -1,0 +1,848 @@
+\begin{thebibliography}{100}
+
+\bibitem{OptimizSoftware}
+Decision tree for optimization software.
+\newblock \url{http://plato.asu.edu/guide.html}.
+
+\bibitem{Achdou_Pironneau_2005}
+Y.~Achdou and O.~Pironneau.
+\newblock {\em Computational methods for option pricing}.
+\newblock SIAM, 2005.
+
+\bibitem{aitSahalia_Duarte_2003}
+Y.~A{\"{\i}}t-Sahalia and J.~Duarte.
+\newblock Nonparametric option pricing under shape restrictions.
+\newblock {\em Journal of Econometrics}, 116(1-2):9--47, 2003.
+
+\bibitem{Andersen_Andreasen_2000}
+L.~B.~G. Andersen and J.~Andreasen.
+\newblock Jump-diffusion processes: Volatility smile fitting and numerical
+  methods for pricing.
+\newblock {\em Review of Derivatives Research}, 4:231--262, 2000.
+
+\bibitem{Andersen_Piterbarg_2007}
+L.B.G. Andersen and V.V. Piterbarg.
+\newblock Moment explosion in stochastic volatility models.
+\newblock {\em Finance and Stochastics}, 11:29--50, 2007.
+
+\bibitem{Andreasen_Huge_2010}
+J~Andreasen and B.~Huge.
+\newblock Volatility interpolation.
+\newblock \url{http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1694972},
+  2010.
+
+\bibitem{Andreasen_Huge_2011}
+J~Andreasen and B~Huge.
+\newblock Volatility interpolation.
+\newblock {\em Risk magazine}, March, 2011.
+
+\bibitem{Avellaneda_et_al_1997}
+M.~Avellaneda, C.~Friedman, R.~Holmes, and D.~Samperi.
+\newblock {Calibrating volatility surfaces via relative-entropy minimization}.
+\newblock {\em Appl. Math. Finance}, 4(1):37--64, 1997.
+
+\bibitem{Avellaneda_zhu_1998}
+M.~Avellaneda and Y.~Zhu.
+\newblock A risk-neutral stochastic volatility model.
+\newblock {\em International Journal of Theoretical and Applied Finance},
+  1(2):289--310, 1998.
+
+\bibitem{Ayache_2005}
+E.~Ayache.
+\newblock Can anyone solve the smile problem? a post-scriptum.
+\newblock
+  \url{http://www.ito33.com/sites/default/files/articles/0501_ayache.pdf},
+  2005.
+
+\bibitem{Ayache_et_al_2004}
+E.~Ayache, P.~Henrotte, S.~Nassar, and X.~Wang.
+\newblock Can anyone solve the smile problem?
+\newblock {\em Wilmott magazine}, January:78--96, 2004.
+
+\bibitem{BarndorffNielsen_1998}
+O.~Barndorff-Nielsen.
+\newblock Processes of normal inverse gaussian type.
+\newblock {\em Finance and Stochastics}, 2:41--68, 1998.
+
+\bibitem{Benaim_et_al_2009}
+S.~Benaim, M.~Dodgson, and D~Kainth.
+\newblock An arbitrage-free method for smile extrapolation.
+\newblock \url{http://www.quarchome.org/RiskTailsPaper_v5.pdf}, 2009.
+
+\bibitem{Benaim_Friz_2009}
+S.~Benaim and P.~Friz.
+\newblock Regular variation and smile asymptotics.
+\newblock {\em Mathematical Finance}, 19(1):1--12, 2009.
+
+\bibitem{Benaim_Friz_2009a}
+S.~Benaim and P.~Friz.
+\newblock Smile asymptotics {II}: Models with known moment generating
+  functions.
+\newblock {\em Journal of Applied Probability}, 45:16--32, 2009.
+
+\bibitem{Benhamou_et_al_2008}
+E.~Benhamou, E.~Gobet, and M.~Miri.
+\newblock Closed forms for european options in a local volatility model.
+\newblock \url{http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1275872},
+  2008.
+
+\bibitem{Benhamou_et_al_2009}
+E.~Benhamou, E.~Gobet, and M.~Miri.
+\newblock Smart expansion and fast calibration for jump diffusions.
+\newblock {\em Finance and Stochastics}, 13(4)(4):563--589, 2009.
+
+\bibitem{Benhamou_et_al_2010}
+E.~Benhamou, E.~Gobet, and M.~Miri.
+\newblock Time dependent {Heston} model.
+\newblock {\em SIAM Journal of Financial Mathematics}, 1:289--325, 2010.
+
+\bibitem{Benhamou_et_al_2011}
+E.~Benhamou, E.~Gobet, and M.~Miri.
+\newblock Analytical formulas for local volatility model with stochastic rates.
+\newblock {\em Quantitative Finance}, 2011.
+
+\bibitem{Benko_et_al_2007}
+M.~Benko, M.~R. Fengler, W.~K. Hardle, and M.~Kopa.
+\newblock On extracting information implied in options.
+\newblock {\em Computational Statistics}, 22(4):543--553, 2007.
+
+\bibitem{Berestycki_et_al_2004}
+H~Berestycki, J~Busca, and I.~Florent.
+\newblock Computing the implied volatility in stochastic volatility models.
+\newblock {\em Communications on Pure and Applied Mathematics}, 57:1352 --
+  1373, 2004.
+
+\bibitem{Bergomi_2004}
+L.~Bergomi.
+\newblock {Smile Dynamics I}.
+\newblock \url{http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1493294},
+  2004.
+
+\bibitem{Bergomi_2005}
+L.~Bergomi.
+\newblock {Smile Dynamics II}.
+\newblock \url{http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1493302},
+  2005.
+
+\bibitem{Bergomi_2008}
+L.~Bergomi.
+\newblock {Smile Dynamics III}.
+\newblock \url{http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1493308},
+  2008.
+
+\bibitem{Bergomi_2009}
+L.~Bergomi.
+\newblock {Smile Dynamics IV}.
+\newblock \url{http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1520443},
+  2009.
+
+\bibitem{Bloch_2010}
+D.A. Bloch.
+\newblock A practical guide to implied and local volatility.
+\newblock \url{http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1538808},
+  2010.
+
+\bibitem{Bloch_Coello_Coello_2010}
+D.A. Bloch and C.A. Coello~Coello.
+\newblock Smiling at evolution.
+\newblock \url{http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1627645},
+  2010.
+
+\bibitem{Borovkova_Permana_2009}
+S.~Borovkova and F.~J. Permana.
+\newblock Implied volatility in oil markets.
+\newblock {\em Computational Statistics and Data Analysis}, 53:2022--2039,
+  April 2009.
+
+\bibitem{Brecher_2005}
+D~Brecher.
+\newblock Pushing the limits of local volatility in option pricing.
+\newblock {\em Wilmott Magazine}, September:6--15, 2006.
+
+\bibitem{Brody_et_al_2007}
+D.C. Brody, I.R.C. Buckley, and I.C. Constantinou.
+\newblock {Option price calibration from R{\'e}nyi entropy}.
+\newblock {\em Physics Letters A}, 366:298--307, July 2007.
+
+\bibitem{Buchen_Kelly_1997}
+P.~W. Buchen and M.~Kelly.
+\newblock The maximum entropy distribution of an asset inferred from option
+  prices.
+\newblock {\em Journal of Financial and Quantitative Analysis},
+  31(01):143--159, March 1996.
+
+\bibitem{Buehler_2008}
+H~Buehler.
+\newblock {\em Volatility markets}.
+\newblock PhD thesis, 2008.
+
+\bibitem{Carr_et_al_2002}
+P.~Carr, H.~Geman, D.~Madan, and M.~Yor.
+\newblock The fine structure of asset returns: an empirical investigation.
+\newblock {\em Journal of Business}, 75(2):305--332, 2002.
+
+\bibitem{Carr_Madan_2005}
+P.~Carr and D.~B. Madan.
+\newblock A note on sufficient conditions for no arbitrage.
+\newblock {\em Finance Research Letters}, 2(3):125--130, 2005.
+
+\bibitem{Carr_Madan_1998}
+P.~Carr and D.B. Madan.
+\newblock Option valuation using the {F}ast {F}ourier transform.
+\newblock {\em Journal of Computational Finance}, 2:61--73, 1998.
+
+\bibitem{Carr_Wu_2010}
+P.~Carr and L.~Wu.
+\newblock A new simple approach for constructing implied volatility surfaces.
+\newblock \url{http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1701685},
+  2010.
+
+\bibitem{Castagna_2007}
+A~Castagna.
+\newblock Implied volatility surface.
+\newblock \url{online at
+  http://www.iasonltd.com/FileUpload/files/pdf_res_3.pdf}, 2007.
+
+\bibitem{Cheng_et_al_2009}
+W.~Cheng, N.~Costanzino, A.~L. Mazzucato, J.~Liechty, and V.~Nistor.
+\newblock Closed-form asymptotics for local volatility models.
+\newblock
+  \url{http://www.personal.psu.edu/users/j/c/jcl12/Closed%20Form%20Asymptotics.pdf},
+  2009.
+
+\bibitem{Christoffersen_Jacobs_2004}
+P.~Christoffersen and K.~Jacobs.
+\newblock The importance of the loss function in option valuation.
+\newblock {\em Journal of Financial Economics}, 72(2)(2):291--318, May 2004.
+
+\bibitem{Cont_BenHamida_2005}
+R.~Cont and S.~Ben~Hamida.
+\newblock Recovering volatility from option prices by evolutionary
+  optimization.
+\newblock {\em Journal of Computational Finance}, 8(4):43--76, 2005.
+
+\bibitem{Cont_Tankov_2002}
+R.~Cont and P.~Tankov.
+\newblock Calibration of jump-diffusion option pricing models: A robust
+  non-parametric approach.
+\newblock \url{http://papers.ssrn.com/sol3/papers.cfm?abstract_id=332400},
+  2002.
+
+\bibitem{Cont_Tankov_2004}
+R~Cont and P.~Tankov.
+\newblock {\em Financial modeling with jump processes}.
+\newblock Chapman and Hall, 2004.
+
+\bibitem{Cont_Tankov_2004a}
+R.~Cont and P.~Tankov.
+\newblock Non-parametric calibration of jump-diffusion option pricing models.
+\newblock {\em Journal of Compuattional Finance}, 7:1--49, 2004.
+
+\bibitem{Cont_Tankov_2006}
+R.~Cont and P.~Tankov.
+\newblock Retrieving {L}evy processes from option prices: Regularization of an
+  ill-posed inverse problem.
+\newblock {\em SIAM Journal on Control and Optimization}, 45:1--25, 2006.
+
+\bibitem{Corcuera_at_al_2009}
+J.~M. Corcuera, F.~Guillaume, P.~Leoni, and W.~Schoutens.
+\newblock Implied {L}{\'{e}}vy volatility.
+\newblock {\em Quantitative Finance}, 9(4):383--393, 2009.
+
+\bibitem{Cousot_2007}
+L.~Cousot.
+\newblock Conditions on option prices for absence of arbitrage and exact
+  calibration.
+\newblock {\em Journal of Banking and Finance}, 31(11):3377--3397, 2007.
+
+\bibitem{Crosby_2010}
+J~Crosby.
+\newblock Practicalities of pricing exotic derivatives.
+\newblock
+  \url{http://www.john-crosby.co.uk/pdfs/JCrosby_OxfordJune2010_Exotics.pdf},
+  2010.
+
+\bibitem{Daglish_et_al_2007}
+T.~Daglish, J.~Hull, and W.~Suo.
+\newblock Volatility surfaces: theory, rules of thumb, and empirical evidence.
+\newblock {\em Quantitative finance}, 7(5):507--524, 2007.
+
+\bibitem{Davis_Hobson_2007}
+M.H.A. Davis and D.G. Hobson.
+\newblock The range of traded option prices.
+\newblock {\em Mathematical Finance}, 17(1):1--14, 2007.
+
+\bibitem{Decamps_DeSchepper_2008}
+M.~Decamps and A.~De~Schepper.
+\newblock Atomic implied volatilities.
+\newblock \url{http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1279363},
+  2008.
+
+\bibitem{DeMarco_2009}
+P.~DeMarco.
+\newblock Quasi-explicit calibration of {G}atheral {SVI} model.
+\newblock \url{http://www.zeliade.com/whitepapers/zwp-0005.pdf}, 2009.
+
+\bibitem{Deryabin_2010}
+M.V. Deryabin.
+\newblock On implied volatility reconstruction for energy markets.
+\newblock {\em International Journal of Human and Social Sciences}, 5, 2010.
+
+\bibitem{Deryabin_2011}
+M.V. Deryabin.
+\newblock Implied volatility surface reconstruction for energy markets: spot
+  price modeling versus surface parametrization.
+\newblock {\em Journal of Energy Markets}, 4(2), 2011.
+
+\bibitem{Detlefsen_Hardle_2008}
+K.~Detlefsen and W.~K. Hardle.
+\newblock Calibration design of implied volatility surfaces.
+\newblock {\em Journal of Data Science}, 6:303--312, 2008.
+
+\bibitem{Duffie_et_al_2000}
+D.~Duffie, J.~Pan, and K.~Singleton.
+\newblock Transform analysis and asset pricing for affine jump-diffusions.
+\newblock {\em Econometrica}, 68(6):1343--1376, 2000.
+
+\bibitem{Dumas_et_al_1998}
+B.~Dumas, J.~Fleming, and R.E. Whaley.
+\newblock Implied volatility functions: Empirical tests.
+\newblock {\em The Journal of Finance}, (53), 1998.
+
+\bibitem{Durrleman_2010}
+V.~Durrleman.
+\newblock From implied to spot volatilities.
+\newblock {\em Finance and Stochastics}, 14(2):157--177, 2010.
+
+\bibitem{Durrleman_ElKaroui_2007}
+V.~Durrleman and N.~El~Karoui.
+\newblock Coupling smiles.
+\newblock \url{http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1005332},
+  2007.
+
+\bibitem{Elices_2008}
+A.~Elices.
+\newblock Models with time-dependent parameters using transform methods:
+  application to {H}eston model,.
+\newblock \url{http://arxiv.org/ftp/arxiv/papers/0708/0708.2020.pdf}, 2008.
+
+\bibitem{Engelmann_et_al_2011}
+B.~Engelmann, F.~Koster, and D.~Oeltz.
+\newblock Calibration of the {Heston} local stochastic volatility model: A
+  finite volume scheme.
+\newblock \url{http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1823769},
+  2011.
+
+\bibitem{Fengler_2005}
+M.~R Fengler.
+\newblock {\em Semiparametric Modeling of Implied Volatility}.
+\newblock Springer, 2005.
+
+\bibitem{Fengler_2010}
+M.R. Fengler.
+\newblock Option data and modeling {BSM} implied volatility.
+\newblock In {\em Handbook of computational finance}. 2010.
+
+\bibitem{FigueroaLopez_Forde_2011}
+J.~Figueroa-Lopez and M.~Forde.
+\newblock The small-maturity smile for exponential {L}evy models.
+\newblock \url{http://arxiv.org/abs/1105.3180}, 2011.
+
+\bibitem{Forde_Jacquier_2009b}
+M.~Forde and A.~Jacquier.
+\newblock Small-time asymptotics for implied volatility under a general
+  local-stochastic volatility model.
+\newblock \url{http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1514125},
+  2009.
+
+\bibitem{Forde_Jacquier_2009a}
+M.~Forde and A.~Jacquier.
+\newblock Small-time asymptotics for implied volatility under the {H}eston
+  model.
+\newblock {\em International Journal of Theoretical and Applied Finance},
+  12(6):861--876, 2009.
+
+\bibitem{Forde_Jacquier_2009}
+M.~Forde and A.~Jacquier.
+\newblock Small time asymptotics for the implied volatility under the {H}eston
+  model.
+\newblock {\em International Journal of Theoretical and Applied Finance},
+  12(6), 2009.
+
+\bibitem{Forde_Jacquier_2011}
+M.~Forde and A.~Jacquier.
+\newblock The large-maturity smile for the {H}eston model.
+\newblock {\em Finance and Stochastics}, In Press, 2011.
+
+\bibitem{Forde_Jacquier_2011a}
+M.~Forde and A.~Jacquier.
+\newblock Small-time asymptotics for an uncorrelated local-stochastic
+  volatility model.
+\newblock
+  \url{http://www.math.tu-berlin.de/~jacquier/index_files/Forde,%20Jacquier%20-%20Small%20time%20Geodesics.pdf},
+  2011.
+
+\bibitem{Forde_et_al_2011}
+M.~Forde, A.~Jacquier, and R.~Lee.
+\newblock The small time smile and term structure of implied volatility under
+  the {H}eston model.
+\newblock \url{http://math.uchicago.edu/~rl/FJL.pdf}, 2011.
+
+\bibitem{Forde_et_al_2010}
+M.~Forde, A~Jacquier, and A.~Mijatovic.
+\newblock Asymptotic formulae for implied volatility under the {H}eston model.
+\newblock {\em Proceedings of the Royal Society A}, 466(2124):3593--3620, 2010.
+
+\bibitem{Friz_et_al_2011}
+P.~Friz, S.~Gerhold, A.~Gulisashvili, and S.~Sturm.
+\newblock On refined volatility smile expansion in the {H}eston model.
+\newblock {\em Quantitative Finance}, In Press, 2011.
+
+\bibitem{Friz_2005}
+P.K. Friz, J.~Gatheral, and S.~Benaim.
+\newblock Volatility derivatives and the implied volatility smile.
+\newblock
+  \url{http://www.cfr.statslab.cam.ac.uk/events/content/20056/friz.pdf}, 2005.
+
+\bibitem{Fukasawa_2011}
+M.~Fukasawa.
+\newblock Asymptotic analysis for stochastic volatility: martingale expansion.
+\newblock
+  \url{http://www-csfi.sigmath.es.osaka-u.ac.jp/faculty/personal/fukasawa/20091202.pdf},
+  2010.
+
+\bibitem{Galluccio_LeCam_2007}
+S.~Galluccio and Y.~Le Cam.
+\newblock Implied calibration and moments asymptotics in stochastic volatility
+  jump diffusion models.
+\newblock \url{http://www.maths.univ-evry.fr/prepubli/251.pdf}, 2007.
+
+\bibitem{Gao_Lee_2011}
+K.~Gao and R.~Lee.
+\newblock Asymptotics of implied volatility to arbitrary order.
+\newblock \url{http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1768383},
+  2011.
+
+\bibitem{Gatheral_2004}
+J~Gatheral.
+\newblock A parsimonious arbitrage-free implied volatility parameterization
+  with application to the valuation of volatility derivatives.
+\newblock
+  \url{http://www.math.nyu.edu/fellows_fin_math/gatheral/madrid2004.pdf}, 2004.
+
+\bibitem{Gatheral_2006}
+J.~Gatheral.
+\newblock {\em {The Volatility Surface: A practitioner's guide}}.
+\newblock Wiley Finance, 2006.
+
+\bibitem{Gatheral_et_al_2011}
+J.~Gatheral, E.~P. Hsu, P.~Laurence, C.~Ouyang, and T.-H. Wang.
+\newblock Asymptotics of implied volatility in local volatility models.
+\newblock {\em Mathematical Finance}, 21:In Press, 2011.
+
+\bibitem{Gauthier_Rivaille_2009}
+P.~Gauthier and P.-Y.~H. Rivaille.
+\newblock Fitting the smile: {S}mart parameters for {SABR} and {H}eston.
+\newblock \url{http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1496982},
+  2009.
+
+\bibitem{Glasserman_Wu_2010}
+P.~Glasserman and Q.~Wu.
+\newblock Forward and future implied volatility.
+\newblock \url{http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1636123},
+  2010.
+
+\bibitem{Gulisashvili_2010}
+A.~Gulisashvili.
+\newblock Asymptotic formulas with error estimates for call pricing functions
+  and the implied volatility at extreme strikes.
+\newblock {\em SIAM Journal on Financial Mathematics}, 1:609--641, 2010.
+
+\bibitem{Gurrieri_2010}
+S.~Gurrieri.
+\newblock A class of term structures for {SVI} implied volatility.
+\newblock \url{http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1779463},
+  2010.
+
+\bibitem{Gyongy_1986}
+I.~Gyongy.
+\newblock Mimicking the one-dimensional marginal distributions of processes
+  having an {I}to differential.
+\newblock {\em Probability Theory and Related Fields}, 71:501--516, 1986.
+
+\bibitem{Hafner_2004}
+R.~Hafner.
+\newblock {\em Stochastic Implied Volatility: A Factor-Based Model.}
+\newblock Springer, 2004.
+
+\bibitem{Hagan_et_al_2002}
+P.~Hagan, D.~Kumar, A.~Lesniewski, and D.~Woodward.
+\newblock Managing smile risk.
+\newblock {\em Wilmott}, 1(8):84--108, 2002.
+
+\bibitem{Henry-Labordere_2005}
+P.~Henry-Labordere.
+\newblock A general asymptotic implied volatility for stochastic volatility
+  models.
+\newblock \url{http://papers.ssrn.com/sol3/papers.cfm?abstract_id=698601},
+  2005.
+
+\bibitem{HenryLabordere_2008}
+P.~Henry-Labordere.
+\newblock {\em Geometry and Modeling in Finance: Advanced Methods in Option
+  Pricing}.
+\newblock Chapman and Hall, 2008.
+
+\bibitem{HenryLabordere_2009}
+P.~Henry-Labordere.
+\newblock Calibration of local stochastic volatility models to market smiles: A
+  {Monte-Carlo} approach.
+\newblock {\em Risk Magazine}, September, 2009.
+
+\bibitem{Herzel_2005}
+S.~Herzel.
+\newblock Arbitrage opportunities on derivatives: A linear programming
+  approach.
+\newblock {\em Dynamics of Continuous, Discrete and Impulsive System},
+  12:589--606, 2005.
+
+\bibitem{Homescu_2011}
+C.~Homescu.
+\newblock Adjoints and automatic (algorithmic) differentiation in computational
+  finance.
+\newblock \url{papers.ssrn.com/sol3/papers.cfm?abstract_id=1828503}, 2011.
+
+\bibitem{Huge_2010}
+B~Huge.
+\newblock Volatility interpolation.
+\newblock In {\em Quant Congress Conference}, 2010.
+
+\bibitem{Jacquier_2010a}
+A.~Jacquier.
+\newblock Heston model.
+\newblock \url{http://www.zeliade.com/whitepapers/zwp-0004.pdf}, 2010.
+
+\bibitem{Jacquier_2010}
+A.~Jacquier.
+\newblock {\em Implied volatility asymptotics under affine stochastic
+  volatility models}.
+\newblock PhD thesis, Imperial College, 2010.
+
+\bibitem{Johnson_Nonas_2009}
+S.~Johnson and B.~Nonas.
+\newblock Arbitrage-free construction of the swaption cube.
+\newblock \url{http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1330869},
+  2009.
+
+\bibitem{Kahale_2004}
+N.~Kahale.
+\newblock An arbitrage-free interpolation of volatilities.
+\newblock {\em Risk Magazine}, 17:102--106, 2004.
+
+\bibitem{vanDerKamp_2009}
+R.~Kamp~van der.
+\newblock Local volatility modelling.
+\newblock Master's thesis, University of Twente, 2009.
+
+\bibitem{KellerRessel_2011}
+M.~Keller-Ressel.
+\newblock Moment explosions and long-term behavior of affine stochastic
+  volatility models.
+\newblock {\em Mathematical Finance}, 21:73--98, 2011.
+
+\bibitem{Kilin_2011}
+F.~Kilin.
+\newblock Accelerating the calibration of stochastic volatility models.
+\newblock {\em Journal of Derivatives}, 18(3):7--16, 2011.
+
+\bibitem{Kong_Ong_2009}
+V.P Kong and B.H. Ong.
+\newblock Shape preserving approximation by spatial cubic splines.
+\newblock {\em Computer Aided Geometric Design}, 26:883--903, 2009.
+
+\bibitem{Kou_2002}
+S.~G. Kou.
+\newblock A jump diffusion model for option pricing.
+\newblock {\em Management Science}, 48:1086--1101, 2002.
+
+\bibitem{Laurence_2008}
+P.~Laurence.
+\newblock Implied volatility, fundamental solutions, asymptotic analysis and
+  symmetry methods.
+\newblock \url{http://www.math.nyu.edu/~laurence/SabCalTechFinalApr242008.pdf},
+  2008.
+
+\bibitem{Laurini_2007}
+M.~Laurini.
+\newblock Imposing no-arbitrage conditions in implied volatility surfaces using
+  constrained smoothing splines.
+\newblock \url{http://www.mlcc.com.br/artigos/cobsimp.pdf}, 2007.
+
+\bibitem{Lee_2004}
+R.~Lee.
+\newblock The moment formula for implied volatility at extreme strikes.
+\newblock {\em Mathematical Finance}, 14(3):469--480, 2004.
+
+\bibitem{Lee_2004a}
+R.W. Lee.
+\newblock Implied volatility: Statics, dynamics, and probabilistic
+  interpretation.
+\newblock In {\em Recent Advances in Applied Probability}. Springer, 2004.
+
+\bibitem{Lindstrom_et_al_2008}
+E.~Lindstrom, J.~Strojby, M.~Broden, M.~Wiktorsson, and J.~Holst.
+\newblock Sequential calibration of options.
+\newblock {\em Computational Statistics and Data Analysis}, 52(6):2877--2891,
+  2008.
+
+\bibitem{Lipton_2002}
+A.~Lipton.
+\newblock The vol smile problem.
+\newblock {\em Risk Magazine}, (February):61--65, 2002.
+
+\bibitem{Madan_et_al_1998}
+D.~Madan, P.~Carr, and E.~Chang.
+\newblock The variance gamma process and option pricing model.
+\newblock {\em European Financial Review}, 2:79--195, 1998.
+
+\bibitem{Madan_Yor_2008}
+D.~Madan and M.~Yor.
+\newblock {Representing the CGMY and Meixner Levy Processes as time changed
+  Brownian motions}.
+\newblock {\em Journal of Computational Finance}, Fall:27--47, 2008.
+
+\bibitem{Maruhn_2010}
+J.~Maruhn.
+\newblock On-the-fly bid/ask-vol fitting with applications in model
+  calibration.
+\newblock In {\em SIAM Conference on Financial Mathematics \& Engineering, San
+  Francisco, USA, November 19-20}, 2010.
+
+\bibitem{Maruhn_2011}
+J.~Maruhn.
+\newblock Calibration of stochastic and local stochastic volatility models.
+\newblock In {\em Global Derivatives Trading \& Risk Management, Paris, April
+  11-15}, 2011.
+
+\bibitem{Medvedev_Scaillet_2006}
+A.~Medvedev and O.~Scaillet.
+\newblock Approximation and calibration of short-term implied volatilities
+  under jump-diffusion stochastic volatility.
+\newblock
+  \url{http://www.hec.unige.ch/www/hec/m1/RecherchePublications/CahiersRecherche/2006/simpleText/0/content_files/file8/2006.01.01.01.01.01.01.01.01.01.01.01.01.pdf},
+  2006.
+
+\bibitem{Medvedev_2008}
+A.N. Medvedev.
+\newblock Implied volatility at expiration.
+\newblock \url{http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1090200},
+  2008.
+
+\bibitem{Mercurio}
+F.~Mercurio.
+\newblock No-arbitrage conditions for a finite options system.
+\newblock \url{http://www.fabiomercurio.it/NoArbitrage.pdf}.
+
+\bibitem{Mikhailov_Nogel_2004}
+S.~Mikhailov and U.~Nogel.
+\newblock Heston stochastic volatility model implementation, calibration and
+  some extensions.
+\newblock {\em Wilmott Magazine}, July:74--79, 2004.
+
+\bibitem{Obloj_2008}
+J.~Obloj.
+\newblock Fine-tune your smile: Correction to {Hagan et al.}
+\newblock \url{http://arxiv.org/abs/0708.0998}, 2008.
+
+\bibitem{Orosi_2010a}
+G~Orosi.
+\newblock Calibration of implied volatility surface using {T}ikhonov
+  regularization.
+\newblock In {\em Second International Conference on Engineering Systems
+  Management and Its Applications (ICESMA)}, 2010.
+
+\bibitem{Orosi_2010}
+G.~Orosi.
+\newblock Improved implementation of local volatility and its application to
+  {S\&P} 500 index options.
+\newblock {\em Journal of Derivatives}, 17(3):53--64, 2010.
+
+\bibitem{Osajima_2007}
+Y.~Osajima.
+\newblock The asymptotic expansion formula of implied volatility for dynamic
+  {SABR} model and {FX} hybrid model.
+\newblock \url{http://papers.ssrn.com/sol3/papers.cfm?abstract_id=965265},
+  2007.
+
+\bibitem{Paulot_2009}
+L.~Paulot.
+\newblock Asymptotic implied volatility at the second order with application to
+  the {SABR} model.
+\newblock \url{http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1413649},
+  2009.
+
+\bibitem{Piterbarg_2007}
+V.~V. Piterbarg.
+\newblock Markovian projection for volatility calibration.
+\newblock {\em Risk Magazine}, 20:84--89, 2007.
+
+\bibitem{Price_et_al_2005}
+K.~Price, R.~M. Storn, and J.~A. Lampinen.
+\newblock {\em Differential Evolution: A Practical Approach to Global
+  Optimization}.
+\newblock Springer, 2005.
+
+\bibitem{Cont_daFonseca_2002}
+C.~Rama and J.~da~Fonseca.
+\newblock Dynamics of implied volatility surfaces.
+\newblock {\em Quantitative Finance}, 2:45--60, 2002.
+
+\bibitem{Reghai_2010}
+A.~Reghai.
+\newblock Joint dynamics using asymptotic methods.
+\newblock
+  \url{http://www.cmap.polytechnique.fr/~euroschoolmathfi10/Joint%20dynamics%20Asymptotics%20-%20Reghai%20Natixis.pdf},
+  2010.
+
+\bibitem{Reiner_2004}
+E.~Reiner.
+\newblock The characteristic curve approach to arbitrage-free time
+  interpolation of volatility.
+\newblock In {\em ICBI Global Derivatives and Risk Management}, 2004.
+
+\bibitem{Reiswich_2010}
+D.~Reiswich.
+\newblock A note on standard no-arbitrage conditions.
+\newblock \url{http://ssrn.com/abstract=1619844}, 2010.
+
+\bibitem{Ren_et_al_2007}
+Y.~Ren, D.~Madan, and M.~Qian~Qian.
+\newblock Calibrating and pricing with embedded local volatility models.
+\newblock {\em Risk Magazine}, September:138--143, 2007.
+
+\bibitem{Roper_2010}
+M~Roper.
+\newblock Arbitrage free implied volatility surfaces.
+\newblock
+  \url{www.maths.usyd.edu.au/u/pubs/publist/preprints/2010/roper-9.pdf}, 2010.
+
+\bibitem{Roper_2010a}
+M.~Roper.
+\newblock Implied volatility: small time-to-expiry asymptotics in exponential
+  {L}evy models.
+\newblock
+  \url{http://www.maths.usyd.edu.au/u/pubs/publist/preprints/2010/roper-13.html.},
+  2010.
+
+\bibitem{Schoutens_2002}
+W.~Schoutens.
+\newblock The {M}eixner process: theory and applications in finance.
+\newblock \url{https://perswww.kuleuven.be/~u0009713/004wsreport.pdf}, 2002.
+
+\bibitem{Shiraya_Takahashi_2010}
+K.~Shiraya and A.~Takahashi.
+\newblock Pricing average options on commodities.
+\newblock \url{http://park.itc.u-tokyo.ac.jp/takahashi-lab/WPs/p35.pdf}, 2010.
+
+\bibitem{Shiraya_et_al_2009}
+K.~Shiraya, A.~Takahashi, and Toda M.
+\newblock Pricing barrier and average options under stochastic volatility
+  environment.
+\newblock \url{http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1491937},
+  2009.
+
+\bibitem{Strikwerda_2004}
+J.~Strikwerda.
+\newblock {\em Finite Difference Schemes and Partial Differential Equations}.
+\newblock SIAM, 2004 (Second Edition).
+
+\bibitem{Takahashi_2007}
+A.~Takahashi.
+\newblock An asymptotic expansion approach in finance.
+\newblock
+  \url{http://www.carf.e.u-tokyo.ac.jp/pdf/workingpaper/fseries/104.pdf}, 2007.
+
+\bibitem{Takahashi_et_al_2009}
+A.~Takahashi, K.~Takehara, and M.~Toda.
+\newblock Computation in an asymptotic expansion method.
+\newblock \url{http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1413924},
+  2009.
+
+\bibitem{Takahashi_et_al_2011}
+A.~Takahashi, K.~Takehara, and M.~Toda.
+\newblock A general computation scheme for a high-order asymptotic expansion
+  method.
+\newblock Technical report, CIRJE-F-787, 2011.
+
+\bibitem{Takahashi_Yamada_2009}
+A.~Takahashi and T.~Yamada.
+\newblock An asymptotic expansion with push-down of malliavin weights.
+\newblock Technical report, 2009.
+
+\bibitem{Takehara_et_al_2010}
+K.~Takehara, A.~Takahashi, and M.~Toda.
+\newblock New unified computational algorithm in a high-order asymptotic
+  expansion scheme.
+\newblock
+  \url{http://www.cirje.e.u-tokyo.ac.jp/research/dp/2010/2010cf728.pdf}, 2010.
+
+\bibitem{Tankov_2007}
+P.~Tankov.
+\newblock Levy processes in finance and risk management.
+\newblock \url{http://www.math.jussieu.fr/~tankov/wccf_paper.pdf}, 2007.
+
+\bibitem{Tankov_Voltchkova_2009}
+P.~Tankov and E.~Voltchkova.
+\newblock Jump-diffusion models: a practitioner's guide.
+\newblock {\em Banques et Marches}, 99, 2009.
+
+\bibitem{Taylor_2011}
+S.M. Taylor.
+\newblock Explicit density approximations for local volatility models using
+  heat kernel expansions.
+\newblock \url{http://ssrn.com/paper=1800415}, 2011.
+
+\bibitem{Tehranci_2009}
+M.~Tehranci.
+\newblock Asymptotics of implied volatility far from maturity.
+\newblock {\em Journal of Applied Probability}, 46(3):629--650, 2009.
+
+\bibitem{Vollrath_Wendland_2009}
+I.~Vollrath and J.~Wendland.
+\newblock Calibration of interest rate and option models using {Differential
+  Evolution}.
+\newblock \url{http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1367502},
+  2009.
+
+\bibitem{Wang_et_al_2004}
+Y.~Wang, H.~Yin, and L.~Qi.
+\newblock No-arbitrage interpolation of the option price function and its
+  reformulation.
+\newblock {\em Journal of Optimization Theory and Applications},
+  120(3):627--649, 2004.
+
+\bibitem{Wang_2007}
+Z.~Wang.
+\newblock {'Effective'} parameters for stochastic volatility models.
+\newblock \url{http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1071768},
+  2007.
+
+\bibitem{Wolberg_Alfy_2002}
+G.~Wolberg and I.~Alfy.
+\newblock An energy-minimization framework for monotonic cubic spline
+  interpolation.
+\newblock {\em Journal of Computational and Applied Mathematics}, 143:145--188,
+  2002.
+
+\bibitem{Wright_Tenny_2004}
+S.~J. Wright and M.~J. Tenny.
+\newblock A feasible trust-region {Sequential Quadratic Programming} algorithm.
+\newblock {\em SIAM Journal on Optimization}, 14:1074--1105, 2004.
+
+\bibitem{Wu_2010}
+Q.~Wu.
+\newblock Series expansion of the {SABR} joint density.
+\newblock \url{http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1367966},
+  2010.
+
+\end{thebibliography}

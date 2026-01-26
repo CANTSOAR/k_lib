@@ -1,0 +1,490 @@
+
+
+\section{Discretization scheme for the volatility preserving the positivity} \label{RH:appendix:discussionschememilstein}
+
+We recall the dynamics of the volatility
+\begin{equation*}
+	dv_t = \kappa (\theta - v_t) dt + \xi \sqrt{v_t} d \widetilde W_t
+\end{equation*}
+with $\kappa >0,\, \theta >0 \,\mbox{and}\, \xi > 0$. In this section, we discuss the choice of the discretization scheme under the Feller condition, which ensures the positivity of the process.
+
+
+\paragraph{Euler-Maruyama scheme.}
+Discretizing the volatility using an Euler-Maruyama scheme
+\begin{equation*}
+	\widebar v_{t_{k+1}} = \widebar v_{t_k} + \kappa (\theta - \widebar v_{t_k}) h + \xi \sqrt{\widebar v_{t_k}} \sqrt{h} \, Z_{k+1}^2
+\end{equation*}
+with $t_k = k h$, $h = T/n$ and $Z_{k+1}^2 = (\widetilde W_{t_{k+1}} - \widetilde W_{t_k} ) / \sqrt{h} $ may look natural. However, such a scheme clearly does not preserve positivity of the process even if the Feller condition is fulfilled since
+\begin{equation*}
+	\Prob \big( \widebar v_{t_1} < 0 \big) = \Prob \bigg( Z < \frac{- v_{0} - \kappa (\theta - v_0) h}{\xi \sqrt{v_0} \sqrt{h} } \bigg) > 0
+\end{equation*}
+with $Z \sim \N (0, 1)$. This suggests to introduce the Milstein scheme which is quite tractable in one dimension in absence of Lévy areas.
+
+\paragraph{Milstein scheme.}
+The Milstein scheme of the stochastic volatility is given by
+% \begin{equation*}
+% 	\widebar{v}_{t_{k+1}} = \widebar{v}_{t_k} + b(t_k, \widebar{v}_{t_k}) h + \sigma (t_k, \widebar{v}_{t_k}) \sqrt{h} Z_{k+1}^2 + \frac{ (\sigma \sigma_{x}^{\prime}) h}{2} ( t_k, \widebar{v}_{t_k} ) \big( (Z^2_{k+1})^2 - 1 \big)
+% \end{equation*}
+% or equivalently
+\begin{equation*}
+	\widebar{v}_{t_{k+1}} = \mathcal{M}_{b,\sigma} \big( t_k, \widebar{v}_{t_{k+1}}, Z_{k+1}^2 \big)
+\end{equation*}
+where (see \eqref{RH:MilsteinScheme})
+\begin{equation*}
+	\mathcal{M}_{b,\sigma} (t,x,z) = x - \frac{\sigma(x)}{2 \sigma_{x}^{\prime} (x)} + h \bigg(b(t, x) - \frac{ (\sigma \sigma_{x}^{\prime}) (x)}{2}\bigg) + \frac{ (\sigma \sigma_{x}^{\prime}) (x) h}{2} \bigg( z + \frac{1}{\sqrt{h} \sigma_{x}^{\prime} (x)} \bigg)^2.
+\end{equation*}
+with $b(x) = \kappa (\theta - x)$, $\sigma(x) = \xi \sqrt{x}$ and $ \sigma_{x}^{\prime} (x) = \frac{\xi}{2 \sqrt{x}}$. Consequently, under the Feller condition, the positivity of $\mathcal{M}_{b,\sigma} (t,x,z) $ is ensured if
+\begin{equation*}
+	x \geq \frac{\sigma(x)}{2 \sigma_{x}^{\prime} (x) } \geq 0, \qquad b(t, x) \geq \frac{ (\sigma \sigma_{x}^{\prime}) (x)}{2} \geq 0.
+\end{equation*}
+In our case, if the first condition holds true since
+\begin{equation*}
+	\frac{\sigma(x)}{2 \sigma_{x}^{\prime} (x) } = \frac{ \xi \sqrt{x} }{2 \frac{\xi}{2 \sqrt{x}} } = x
+\end{equation*}
+the second one fails. Indeed
+\begin{equation*}
+	\begin{aligned}
+		\frac{ (\sigma \sigma_{x}^{\prime}) (x)}{2} = \frac{ \xi \sqrt{x} \frac{\xi}{2 \sqrt{x}} }{2} = \frac{ \xi^2 }{4}
+	\end{aligned}
+\end{equation*}
+can be bigger than $b(t, x)$. In order to solve this problem, we consider the following \textit{boosted} volatility process
+\begin{equation}
+	Y_t = \e^{\kappa t} v_t, \, t \in [0,T].
+\end{equation}
+
+
+\paragraph{Milstein scheme for the \textit{boosted} volatility.}
+Let $Y_t = \e^{\kappa t} v_t, \, t \in [0,T]$ for some $\kappa > 0$, which satisfies, owing to Itô's formula
+\begin{equation*}
+	d Y_t = \e^{\kappa t} \kappa \theta dt + \xi \e^{\kappa t / 2} \sqrt{Y_t} d \widetilde W_t.
+\end{equation*}
+
+\begin{remark}
+	The process $(Y_t)_{t \in [0,T]}$ will have a higher variance but, having in mind a quantized scheme, this has no real impact (by contrast with a Monte Carlo simulation).
+\end{remark}
+
+Now, if we look at the Milstein discretization scheme of $Y_t$
+\begin{equation*}
+	\widebar{Y}_{t_{k+1}} = \mathcal{M}_{\widetilde b, \widetilde \sigma} \big( t_k, \widebar{Y}_{t_k}, Z_{k+1}^2 \big)
+\end{equation*}
+using the notation defined in \eqref{RH:MilsteinScheme} where drift and volatility terms of the \textit{boosted} process, now time-dependents, are given by
+\begin{equation*}
+	\widetilde b(t,x) = \e^{\kappa t} \kappa \theta, \qquad \widetilde \sigma(t,x) = \xi \sqrt{x} \e^{\kappa t / 2} \quad \textrm{ and } \quad \widetilde \sigma_{x}^{\prime} (t,x) = \frac{\xi \e^{\kappa t / 2}}{2 \sqrt{x}}.
+\end{equation*}
+Under the Feller condition, the positivity of the scheme is ensured, since
+\begin{equation*}
+	\frac{\widetilde \sigma(t,x)}{2 \widetilde \sigma_{x}^{\prime} (t,x) } = x \qquad \textrm{and} \qquad \frac{(\widetilde \sigma \widetilde \sigma_{x}^{\prime}) (t,x)}{2} = \frac{ \xi^2 \e^{ \kappa t}}{4} \leq \widetilde b(t,x) = \e^{\kappa t} \kappa \theta.
+\end{equation*}
+The last inequality is satisfied thanks to the condition $\frac{\xi^2}{2 \kappa \theta} \leq 1$ ensuring the positivity of the scheme.
+
+% \newpage
+
+
+
+
+
+
+
+
+\section{$L^p$-linear growth of the hybrid scheme}\label{RH:appendix:proofLplineargrowth}
+
+The aim of this section is to show the $L^p$-linear growth of the scheme $F_k(u,z)$ with $u = (x,y)$ defined by
+\begin{equation}\label{RH:scheme_couple}
+	F_k(u, Z) = \Bigg(
+	\begin{aligned}
+			 & \mathcal{E}_{b, \sigma} \big( t_k, x, y, Z_{k+1}^1 \big)                    \\
+			 & \mathcal{M}_{\widetilde b, \widetilde \sigma} \big( t_k, y, Z_{k+1}^2 \big)
+		\end{aligned} \Bigg).
+\end{equation}
+where the schemes $\mathcal{E}_{b, \sigma}$ and $\mathcal{M}_{\widetilde b, \widetilde \sigma}$ are defined in \eqref{RH:eulerscheme} and \eqref{RH:MilsteinScheme}, respectively.
+
+The results on the $L^p$-linear growth of the schemes are essentially based on the key Lemma 2.1 proved in \cite{sagna2018general} in $\R^d$ that we recall below.
+
+\begin{lemme}\label{RH:key_lemma}
+	\begin{enumerate}[label=(\alph*)]
+		\item Let $u \in \R^d$ and $A(u)$ be a $d \times q$-matrix and let $a(u) \in \R^d$. Let $p \in [2,3)$. For any centered random vector $\zeta \in L^p_{\R^d}(\Omega, \A, \Prob)$, one has for every $h \in (0, + \infty)$
+		      \begin{equation}
+			      \E \big[ \vert a(u) + \sqrt{h} A(u) \zeta \vert^p \big] \leq \bigg( 1 + \frac{(p-1)(p-2)}{2} h \bigg) \vert a(u) \vert^p + h \big( 1 + p + h^{\frac{p}{2}-1} \big) \Vert A(u) \Vert^p \E \big[ \vert \zeta \vert^p \big]
+		      \end{equation}
+		      where $\Vert A(u) \Vert = \big( \Tr(A(u) A^{\star}(u)) \big)^{1/2}$.
+		\item In particular, if $\vert a(u) \vert \leq \vert u \vert ( 1 + L h) +  Lh$ and $\Vert A(u) \Vert^p \leq 2^{p-1} \Upsilon^p (1 + \vert u \vert^p)$, then
+		      \begin{equation}
+			      \E \big[ \vert a(u) + \sqrt{h} A(u) \zeta \vert^p \big] \leq \big( \e^{\kappa_p h} L + K_p \big) h + \big( \e^{\kappa_p h} + K_p h \big) \vert u \vert^p,
+		      \end{equation}
+		      where
+		      \begin{equation}
+			      \kappa_p = \frac{(p-1)(p-2)}{2} + 2 p L \quad \mbox{and} \quad K_p = 2^{p-1} \Upsilon^p \big( 1 + p + h^{\frac{p}{2}-1} \big) \E \big[ \vert \zeta \vert^p \big].
+		      \end{equation}
+	\end{enumerate}
+\end{lemme}
+
+Now, we will apply Lemma \ref{RH:key_lemma} to $F_k(u,z)$ defined in \eqref{RH:scheme_couple} further on in order to show its $L^p$-linear growth. Let $a(u) \in \R^2$ and let $A(u)$ be a $2 \times 3$-matrix defined by
+\begin{equation*}
+	\begin{aligned}
+		a(u) = &
+		\begin{pmatrix}
+			x + h \big(r - \frac{\e^{- \kappa t_k} y}{2} \big) \\
+			y + \e^{\kappa t_k} \kappa \theta h                \\
+		\end{pmatrix},
+		\quad A(u) =
+		\begin{pmatrix}
+			\e^{-\kappa t_k / 2} \sqrt{y} & 0                            & 0                                        \\
+			0                             & \sqrt{y} \e^{\kappa t_k / 2} & \sqrt{h} \frac{\xi^2 \e^{\kappa t_k}}{4} \\
+		\end{pmatrix}                             \\
+		       & \qquad \qquad \qquad \mbox{and} \quad \zeta =
+		\begin{pmatrix}
+			Z_{k+1}^1         \\
+			Z_{k+1}^2         \\
+			(Z_{k+1}^2)^2 - 1 \\
+		\end{pmatrix}.
+	\end{aligned}
+\end{equation*}
+
+First, we show the linear growth of $a(u)$
+\begin{equation*}
+	\begin{aligned}
+		\vert a(u) \vert
+		 & = \Big( \Big\vert x + h \big(r - \frac{\e^{- \kappa t_k} y}{2} \big) \Big\vert^2 + \big\vert y + \e^{\kappa t_k} \kappa \theta h \big\vert^2 \Big)^{1/2}              \\
+		 & = \Big( \vert x \vert^2 + \vert y \vert^2 + h^2 \Big( r^2 + \frac{\e^{- 2 \kappa t_k}}{4} \vert y \vert^2 \Big) + \e^{2 \kappa t_k} \kappa^2 \theta^2 h^2 \Big)^{1/2} \\
+		 & \leq \Big( \vert u \vert^2 \Big( 1 + h^2 \frac{\e^{- 2 \kappa t_k}}{4} \Big) + h^2 \big( r^2 + \e^{2 \kappa t_k} \kappa^2 \theta^2 \big) \Big)^{1/2}                  \\
+		 & \leq \vert u \vert \Big( 1 + h^2 \frac{\e^{- 2 \kappa t_k}}{4} \Big)^{1/2} + h \big( r^2 + \e^{2 \kappa t_k} \kappa^2 \theta^2 \big)^{1/2}                            \\
+		 & \leq \vert u \vert \Big( 1 + h \frac{h}{2} \Big) + h \big( r^2 + \e^{2 \kappa T} \kappa^2 \theta^2 \big)^{1/2}                                                        \\
+		% &\leq \vert u \vert \Big( 1 + h \frac{\e^{- \kappa t_k}}{2} \Big) + h \big( r^2 + \e^{2 \kappa t_k} \kappa^2 \theta^2 \big)^{1/2} \\
+		 & \leq \vert u \vert ( 1 + L h ) + L h
+	\end{aligned}
+\end{equation*}
+where $L = \max \Big( \frac{1}{2} , \big( r^2 + \e^{2 \kappa T} \kappa^2 \theta^2 \big)^{1/2} \Big)$. Then, we study $\Vert A(u) \Vert^p$
+\begin{equation*}
+	\begin{aligned}
+		\Vert A(u) \Vert^p
+		 & = \Big( \e^{-\kappa t_k} \vert y \vert + \vert y \vert \e^{\kappa t_k} + h \frac{\xi^4 \e^{2 \kappa t_k}}{16} \Big)^{p/2}                                                                                       \\
+		 & = \Big( \vert y \vert ( \e^{-\kappa t_k} + \e^{\kappa t_k} ) + h \frac{\xi^4 \e^{2 \kappa t_k}}{16} \Big)^{p/2}                                                                                                 \\
+		 & \leq 2^{\frac{p}{2}-1} \Big( \vert y \vert^{\frac{p}{2}} ( \e^{-\kappa t_k} + \e^{\kappa t_k} )^{\frac{p}{2}} + h^{\frac{p}{2}} \frac{\xi^{2p} \e^{p \kappa t_k}}{4^p} \Big)                                    \\
+		 & \leq 2^{\frac{p}{2}-1} \Big( \frac{\vert y \vert^{p} + 1}{2} ( \e^{-\kappa t_k} + \e^{\kappa t_k} )^{\frac{p}{2}} + h^{\frac{p}{2}} \frac{\xi^{2p} \e^{p \kappa t_k}}{4^p} \Big)                                \\
+		 & \leq 2^{\frac{p}{2}-1} \frac{( 1 + \e^{\kappa T} )^{\frac{p}{2}}}{2} \Big( \vert y \vert^{p} + 1 + h^{\frac{p}{2}} \frac{\xi^{2p} \e^{p \kappa T}}{2^{2p-1}} \frac{1}{( 1 + \e^{\kappa T} )^{\frac{p}{2}}}\Big) \\
+		% &\leq 2^{\frac{p}{2}-1} \frac{( \e^{-\kappa t_k} + \e^{\kappa t_k} )^{\frac{p}{2}}}{2} \Big( \vert y \vert^{p} + 1 + h^{\frac{p}{2}} \frac{\xi^{2p} \e^{p \kappa t_k}}{2^{2p-1}} \frac{1}{( \e^{-\kappa t_k} + \e^{\kappa t_k} )^{\frac{p}{2}}}\Big) \\
+		 & \leq 2^{p-1} \Upsilon^p \big( 1 + \vert u \vert^{p} \big)
+	\end{aligned}
+\end{equation*}
+where $\Upsilon^p = \frac{( 1 + \e^{\kappa T} )^{\frac{p}{2}}}{2} + h^{\frac{p}{2}} \frac{\xi^{2p} \e^{p \kappa T}}{2^{2p}}$. Hence, by Lemma \ref{RH:key_lemma}, the discretization scheme $F_k$ has an $L^p$-linear growth
+\begin{equation*}
+	\E \big[ \vert F_k(u, Z_{k+1}) \vert^p \big] \leq \alpha_{p} + \beta_{p} \vert u \vert^p
+\end{equation*}
+with
+\begin{equation} \label{RH:coefficients_sub_linear}
+	\alpha_{p} = \big( \e^{\kappa_p h} L + K_p \big) h \quad \mbox{and} \quad \beta_{p} = \e^{\kappa_p h} + K_p h
+\end{equation}
+where $K_p$ and $\kappa_p$ are defined in the Lemma \ref{RH:key_lemma}.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Proof of the $L^2$-error estimation of Proposition \ref{RH:prop:l2-error}} \label{RH:appendix:proofl2error}
+
+
+We have, for every $k=0, \dots, n-1$
+\begin{equation}
+	\begin{aligned}
+		\widehat U_{k+1} - \widebar U_{k+1}
+		 & = \widehat U_{k+1} - \widetilde U_{k+1} + \widetilde U_{k+1} - \widebar U_{k+1}                         \\
+		 & = \widehat U_{k+1} - \widetilde U_{k+1} + F_k ( \widehat U_k, Z_{k+1} ) - F_k ( \widebar U_k, Z_{k+1} ) \\
+	\end{aligned}
+\end{equation}
+by the very definition of $\widetilde U_{k+1}$ and $\widebar U_{k+1}$. Hence,
+\begin{equation} \label{RH:L2_error_recurquantif_couple}
+	\begin{aligned}
+		\Vert \widehat U_{k+1} - \widebar U_{k+1} \Vert_{_2}
+		 & \leq \Vert \widehat U_{k+1} - \widetilde U_{k+1} \Vert_{_2} + \Vert \widetilde U_{k+1} - \widebar U_{k+1} \Vert_{_2}                    \\
+		 & \leq \Vert \widehat U_{k+1} - \widetilde U_{k+1} \Vert_{_2} + \Vert F_k(\widehat U_k, Z_{k+1}) - F_k(\widebar U_k, Z_{k+1}) \Vert_{_2}.
+	\end{aligned}
+\end{equation}
+% We study the last term, let $u=(x,y)$ and $u'=(x',y')$ then
+% \begin{equation}\label{RH:error_one_step_recurQ}
+% 	\begin{aligned}
+% 		\big\Vert F_k(u, Z_{k+1}) - F_k(u', Z_{k+1}) \big\Vert_{_2}
+% 		 & = \bigg( \E \Big[ \big\vert F_k(u, Z_{k+1}) - F_k(u', Z_{k+1}) \big\vert^2 \Big] \bigg)^{1/2}                                                                                                                                 \\
+% 		 & = \bigg( \E \Big[ \big\vert \mathcal{E}_{b, \sigma} \big( t_k, x, y, Z_{k+1}^1 \big) - \mathcal{E}_{b, \sigma} \big( t_k, x', y', Z_{k+1}^1 \big) \big\vert^2 \Big]                                                           \\
+% 		 & \qquad \qquad + \E \Big[ \big\vert \mathcal{M}_{\widetilde b, \widetilde \sigma} \big( t_k, y, Z_{k+1}^2 \big) - \mathcal{M}_{\widetilde b, \widetilde \sigma} \big( t_k, y', Z_{k+1}^2 \big) \big\vert^2 \Big] \bigg)^{1/2}.
+% 	\end{aligned}
+% \end{equation}
+% Let us recall the definition of $\mathcal{M}_{\widetilde b, \widetilde \sigma}$ with $\widetilde b$ and $\widetilde \sigma$ the drift and the volatility, respectively, of the boosted-volatility
+% \begin{equation}
+% 	\mathcal{M}_{\widetilde b, \widetilde \sigma} \big( t, y, z \big) = h \e^{\kappa t} \Big( \kappa \theta - \frac{\xi^2}{4} \Big) + \Big( z \frac{ \xi \e^{\kappa t / 2} \sqrt{h} }{2} + \sqrt{y} \Big)^2.
+% \end{equation}
+Using the definition of Milstein scheme of the \textit{boosted}-volatility models $\mathcal{M}_{\widetilde b, \widetilde \sigma}$ in \eqref{RH:MilsteinScheme_with_specificationmodel}, the $\frac{1}{2}$-Hölder property of $\sqrt{x}$, for every $y,y' \in \R_+$ one has
+\begin{equation}
+	\begin{aligned}
+		\big\vert \mathcal{M}_{\widetilde b, \widetilde \sigma} \big( t, y, z \big) - \mathcal{M}_{\widetilde b, \widetilde \sigma} \big( t, y', z \big) \big\vert
+		 & = \bigg\vert \Big( z \frac{ \xi \e^{\kappa t / 2} \sqrt{h} }{2} + \sqrt{y} \Big)^2 - \Big( z \frac{ \xi \e^{\kappa t / 2} \sqrt{h} }{2} + \sqrt{y'} \Big)^2 \bigg\vert \\
+		 & \leq \big\vert \sqrt{y} - \sqrt{y'} \big\vert \big( \vert z \vert \xi \e^{\kappa t / 2} \sqrt{h} + \sqrt{y} + \sqrt{y'} \big)                                          \\
+		 & \leq \sqrt{ \vert y - y' \vert} \sqrt{h} \vert z \vert \xi \e^{\kappa t / 2}  + \vert y - y' \vert
+	\end{aligned}
+\end{equation}
+and using the definition of the Euler-Maruyama scheme of the log-asset $\mathcal{E}_{b, \sigma}$ defined in \eqref{RH:eulerscheme} we have, for any $x,x',y,y' \in \R_+$
+\begin{equation}
+	\begin{aligned}
+		\big\vert \mathcal{E}_{b, \sigma} \big( t, x, y, z \big) - \mathcal{E}_{b, \sigma} \big( t, x', y', z \big) \big\vert \leq \vert x - x' \vert + \frac{\e^{- \kappa t}}{2} h \vert y - y' \vert + \e^{- \kappa t / 2} \sqrt{h} \vert z \vert \sqrt{ \vert y - y' \vert}.
+	\end{aligned}
+\end{equation}
+
+
+
+
+Now, when we replace $x,y,x',y'$ by $\widehat X_k, \widehat Y_k, \widebar X_k, \widebar Y_k$ in the last expression, we get an upper-bound for the last term of \eqref{RH:L2_error_recurquantif_couple}
+\begin{equation}
+	\begin{aligned}
+		 & \big\Vert F_k(\widehat U_k, Z_{k+1}) - F_k(\widebar U_k, Z_{k+1}) \big\Vert_{_2}                                                                                                                                                                                                                       \\
+		 & \qquad \leq \big\Vert \mathcal{E}_{b, \sigma} \big( t_k, \widehat X_k, \widehat Y_k, Z_{k+1}^1 \big) - \mathcal{E}_{b, \sigma} \big( t_k, \widebar X_k, \widebar Y_k, Z_{k+1}^1 \big) \big\Vert_{_2}                                                                                                   \\
+		 & \qquad \qquad \qquad \qquad + \big\Vert \mathcal{M}_{\widetilde b, \widetilde \sigma} \big( t_k, \widehat Y_k, Z_{k+1}^2 \big) - \mathcal{M}_{\widetilde b, \widetilde \sigma} \big( t_k, \widebar Y_k, Z_{k+1}^2 \big) \big\Vert_{_2}                                                                 \\
+		 & \qquad \leq \Vert \widehat X_k - \widebar X_k \Vert_{_2} + \Big( 1 + \frac{ \e^{- \kappa t_k}}{2} h \Big) \Vert \widehat Y_k - \widebar Y_k \Vert_{_2} + \Big\Vert \sqrt{h} \big( \xi \e^{\kappa t_k /2 } + \e^{- \kappa t_k /2} \big) \sqrt{ \vert \widehat Y_k - \widebar Y_k \vert } \Big\Vert_{_2} \\
+		 & \qquad \leq \Vert \widehat X_k - \widebar X_k \Vert_{_2} + \Big( 1 + \frac{ \e^{- \kappa t_k}}{2} h \Big) \Vert \widehat Y_k - \widebar Y_k \Vert_{_2} + \Big\Vert \sqrt{2h ( \xi^2 \e^{\kappa t_k} + \e^{- \kappa t_k} )} \sqrt{ \vert \widehat Y_k - \widebar Y_k \vert } \Big\Vert_{_2}.
+	\end{aligned}
+\end{equation}
+Now, using that $\sqrt{a} \sqrt{b} \leq \frac{1}{2} \big( \frac{a}{\lambda} + b \lambda \big)$ with $\sqrt{a} = \sqrt{2h ( \xi^2 \e^{\kappa t_k} + \e^{- \kappa t_k} )}$ and $\sqrt{b} = \sqrt{ \vert \widehat Y_k - \widebar Y_k \vert }$ where we considere that $\lambda = \sqrt{h} (1 - \sqrt{h})$. Wo choose $\lambda$ of this order because we wish to divide equally the impact of $h$ and get $\sqrt{h}$ on each side. Hence, we have
+\begin{equation}
+	\begin{aligned}
+		\sqrt{2h ( \xi^2 \e^{\kappa t_k} + \e^{- \kappa t_k} )} \sqrt{ \vert \widehat Y_k - \widebar Y_k \vert } \leq \frac{1}{2} \bigg( \frac{2h ( \xi^2 \e^{\kappa t_k} + \e^{- \kappa t_k} ) }{ \lambda } + \vert \widehat Y_k - \widebar Y_k \vert \lambda \bigg).
+	\end{aligned}
+\end{equation}
+Then,
+\begin{equation}
+	\begin{aligned}
+		 & \big\Vert F_k(\widehat U_k, Z_{k+1}) - F_k(\widebar U_k, Z_{k+1}) \big\Vert_{_2}                                                                                                                                                                                                                                                  \\
+		 & \qquad \leq \Vert \widehat X_k - \widebar X_k \Vert_{_2} + \Big( 1 + \frac{ \e^{- \kappa t_k}}{2} h \Big) \Vert \widehat Y_k - \widebar Y_k \Vert_{_2} + \Big\Vert \frac{1}{2} \bigg( \frac{2h ( \xi^2 \e^{\kappa t_k} + \e^{- \kappa t_k} ) }{ \lambda } + \vert \widehat Y_k - \widebar Y_k \vert \lambda \bigg) \Big\Vert_{_2} \\
+		 & \qquad \leq \Vert \widehat X_k - \widebar X_k \Vert_{_2} + \Big( 1 + \frac{ \e^{- \kappa t_k}}{2} h + \frac{\lambda}{2} \Big) \Vert \widehat Y_k - \widebar Y_k \Vert_{_2} + ( \xi^2 \e^{\kappa t_k} + \e^{- \kappa t_k} ) \frac{h}{ \lambda }                                                                                    \\
+		 & \qquad \leq \sqrt{2} \Big( 1 + \frac{h}{2} + \frac{\lambda}{2} \Big) \Vert \widehat U_k - \widebar U_k \Vert_{_2} + C_{T} \frac{h}{ \lambda }                                                                                                                                                                                     \\
+		 & \qquad \leq \sqrt{2} \Big( 1 + \frac{\sqrt{h}}{2} \Big) \Vert \widehat U_k - \widebar U_k \Vert_{_2} + C_{T} (h) \sqrt{h}
+	\end{aligned}
+\end{equation}
+where $C_T (h) = (1 + \xi^2 \e^{\kappa T}) (1-\sqrt{h})^{-1} = O(1)$.
+
+
+Finally, \eqref{RH:L2_error_recurquantif_couple} is upper-bounded by
+\begin{equation}
+	\begin{aligned}
+		\Vert \widehat U_{k+1} - \widebar U_{k+1} \Vert_{_2}
+		 & \leq \Vert \widehat U_{k+1} - \widetilde U_{k+1} \Vert_{_2} + \sqrt{2} \Big( 1 + \frac{\sqrt{h}}{2} \Big) \Vert \widehat U_k - \widebar U_k \Vert_{_2} + C_{T} (h) \sqrt{h}                                                        \\
+		 & \leq \sum_{j=0}^{k+1} \Vert \widehat U_j - \widetilde U_j \Vert_{_2} 2^{\frac{k-j+1}{2}} \Big( 1 + \frac{\sqrt{h}}{2} \Big)^{k-j+1} + \sqrt{h} C_{T} (h) \sum_{j=0}^{k} 2^{\frac{k-j}{2}} \Big( 1 + \frac{\sqrt{h}}{2} \Big)^{k-j} \\
+		 & \leq \sum_{j=0}^{k+1} A_{j,k+1} \Vert \widehat U_j - \widetilde U_j \Vert_{_2} + B_{k+1} \sqrt{h}                                                                                                                                  \\
+	\end{aligned}
+\end{equation}
+where
+\begin{equation}
+	A_{j,k} = 2^{\frac{k-j}{2}} \e^{\frac{\sqrt{h}}{2}(k-j)} \quad \mbox{and} \quad B_k = C_{T} (h) \sum_{j=0}^{k-1} 2^{\frac{k-1-j}{2}} \e^{\frac{\sqrt{h}}{2}(k-1-j)}
+\end{equation}
+and $\sum_{\emptyset} = 0$ by convention.
+
+\medskip
+Now, we follow the lines of the proof developed in \cite{sagna2018general}, we apply the revisited Pierce's lemma for product quantization (Lemma 2.3 in \cite{sagna2018general}) with $r=2$ and let $p>r=2$, which yields
+\begin{equation} \label{RH:step_proof_error_l2}
+	\Vert \widehat U_{k+1} - \widebar U_{k+1} \Vert_{_2} \leq 2^{\frac{p-2}{2p}} C_p  \sum_{j=0}^{k+1} A_{j,k+1} \Vert \widetilde U_j \Vert_{_p} \big( N_{1,j} \times N_{2,j} \big)^{-1/2} + B_{k+1} \sqrt{h}
+\end{equation}
+where $C_p = 2 C_{1,p}$ and $C_{1,p}$ is the constant appearing in Pierce lemma (see the second item in Theorem \ref{RH:zador} and \cite{graf2000foundations} for further details) and we used that $\Vert \widetilde U_j \Vert_{_p} \geq \sigma_p (\widetilde U_j) = \inf_{a \in \R^2} \Vert \widetilde U_j - a \Vert_{_p}$.
+Moreover, noting that the hybrid discretization scheme $F_k$ has an $L^p$-linear growth, (see Appendix \ref{RH:appendix:proofLplineargrowth}), i.e.
+\begin{equation}
+	\forall k = 0, \dots, n-1, \quad \forall u \in \R^2, \quad \E \big[ \vert F_k(u, Z_{k+1}) \vert^p \big] \leq \alpha_{p} + \beta_{p} \vert x \vert^p,
+\end{equation}
+where the coefficients $\alpha_{p}$ and $\beta_{p}$ are defined in \eqref{RH:coefficients_sub_linear}. Hence, for all $j = 0, \dots, n-1$, we have
+\begin{equation}\label{RH:step_proof_norm_l2_of_widetildeU}
+	\Vert \widetilde U_{j+1} \Vert_{_p}^p = \E \big[ \E \big[ \vert F_j ( \widehat U_j, Z_{j+1} ) \vert^p \mid \widehat U_j \big] \big] \leq \alpha_{p} + \beta_{p} \Vert \widehat U_j \Vert_{_p}^p.
+\end{equation}
+Furthermore, $\E \big[ \vert \widehat U_j \vert^p \big]$ can be upper-bounded using Jensen's inequality and the stationary property satisfied by $\widehat X_j$ and $\widehat Y_j$ independently. Indeed, they are one-dimensional quadratic optimal quantizers of $\widetilde X_j$ and $\widetilde Y_j$, respectively, hence they are stationary in the sense of Proposition \ref{RH:stationary_property}.
+\begin{equation}
+	\begin{aligned}
+		\Vert \widehat U_j \Vert_{_p}^p
+		 & \leq 2^{\frac{p}{2}-1} \Big( \E \big[ \vert \widehat X_j \vert^p \big] + \E \big[ \vert \widehat Y_j \vert^p \big] \Big)                                                                                         \\
+		 & \leq 2^{\frac{p}{2}-1} \bigg( \E \Big[ \big\vert \E \big[ \widetilde X_j \mid \widehat X_j \big] \big\vert^p \Big] + \E \Big[ \big\vert \E \big[ \widetilde Y_j \mid \widehat Y_j \big] \big\vert^p \Big] \bigg) \\
+		 & \leq 2^{\frac{p}{2}-1} \Big( \E \big[ \vert \widetilde X_j \vert^p \big] + \E \big[ \vert \widetilde Y_j \vert^p \big] \Big)                                                                                     \\
+		 & = 2^{\frac{p}{2}-1} \Vert \widetilde U_j \Vert_{_p}^p                                                                                                                                                            \\
+		 & \leq 2^{\frac{p}{2}-1} \Vert \widetilde U_j \Vert_{_2}^p.
+	\end{aligned}
+\end{equation}
+Now, plugging this upper-bound in \eqref{RH:step_proof_norm_l2_of_widetildeU} and by a standard induction argument, we have
+% \begin{equation}\label{RH:upperbound_widetildeU}
+%     \begin{aligned}
+%         \Vert \widetilde U_{j+1} \Vert_{_p}^p
+%         &\leq \alpha_{p} + \beta_{p} 2^{\frac{p}{2}-1} \Vert \widetilde U_j \Vert_{_2}^p \\
+%         &\leq \sum_{i=0}^{j} \alpha_{p} 2^{(\frac{p}{2}-1)(j-i)} \prod_{\ell=i+1}^{j} \beta_{p,\ell} + 2^{(\frac{p}{2}-1)(j+1)} \Vert U_0 \Vert_{_2}^p \prod_{i=0}^{j} \beta_{p} \\
+%         &= \sum_{i=-1}^{j} \alpha_{p} 2^{(\frac{p}{2}-1)(j-i)} \prod_{\ell=i+1}^{j} \beta_{p,\ell}
+%     \end{aligned}
+% \end{equation}
+\begin{equation}\label{RH:upperbound_widetildeU}
+	\begin{aligned}
+		\Vert \widetilde U_j \Vert_{_p}^p
+		 & \leq \alpha_{p} + \beta_{p} 2^{\frac{p}{2}-1} \Vert \widetilde U_{j-1} \Vert_{_2}^p                                                                                  \\
+		 & \leq 2^{(\frac{p}{2}-1 )j} \beta_{p}^j \Vert \widehat U_0 \Vert_{_2}^p + \alpha_{p} \sum_{i=0}^{j-1} \big( 2^{\frac{p}{2}-1} \beta_{p} \big)^{i}                     \\
+		 & \leq 2^{(\frac{p}{2}-1 )j} \beta_{p}^j \Vert \widehat U_0 \Vert_{_2}^p + \alpha_{p} \frac{1 - 2^{(\frac{p}{2}-1 )j} \beta_{p}^j }{1 - 2^{\frac{p}{2}-1} \beta_{p} }.
+		% & = \sum_{i=0}^{j} \alpha_{p} 2^{(\frac{p}{2}-1)(j-i)} \prod_{\ell=i}^{j-1} \beta_{p,\ell}
+	\end{aligned}
+\end{equation}
+Hence, using the upper-bound \eqref{RH:upperbound_widetildeU} in \eqref{RH:step_proof_error_l2}, we have
+\begin{equation}
+	\begin{aligned}
+		\Vert \widehat U_{k+1} & - \widebar U_{k+1} \Vert_{_2}                                                                                                                                                                                                                                                                            \\
+		                       & \leq 2^{\frac{p-2}{2p}} C_p^2 \sum_{j=0}^{k+1} A_{j,k+1} \bigg( 2^{(\frac{p}{2}-1 )j} \beta_{p}^j \Vert \widehat U_0 \Vert_{_2}^p + \alpha_{p} \frac{1 - 2^{(\frac{p}{2}-1 )j} \beta_{p}^j }{1 - 2^{\frac{p}{2}-1} \beta_{p} } \bigg)^{1/p} \big( N_{1,j} \times N_{2,j} \big)^{-1/2} + B_{k+1} \sqrt{h} \\
+		                       & \leq \sum_{j=0}^{k+1} \widetilde A_{j,k+1} \big( N_{1,j} \times N_{2,j} \big)^{-1/2} + B_{k+1} \sqrt{h}                                                                                                                                                                                                  \\
+	\end{aligned}
+\end{equation}
+yielding the desired result with
+\begin{equation}
+	\widetilde A_{j,k} = 2^{\frac{p-2}{2p}} C_p^2 A_{j,k} \bigg( 2^{(\frac{p}{2}-1 )j} \beta_{p}^j \Vert \widehat U_0 \Vert_{_2}^p + \alpha_{p} \frac{1 - 2^{(\frac{p}{2}-1 )j} \beta_{p}^j }{1 - 2^{\frac{p}{2}-1} \beta_{p} } \bigg)^{1/p}.
+\end{equation}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% \newpage
+
+\section{Quadratic Optimal Quantization: Generic Approach} \label{RH:appendix:optquant}
+
+Let $X$ be a $\R$-valued random variable with distribution $\Prob_{_{X}}$ defined on a probability space $ ( \Omega, \A, \Prob )$ such that $X \in L^2_{\R} ( \Omega, \A, \Prob )$.
+
+\begin{definition}
+	Let $\Gamma_N = \{ x_1^N, \dots, x_N^N \} \subset \R$ be a subset of size $N$, called $N$-quantizer. A Borel partition $( C_i (\Gamma_N))_{i \in \{ 1, \dots, N \} }$ of $\R$ is a Voronoï partition of $\R$ induced by the $N$-quantizer $\Gamma_N$ if, for every $i \in \{ 1, \dots, N \} $,
+	\begin{equation*}
+		C_i (\Gamma_N) \subset \big\{ \xi \in \R, \vert \xi - x_i^N \vert \leq \min_{j \neq i }\vert \xi - x_j^N \vert \big\}.
+	\end{equation*}
+	The Borel sets $C_i (\Gamma_N)$ are called Voronoï cells of the partition induced by $\Gamma_N$.
+\end{definition}
+
+\begin{remark}
+	Any such $N$-quantizer is in correspondence with the $N$-tuple $x = ( x_1^N, \dots, x_N^N ) \in ( \R )^N$ as well as with all $N$-tuples obtained by a permutation of the components of $x$. This is why we will sometimes replace $\Gamma_N$ by $x$.
+\end{remark}
+
+\medskip
+If the quantizers are in non-decreasing order: $x_1^N < x_2^N < \cdots < x_{N-1}^N < x_{N}^N$, then the Voronoï cells are given by
+\begin{equation}\label{RH:def_voronoi_cells}
+	C_i ( \Gamma_N ) = \big( x_{i - 1/2}^N, x_{i + 1/2}^N \big], \qquad i \in \{ 1, \dots,  N-1 \}, \qquad C_{N} ( \Gamma_N ) = \big( x_{N - 1/2}^N, x_{N + 1/2}^N \big)
+\end{equation}
+where $\forall i \in \in \{ 2, \dots,  N \}, x_{i-1/2}^N = \frac{x_{i-1}^N + x_i^N}{2}$ and $x_{1/2}^N = - \infty$ and $x_{N+1/2}^N =  + \infty$.
+
+\begin{definition}
+	The Vorono\"i quantization of $X$ by $\Gamma_N$, $\widehat X^N$, is defined as the nearest neighbour projection of $X$ onto $\Gamma_N$
+	\begin{equation}\label{RH:quantizOfX}
+		\widehat X^N = \Proj_{\Gamma_N} (X) = \sum_{i = 1}^N x_i^N \1_{X \in C_i (\Gamma_N) }
+	\end{equation}
+	and its associated probabilities, also called weights, are given by
+	\begin{equation*}
+		\Prob \big( \widehat X^N = x_i^N \big) = \Prob_{_{X}} \big( C_i (\Gamma_N) \big) = \Prob \Big( X \in \big( x_{i - 1/2}^N, x_{i + 1/2}^N \big] \Big).
+	\end{equation*}
+\end{definition}
+
+
+\begin{definition}
+	The quadratic distortion function at level $N$ induced by an $N$-tuple $x = (x_1^N, \dots, x_N^N) $ is given by
+	\begin{equation*}
+		\Distortion : x \longmapsto \frac{1}{2} \E \Big[ \min_{i \in \{ 1, \dots, N \} } \vert X - x_i^N \vert^2 \Big] = \frac{1}{2} \E \big[ \dist ( X, \Gamma_N )^2 \big] = \frac{1}{2} \Vert X - \widehat X^N \Vert_{_2}^2 .
+	\end{equation*}
+\end{definition}
+
+Of course, the above result can be extended to the $L^p$ case by considering the $L^p$-mean quantization error in place of the quadratic one.
+
+
+We briefly recall some classical theoretical results, see \cite{graf2000foundations,pages2018numerical} for further details. The first one treats of existence of optimal quantizers.
+\begin{theorem}{(Existence of optimal $N$-quantizers)}\label{RH:existence}
+	Let $X \in L^2_{\R} ( \Prob )$ and $N \in \Integer^{\star}$.
+	\begin{enumerate}[label=(\alph*)]
+		\item The quadratic distortion function $\Distortion$ at level $N$ attains a minimum at a $N$-tuple $x^{\star} = ( x_1^N, \dots, x_N^N )$ and $\Gamma_N^{\star} = \big\{ x_i^{N}, \, i \in \{ 1, \dots, N \}  \big\}$ is a quadratic optimal quantizer at level $N$.
+		\item If the support of the distribution $\Prob_{_{X}}$ of $X$ has at least $N$ elements, then $x^{\star} = ( x_1^N, \dots, x_N^N )$ has pairwise distinct components, $ \Prob_{_{X}} \big( C_i ( \Gamma_N^{\star} ) \big) > 0, \, i \in \{ 1, \dots, N \} $. Furthermore, the sequence $N \mapsto \inf_{x \in ( \R )^N} \Distortion( x )$ converges to $0$ and is decreasing as long as it is positive.
+	\end{enumerate}
+\end{theorem}
+
+
+A really interesting and useful property concerning quadratic optimal quantizers is the stationary property, this property is deeply connected to the addressed problem after for the optimization of the quadratic optimal quantizers in \eqref{RH:distortozero}.
+
+
+\begin{proposition}{(Stationarity)}\label{RH:stationary_property}
+	Assume that the support of $\Prob_{_{X}}$ has at least $N$ elements. Any $L^2$-optimal $N$-quantizer $\Gamma_N \in ( \R )^N$ is stationary in the following sense: for every Vorono\"{i} quantization $\widehat X^N$ of $X$,
+	\begin{equation*}
+		\E \big[ X \mid \widehat X^N \big] = \widehat X^N.
+	\end{equation*}
+	Moreover $\Prob \big( X \in \bigcup_{i = 1, \dots, N} \partial C_i (\Gamma_N) \big) = 0$, so all optimal quantization induced by $\Gamma_N$ a.s. coincide.
+\end{proposition}
+
+The uniqueness of an optimal $N$-quantizer, due to Kieffer \cite{kieffer1982exponential}, was shown in dimension one under some assumptions on the density of $X$.
+\begin{theorem}{(Uniqueness of optimal $N$-quantizers see \cite{kieffer1982exponential})}\label{RH:uniqueness}
+	If $\Prob_{_{X}}(d\xi) = \varphi (\xi) d \xi$ with $\log \varphi$ concave, then for every $N \geq 1$, there is exactly one stationary $N$-quantizer (up to the permutations of the $N$-tuple). This unique stationary quantizer is a global (local) minimum of the distortion function, i.e.
+	\begin{equation*}
+		\forall N \geq 1, \qquad \argmin_{\R^N} \Distortion = \{ x^{\star} \}.
+	\end{equation*}
+\end{theorem}
+In what follows, we will drop the star notation ($\star$) when speaking of optimal quantizers, $x^{\star}$ and $\Gamma_N^{\star}$ will be replaced by $x$ and $\Gamma_N$.
+
+The next result elucidates the asymptotic behavior of the distortion. We saw in Theorem \ref{RH:existence} that the infimum of the quadratic distortion converges to $0$ as $N$ goes to infinity. The next theorem, known as Zador's Theorem, establishes the sharp rate of convergence of the $L^p$-mean quantization error.
+
+\begin{theorem}{(Zador's Theorem)}\label{RH:zador} Let $p \in (0, + \infty)$.
+	\begin{enumerate}[label=(\alph*)]
+		\item {\sc Sharp rate \cite{zador1982asymptotic,graf2000foundations}}. Let $X \in L^{p+ \delta}_{\R}(\Prob)$ for some $\delta > 0$. Let $\Prob_{_{X}} (d \xi) = \varphi(\xi) \cdot \lambda ( d \xi ) + \nu ( d \xi ) $, where $\nu ~ \bot ~ \lambda$ i.e., is singular with respect to the Lebesgue measure $\lambda$ on $\R$. Then, there is a constant $\widetilde{J}_{p,1} \in (0, + \infty)$ such that
+		      \begin{equation}
+			      \lim_{N \rightarrow + \infty} N \min_{\Gamma_N \subset \R, \vert \Gamma_N \vert \leq N } \Vert X - \widehat{X}^N \Vert_{_p} = \frac{1}{2^p (p+1)} \bigg[ \int_{\R} \varphi^{\frac{1}{1+p}} d \lambda \bigg]^{1+\frac{1}{p} }.
+		      \end{equation}
+
+		\item {\sc Non asymptotic upper-bound \cite{graf2000foundations,pages2018numerical}}. Let $\delta > 0$. There exists a real constant $C_{1,p} \in (0, +\infty )$ such that, for every $\R$-valued random variable $X$,
+		      \begin{equation}
+			      \forall N \geq 1, \qquad \min_{\Gamma_N \subset \R, \vert \Gamma_N \vert \leq N } \Vert X - \widehat{X}^N \Vert_{_p} \leq C_{1,p} \sigma_{\delta+p} (X) N^{- 1}
+		      \end{equation}
+		      where, for $r \in (0, + \infty),\sigma_r(X) = \min_{a \in \R} \left\Vert X - a \right\Vert_{_r} < + \infty$ is the $L^r$-pseudo-standard deviation.
+	\end{enumerate}
+\end{theorem}
+
+Now, we will be interested by the construction of such quadratic optimal quantizer. We differentiate $\Distortion$, whose gradient is given by
+\begin{equation}
+	\nabla \Distortion ( x )
+	= \bigg( \E \Big[ ( x_i^N - X ) \1_{ X \, \in \, \big( x_{i - 1/2}^N, x_{i + 1/2}^N \big] } \Big] \bigg)_{i = 1, \dots, N}.
+\end{equation}
+Moreover, if $x$ is solution to the distortion minimization problem then it satisfies
+\begin{equation}\label{RH:distortozero}
+	\begin{aligned}
+		\nabla \Distortion ( x ) = 0
+		\quad \iff \quad & x_i^N = \frac{ \E \Big[ X \1_{ X \, \in \, \big( x_{i - 1/2}^N, x_{i + 1/2}^N \big] } \Big] }{ \Prob \Big( X \in \big( x_{i - 1/2}^N, x_{i + 1/2}^N \big] \Big) }, \qquad i = 1, \dots, N \\
+		\quad \iff \quad & x_i^N = \frac{ K_{_X} \big( x_{i + 1/2}^N \big) - K_{_X} \big( x_{i - 1/2}^N \big) }{ F_{_X} \big( x_{i + 1/2}^N \big) - F_{_X} \big( x_{i - 1/2}^N \big) }, \qquad i = 1, \dots, N       \\
+	\end{aligned}
+\end{equation}
+where $K_{_X}(\cdot)$ and $F_{_X}(\cdot)$ are the first partial moment and the cumulative distribution respectively, function of $X$, i.e.
+\begin{equation}
+	K_{_X}( x ) = \E \big[ X \1_{X \leq x} \big] \qquad \textrm{ and } \qquad F_{_X}( x ) = \Prob \big( X \leq x \big).
+\end{equation}
+
+Hence, one can notices that the optimal quantizer that cancel the gradient defined in \eqref{RH:distortozero}, hence is an optimal quantizer, is a stationary quantizer in the following sense
+\begin{equation}
+	\E \big[ \widehat x^N \mid X \big] = \widehat X^N.
+\end{equation}
+
+The last equality in \eqref{RH:distortozero} was the starting point to the development of the first method devoted to the numerical computation of optimal quantizers: the Lloyd's method I. This method was first devised in 1957 by S.P. Lloyd and published later \cite{lloyd1982least}. Starting from a sorted $N$-tuple $x^{[0]}$ and with the knowledge of the first partial moment $K_{_X}$ and the cumulative distribution function $F_{_X}$ of $X$, the algorithm, which is essentially a deterministic fixed point method, is defined as follows
+\begin{equation}\label{RH:LloydAlgo}
+	\begin{aligned}
+		x_i^{N, [n+1]} = \frac{ K_{_X} \big( x_{i + 1/2}^{N, [n]} \big) - K_{_X} \big( x_{i - 1/2}^{N, [n]} \big) }{ F_{_X} \big( x_{i + 1/2}^{N, [n]} \big) - F_{_X} \big( x_{i - 1/2}^{N, [n]} \big) }, \qquad i = 1, \dots, N.
+	\end{aligned}
+\end{equation}
+In the seminal paper of \cite{kieffer1982exponential}, it has been shown that $\big( x^{[n]} \big)_{n \geq 1}$ converges exponentially fast toward $x$, the optimal quantizer, when the density $\varphi$ of $X$ is $\log$-concave and not piecewise affine. Numerical optimizations can be made in order to increase the rate of convergence to the optimal quantizer such as fixed point search acceleration, for example the Anderson acceleration (see \cite{anderson1965iterative} for the original paper and \cite{walker2011anderson} for details on the procedure).
+
+Of course, other algorithms exist, such as the Newton Raphson zero search procedure or its variant the Levenberg–Marquardt algorithm which are deterministic procedures as well if the density, the first partial moment and the cumulative distribution function of $X$ are known. Additionally, we can cite stochastic procedures such as the CLVQ procedure (Competitive Learning Vector Quantization) which is a zero search stochastic gradient and the randomized version of the Lloyd's method I. For more details, the reader can refer to \cite{pages2018numerical,pages2016pointwise}.
+
+Once the algorithm \eqref{RH:LloydAlgo} has been converging, we have at hand the quadratic optimal quantizer $\widehat X^N$ of $X$ and its associated probabilities given by
+\begin{equation}\label{RH:probaOptimalQuantizer}
+	\Prob \big( \widehat X^N = x_i^n \big) = F_{_X} \big( x_{i + 1/2}^{N} \big) - F_{_X} \big( x_{i - 1/2}^{N} \big), \qquad i = 1, \dots, n.
+\end{equation}

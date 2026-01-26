@@ -1,0 +1,21 @@
+{
+   "sources" : [
+      {
+         "usage" : "toplevel",
+         "filename" : "elsarticle-template-num-names.tex"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "elsarticle-num-names.bst"
+      },
+      {
+         "usage" : "ignore",
+         "filename" : "reference.bib"
+      }
+   ],
+   "version" : 2,
+   "texlive_version" : 2023,
+   "process" : {
+      "compiler" : "pdflatex"
+   }
+}

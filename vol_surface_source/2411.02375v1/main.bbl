@@ -1,0 +1,429 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{33}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[Ackerer et~al\mbox{.}(2020)]%
+        {ackerer2020deep}
+\bibfield{author}{\bibinfo{person}{Damien Ackerer}, \bibinfo{person}{Natasa
+  Tagasovska}, {and} \bibinfo{person}{Thibault Vatter}.}
+  \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Deep smoothing of the implied volatility surface}.
+\newblock \bibinfo{journal}{\emph{Advances in Neural Information Processing
+  Systems}}  \bibinfo{volume}{33} (\bibinfo{year}{2020}),
+  \bibinfo{pages}{11552--11563}.
+\newblock
+
+
+\bibitem[A{\i}t-Sahalia and Duarte(2003)]%
+        {ait2003nonparametric}
+\bibfield{author}{\bibinfo{person}{Yacine A{\i}t-Sahalia} {and}
+  \bibinfo{person}{Jefferson Duarte}.} \bibinfo{year}{2003}\natexlab{}.
+\newblock \showarticletitle{Nonparametric option pricing under shape
+  restrictions}.
+\newblock \bibinfo{journal}{\emph{Journal of Econometrics}}
+  \bibinfo{volume}{116}, \bibinfo{number}{1-2} (\bibinfo{year}{2003}),
+  \bibinfo{pages}{9--47}.
+\newblock
+
+
+\bibitem[Andreasen and Huge(2011)]%
+        {andreasen2011volatility}
+\bibfield{author}{\bibinfo{person}{Jesper Andreasen} {and}
+  \bibinfo{person}{Brian Huge}.} \bibinfo{year}{2011}\natexlab{}.
+\newblock \showarticletitle{Volatility interpolation}.
+\newblock \bibinfo{journal}{\emph{Risk}} \bibinfo{volume}{24},
+  \bibinfo{number}{3} (\bibinfo{year}{2011}), \bibinfo{pages}{76}.
+\newblock
+
+
+\bibitem[Bai et~al\mbox{.}(2022)]%
+        {bai2022application}
+\bibfield{author}{\bibinfo{person}{Yuexing Bai}, \bibinfo{person}{Temuer
+  Chaolu}, {and} \bibinfo{person}{Sudao Bilige}.}
+  \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{The application of improved physics-informed neural
+  network (IPINN) method in finance}.
+\newblock \bibinfo{journal}{\emph{Nonlinear Dynamics}} \bibinfo{volume}{107},
+  \bibinfo{number}{4} (\bibinfo{year}{2022}), \bibinfo{pages}{3655--3667}.
+\newblock
+
+
+\bibitem[Balland(2002)]%
+        {balland2002deterministicimplied}
+\bibfield{author}{\bibinfo{person}{Philippe Balland}.}
+  \bibinfo{year}{2002}\natexlab{}.
+\newblock \showarticletitle{Deterministicimplied volatility models}.
+\newblock \bibinfo{journal}{\emph{Quantitative Finance}} \bibinfo{volume}{2},
+  \bibinfo{number}{1} (\bibinfo{year}{2002}), \bibinfo{pages}{31}.
+\newblock
+
+
+\bibitem[Bergeron et~al\mbox{.}(2022)]%
+        {bergeron2022variational}
+\bibfield{author}{\bibinfo{person}{Maxime Bergeron}, \bibinfo{person}{Nicholas
+  Fung}, \bibinfo{person}{John Hull}, \bibinfo{person}{Zissis Poulos}, {and}
+  \bibinfo{person}{Andreas Veneris}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Variational autoencoders: A hands-off approach to
+  volatility}.
+\newblock \bibinfo{journal}{\emph{The Journal of Financial Data Science}}
+  \bibinfo{volume}{4}, \bibinfo{number}{2} (\bibinfo{year}{2022}),
+  \bibinfo{pages}{125--138}.
+\newblock
+
+
+\bibitem[Black(1976)]%
+        {black1976pricing}
+\bibfield{author}{\bibinfo{person}{Fischer Black}.}
+  \bibinfo{year}{1976}\natexlab{}.
+\newblock \showarticletitle{The pricing of commodity contracts}.
+\newblock \bibinfo{journal}{\emph{Journal of financial economics}}
+  \bibinfo{volume}{3}, \bibinfo{number}{1-2} (\bibinfo{year}{1976}),
+  \bibinfo{pages}{167--179}.
+\newblock
+
+
+\bibitem[Black and Scholes(1973)]%
+        {black1973pricing}
+\bibfield{author}{\bibinfo{person}{Fischer Black} {and} \bibinfo{person}{Myron
+  Scholes}.} \bibinfo{year}{1973}\natexlab{}.
+\newblock \showarticletitle{The pricing of options and corporate liabilities}.
+\newblock \bibinfo{journal}{\emph{Journal of political economy}}
+  \bibinfo{volume}{81}, \bibinfo{number}{3} (\bibinfo{year}{1973}),
+  \bibinfo{pages}{637--654}.
+\newblock
+
+
+\bibitem[Bradbury et~al\mbox{.}(2018)]%
+        {jax2018github}
+\bibfield{author}{\bibinfo{person}{James Bradbury}, \bibinfo{person}{Roy
+  Frostig}, \bibinfo{person}{Peter Hawkins}, \bibinfo{person}{Matthew~James
+  Johnson}, \bibinfo{person}{Chris Leary}, \bibinfo{person}{Dougal Maclaurin},
+  \bibinfo{person}{George Necula}, \bibinfo{person}{Adam Paszke},
+  \bibinfo{person}{Jake Vander{P}las}, \bibinfo{person}{Skye
+  Wanderman-{M}ilne}, {and} \bibinfo{person}{Qiao Zhang}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{{JAX}: composable transformations of
+  {P}ython+{N}um{P}y programs}}.
+\newblock
+\urldef\tempurl%
+\url{http://github.com/google/jax}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Cao et~al\mbox{.}(2021)]%
+        {cao2021option}
+\bibfield{author}{\bibinfo{person}{Yi Cao}, \bibinfo{person}{Xiaoquan Liu},
+  {and} \bibinfo{person}{Jia Zhai}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Option valuation under no-arbitrage constraints
+  with neural networks}.
+\newblock \bibinfo{journal}{\emph{European Journal of Operational Research}}
+  \bibinfo{volume}{293}, \bibinfo{number}{1} (\bibinfo{year}{2021}),
+  \bibinfo{pages}{361--374}.
+\newblock
+
+
+\bibitem[Carr and Madan(2005)]%
+        {carr2005note}
+\bibfield{author}{\bibinfo{person}{Peter Carr} {and} \bibinfo{person}{Dilip~B
+  Madan}.} \bibinfo{year}{2005}\natexlab{}.
+\newblock \showarticletitle{A note on sufficient conditions for no arbitrage}.
+\newblock \bibinfo{journal}{\emph{Finance Research Letters}}
+  \bibinfo{volume}{2}, \bibinfo{number}{3} (\bibinfo{year}{2005}),
+  \bibinfo{pages}{125--130}.
+\newblock
+
+
+\bibitem[Choudhary et~al\mbox{.}(2023)]%
+        {choudhary2023funvol}
+\bibfield{author}{\bibinfo{person}{Vedant Choudhary},
+  \bibinfo{person}{Sebastian Jaimungal}, {and} \bibinfo{person}{Maxime
+  Bergeron}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{FuNVol: A Multi-Asset Implied Volatility Market
+  Simulator using Functional Principal Components and Neural SDEs}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2303.00859}}
+  (\bibinfo{year}{2023}).
+\newblock
+
+
+\bibitem[Cohen et~al\mbox{.}(2023)]%
+        {cohen2023arbitrage}
+\bibfield{author}{\bibinfo{person}{Samuel~N Cohen}, \bibinfo{person}{Christoph
+  Reisinger}, {and} \bibinfo{person}{Sheng Wang}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Arbitrage-free neural-SDE market models}.
+\newblock \bibinfo{journal}{\emph{Applied Mathematical Finance}}
+  \bibinfo{volume}{30}, \bibinfo{number}{1} (\bibinfo{year}{2023}),
+  \bibinfo{pages}{1--46}.
+\newblock
+
+
+\bibitem[Cont and Da~Fonseca(2002)]%
+        {cont2002dynamics}
+\bibfield{author}{\bibinfo{person}{Rama Cont} {and} \bibinfo{person}{Jos{\'e}
+  Da~Fonseca}.} \bibinfo{year}{2002}\natexlab{}.
+\newblock \showarticletitle{Dynamics ofimplied volatility surfaces}.
+\newblock \bibinfo{journal}{\emph{Quantitative finance}} \bibinfo{volume}{2},
+  \bibinfo{number}{1} (\bibinfo{year}{2002}), \bibinfo{pages}{45}.
+\newblock
+
+
+\bibitem[Cont and Vuleti{\'c}(2022)]%
+        {cont2022simulation}
+\bibfield{author}{\bibinfo{person}{Rama Cont} {and} \bibinfo{person}{Milena
+  Vuleti{\'c}}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Simulation of arbitrage-free implied volatility
+  surfaces}.
+\newblock \bibinfo{journal}{\emph{Available at SSRN}} (\bibinfo{year}{2022}).
+\newblock
+
+
+\bibitem[Dhiman and Hu(2023)]%
+        {dhiman2023physics}
+\bibfield{author}{\bibinfo{person}{Ashish Dhiman} {and} \bibinfo{person}{Yibei
+  Hu}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Physics Informed Neural Network for Option
+  Pricing}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2312.06711}}
+  (\bibinfo{year}{2023}).
+\newblock
+
+
+\bibitem[Dupire et~al\mbox{.}(1994)]%
+        {dupire1994pricing}
+\bibfield{author}{\bibinfo{person}{Bruno Dupire} {et~al\mbox{.}}}
+  \bibinfo{year}{1994}\natexlab{}.
+\newblock \showarticletitle{Pricing with a smile}.
+\newblock \bibinfo{journal}{\emph{Risk}} \bibinfo{volume}{7},
+  \bibinfo{number}{1} (\bibinfo{year}{1994}), \bibinfo{pages}{18--20}.
+\newblock
+
+
+\bibitem[Gatheral(2011)]%
+        {gatheral2011volatility}
+\bibfield{author}{\bibinfo{person}{Jim Gatheral}.}
+  \bibinfo{year}{2011}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{The volatility surface: a practitioner's
+  guide}}.
+\newblock \bibinfo{publisher}{John Wiley \& Sons}.
+\newblock
+
+
+\bibitem[Heek et~al\mbox{.}(2023)]%
+        {flax2020github}
+\bibfield{author}{\bibinfo{person}{Jonathan Heek}, \bibinfo{person}{Anselm
+  Levskaya}, \bibinfo{person}{Avital Oliver}, \bibinfo{person}{Marvin Ritter},
+  \bibinfo{person}{Bertrand Rondepierre}, \bibinfo{person}{Andreas Steiner},
+  {and} \bibinfo{person}{Marc van {Z}ee}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{{F}lax: A neural network library and
+  ecosystem for {JAX}}}.
+\newblock
+\urldef\tempurl%
+\url{http://github.com/google/flax}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Hornik et~al\mbox{.}(1990)]%
+        {hornik1990universal}
+\bibfield{author}{\bibinfo{person}{Kurt Hornik}, \bibinfo{person}{Maxwell
+  Stinchcombe}, {and} \bibinfo{person}{Halbert White}.}
+  \bibinfo{year}{1990}\natexlab{}.
+\newblock \showarticletitle{Universal approximation of an unknown mapping and
+  its derivatives using multilayer feedforward networks}.
+\newblock \bibinfo{journal}{\emph{Neural networks}} \bibinfo{volume}{3},
+  \bibinfo{number}{5} (\bibinfo{year}{1990}), \bibinfo{pages}{551--560}.
+\newblock
+
+
+\bibitem[Hoshisashi et~al\mbox{.}(2023)]%
+        {hoshisashi2023no}
+\bibfield{author}{\bibinfo{person}{Kentaro Hoshisashi},
+  \bibinfo{person}{Carolyn~E Phelan}, {and} \bibinfo{person}{Paolo Barucca}.}
+  \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{No-Arbitrage Deep Calibration for Volatility Smile
+  and Skewness}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2310.16703}}
+  (\bibinfo{year}{2023}).
+\newblock
+
+
+\bibitem[Hoshisashi et~al\mbox{.}(2024)]%
+        {EasyChair:15219}
+\bibfield{author}{\bibinfo{person}{Kentaro Hoshisashi},
+  \bibinfo{person}{Carolyn~E. Phelan}, {and} \bibinfo{person}{Paolo Barucca}.}
+  \bibinfo{year}{EasyChair, 2024}\natexlab{}.
+\newblock \bibinfo{title}{Whack-a-Mole Learning: Physics-Informed Deep
+  Calibration for Implied Volatility Surface}.
+\newblock \bibinfo{howpublished}{EasyChair Preprint 15219}.
+\newblock
+
+
+\bibitem[Itkin(2019)]%
+        {itkin2019deep}
+\bibfield{author}{\bibinfo{person}{Andrey Itkin}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Deep learning calibration of option pricing models:
+  some pitfalls and solutions}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:1906.03507}}
+  (\bibinfo{year}{2019}).
+\newblock
+
+
+\bibitem[Kingma and Ba(2014)]%
+        {kingma2014adam}
+\bibfield{author}{\bibinfo{person}{Diederik~P Kingma} {and}
+  \bibinfo{person}{Jimmy Ba}.} \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Adam: A method for stochastic optimization}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:1412.6980}}
+  (\bibinfo{year}{2014}).
+\newblock
+
+
+\bibitem[Lee(2005)]%
+        {lee2005implied}
+\bibfield{author}{\bibinfo{person}{Roger~W Lee}.}
+  \bibinfo{year}{2005}\natexlab{}.
+\newblock \showarticletitle{Implied volatility: Statics, dynamics, and
+  probabilistic interpretation}.
+\newblock \bibinfo{journal}{\emph{Recent advances in applied probability}}
+  (\bibinfo{year}{2005}), \bibinfo{pages}{241--268}.
+\newblock
+
+
+\bibitem[Liu et~al\mbox{.}(2019)]%
+        {liu2019neural}
+\bibfield{author}{\bibinfo{person}{Shuaiqiang Liu}, \bibinfo{person}{Anastasia
+  Borovykh}, \bibinfo{person}{Lech~A Grzelak}, {and}
+  \bibinfo{person}{Cornelis~W Oosterlee}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{A neural network-based framework for financial
+  model calibration}.
+\newblock \bibinfo{journal}{\emph{Journal of Mathematics in Industry}}
+  \bibinfo{volume}{9} (\bibinfo{year}{2019}), \bibinfo{pages}{1--28}.
+\newblock
+
+
+\bibitem[Lu et~al\mbox{.}(2021)]%
+        {lu2021physics}
+\bibfield{author}{\bibinfo{person}{Lu Lu}, \bibinfo{person}{Raphael Pestourie},
+  \bibinfo{person}{Wenjie Yao}, \bibinfo{person}{Zhicheng Wang},
+  \bibinfo{person}{Francesc Verdugo}, {and} \bibinfo{person}{Steven~G
+  Johnson}.} \bibinfo{year}{2021}\natexlab{}.
+\newblock \showarticletitle{Physics-informed neural networks with hard
+  constraints for inverse design}.
+\newblock \bibinfo{journal}{\emph{SIAM Journal on Scientific Computing}}
+  \bibinfo{volume}{43}, \bibinfo{number}{6} (\bibinfo{year}{2021}),
+  \bibinfo{pages}{B1105--B1132}.
+\newblock
+
+
+\bibitem[McClenny and Braga-Neto(2020)]%
+        {mcclenny2020self}
+\bibfield{author}{\bibinfo{person}{Levi McClenny} {and}
+  \bibinfo{person}{Ulisses Braga-Neto}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Self-adaptive physics-informed neural networks
+  using a soft attention mechanism}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2009.04544}}
+  (\bibinfo{year}{2020}).
+\newblock
+
+
+\bibitem[Ning et~al\mbox{.}(2023)]%
+        {ning2023arbitrage}
+\bibfield{author}{\bibinfo{person}{Brian Ning}, \bibinfo{person}{Sebastian
+  Jaimungal}, \bibinfo{person}{Xiaorong Zhang}, {and} \bibinfo{person}{Maxime
+  Bergeron}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{Arbitrage-free implied volatility surface
+  generation with variational autoencoders}.
+\newblock \bibinfo{journal}{\emph{SIAM Journal on Financial Mathematics}}
+  \bibinfo{volume}{14}, \bibinfo{number}{4} (\bibinfo{year}{2023}),
+  \bibinfo{pages}{1004--1027}.
+\newblock
+
+
+\bibitem[Raissi et~al\mbox{.}(2019)]%
+        {raissi2019physics}
+\bibfield{author}{\bibinfo{person}{Maziar Raissi}, \bibinfo{person}{Paris
+  Perdikaris}, {and} \bibinfo{person}{George~E Karniadakis}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Physics-informed neural networks: A deep learning
+  framework for solving forward and inverse problems involving nonlinear
+  partial differential equations}.
+\newblock \bibinfo{journal}{\emph{Journal of Computational physics}}
+  \bibinfo{volume}{378} (\bibinfo{year}{2019}), \bibinfo{pages}{686--707}.
+\newblock
+
+
+\bibitem[Rumelhart et~al\mbox{.}(1986)]%
+        {rumelhart1986learning}
+\bibfield{author}{\bibinfo{person}{David~E Rumelhart},
+  \bibinfo{person}{Geoffrey~E Hinton}, {and} \bibinfo{person}{Ronald~J
+  Williams}.} \bibinfo{year}{1986}\natexlab{}.
+\newblock \showarticletitle{Learning representations by back-propagating
+  errors}.
+\newblock \bibinfo{journal}{\emph{nature}} \bibinfo{volume}{323},
+  \bibinfo{number}{6088} (\bibinfo{year}{1986}), \bibinfo{pages}{533--536}.
+\newblock
+
+
+\bibitem[Waldon et~al\mbox{.}({[n.\,d.]})]%
+        {waldon2024dare}
+\bibfield{author}{\bibinfo{person}{Harrison Waldon},
+  \bibinfo{person}{Fay{\c{c}}al Drissi}, \bibinfo{person}{Yannick Limmer},
+  \bibinfo{person}{Uljad Berdica}, \bibinfo{person}{Jakob~Nicolaus Foerster},
+  {and} \bibinfo{person}{Alvaro Cartea}.} \bibinfo{year}{[n.\,d.]}\natexlab{}.
+\newblock \showarticletitle{DARE: The Deep Adaptive Regulator for Control of
+  Uncertain Continuous-Time Systems}. In \bibinfo{booktitle}{\emph{ICML 2024
+  Workshop: Foundations of Reinforcement Learning and Control--Connections and
+  Perspectives}}.
+\newblock
+
+
+\bibitem[Wang et~al\mbox{.}(2023)]%
+        {wang2023expert}
+\bibfield{author}{\bibinfo{person}{Sifan Wang}, \bibinfo{person}{Shyam
+  Sankaran}, \bibinfo{person}{Hanwen Wang}, {and} \bibinfo{person}{Paris
+  Perdikaris}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{An expert's guide to training physics-informed
+  neural networks}.
+\newblock \bibinfo{journal}{\emph{arXiv preprint arXiv:2308.08468}}
+  (\bibinfo{year}{2023}).
+\newblock
+
+
+\end{thebibliography}

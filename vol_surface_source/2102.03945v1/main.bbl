@@ -1,0 +1,1011 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{cms/global//global/global}
+    \entry{ackerer}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=f73c087782a5ddc50890e1b90e8d585c}{%
+           family={Ackerer},
+           familyi={A\bibinitperiod},
+           given={Damien},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=070163542003b4ffaa3410f76fced9b7}{%
+           family={Tagasovska},
+           familyi={T\bibinitperiod},
+           given={Natasa},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=540ceb4174c61b0464a50f8d81618c70}{%
+           family={Vatter},
+           familyi={V\bibinitperiod},
+           given={Thibault},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{55ef1b1748a9fccbb9c6a109d54c2f68}
+      \strng{fullhash}{55ef1b1748a9fccbb9c6a109d54c2f68}
+      \strng{bibnamehash}{55ef1b1748a9fccbb9c6a109d54c2f68}
+      \strng{authorbibnamehash}{55ef1b1748a9fccbb9c6a109d54c2f68}
+      \strng{authornamehash}{55ef1b1748a9fccbb9c6a109d54c2f68}
+      \strng{authorfullhash}{55ef1b1748a9fccbb9c6a109d54c2f68}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a neural network (NN) approach to fit and predict implied volatility surfaces (IVSs). Atypically to standard NN applications, financial industry practitioners use such models equally to replicate market prices and to value other financial instruments. In other words, low training losses are as important as generalization capabilities. Importantly, IVS models need to generate realistic arbitrage-free option prices, meaning that no portfolio can lead to risk-free profits. We propose an approach guaranteeing the absence of arbitrage opportunities by penalizing the loss using soft constraints. Furthermore, our method can be combined with standard IVS models in quantitative finance, thus providing a NN-based correction when such models fail at replicating observed market prices. This lets practitioners use our approach as a plug-in on top of classical methods. Empirical results show that this approach is particularly useful when only sparse or erroneous data are available. We also quantify the uncertainty of the model predictions in regions with few or no observations. We further explore how deeper NNs improve over shallower ones, as well as other properties of the network architecture. We benchmark our method against standard IVS models. By evaluating our method on both training sets, and testing sets, namely, we highlight both their capacity to reproduce observed prices and predict new ones.}
+      \field{journaltitle}{arXiv:1906.05065 [cs, q-fin, stat]}
+      \field{month}{6}
+      \field{note}{arXiv: 1906.05065}
+      \field{title}{Deep {Smoothing} of the {Implied} {Volatility} {Surface}}
+      \field{urlday}{21}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb arXiv Fulltext PDF:/home/nick/Zotero/storage/IUKACDC9/Ackerer et al. - 2020 - Deep Smoothing of the Implied Volatility Surface.pdf:application/pdf;arXiv.org Snapshot:/home/nick/Zotero/storage/QZD93HEA/1906.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1906.05065
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1906.05065
+      \endverb
+      \keyw{Computer Science - Machine Learning,Statistics - Machine Learning,Quantitative Finance - Pricing of Securities}
+    \endentry
+    \entry{bates}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=1e5510f1ee9c7fd0a862c5ffe52cfeff}{%
+           family={Bates},
+           familyi={B\bibinitperiod},
+           given={David\bibnamedelima S.},
+           giveni={D\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{1e5510f1ee9c7fd0a862c5ffe52cfeff}
+      \strng{fullhash}{1e5510f1ee9c7fd0a862c5ffe52cfeff}
+      \strng{bibnamehash}{1e5510f1ee9c7fd0a862c5ffe52cfeff}
+      \strng{authorbibnamehash}{1e5510f1ee9c7fd0a862c5ffe52cfeff}
+      \strng{authornamehash}{1e5510f1ee9c7fd0a862c5ffe52cfeff}
+      \strng{authorfullhash}{1e5510f1ee9c7fd0a862c5ffe52cfeff}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{An efficient method is developed for pricing American options on stochastic volatility/jump-diffusion processes under systematic jump and volatility risk. The parameters implicit in deutsche mark (DM) options of the model and various submodels are estimated over the period 1984 to 1991 via nonlinear generalized least squares, and are tested for consistency with \$/DM futures prices and the implicit volatility sample path. The stochastic volatility submodel cannot explain the â€œvolatility smileâ€ evidence of implicit excess kurtosis, except under parameters implausible given the time series properties of implicit volatilities. Jump fears can explain the smile, and are consistent with one 8 percent DM appreciation â€œoutlierâ€ observed over the period 1984 to 1991.}
+      \field{issn}{0893-9454}
+      \field{journaltitle}{The Review of Financial Studies}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shorttitle}{Jumps and {Stochastic} {Volatility}}
+      \field{title}{Jumps and {Stochastic} {Volatility}: {Exchange} {Rate} {Processes} {Implicit} in {Deutsche} {Mark} {Options}}
+      \field{urlday}{2}
+      \field{urlmonth}{2}
+      \field{urlyear}{2021}
+      \field{volume}{9}
+      \field{year}{1996}
+      \field{urldateera}{ce}
+      \field{pages}{69\bibrangedash 107}
+      \range{pages}{39}
+      \verb{doi}
+      \verb 10.1093/rfs/9.1.69
+      \endverb
+      \verb{file}
+      \verb Submitted Version:/home/nick/Zotero/storage/DVQLN7NV/Bates - 1996 - Jumps and Stochastic Volatility Exchange Rate Pro.pdf:application/pdf;Snapshot:/home/nick/Zotero/storage/5PQDS6A6/1583938.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1093/rfs/9.1.69
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1093/rfs/9.1.69
+      \endverb
+    \endentry
+    \entry{deep_rough_calibration}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=d578598916e59b87ed4952cd57856013}{%
+           family={Bayer},
+           familyi={B\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8104ec1a36a6da61ac9864caddf7d3f7}{%
+           family={Horvath},
+           familyi={H\bibinitperiod},
+           given={Blanka},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ecfde37d05b1209a87758adee828a8a4}{%
+           family={Muguruza},
+           familyi={M\bibinitperiod},
+           given={Aitor},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0a739c557200761079a3c296c6232d7e}{%
+           family={Stemper},
+           familyi={S\bibinitperiod},
+           given={Benjamin},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=edb7b2f396ad33a649cdc1d833c19580}{%
+           family={Tomas},
+           familyi={T\bibinitperiod},
+           given={Mehdi},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{e7c12f189e24dee0bceb51b7529ced93}
+      \strng{fullhash}{20b30b2ffb5a6f3c3fa4fde263f0c12c}
+      \strng{bibnamehash}{20b30b2ffb5a6f3c3fa4fde263f0c12c}
+      \strng{authorbibnamehash}{20b30b2ffb5a6f3c3fa4fde263f0c12c}
+      \strng{authornamehash}{e7c12f189e24dee0bceb51b7529ced93}
+      \strng{authorfullhash}{20b30b2ffb5a6f3c3fa4fde263f0c12c}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Techniques from deep learning play a more and more important role for the important task of calibration of financial models. The pioneering paper by Hernandez [Risk, 2017] was a catalyst for resurfacing interest in research in this area. In this paper we advocate an alternative (two-step) approach using deep learning techniques solely to learn the pricing map -- from model parameters to prices or implied volatilities -- rather than directly the calibrated model parameters as a function of observed market data. Having a fast and accurate neural-network-based approximating pricing map (first step), we can then (second step) use traditional model calibration algorithms. In this work we showcase a direct comparison of different potential approaches to the learning stage and present algorithms that provide a suffcient accuracy for practical use. We provide a first neural network-based calibration method for rough volatility models for which calibration can be done on the y. We demonstrate the method via a hands-on calibration engine on the rough Bergomi model, for which classical calibration techniques are diffcult to apply due to the high cost of all known numerical pricing methods. Furthermore, we display and compare different types of sampling and training methods and elaborate on their advantages under different objectives. As a further application we use the fast pricing method for a Bayesian analysis of the calibrated model.}
+      \field{journaltitle}{arXiv:1908.08806 [q-fin]}
+      \field{month}{8}
+      \field{note}{arXiv: 1908.08806}
+      \field{title}{On deep calibration of (rough) stochastic volatility models}
+      \field{urlday}{16}
+      \field{urlmonth}{11}
+      \field{urlyear}{2020}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb arXiv Fulltext PDF:/home/nick/Zotero/storage/BTRB799U/Bayer et al. - 2019 - On deep calibration of (rough) stochastic volatili.pdf:application/pdf;arXiv.org Snapshot:/home/nick/Zotero/storage/AAC2MCD2/1908.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1908.08806
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1908.08806
+      \endverb
+      \keyw{Quantitative Finance - Mathematical Finance,60G15,60G22,91G20,91G60,91B25}
+    \endentry
+    \entry{blackscholes}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=93277dfc1ebe8d44428e74799781e4d7}{%
+           family={Black},
+           familyi={B\bibinitperiod},
+           given={Fischer},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=301bb16d9f303a488dac1c73931c0eff}{%
+           family={Scholes},
+           familyi={S\bibinitperiod},
+           given={Myron},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{0bcdbf94b820ddcda24f3e8d73d9a4ec}
+      \strng{fullhash}{0bcdbf94b820ddcda24f3e8d73d9a4ec}
+      \strng{bibnamehash}{0bcdbf94b820ddcda24f3e8d73d9a4ec}
+      \strng{authorbibnamehash}{0bcdbf94b820ddcda24f3e8d73d9a4ec}
+      \strng{authornamehash}{0bcdbf94b820ddcda24f3e8d73d9a4ec}
+      \strng{authorfullhash}{0bcdbf94b820ddcda24f3e8d73d9a4ec}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{The Journal of Political Economy}
+      \field{number}{3}
+      \field{title}{The {Pricing} of {Options} and {Corporate} {Liabilities}}
+      \field{volume}{81}
+      \field{year}{1973}
+      \field{pages}{637\bibrangedash 654}
+      \range{pages}{18}
+      \verb{file}
+      \verb Black and Scholes - 1973 - The Pricing of Options and Corporate Liabilities.pdf:/home/nick/Zotero/storage/47ABF535/Black and Scholes - 1973 - The Pricing of Options and Corporate Liabilities.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/1831029
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/1831029
+      \endverb
+    \endentry
+    \entry{deep_local_vol}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=e278c58f12760cfd2c27cec9ed690cdd}{%
+           family={Chataigner},
+           familyi={C\bibinitperiod},
+           given={Marc},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0bf143581b6a50fadb41099cca42eda0}{%
+           family={Crépey},
+           familyi={C\bibinitperiod},
+           given={Stéphane},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d1c13e78008bdad93f49d2f7b9247c3a}{%
+           family={Dixon},
+           familyi={D\bibinitperiod},
+           given={Matthew},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{10ad6a033fc2334b19f39d3053b90d47}
+      \strng{fullhash}{10ad6a033fc2334b19f39d3053b90d47}
+      \strng{bibnamehash}{10ad6a033fc2334b19f39d3053b90d47}
+      \strng{authorbibnamehash}{10ad6a033fc2334b19f39d3053b90d47}
+      \strng{authornamehash}{10ad6a033fc2334b19f39d3053b90d47}
+      \strng{authorfullhash}{10ad6a033fc2334b19f39d3053b90d47}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Deep learning for option pricing has emerged as a novel methodology for fast computations with applications in calibration and computation of Greeks. However, many of these approaches do not enforce any no-arbitrage conditions, and the subsequent local volatility surface is never considered. In this article, we develop a deep learning approach for interpolation of European vanilla option prices which jointly yields the full surface of local volatilities. We demonstrate the modification of the loss function or the feed forward network architecture to enforce (hard constraints approach) or favor (soft constraints approach) the no-arbitrage conditions and we specify the experimental design parameters that are needed for adequate performance. A novel component is the use of the Dupire formula to enforce bounds on the local volatility associated with option prices, during the network fitting. Our methodology is benchmarked numerically on real datasets of DAX vanilla options.}
+      \field{journaltitle}{arXiv:2007.10462 [q-fin]}
+      \field{month}{7}
+      \field{note}{arXiv: 2007.10462}
+      \field{title}{Deep {Local} {Volatility}}
+      \field{urlday}{23}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{year}{2020}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb arXiv Fulltext PDF:/home/nick/Zotero/storage/UAB4HCPL/Chataigner et al. - 2020 - Deep Local Volatility.pdf:application/pdf;arXiv.org Snapshot:/home/nick/Zotero/storage/9CJ6JLIF/2007.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2007.10462
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2007.10462
+      \endverb
+      \keyw{Quantitative Finance - Computational Finance}
+    \endentry
+    \entry{clark}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=8fac4c47c1dd8507e2a6ea6b882ee021}{%
+           family={Clark},
+           familyi={C\bibinitperiod},
+           given={Iain\bibnamedelima J},
+           giveni={I\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{8fac4c47c1dd8507e2a6ea6b882ee021}
+      \strng{fullhash}{8fac4c47c1dd8507e2a6ea6b882ee021}
+      \strng{bibnamehash}{8fac4c47c1dd8507e2a6ea6b882ee021}
+      \strng{authorbibnamehash}{8fac4c47c1dd8507e2a6ea6b882ee021}
+      \strng{authornamehash}{8fac4c47c1dd8507e2a6ea6b882ee021}
+      \strng{authorfullhash}{8fac4c47c1dd8507e2a6ea6b882ee021}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Foreign Exchange Option Pricing}
+      \field{title}{Foreign {Exchange} {Option} {Pricing}}
+      \field{year}{2010}
+      \field{pages}{300}
+      \range{pages}{1}
+      \verb{file}
+      \verb Clark - 2010 - Foreign Exchange Option Pricing.pdf:/home/nick/Zotero/storage/CVZAEVZD/Clark - 2010 - Foreign Exchange Option Pricing.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{ferguson}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=cff7db33592860923062c849c4646aee}{%
+           family={Ferguson},
+           familyi={F\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=228844e1ebf2d23819277fd258cb6f88}{%
+           family={Green},
+           familyi={G\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{81b8afe3a158b4334bf2f549fa1b42cb}
+      \strng{fullhash}{81b8afe3a158b4334bf2f549fa1b42cb}
+      \strng{bibnamehash}{81b8afe3a158b4334bf2f549fa1b42cb}
+      \strng{authorbibnamehash}{81b8afe3a158b4334bf2f549fa1b42cb}
+      \strng{authornamehash}{81b8afe3a158b4334bf2f549fa1b42cb}
+      \strng{authorfullhash}{81b8afe3a158b4334bf2f549fa1b42cb}
+      \field{sortinit}{F}
+      \field{sortinithash}{fb0c0faa89eb6abae8213bf60e6799ea}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper uses deep learning to value derivatives. The approach is broadly applicable, and we use a call option on a basket of stocks as an example. We show that the deep learning model is accurate and very fast, capable of producing valuations a million times faster than traditional models. We develop a methodology to randomly generate appropriate training data and explore the impact of several parameters including layer width and depth, training data quality and quantity on model speed and accuracy.}
+      \field{journaltitle}{arXiv:1809.02233 [cs, q-fin]}
+      \field{month}{10}
+      \field{note}{arXiv: 1809.02233}
+      \field{title}{Deeply {Learning} {Derivatives}}
+      \field{urlday}{17}
+      \field{urlmonth}{6}
+      \field{urlyear}{2020}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb arXiv Fulltext PDF:/home/nick/Zotero/storage/3UJRQAR6/Ferguson and Green - 2018 - Deeply Learning Derivatives.pdf:application/pdf;arXiv.org Snapshot:/home/nick/Zotero/storage/VKN8Q76U/1809.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1809.02233
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1809.02233
+      \endverb
+      \keyw{Computer Science - Machine Learning,Quantitative Finance - Computational Finance,68T05,91-08,91G20,91G60}
+    \endentry
+    \entry{svi}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=5b59e77d6545ce779ff6f43a5f68bc96}{%
+           family={Gatheral},
+           familyi={G\bibinitperiod},
+           given={Jim},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{5b59e77d6545ce779ff6f43a5f68bc96}
+      \strng{fullhash}{5b59e77d6545ce779ff6f43a5f68bc96}
+      \strng{bibnamehash}{5b59e77d6545ce779ff6f43a5f68bc96}
+      \strng{authorbibnamehash}{5b59e77d6545ce779ff6f43a5f68bc96}
+      \strng{authornamehash}{5b59e77d6545ce779ff6f43a5f68bc96}
+      \strng{authorfullhash}{5b59e77d6545ce779ff6f43a5f68bc96}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{5}
+      \field{title}{A parsimonious arbitrage-free implied volatility parameterization with application to the valuation of volatility derivatives}
+      \field{year}{2004}
+      \field{pages}{41}
+      \range{pages}{1}
+      \verb{file}
+      \verb Gatheral - A parsimonious arbitrage-free implied volatility p.pdf:/home/nick/Zotero/storage/QY22QXF8/Gatheral - A parsimonious arbitrage-free implied volatility p.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://faculty.baruch.cuny.edu/jgatheral/madrid2004.pdf
+      \endverb
+      \verb{url}
+      \verb http://faculty.baruch.cuny.edu/jgatheral/madrid2004.pdf
+      \endverb
+    \endentry
+    \entry{ssvi}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=5b59e77d6545ce779ff6f43a5f68bc96}{%
+           family={Gatheral},
+           familyi={G\bibinitperiod},
+           given={Jim},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d47a3ab456d3cda505b07d3e4d1c7ceb}{%
+           family={Jacquier},
+           familyi={J\bibinitperiod},
+           given={Antoine},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{0a3fc05b4a29fbbe271365f2b1fa7de4}
+      \strng{fullhash}{0a3fc05b4a29fbbe271365f2b1fa7de4}
+      \strng{bibnamehash}{0a3fc05b4a29fbbe271365f2b1fa7de4}
+      \strng{authorbibnamehash}{0a3fc05b4a29fbbe271365f2b1fa7de4}
+      \strng{authornamehash}{0a3fc05b4a29fbbe271365f2b1fa7de4}
+      \strng{authorfullhash}{0a3fc05b4a29fbbe271365f2b1fa7de4}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this article, we show how to calibrate the widely-used SVI parameterization of the implied volatility surface in such a way as to guarantee the absence of static arbitrage. In particular, we exhibit a large class of arbitrage-free SVI volatility surfaces with a simple closed-form representation. We demonstrate the high quality of typical SVI fits with a numerical example using recent SPX options data.}
+      \field{journaltitle}{arXiv:1204.0646 [q-fin]}
+      \field{month}{3}
+      \field{note}{arXiv: 1204.0646}
+      \field{title}{Arbitrage-free {SVI} volatility surfaces}
+      \field{urlday}{30}
+      \field{urlmonth}{10}
+      \field{urlyear}{2020}
+      \field{year}{2013}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb arXiv Fulltext PDF:/home/nick/Zotero/storage/W8YPBIYJ/Gatheral and Jacquier - 2013 - Arbitrage-free SVI volatility surfaces.pdf:application/pdf;arXiv.org Snapshot:/home/nick/Zotero/storage/QUSY8PA7/1204.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1204.0646
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1204.0646
+      \endverb
+      \keyw{91G60,Quantitative Finance - Pricing of Securities}
+    \endentry
+    \entry{rough_gatheral}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=5b59e77d6545ce779ff6f43a5f68bc96}{%
+           family={Gatheral},
+           familyi={G\bibinitperiod},
+           given={Jim},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9c1de9315b32077f6f0cd09abcb384db}{%
+           family={Jaisson},
+           familyi={J\bibinitperiod},
+           given={Thibault},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5a373e5be0134cb25af59b896a57531d}{%
+           family={Rosenbaum},
+           familyi={R\bibinitperiod},
+           given={Mathieu},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{02d6046d90976ca3b4e6efca08291fbd}
+      \strng{fullhash}{02d6046d90976ca3b4e6efca08291fbd}
+      \strng{bibnamehash}{02d6046d90976ca3b4e6efca08291fbd}
+      \strng{authorbibnamehash}{02d6046d90976ca3b4e6efca08291fbd}
+      \strng{authornamehash}{02d6046d90976ca3b4e6efca08291fbd}
+      \strng{authorfullhash}{02d6046d90976ca3b4e6efca08291fbd}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Estimating volatility from recent high frequency data, we revisit the question of the smoothness of the volatility process. Our main result is that log-volatility behaves essentially as a fractional Brownian motion with Hurst exponent H of order 0.1, at any reasonable time scale. This leads us to adopt the fractional stochastic volatility (FSV) model of Comte and Renault. We call our model Rough FSV (RFSV) to underline that, in contrast to FSV, H<1/2. We demonstrate that our RFSV model is remarkably consistent with financial time series data; one application is that it enables us to obtain improved forecasts of realized volatility. Furthermore, we find that although volatility is not long memory in the RFSV model, classical statistical procedures aiming at detecting volatility persistence tend to conclude the presence of long memory in data generated from it. This sheds light on why long memory of volatility has been widely accepted as a stylized fact. Finally, we provide a quantitative market microstructure-based foundation for our findings, relating the roughness of volatility to high frequency trading and order splitting.}
+      \field{journaltitle}{arXiv:1410.3394 [q-fin]}
+      \field{month}{10}
+      \field{note}{arXiv: 1410.3394}
+      \field{title}{Volatility is rough}
+      \field{urlday}{2}
+      \field{urlmonth}{2}
+      \field{urlyear}{2021}
+      \field{year}{2014}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb arXiv Fulltext PDF:/home/nick/Zotero/storage/E5M3VASX/Gatheral et al. - 2014 - Volatility is rough.pdf:application/pdf;arXiv.org Snapshot:/home/nick/Zotero/storage/3GFF44GG/1410.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1410.3394
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1410.3394
+      \endverb
+      \keyw{Quantitative Finance - Mathematical Finance,Quantitative Finance - Statistical Finance,Quantitative Finance - Trading and Market Microstructure}
+    \endentry
+    \entry{hernandez}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c352ccd380850a72aaa959deec0ba1d3}{%
+           family={Hernandez},
+           familyi={H\bibinitperiod},
+           given={Andres},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Social Science Research Network}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Rochester, NY}%
+      }
+      \strng{namehash}{c352ccd380850a72aaa959deec0ba1d3}
+      \strng{fullhash}{c352ccd380850a72aaa959deec0ba1d3}
+      \strng{bibnamehash}{c352ccd380850a72aaa959deec0ba1d3}
+      \strng{authorbibnamehash}{c352ccd380850a72aaa959deec0ba1d3}
+      \strng{authornamehash}{c352ccd380850a72aaa959deec0ba1d3}
+      \strng{authorfullhash}{c352ccd380850a72aaa959deec0ba1d3}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A central consideration for the use of any pricing model is the ability to calibrate that model to market or historical prices. Whether the information needed by the model can be effectively implied from the data or not is one part of the calibration problem. However, in many applications, the speed with which that calibration can be performed influences the usability of that model.}
+      \field{month}{7}
+      \field{number}{ID 2812140}
+      \field{title}{Model {Calibration} with {Neural} {Networks}}
+      \field{type}{{SSRN} {Scholarly} {Paper}}
+      \field{urlday}{13}
+      \field{urlmonth}{6}
+      \field{urlyear}{2020}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.2139/ssrn.2812140
+      \endverb
+      \verb{file}
+      \verb Hernandez - 2016 - Model Calibration with Neural Networks.pdf:/home/nick/Zotero/storage/EB4AT7SR/Hernandez - 2016 - Model Calibration with Neural Networks.pdf:application/pdf;Snapshot:/home/nick/Zotero/storage/5ZM5G5D2/papers.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://papers.ssrn.com/abstract=2812140
+      \endverb
+      \verb{url}
+      \verb https://papers.ssrn.com/abstract=2812140
+      \endverb
+      \keyw{neural networks,model calibration}
+    \endentry
+    \entry{heston}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c907e3fa3771173e60affca583df6375}{%
+           family={Heston},
+           familyi={H\bibinitperiod},
+           given={Steven},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{c907e3fa3771173e60affca583df6375}
+      \strng{fullhash}{c907e3fa3771173e60affca583df6375}
+      \strng{bibnamehash}{c907e3fa3771173e60affca583df6375}
+      \strng{authorbibnamehash}{c907e3fa3771173e60affca583df6375}
+      \strng{authornamehash}{c907e3fa3771173e60affca583df6375}
+      \strng{authorfullhash}{c907e3fa3771173e60affca583df6375}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{I use a new technique to derive a closed-form solution for the price of a European call option on an asset with stochastic volatility. The model allows arbitrary correlation between volatility and spot-asset returns. I introduce stochastic interest rates and show how to apply the model to bond options and foreign currency options. Simulations show that correlation between volatility and the spot asset's price is important for explaining return skewness and strike-price biases in the Black-Scholes (1973) model. The solution technique is based on characteristic functions and can be applied to other problems. Article published by Oxford University Press on behalf of the Society for Financial Studies in its journal, The Review of Financial Studies.}
+      \field{title}{A {Closed}-{Form} {Solution} for {Options} with {Stochastic} {Volatility} with {Applications} to {Bond} and {Currency} {Options}}
+      \field{year}{1993}
+      \verb{doi}
+      \verb 10.1093/rfs/6.2.327
+      \endverb
+      \verb{file}
+      \verb Full Text PDF:/home/nick/Zotero/storage/UCLVK9P9/Heston - 1993 - A Closed-Form Solution for Options with Stochastic.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{deep_calibration}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=8104ec1a36a6da61ac9864caddf7d3f7}{%
+           family={Horvath},
+           familyi={H\bibinitperiod},
+           given={Blanka},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ecfde37d05b1209a87758adee828a8a4}{%
+           family={Muguruza},
+           familyi={M\bibinitperiod},
+           given={Aitor},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=edb7b2f396ad33a649cdc1d833c19580}{%
+           family={Tomas},
+           familyi={T\bibinitperiod},
+           given={Mehdi},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{ddf0c3019c3e45da7b19757075d2c50d}
+      \strng{fullhash}{ddf0c3019c3e45da7b19757075d2c50d}
+      \strng{bibnamehash}{ddf0c3019c3e45da7b19757075d2c50d}
+      \strng{authorbibnamehash}{ddf0c3019c3e45da7b19757075d2c50d}
+      \strng{authornamehash}{ddf0c3019c3e45da7b19757075d2c50d}
+      \strng{authorfullhash}{ddf0c3019c3e45da7b19757075d2c50d}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We present a neural network based calibration method that performs the calibration task within a few milliseconds for the full implied volatility surface. The framework is consistently applicable throughout a range of volatility models -including the rough volatility family- and a range of derivative contracts. The aim of neural networks in this work is an off-line approximation of complex pricing functions, which are difficult to represent or time-consuming to evaluate by other means. We highlight how this perspective opens new horizons for quantitative modelling: The calibration bottleneck posed by a slow pricing of derivative contracts is lifted. This brings several numerical pricers and model families (such as rough volatility models) within the scope of applicability in industry practice. The form in which information from available data is extracted and stored influences network performance: This approach is inspired by representing the implied volatility and option prices as a collection of pixels. In a number of applications we demonstrate the prowess of this modelling approach regarding accuracy, speed, robustness and generality and also its potentials towards model recognition.}
+      \field{journaltitle}{arXiv:1901.09647 [q-fin]}
+      \field{month}{8}
+      \field{note}{arXiv: 1901.09647}
+      \field{title}{Deep {Learning} {Volatility}}
+      \field{urlday}{28}
+      \field{urlmonth}{5}
+      \field{urlyear}{2020}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb arXiv Fulltext PDF:/home/nick/Zotero/storage/UQ467CVJ/Horvath et al. - 2019 - Deep Learning Volatility.pdf:application/pdf;arXiv.org Snapshot:/home/nick/Zotero/storage/4VBT2DUB/1901.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1901.09647
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1901.09647
+      \endverb
+      \keyw{Quantitative Finance - Mathematical Finance}
+    \endentry
+    \entry{adam}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b6fbd171848aad4edf3925543f1f1522}{%
+           family={Kingma},
+           familyi={K\bibinitperiod},
+           given={Diederik\bibnamedelima P.},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8aa66e8231cc2fdbe67aa4f18ca970c6}{%
+           family={Ba},
+           familyi={B\bibinitperiod},
+           given={Jimmy},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{fullhash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{bibnamehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{authorbibnamehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{authornamehash}{a09df9f123146b8e2c7f1134c9496932}
+      \strng{authorfullhash}{a09df9f123146b8e2c7f1134c9496932}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We introduce Adam, an algorithm for first-order gradient-based optimization of stochastic objective functions, based on adaptive estimates of lower-order moments. The method is straightforward to implement, is computationally efficient, has little memory requirements, is invariant to diagonal rescaling of the gradients, and is well suited for problems that are large in terms of data and/or parameters. The method is also appropriate for non-stationary objectives and problems with very noisy and/or sparse gradients. The hyper-parameters have intuitive interpretations and typically require little tuning. Some connections to related algorithms, on which Adam was inspired, are discussed. We also analyze the theoretical convergence properties of the algorithm and provide a regret bound on the convergence rate that is comparable to the best known results under the online convex optimization framework. Empirical results demonstrate that Adam works well in practice and compares favorably to other stochastic optimization methods. Finally, we discuss AdaMax, a variant of Adam based on the infinity norm.}
+      \field{journaltitle}{arXiv:1412.6980 [cs]}
+      \field{month}{1}
+      \field{note}{arXiv: 1412.6980}
+      \field{shorttitle}{Adam}
+      \field{title}{Adam: {A} {Method} for {Stochastic} {Optimization}}
+      \field{urlday}{25}
+      \field{urlmonth}{11}
+      \field{urlyear}{2020}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb arXiv Fulltext PDF:/home/nick/Zotero/storage/M63A39X4/Kingma and Ba - 2017 - Adam A Method for Stochastic Optimization.pdf:application/pdf;arXiv.org Snapshot:/home/nick/Zotero/storage/EGJ5YT47/1412.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1412.6980
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1412.6980
+      \endverb
+      \keyw{Computer Science - Machine Learning}
+    \endentry
+    \entry{vae}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b6fbd171848aad4edf3925543f1f1522}{%
+           family={Kingma},
+           familyi={K\bibinitperiod},
+           given={Diederik\bibnamedelima P.},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=53d2880ad8047b61cdae2c6b2803e763}{%
+           family={Welling},
+           familyi={W\bibinitperiod},
+           given={Max},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{aabdd5db7a1ed298b1dfb6824d032c66}
+      \strng{fullhash}{aabdd5db7a1ed298b1dfb6824d032c66}
+      \strng{bibnamehash}{aabdd5db7a1ed298b1dfb6824d032c66}
+      \strng{authorbibnamehash}{aabdd5db7a1ed298b1dfb6824d032c66}
+      \strng{authornamehash}{aabdd5db7a1ed298b1dfb6824d032c66}
+      \strng{authorfullhash}{aabdd5db7a1ed298b1dfb6824d032c66}
+      \field{sortinit}{K}
+      \field{sortinithash}{d3edc18d54b9438a72c24c925bfb38f4}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{How can we perform efficient inference and learning in directed probabilistic models, in the presence of continuous latent variables with intractable posterior distributions, and large datasets? We introduce a stochastic variational inference and learning algorithm that scales to large datasets and, under some mild differentiability conditions, even works in the intractable case. Our contributions is two-fold. First, we show that a reparameterization of the variational lower bound yields a lower bound estimator that can be straightforwardly optimized using standard stochastic gradient methods. Second, we show that for i.i.d. datasets with continuous latent variables per datapoint, posterior inference can be made especially efficient by fitting an approximate inference model (also called a recognition model) to the intractable posterior using the proposed lower bound estimator. Theoretical advantages are reflected in experimental results.}
+      \field{journaltitle}{arXiv:1312.6114 [cs, stat]}
+      \field{month}{5}
+      \field{note}{arXiv: 1312.6114}
+      \field{title}{Auto-{Encoding} {Variational} {Bayes}}
+      \field{urlday}{25}
+      \field{urlmonth}{11}
+      \field{urlyear}{2020}
+      \field{year}{2014}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb arXiv Fulltext PDF:/home/nick/Zotero/storage/TK3L4MNE/Kingma and Welling - 2014 - Auto-Encoding Variational Bayes.pdf:application/pdf;arXiv.org Snapshot:/home/nick/Zotero/storage/3J9XKIHG/1312.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1312.6114
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1312.6114
+      \endverb
+      \keyw{Computer Science - Machine Learning,Statistics - Machine Learning}
+    \endentry
+    \entry{lucic}{report}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=fc7a9ba9b6e0470531ccad2069aea74d}{%
+           family={Lucic},
+           familyi={L\bibinitperiod},
+           given={Vladimir},
+           giveni={V\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{institution}{1}{%
+        {Social Science Research Network}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{location}{1}{%
+        {Rochester, NY}%
+      }
+      \strng{namehash}{fc7a9ba9b6e0470531ccad2069aea74d}
+      \strng{fullhash}{fc7a9ba9b6e0470531ccad2069aea74d}
+      \strng{bibnamehash}{fc7a9ba9b6e0470531ccad2069aea74d}
+      \strng{authorbibnamehash}{fc7a9ba9b6e0470531ccad2069aea74d}
+      \strng{authornamehash}{fc7a9ba9b6e0470531ccad2069aea74d}
+      \strng{authorfullhash}{fc7a9ba9b6e0470531ccad2069aea74d}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We look into problems related to volatility modelling, focusing on general properties of implied volatility surface and valuation of volatility products. This work contributes to the large body of existing literature by presenting several new results and providing alternative proofs of some existing ones. The paper is organised as a series of facts, centred around a common theme.}
+      \field{month}{11}
+      \field{number}{ID 3211920}
+      \field{title}{Volatility {Notes}}
+      \field{type}{{SSRN} {Scholarly} {Paper}}
+      \field{urlday}{23}
+      \field{urlmonth}{12}
+      \field{urlyear}{2020}
+      \field{year}{2019}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.2139/ssrn.3211920
+      \endverb
+      \verb{file}
+      \verb Snapshot:/home/nick/Zotero/storage/CPYZ8FNC/papers.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://papers.ssrn.com/abstract=3211920
+      \endverb
+      \verb{url}
+      \verb https://papers.ssrn.com/abstract=3211920
+      \endverb
+      \keyw{Implied Volatility,Variance Swap}
+    \endentry
+    \entry{madan}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=30ef6f233af70c2ce8f2a9c926d259e1}{%
+           family={Madan},
+           familyi={M\bibinitperiod},
+           given={Dilip\bibnamedelima B.},
+           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0f2654ee37b0cde5d6a08154bce60879}{%
+           family={Carr},
+           familyi={C\bibinitperiod},
+           given={Peter\bibnamedelima P.},
+           giveni={P\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8e4998a75a4fe1c26f309866b2e9907b}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Eric\bibnamedelima C.},
+           giveni={E\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{49510e9c54c9201061933aa1fc85398c}
+      \strng{fullhash}{49510e9c54c9201061933aa1fc85398c}
+      \strng{bibnamehash}{49510e9c54c9201061933aa1fc85398c}
+      \strng{authorbibnamehash}{49510e9c54c9201061933aa1fc85398c}
+      \strng{authornamehash}{49510e9c54c9201061933aa1fc85398c}
+      \strng{authorfullhash}{49510e9c54c9201061933aa1fc85398c}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A three parameter stochastic process, termed the variance gamma process, that generalizes Brownian motion is developed as a model for the dynamics of log stock prices. The process is obtained by evaluating Brownian motion with drift at a random time given by a gamma process. The two additional parameters are the drift of the Brownian motion and the volatility of the time change. These additional parameters provide control over the skewness and kurtosis of the return distribution. Closed forms are obtained for the return density and the prices of European options. The statistical and risk neutral densities are estimated for data on the S\&P500 Index and the prices of options on this Index. It is observed that the statistical density is symmetric with some kurtosis, while the risk neutral density is negatively skewed with a larger kurtosis. The additional parameters also correct for pricing biases of the Black Scholes model that is a parametric special case of the option pricing model developed here.}
+      \field{issn}{1572-3097, 1573-692X}
+      \field{journaltitle}{Review of Finance}
+      \field{month}{4}
+      \field{number}{1}
+      \field{title}{The {Variance} {Gamma} {Process} and {Option} {Pricing}}
+      \field{urlday}{2}
+      \field{urlmonth}{2}
+      \field{urlyear}{2021}
+      \field{volume}{2}
+      \field{year}{1998}
+      \field{urldateera}{ce}
+      \field{pages}{79\bibrangedash 105}
+      \range{pages}{27}
+      \verb{doi}
+      \verb 10.1023/A:1009703431535
+      \endverb
+      \verb{file}
+      \verb Madan et al. - 1998 - The Variance Gamma Process and Option Pricing.pdf:/home/nick/Zotero/storage/HIUV73BE/Madan et al. - 1998 - The Variance Gamma Process and Option Pricing.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://academic.oup.com/rof/article/2/1/79/1581894
+      \endverb
+      \verb{url}
+      \verb https://academic.oup.com/rof/article/2/1/79/1581894
+      \endverb
+    \endentry
+    \entry{merton}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b1e2894bce14479f5a711418ce8f8ffa}{%
+           family={Merton},
+           familyi={M\bibinitperiod},
+           given={Robert\bibnamedelima C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{b1e2894bce14479f5a711418ce8f8ffa}
+      \strng{fullhash}{b1e2894bce14479f5a711418ce8f8ffa}
+      \strng{bibnamehash}{b1e2894bce14479f5a711418ce8f8ffa}
+      \strng{authorbibnamehash}{b1e2894bce14479f5a711418ce8f8ffa}
+      \strng{authornamehash}{b1e2894bce14479f5a711418ce8f8ffa}
+      \strng{authorfullhash}{b1e2894bce14479f5a711418ce8f8ffa}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The validity of the classic Black-Scholes option pricing formula depends on the capability of investors to follow a dynamic portfolio strategy in the stock that replicates the payoff structure to the option. The critical assumption required for such a strategy to be feasible, is that the underlying stock return dynamics can be described by a stochastic process with a continuous sample path. In this paper, an option pricing formula is derived for the more-general case when the underlying stock returns are generated by a mixture of both continuous and jump processes. The derived formula has most of the attractive features of the original Black-Scholes formula in that it does not depend on investor preferences or knowledge of the expected return on the underlying stock. Moreover, the same analysis applied to the options can be extended to the pricing of corporate liabilities.}
+      \field{issn}{0304-405X}
+      \field{journaltitle}{Journal of Financial Economics}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Option pricing when underlying stock returns are discontinuous}
+      \field{urlday}{2}
+      \field{urlmonth}{2}
+      \field{urlyear}{2021}
+      \field{volume}{3}
+      \field{year}{1976}
+      \field{urldateera}{ce}
+      \field{pages}{125\bibrangedash 144}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1016/0304-405X(76)90022-2
+      \endverb
+      \verb{file}
+      \verb Submitted Version:/home/nick/Zotero/storage/7INN6SA3/Merton - 1976 - Option pricing when underlying stock returns are d.pdf:application/pdf;ScienceDirect Snapshot:/home/nick/Zotero/storage/422VTESN/0304405X76900222.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb http://www.sciencedirect.com/science/article/pii/0304405X76900222
+      \endverb
+      \verb{url}
+      \verb http://www.sciencedirect.com/science/article/pii/0304405X76900222
+      \endverb
+    \endentry
+    \entry{wystup}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=a6b9099cff2ab2d0d2ee94f67e8793d9}{%
+           family={Reiswich},
+           familyi={R\bibinitperiod},
+           given={Dimitri},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0aa854478e0993ac12c09d6757f5733e}{%
+           family={Wystup},
+           familyi={W\bibinitperiod},
+           given={Uwe},
+           giveni={U\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{7feafec7387959799cf681fd2c0ae179}
+      \strng{fullhash}{7feafec7387959799cf681fd2c0ae179}
+      \strng{bibnamehash}{7feafec7387959799cf681fd2c0ae179}
+      \strng{authorbibnamehash}{7feafec7387959799cf681fd2c0ae179}
+      \strng{authornamehash}{7feafec7387959799cf681fd2c0ae179}
+      \strng{authorfullhash}{7feafec7387959799cf681fd2c0ae179}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The foreign exchange options market is one of the largest and most liquid OTC derivative markets in the world. Surprisingly, very little is known in the academic literature about the construction of the most important object in this market: The implied volatility smile. The smile construction procedure and the volatility quoting mechanisms are FX specific and differ significantly from other markets. We give a brief overview of these quoting mechanisms and provide a comprehensive introduction to the resulting smile construction problem. Furthermore, we provide a new formula which can be used for an efficient and robust FX smile construction.}
+      \field{issn}{15406962}
+      \field{journaltitle}{Wilmott}
+      \field{month}{7}
+      \field{number}{60}
+      \field{title}{{FX} {Volatility} {Smile} {Construction}}
+      \field{urlday}{26}
+      \field{urlmonth}{11}
+      \field{urlyear}{2020}
+      \field{volume}{2012}
+      \field{year}{2012}
+      \field{urldateera}{ce}
+      \field{pages}{58\bibrangedash 69}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1002/wilm.10132
+      \endverb
+      \verb{file}
+      \verb Reiswich and Uwe - 2012 - FX Volatility Smile Construction.pdf:/home/nick/Zotero/storage/8IQAHNVA/Reiswich and Uwe - 2012 - FX Volatility Smile Construction.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://doi.wiley.com/10.1002/wilm.10132
+      \endverb
+      \verb{url}
+      \verb http://doi.wiley.com/10.1002/wilm.10132
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

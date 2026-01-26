@@ -1,0 +1,31 @@
+\begin{table}[!h]
+
+\caption{Mean loss (with standard deviation).
+    All numbers are multiplied by 100.
+    \label{tab:appli_loss}}
+\centering
+\resizebox{\linewidth}{!}{
+\begin{tabular}{llllllll}
+\toprule
+\multicolumn{2}{c}{ } & \multicolumn{2}{c}{Condition 1} & \multicolumn{2}{c}{Condition 2} & \multicolumn{2}{c}{Condition 3} \\
+\cmidrule(l{3pt}r{3pt}){3-4} \cmidrule(l{3pt}r{3pt}){5-6} \cmidrule(l{3pt}r{3pt}){7-8}
+ &  & Interpolation & Extrapolation & Interpolation & Extrapolation & Interpolation & Extrapolation\\
+\midrule
+ & train & 3.12 (3.04) & 4.79 (5.82) & 2.47 (2.98) & 1.56 (3.58) & 5.46 (1.91) & 8.1 (5.7)\\
+\cmidrule{2-8}
+\multirow[t]{-2}{*}{\raggedright\arraybackslash RMSE} & test & 9.48 (7.52) & 4.87 (5.91) & 7.66 (6.95) & 1.55 (3.47) & 14.27 (4.67) & 8.2 (5.75)\\
+\cmidrule{1-8}
+ & train & 16.04 (15.67) & 16.39 (19.88) & 12.81 (15.46) & 5.42 (12.43) & 27.96 (10.09) & 27.66 (19.43)\\
+\cmidrule{2-8}
+\multirow[t]{-2}{*}{\raggedright\arraybackslash MAPE} & test & 26.4 (22.65) & 16.66 (20.11) & 21.61 (21.91) & 5.48 (12.26) & 42.14 (13.54) & 27.76 (19.45)\\
+\cmidrule{1-8}
+ & train & 0.01 (0.02) & 0.02 (0.03) & 0.03 (0.07) & 0.07 (0.18) & 4.24 (2.75) & 2.39 (1.78)\\
+\cmidrule{2-8}
+\multirow[t]{-2}{*}{\raggedright\arraybackslash CAL} & test & 0.01 (0.02) & 0.02 (0.03) & 0.03 (0.07) & 0.07 (0.18) & 4.24 (2.75) & 2.39 (1.78)\\
+\cmidrule{1-8}
+ & train & 0 (0) & 0 (0) & 0 (0) & 0 (0) & 0.86 (2.06) & 3.36 (14.06)\\
+\cmidrule{2-8}
+\multirow[t]{-2}{*}{\raggedright\arraybackslash BUT} & test & 0 (0) & 0 (0) & 0 (0) & 0 (0) & 0.86 (2.06) & 3.36 (14.06)\\
+\bottomrule
+\end{tabular}}
+\end{table}

@@ -1,0 +1,613 @@
+[
+    {
+        "arxiv_id": "1107.1834v1",
+        "title": "Implied Volatility Surface: Construction Methodologies and Characteristics",
+        "authors": [
+            "Cristian Homescu"
+        ],
+        "published_date": "2011-07-10 04:50:23+00:00",
+        "abstract": "The implied volatility surface (IVS) is a fundamental building block in computational finance. We provide a survey of methodologies for constructing such surfaces. We also discuss various topics which can influence the successful construction of IVS in practice: arbitrage-free conditions in both strike and time, how to perform extrapolation outside the core region, choice of calibrating functional and selection of numerical optimization algorithms, volatility surface dynamics and asymptotics.",
+        "source_folder": "./vol_surface_source/1107.1834v1",
+        "main_tex_file": "ConstructingImpliedVolSurface_Homescu_2011_Arxiv.tex",
+        "url": "https://arxiv.org/pdf/1107.1834v1"
+    },
+    {
+        "arxiv_id": "2407.21138v2",
+        "title": "Enhancing Deep Hedging of Options with Implied Volatility Surface Feedback Information",
+        "authors": [
+            "Pascal Fran\u00e7ois",
+            "Genevi\u00e8ve Gauthier",
+            "Fr\u00e9d\u00e9ric Godin",
+            "Carlos Octavio P\u00e9rez Mendoza"
+        ],
+        "published_date": "2024-07-30 18:59:19+00:00",
+        "abstract": "We present a dynamic hedging scheme for S&P 500 options, where rebalancing decisions are enhanced by integrating information about the implied volatility surface dynamics. The optimal hedging strategy is obtained through a deep policy gradient-type reinforcement learning algorithm. The favorable inclusion of forward-looking information embedded in the volatility surface allows our procedure to outperform several conventional benchmarks such as practitioner and smiled-implied delta hedging procedures, both in simulation and backtesting experiments. The outperformance is more pronounced in the presence of transaction costs.",
+        "source_folder": "./vol_surface_source/2407.21138v2",
+        "main_tex_file": "main_QFSubmission.tex",
+        "url": "https://arxiv.org/pdf/2407.21138v2"
+    },
+    {
+        "arxiv_id": "2509.08096v1",
+        "title": "Joint calibration of the volatility surface and variance term structure",
+        "authors": [
+            "Jiwook Yoo"
+        ],
+        "published_date": "2025-09-09 19:09:12+00:00",
+        "abstract": "This article proposes a calibration framework for complex option pricing models that jointly fits market option prices and the term structure of variance. Calibrated models under the conventional objective function, the sum of squared errors in Black-Scholes implied volatilities, can produce model-implied variance term structures with large errors relative to those observed in the market and implied by option prices. I show that this can occur even when the model-implied volatility surface closely matches the volatility surface observed in the market. The proposed joint calibration addresses this issue by augmenting the conventional objective function with a penalty term for large deviations from the observed variance term structure. This augmented objective function features a hyperparameter that governs the relative weight placed on the volatility surface and the variance term structure. I test this framework on a jump-diffusion model with stochastic volatility in two calibration exercises: the first using volatility surfaces generated under a Bates model, and the second using a panel of S&P 500 equity index options covering the 1996-2023 period. I demonstrate that the proposed method is able to fit observed option prices well while delivering realistic term structures of variance. Finally, I provide guidance on the choice of hyperparameters based on the results of these numerical exercises.",
+        "source_folder": "./vol_surface_source/2509.08096v1",
+        "main_tex_file": "joint_calibration.tex",
+        "url": "https://arxiv.org/pdf/2509.08096v1"
+    },
+    {
+        "arxiv_id": "2312.15950v3",
+        "title": "The implied volatility surface (also) is path-dependent",
+        "authors": [
+            "Herv\u00e9 Andr\u00e8s",
+            "Alexandre Boumezoued",
+            "Benjamin Jourdain"
+        ],
+        "published_date": "2023-12-26 08:31:29+00:00",
+        "abstract": "We propose a new model for the forecasting of both the implied volatility surfaces and the underlying asset price. In the spirit of Guyon and Lekeufack (2023) who are interested in the dependence of volatility indices (e.g. the VIX) on the paths of the associated equity indices (e.g. the S\\&P 500), we first study how vanilla options implied volatility can be predicted using the past trajectory of the underlying asset price. Our empirical study reveals that a large part of the movements of the at-the-money-forward implied volatility for up to two years time-to-maturities can be explained using the past returns and their squares. Moreover, we show that this feedback effect gets weaker when the time-to-maturity increases. Building on this new stylized fact, we fit to historical data a parsimonious version of the SSVI parameterization (Gatheral and Jacquier, 2014) of the implied volatility surface relying on only four parameters and show that the two parameters ruling the at-the-money-forward implied volatility as a function of the time-to-maturity exhibit a path-dependent behavior with respect to the underlying asset price. Finally, we propose a model for the joint dynamics of the implied volatility surface and the underlying asset price. The latter is modelled using a variant of the path-dependent volatility model of Guyon and Lekeufack and the former is obtained by adding a feedback effect of the underlying asset price onto the two parameters ruling the at-the-money-forward implied volatility in the parsimonious SSVI parameterization and by specifying Ornstein-Uhlenbeck processes for the residuals of these two parameters and Jacobi processes for the two other parameters. Thanks to this model, we are able to simulate highly realistic paths of implied volatility surfaces that are free from static arbitrage.",
+        "source_folder": "./vol_surface_source/2312.15950v3",
+        "main_tex_file": "main.tex",
+        "url": "https://arxiv.org/pdf/2312.15950v3"
+    },
+    {
+        "arxiv_id": "1204.0646v4",
+        "title": "Arbitrage-free SVI volatility surfaces",
+        "authors": [
+            "Jim Gatheral",
+            "Antoine Jacquier"
+        ],
+        "published_date": "2012-04-03 10:23:12+00:00",
+        "abstract": "In this article, we show how to calibrate the widely-used SVI parameterization of the implied volatility surface in such a way as to guarantee the absence of static arbitrage. In particular, we exhibit a large class of arbitrage-free SVI volatility surfaces with a simple closed-form representation. We demonstrate the high quality of typical SVI fits with a numerical example using recent SPX options data.",
+        "source_folder": "./vol_surface_source/1204.0646v4",
+        "main_tex_file": "svi_revised_130316A.tex",
+        "url": "https://arxiv.org/pdf/1204.0646v4"
+    },
+    {
+        "arxiv_id": "2106.07177v2",
+        "title": "A Two-Step Framework for Arbitrage-Free Prediction of the Implied Volatility Surface",
+        "authors": [
+            "Wenyong Zhang",
+            "Lingfei Li",
+            "Gongqiu Zhang"
+        ],
+        "published_date": "2021-06-14 05:57:54+00:00",
+        "abstract": "We propose a two-step framework for predicting the implied volatility surface over time without static arbitrage. In the first step, we select features to represent the surface and predict them over time. In the second step, we use the predicted features to construct the implied volatility surface using a deep neural network (DNN) model by incorporating constraints that prevent static arbitrage. We consider three methods to extract features from the implied volatility data: principal component analysis, variational autoencoder and sampling the surface, and we predict these features using LSTM. Using a long time series of implied volatility data for S\\&P500 index options to train our models, we find two feature construction methods, sampling the surface and variational autoencoders combined with DNN for surface construction, are the best performers in out-of-sample prediction. In particular, they outperform a classical method substantially. Furthermore, the DNN model for surface construction not only removes static arbitrage, but also significantly reduces the prediction error compared with a standard interpolation method. Our framework can also be used to simulate the dynamics of the implied volatility surface without static arbitrage.",
+        "source_folder": "./vol_surface_source/2106.07177v2",
+        "main_tex_file": "IVS_arxiv.tex",
+        "url": "https://arxiv.org/pdf/2106.07177v2"
+    },
+    {
+        "arxiv_id": "2509.05911v1",
+        "title": "Deep Learning Option Pricing with Market Implied Volatility Surfaces",
+        "authors": [
+            "Lijie Ding",
+            "Egang Lu",
+            "Kin Cheung"
+        ],
+        "published_date": "2025-09-07 04:03:48+00:00",
+        "abstract": "We present a deep learning framework for pricing options based on market-implied volatility surfaces. Using end-of-day S\\&P 500 index options quotes from 2018-2023, we construct arbitrage-free volatility surfaces and generate training data for American puts and arithmetic Asian options using QuantLib. To address the high dimensionality of volatility surfaces, we employ a variational autoencoder (VAE) that compresses volatility surfaces across maturities and strikes into a 10-dimensional latent representation. We feed these latent variables, combined with option-specific inputs such as strike and maturity, into a multilayer perceptron to predict option prices. Our model is trained in stages: first to train the VAE for volatility surface compression and reconstruction, then options pricing mapping, and finally fine-tune the entire network end-to-end. The trained pricer achieves high accuracy across American and Asian options, with prediction errors concentrated primarily near long maturities and at-the-money strikes, where absolute bid-ask price differences are known to be large. Our method offers an efficient and scalable approach requiring only a single neural network forward pass and naturally improve with additional data. By bridging volatility surface modeling and option pricing in a unified framework, it provides a fast and flexible alternative to traditional numerical approaches for exotic options.",
+        "source_folder": "./vol_surface_source/2509.05911v1",
+        "main_tex_file": "main.tex",
+        "url": "https://arxiv.org/pdf/2509.05911v1"
+    },
+    {
+        "arxiv_id": "1210.7111v4",
+        "title": "Generalised arbitrage-free SVI volatility surfaces",
+        "authors": [
+            "Gaoyue Guo",
+            "Antoine Jacquier",
+            "Claude Martini",
+            "Leo Neufcourt"
+        ],
+        "published_date": "2012-10-26 12:17:52+00:00",
+        "abstract": "In this article we propose a generalisation of the recent work of Gatheral and Jacquier on explicit arbitrage-free parameterisations of implied volatility surfaces. We also discuss extensively the notion of arbitrage freeness and Roger Lee's moment formula using the recent analysis by Roper. We further exhibit an arbitrage-free volatility surface different from Gatheral's SVI parameterisation.",
+        "source_folder": "./vol_surface_source/1210.7111v4",
+        "main_tex_file": "Final_SIFIN_v3.tex",
+        "url": "https://arxiv.org/pdf/1210.7111v4"
+    },
+    {
+        "arxiv_id": "1904.12834v5",
+        "title": "Incorporating prior financial domain knowledge into neural networks for implied volatility surface prediction",
+        "authors": [
+            "Yu Zheng",
+            "Yongxin Yang",
+            "Bowei Chen"
+        ],
+        "published_date": "2019-04-29 17:35:41+00:00",
+        "abstract": "In this paper we develop a novel neural network model for predicting implied volatility surface. Prior financial domain knowledge is taken into account. A new activation function that incorporates volatility smile is proposed, which is used for the hidden nodes that process the underlying asset price. In addition, financial conditions, such as the absence of arbitrage, the boundaries and the asymptotic slope, are embedded into the loss function. This is one of the very first studies which discuss a methodological framework that incorporates prior financial domain knowledge into neural network architecture design and model training. The proposed model outperforms the benchmarked models with the option data on the S&P 500 index over 20 years. More importantly, the domain knowledge is satisfied empirically, showing the model is consistent with the existing financial theories and conditions related to implied volatility surface.",
+        "source_folder": "./vol_surface_source/1904.12834v5",
+        "main_tex_file": "nnivs_arxiv_2021.tex",
+        "url": "https://arxiv.org/pdf/1904.12834v5"
+    },
+    {
+        "arxiv_id": "2504.06208v3",
+        "title": "Deep Hedging with Options Using the Implied Volatility Surface",
+        "authors": [
+            "Pascal Fran\u00e7ois",
+            "Genevi\u00e8ve Gauthier",
+            "Fr\u00e9d\u00e9ric Godin",
+            "Carlos O. P\u00e9rez-Mendoza"
+        ],
+        "published_date": "2025-04-08 16:51:44+00:00",
+        "abstract": "We propose a deep hedging framework for index option portfolios, grounded in a realistic market simulator that captures the joint dynamics of S&P 500 returns and the full implied volatility surface. Our approach integrates surface-informed decisions with multiple hedging instruments and explicitly accounts for transaction costs. The hedging strategy also considers the variance risk premium embedded in the hedging instruments, enabling more informed and adaptive risk management. Tested on a historical out-of-sample set of straddles from 2020 to 2023, our method consistently outperforms traditional delta-gamma hedging strategies across a range of market conditions.",
+        "source_folder": "./vol_surface_source/2504.06208v3",
+        "main_tex_file": "main.tex",
+        "url": "https://arxiv.org/pdf/2504.06208v3"
+    },
+    {
+        "arxiv_id": "2012.10875v1",
+        "title": "High-frequency dynamics of the implied volatility surface",
+        "authors": [
+            "Bastien Baldacci"
+        ],
+        "published_date": "2020-12-20 09:21:54+00:00",
+        "abstract": "We present a Hawkes modeling of the volatility surface's high-frequency dynamics and show how the Hawkes kernel coefficients govern the surface's skew and convexity. We provide simple sufficient conditions on the coefficients to ensure no-arbitrage opportunities of the surface. Moreover, these conditions reduce the number of the kernel's parameters to estimate. Finally, we show that at the macroscopic level, the surface is driven by a sum of risk factors whose volatility processes are rough.",
+        "source_folder": "./vol_surface_source/2012.10875v1",
+        "main_tex_file": "main.tex",
+        "url": "https://arxiv.org/pdf/2012.10875v1"
+    },
+    {
+        "arxiv_id": "2209.10771v3",
+        "title": "Physics-Informed Convolutional Transformer for Predicting Volatility Surface",
+        "authors": [
+            "Soohan Kim",
+            "Seok-Bae Yun",
+            "Hyeong-Ohk Bae",
+            "Muhyun Lee",
+            "Youngjoon Hong"
+        ],
+        "published_date": "2022-09-22 04:11:32+00:00",
+        "abstract": "Predicting volatility is important for asset predicting, option pricing and hedging strategies because it cannot be directly observed in the financial market. The Black-Scholes option pricing model is one of the most widely used models by market participants. Notwithstanding, the Black-Scholes model is based on heavily criticized theoretical premises, one of which is the constant volatility assumption. The dynamics of the volatility surface is difficult to estimate. In this paper, we establish a novel architecture based on physics-informed neural networks and convolutional transformers. The performance of the new architecture is directly compared to other well-known deep-learning architectures, such as standard physics-informed neural networks, convolutional long-short term memory (ConvLSTM), and self-attention ConvLSTM. Numerical evidence indicates that the proposed physics-informed convolutional transformer network achieves a superior performance than other methods.",
+        "source_folder": "./vol_surface_source/2209.10771v3",
+        "main_tex_file": "final.tex",
+        "url": "https://arxiv.org/pdf/2209.10771v3"
+    },
+    {
+        "arxiv_id": "2211.12892v2",
+        "title": "A new encoding of implied volatility surfaces for their synthetic generation",
+        "authors": [
+            "Zheng Gong",
+            "Wojciech Frys",
+            "Renzo Tiranti",
+            "Carmine Ventre",
+            "John O'Hara",
+            "Yingbo Bai"
+        ],
+        "published_date": "2022-11-23 11:52:45+00:00",
+        "abstract": "In financial terms, an implied volatility surface can be described by its term structure, its skewness and its overall volatility level. We use a PCA variational auto-encoder model to perfectly represent these descriptors into a latent space of three dimensions. Our new encoding brings significant benefits for synthetic surface generation, in that (i) scenario generation is more interpretable; (ii) volatility extrapolation achieve better accuracy; and, (iii) we propose a solution to infer implied volatility surfaces of a stock from an index to which it belongs directly by modelling their relationship on the latent space of the encoding. All these applications, and the latter in particular, have the potential to improve risk management of financial derivatives whenever data is scarce.",
+        "source_folder": "./vol_surface_source/2211.12892v2",
+        "main_tex_file": "main.tex",
+        "url": "https://arxiv.org/pdf/2211.12892v2"
+    },
+    {
+        "arxiv_id": "2505.22957v1",
+        "title": "Fast Derivative Valuation from Volatility Surfaces using Machine Learning",
+        "authors": [
+            "Lijie Ding",
+            "Egang Lu",
+            "Kin Cheung"
+        ],
+        "published_date": "2025-05-29 00:42:56+00:00",
+        "abstract": "We introduce a fast and flexible Machine Learning (ML) framework for pricing derivative products whose valuation depends on volatility surfaces. By parameterizing volatility surfaces with the 5-parameter stochastic volatility inspired (SVI) model augmented by a one-factor term structure adjustment, we first generate numerous volatility surfaces over realistic ranges for these parameters. From these synthetic market scenarios, we then compute high-accuracy valuations using conventional methodologies for two representative products: the fair strike of a variance swap and the price and Greeks of an American put. We then train the Gaussian Process Regressor (GPR) to learn the nonlinear mapping from the input risk factors, which are the volatility surface parameters, strike and interest rate, to the valuation outputs. Once trained, We use the GPR to perform out-of-sample valuations and compare the results against valuations using conventional methodologies. Our ML model achieves very accurate results of $0.5\\%$ relative error for the fair strike of variance swap and $1.7\\% \\sim 3.5\\%$ relative error for American put prices and first-order Greeks. More importantly, after training, the model computes valuations almost instantly, yielding a three to four orders of magnitude speedup over Crank-Nicolson finite-difference method for American puts, enabling real-time risk analytics, dynamic hedging and large-scale scenario analysis. Our approach is general and can be extended to other path-dependent derivative products with early-exercise features, paving the way for hybrid quantitative engines for modern financial systems.",
+        "source_folder": "./vol_surface_source/2505.22957v1",
+        "main_tex_file": "apssamp.tex",
+        "url": "https://arxiv.org/pdf/2505.22957v1"
+    },
+    {
+        "arxiv_id": "1909.11009v1",
+        "title": "Implied volatility surface predictability: the case of commodity markets",
+        "authors": [
+            "Fearghal Kearney",
+            "Han Lin Shang",
+            "Lisa Sheenan"
+        ],
+        "published_date": "2019-09-21 05:37:14+00:00",
+        "abstract": "Recent literature seek to forecast implied volatility derived from equity, index, foreign exchange, and interest rate options using latent factor and parametric frameworks. Motivated by increased public attention borne out of the financialization of futures markets in the early 2000s, we investigate if these extant models can uncover predictable patterns in the implied volatility surfaces of the most actively traded commodity options between 2006 and 2016. Adopting a rolling out-of-sample forecasting framework that addresses the common multiple comparisons problem, we establish that, for energy and precious metals options, explicitly modeling the term structure of implied volatility using the Nelson-Siegel factors produces the most accurate forecasts.",
+        "source_folder": "./vol_surface_source/1909.11009v1",
+        "main_tex_file": "Comdty_IV_forecasting_revised_HS.tex",
+        "url": "https://arxiv.org/pdf/1909.11009v1"
+    },
+    {
+        "arxiv_id": "2001.09850v2",
+        "title": "Asymptotics of the time-discretized log-normal SABR model: The implied volatility surface",
+        "authors": [
+            "Dan Pirjol",
+            "Lingjiong Zhu"
+        ],
+        "published_date": "2020-01-27 15:13:51+00:00",
+        "abstract": "We propose a novel time discretization for the log-normal SABR model which is a popular stochastic volatility model that is widely used in financial practice. Our time discretization is a variant of the Euler-Maruyama scheme. We study its asymptotic properties in the limit of a large number of time steps under a certain asymptotic regime which includes the case of finite maturity, small vol-of-vol and large initial volatility with fixed product of vol-of-vol and initial volatility. We derive an almost sure limit and a large deviations result for the log-asset price in the limit of large number of time steps. We derive an exact representation of the implied volatility surface for arbitrary maturity and strike in this regime. Using this representation we obtain analytical expansions of the implied volatility for small maturity and extreme strikes, which reproduce at leading order known asymptotic results for the continuous time model.",
+        "source_folder": "./vol_surface_source/2001.09850v2",
+        "main_tex_file": "paperSABR.tex",
+        "url": "https://arxiv.org/pdf/2001.09850v2"
+    },
+    {
+        "arxiv_id": "2311.14985v1",
+        "title": "Temporal Volatility Surface Projection: Parametric Surface Projection Method for Derivatives Portfolio Risk Management",
+        "authors": [
+            "Shiva Zamani",
+            "Alireza Moslemi Haghighi",
+            "Hamid Arian"
+        ],
+        "published_date": "2023-11-25 10:08:47+00:00",
+        "abstract": "This study delves into the intricate realm of risk evaluation within the domain of specific financial derivatives, notably options. Unlike other financial instruments, like bonds, options are susceptible to broader risks. A distinctive trait characterizing this category of instruments is their non-linear price behavior relative to their pricing parameters. Consequently, evaluating the risk of these securities is notably more intricate when juxtaposed with analogous scenarios involving fixed-income instruments, such as debt securities. A paramount facet in options risk assessment is the inherent uncertainty stemming from first-order fluctuations in the underlying asset's volatility. The dynamic patterns of volatility fluctuations manifest striking resemblances to the interest rate risk associated with zero-coupon bonds. However, it is imperative to bestow heightened attention on this risk category due to its dependence on a more extensive array of variables and the temporal variability inherent in these variables. This study scrutinizes the methodological approach to risk assessment by leveraging the implied volatility surface as a foundational component, thereby diverging from the reliance on a singular estimate of the underlying asset's volatility.",
+        "source_folder": "./vol_surface_source/2311.14985v1",
+        "main_tex_file": "main.tex",
+        "url": "https://arxiv.org/pdf/2311.14985v1"
+    },
+    {
+        "arxiv_id": "2411.02375v1",
+        "title": "Whack-a-mole Online Learning: Physics-Informed Neural Network for Intraday Implied Volatility Surface",
+        "authors": [
+            "Kentaro Hoshisashi",
+            "Carolyn E. Phelan",
+            "Paolo Barucca"
+        ],
+        "published_date": "2024-11-04 18:44:31+00:00",
+        "abstract": "Calibrating the time-dependent Implied Volatility Surface (IVS) using sparse market data is an essential challenge in computational finance, particularly for real-time applications. This task requires not only fitting market data but also satisfying a specified partial differential equation (PDE) and no-arbitrage conditions modelled by differential inequalities. This paper proposes a novel Physics-Informed Neural Networks (PINNs) approach called Whack-a-mole Online Learning (WamOL) to address this multi-objective optimisation problem. WamOL integrates self-adaptive and auto-balancing processes for each loss term, efficiently reweighting objective functions to ensure smooth surface fitting while adhering to PDE and no-arbitrage constraints and updating for intraday predictions. In our experiments, WamOL demonstrates superior performance in calibrating intraday IVS from uneven and sparse market data, effectively capturing the dynamic evolution of option prices and associated risk profiles. This approach offers an efficient solution for intraday IVS calibration, extending PINNs applications and providing a method for real-time financial modelling.",
+        "source_folder": "./vol_surface_source/2411.02375v1",
+        "main_tex_file": "main.tex",
+        "url": "https://arxiv.org/pdf/2411.02375v1"
+    },
+    {
+        "arxiv_id": "1906.05065v3",
+        "title": "Deep Smoothing of the Implied Volatility Surface",
+        "authors": [
+            "Damien Ackerer",
+            "Natasa Tagasovska",
+            "Thibault Vatter"
+        ],
+        "published_date": "2019-06-12 11:31:13+00:00",
+        "abstract": "We present a neural network (NN) approach to fit and predict implied volatility surfaces (IVSs). Atypically to standard NN applications, financial industry practitioners use such models equally to replicate market prices and to value other financial instruments. In other words, low training losses are as important as generalization capabilities. Importantly, IVS models need to generate realistic arbitrage-free option prices, meaning that no portfolio can lead to risk-free profits. We propose an approach guaranteeing the absence of arbitrage opportunities by penalizing the loss using soft constraints. Furthermore, our method can be combined with standard IVS models in quantitative finance, thus providing a NN-based correction when such models fail at replicating observed market prices. This lets practitioners use our approach as a plug-in on top of classical methods. Empirical results show that this approach is particularly useful when only sparse or erroneous data are available. We also quantify the uncertainty of the model predictions in regions with few or no observations. We further explore how deeper NNs improve over shallower ones, as well as other properties of the network architecture. We benchmark our method against standard IVS models. By evaluating our method on both training sets, and testing sets, namely, we highlight both their capacity to reproduce observed prices and predict new ones.",
+        "source_folder": "./vol_surface_source/1906.05065v3",
+        "main_tex_file": "deepsmooth.tex",
+        "url": "https://arxiv.org/pdf/1906.05065v3"
+    },
+    {
+        "arxiv_id": "2506.22888v1",
+        "title": "SABR-Informed Multitask Gaussian Process: A Synthetic-to-Real Framework for Implied Volatility Surface Construction",
+        "authors": [
+            "Jirong Zhuang",
+            "Xuan Wu"
+        ],
+        "published_date": "2025-06-28 13:57:17+00:00",
+        "abstract": "Constructing the Implied Volatility Surface (IVS) is a challenging task in quantitative finance due to the complexity of real markets and the sparsity of market data. Structural models like Stochastic Alpha Beta Rho (SABR) model offer interpretability and theoretical consistency but lack flexibility, while purely data-driven methods such as Gaussian Process regression can struggle with sparse data. We introduce SABR-Informed Multi-Task Gaussian Process (SABR-MTGP), treating IVS construction as a multi-task learning problem. Our method uses a dense synthetic dataset from a calibrated SABR model as a source task to inform the construction based on sparse market data (the target task). The MTGP framework captures task correlation and transfers structural information adaptively, improving predictions particularly in data-scarce regions. Experiments using Heston-generated ground truth data under various market conditions show that SABR-MTGP outperforms both standard Gaussian process regression and SABR across different maturities. Furthermore, an application to real SPX market data demonstrates the method's practical applicability and its ability to produce stable and realistic surfaces. This confirms our method balances structural guidance from SABR with the flexibility needed for market data.",
+        "source_folder": "./vol_surface_source/2506.22888v1",
+        "main_tex_file": "elsarticle-template-num-names.tex",
+        "url": "https://arxiv.org/pdf/2506.22888v1"
+    },
+    {
+        "arxiv_id": "2509.11928v3",
+        "title": "Meta-Learning Neural Process for Implied Volatility Surfaces with SABR-induced Priors",
+        "authors": [
+            "Jirong Zhuang",
+            "Xuan Wu"
+        ],
+        "published_date": "2025-09-15 13:45:31+00:00",
+        "abstract": "We treat implied volatility surface (IVS) reconstruction as a learning problem guided by two principles. First, we adopt a meta-learning view that trains across trading days to learn a procedure that maps sparse option quotes to a full IVS via conditional prediction, avoiding per-day calibration at test time. Second, we impose a structural prior via transfer learning: pre-train on SABR-generated dataset to encode geometric prior, then fine-tune on historical market dataset to align with empirical patterns. We implement both principles in a single attention-based Neural Process (Volatility Neural Process, VolNP) that produces a complete IVS from a sparse context set in one forward pass. On SPX options, the VolNP outperforms SABR, SSVI, and Gaussian process. Relative to an ablation trained only on market data, the SABR-induced prior reduces RMSE by about 40% and suppresses large errors, with pronounced gains at long maturities where quotes are sparse. The resulting model is fast (single pass), stable (no daily recalibration), and practical for deployment at scale.",
+        "source_folder": "./vol_surface_source/2509.11928v3",
+        "main_tex_file": "main.tex",
+        "url": "https://arxiv.org/pdf/2509.11928v3"
+    },
+    {
+        "arxiv_id": "2304.13128v3",
+        "title": "Computing Volatility Surfaces using Generative Adversarial Networks with Minimal Arbitrage Violations",
+        "authors": [
+            "Andrew Na",
+            "Meixin Zhang",
+            "Justin Wan"
+        ],
+        "published_date": "2023-04-25 20:16:36+00:00",
+        "abstract": "In this paper, we propose a generative adversarial network (GAN) approach for efficiently computing volatility surfaces. The idea is to make use of the special GAN neural architecture so that on one hand, we can learn volatility surfaces from training data and on the other hand, enforce no-arbitrage conditions. In particular, the generator network is assisted in training by a discriminator that evaluates whether the generated volatility matches the target distribution. Meanwhile, our framework trains the GAN network to satisfy the no-arbitrage constraints by introducing penalties as regularization terms. The proposed GAN model allows the use of shallow networks which results in much less computational costs. In our experiments, we demonstrate the performance of the proposed method by comparing with the state-of-the-art methods for computing implied and local volatility surfaces. We show that our GAN model can outperform artificial neural network (ANN) approaches in terms of accuracy and computational time.",
+        "source_folder": "./vol_surface_source/2304.13128v3",
+        "main_tex_file": "main.tex",
+        "url": "https://arxiv.org/pdf/2304.13128v3"
+    },
+    {
+        "arxiv_id": "2107.14026v1",
+        "title": "Dynamic functional time-series forecasts of foreign exchange implied volatility surfaces",
+        "authors": [
+            "Han Lin Shang",
+            "Fearghal Kearney"
+        ],
+        "published_date": "2021-07-22 20:56:55+00:00",
+        "abstract": "This paper presents static and dynamic versions of univariate, multivariate, and multilevel functional time-series methods to forecast implied volatility surfaces in foreign exchange markets. We find that dynamic functional principal component analysis generally improves out-of-sample forecast accuracy. More specifically, the dynamic univariate functional time-series method shows the greatest improvement. Our models lead to multiple instances of statistically significant improvements in forecast accuracy for daily EUR-USD, EUR-GBP, and EUR-JPY implied volatility surfaces across various maturities, when benchmarked against established methods. A stylised trading strategy is also employed to demonstrate the potential economic benefits of our proposed approach.",
+        "source_folder": "./vol_surface_source/2107.14026v1",
+        "main_tex_file": "Unblinded_manuscript.tex",
+        "url": "https://arxiv.org/pdf/2107.14026v1"
+    },
+    {
+        "arxiv_id": "2509.01743v1",
+        "title": "Controllable Generation of Implied Volatility Surfaces with Variational Autoencoders",
+        "authors": [
+            "Jing Wang",
+            "Shuaiqiang Liu",
+            "Cornelis Vuik"
+        ],
+        "published_date": "2025-09-01 19:51:42+00:00",
+        "abstract": "This paper presents a deep generative modeling framework for controllably synthesizing implied volatility surfaces (IVSs) using a variational autoencoder (VAE). Unlike conventional data-driven models, our approach provides explicit control over meaningful shape features (e.g., volatility level, slope, curvature, term-structure) to generate IVSs with desired characteristics. In our framework, financially interpretable shape features are disentangled from residual latent factors. The target features are embedded into the VAE architecture as controllable latent variables, while the residual latent variables capture additional structure to preserve IVS shape diversity. To enable this control, IVS feature values are quantified via regression at an anchor point and incorporated into the decoder to steer generation. Numerical experiments demonstrate that the generative model enables rapid generation of realistic IVSs with desired features rather than arbitrary patterns, and achieves high accuracy across both single- and multi-feature control settings. For market validity, an optional post-generation latent-space repair algorithm adjusts only the residual latent variables to remove occasional violations of static no-arbitrage conditions without altering the specified features. Compared with black-box generators, the framework combines interpretability, controllability, and flexibility for synthetic IVS generation and scenario design.",
+        "source_folder": "./vol_surface_source/2509.01743v1",
+        "main_tex_file": "main.tex",
+        "url": "https://arxiv.org/pdf/2509.01743v1"
+    },
+    {
+        "arxiv_id": "1504.00334v1",
+        "title": "Simulation of Implied Volatility Surfaces via Tangent Levy Models",
+        "authors": [
+            "Rene Carmona",
+            "Yi Ma",
+            "Sergey Nadtochiy"
+        ],
+        "published_date": "2015-04-01 18:43:25+00:00",
+        "abstract": "In this paper, we implement and test two types of market-based models for European-type options, based on the tangent Levy models proposed recently by R. Carmona and S. Nadtochiy. As a result, we obtain a method for generating Monte Carlo samples of future paths of implied volatility surfaces. These paths and the surfaces themselves are free of arbitrage, and are constructed in a way that is consistent with the past and present values of implied volatility. We use a real market data to estimate the parameters of these models and conduct an empirical study, to compare the performance of market-based models with the performance of classical stochastic volatility models. We choose the problem of minimal-variance portfolio choice as a measure of model performance and compare the two tangent Levy models to SABR model. Our study demonstrates that the tangent Levy models do a much better job at finding a portfolio with smallest variance, their predictions for the variance are more reliable, and the portfolio weights are more stable. To the best of our knowledge, this is the first example of empirical analysis that provides a convincing evidence of the superior performance of the market-based models for European options using real market data.",
+        "source_folder": "./vol_surface_source/1504.00334v1",
+        "main_tex_file": "SimTL_3.tex",
+        "url": "https://arxiv.org/pdf/1504.00334v1"
+    },
+    {
+        "arxiv_id": "2506.09760v2",
+        "title": "The Additive Bachelier model with an application to the oil option market in the Covid period",
+        "authors": [
+            "Roberto Baviera",
+            "Michele Domenico Massaria"
+        ],
+        "published_date": "2025-06-11 14:03:38+00:00",
+        "abstract": "In April 2020, the Chicago Mercantile Exchange temporarily switched the pricing formula for West Texas Intermediate oil market options from the Black model to the Bachelier model. In this context, we introduce an Additive Bachelier model that provides a simple closed-form solution and a good description of the Implied volatility surface. This new Additive model exhibits several notable mathematical and financial properties. It ensures the no-arbitrage condition, a critical requirement in highly volatile markets, while also enabling a parsimonious synthesis of the volatility surface. The model features only three parameters, each one with a clear financial interpretation: the volatility term structure, vol-of-vol, and a parameter for modelling skew. The proposed model supports efficient pricing of path-dependent exotic options via Monte Carlo simulation, using a straightforward and computationally efficient approach. Its calibration process can follow a cascade calibration: first, it accurately replicates the term structures of forwards and At-The-Money volatilities observed in the market; second, it fits the smile of the volatility surface. Overall this model provides a robust and parsimonious description of the oil option market during the exceptionally volatile first period of the Covid-19 pandemic.",
+        "source_folder": "./vol_surface_source/2506.09760v2",
+        "main_tex_file": "main.tex",
+        "url": "https://arxiv.org/pdf/2506.09760v2"
+    },
+    {
+        "arxiv_id": "2204.00312v1",
+        "title": "No arbitrage global parametrization for the eSSVI volatility surface",
+        "authors": [
+            "Arianna Mingone"
+        ],
+        "published_date": "2022-04-01 09:48:00+00:00",
+        "abstract": "The article describes a global and arbitrage-free parametrization of the eSSVI surfaces introduced by Hendriks and Martini in 2019. A robust calibration of such surfaces has already been proposed by the quantitative research team at Zeliade in 2019, but it is sequential in expiries and lacks of a global view on the surface. The alternative calibration suggested in this article is faster and always guarantees an arbitrage-free fit of market data.",
+        "source_folder": "./vol_surface_source/2204.00312v1",
+        "main_tex_file": "combined.tex",
+        "url": "https://arxiv.org/pdf/2204.00312v1"
+    },
+    {
+        "arxiv_id": "2204.02376v2",
+        "title": "Local volatility under rough volatility",
+        "authors": [
+            "Florian Bourgey",
+            "Stefano De Marco",
+            "Peter K. Friz",
+            "Paolo Pigato"
+        ],
+        "published_date": "2022-04-05 17:30:06+00:00",
+        "abstract": "Several asymptotic results for the implied volatility generated by a rough volatility model have been obtained in recent years (notably in the small-maturity regime), providing a better understanding of the shapes of the volatility surface induced by rough volatility models, and supporting their calibration power to S&P500 option data. Rough volatility models also generate a local volatility surface, via the so-called Markovian projection of the stochastic volatility. We complement the existing results on the implied volatility by studying the asymptotic behavior of the local volatility surface generated by a class of rough stochastic volatility models, encompassing the rough Bergomi model. Notably, we observe that the celebrated \"1/2 skew rule\" linking the short-term at-the-money skew of the implied volatility to the short-term at-the-money skew of the local volatility, a consequence of the celebrated \"harmonic mean formula\" of [Berestycki, Busca, and Florent, QF 2002], is replaced by a new rule: the ratio of the at-the-money implied and local volatility skews tends to the constant 1/(H + 3/2) (as opposed to the constant 1/2), where H is the regularity index of the underlying instantaneous volatility process.",
+        "source_folder": "./vol_surface_source/2204.02376v2",
+        "main_tex_file": "local_vol_from_rough_vol.tex",
+        "url": "https://arxiv.org/pdf/2204.02376v2"
+    },
+    {
+        "arxiv_id": "1409.1830v1",
+        "title": "Discrete Time Term Structure Theory and Consistent Recalibration Models",
+        "authors": [
+            "Anja Richter",
+            "Josef Teichmann"
+        ],
+        "published_date": "2014-09-05 14:56:15+00:00",
+        "abstract": "We develop theory and applications of forward characteristic processes in discrete time following a seminal paper of Jan Kallsen and Paul Kr\u00fchner. Particular emphasis is placed on the dynamics of volatility surfaces which can be easily formulated and implemented from the chosen discrete point of view. In mathematical terms we provide an algorithmic answer to the following question: describe a rich, still tractable class of discrete time stochastic processes, whose marginal distributions are given at initial time and which are free of arbitrage. In terms of mathematical finance we can construct models with pre-described (implied) volatility surface and quite general volatility surface dynamics. In terms of the works of Rene Carmona and Sergey Nadtochiy, we analyze the dynamics of tangent affine models. We believe that the discrete approach due to its technical simplicity will be important in term structure modelling.",
+        "source_folder": "./vol_surface_source/1409.1830v1",
+        "main_tex_file": "main.tex",
+        "url": "https://arxiv.org/pdf/1409.1830v1"
+    },
+    {
+        "arxiv_id": "1506.06568v2",
+        "title": "Nonparametric estimates of pricing functionals",
+        "authors": [
+            "Carlo Marinelli",
+            "Stefano d'Addona"
+        ],
+        "published_date": "2015-06-22 12:30:17+00:00",
+        "abstract": "We analyze the empirical performance of several non-parametric estimators of the pricing functional for European options, using historical put and call prices on the S&P500 during the year 2012. Two main families of estimators are considered, obtained by estimating the pricing functional directly, and by estimating the (Black-Scholes) implied volatility surface, respectively. In each case simple estimators based on linear interpolation are constructed, as well as more sophisticated ones based on smoothing kernels, \u00e0 la Nadaraya-Watson. The results based on the analysis of the empirical pricing errors in an extensive out-of-sample study indicate that a simple approach based on the Black-Scholes formula coupled with linear interpolation of the volatility surface outperforms, both in accuracy and computational speed, all other methods.",
+        "source_folder": "./vol_surface_source/1506.06568v2",
+        "main_tex_file": "arXiv2.tex",
+        "url": "https://arxiv.org/pdf/1506.06568v2"
+    },
+    {
+        "arxiv_id": "1306.0995v4",
+        "title": "B-spline techniques for volatility modeling",
+        "authors": [
+            "Sylvain Corlay"
+        ],
+        "published_date": "2013-06-05 06:23:45+00:00",
+        "abstract": "This paper is devoted to the application of B-splines to volatility modeling, specifically the calibration of the leverage function in stochastic local volatility models and the parameterization of an arbitrage-free implied volatility surface calibrated to sparse option data. We use an extension of classical B-splines obtained by including basis functions with infinite support. We first come back to the application of shape-constrained B-splines to the estimation of conditional expectations, not merely from a scatter plot but also from the given marginal distributions. An application is the Monte Carlo calibration of stochastic local volatility models by Markov projection. Then we present a new technique for the calibration of an implied volatility surface to sparse option data. We use a B-spline parameterization of the Radon-Nikodym derivative of the underlying's risk-neutral probability density with respect to a roughly calibrated base model. We show that this method provides smooth arbitrage-free implied volatility surfaces. Finally, we sketch a Galerkin method with B-spline finite elements to the solution of the partial differential equation satisfied by the Radon-Nikodym derivative.",
+        "source_folder": "./vol_surface_source/1306.0995v4",
+        "main_tex_file": "B_splines_for_volatility_modeling.tex",
+        "url": "https://arxiv.org/pdf/1306.0995v4"
+    },
+    {
+        "arxiv_id": "1010.1212v1",
+        "title": "On Calibrating Stochastic Volatility Models with time-dependent Parameters",
+        "authors": [
+            "Wolfgang Putschoegl"
+        ],
+        "published_date": "2010-10-06 17:29:39+00:00",
+        "abstract": "We consider stochastic volatility models using piecewise constant parameters. We suggest a hybrid optimization algorithm for fitting the models to a volatility surface and provide some numerical results. Finally, we provide an outlook on how to further improve the calibration procedure.",
+        "source_folder": "./vol_surface_source/1010.1212v1",
+        "main_tex_file": "PutschoeglCalibratingSV.tex",
+        "url": "https://arxiv.org/pdf/1010.1212v1"
+    },
+    {
+        "arxiv_id": "2511.07571v1",
+        "title": "Forecasting implied volatility surface with generative diffusion models",
+        "authors": [
+            "Chen Jin",
+            "Ankush Agarwal"
+        ],
+        "published_date": "2025-11-10 19:31:04+00:00",
+        "abstract": "We introduce a conditional Denoising Diffusion Probabilistic Model (DDPM) for generating arbitrage-free implied volatility (IV) surfaces, offering a more stable and accurate alternative to existing GAN-based approaches. To capture the path-dependent nature of volatility dynamics, our model is conditioned on a rich set of market variables, including exponential weighted moving averages (EWMAs) of historical surfaces, returns and squared returns of underlying asset, and scalar risk indicators like VIX. Empirical results demonstrate our model significantly outperforms leading GAN-based models in capturing the stylized facts of IV dynamics. A key challenge is that historical data often contains small arbitrage opportunities in the earlier dataset for training, which conflicts with the goal of generating arbitrage-free surfaces. We address this by incorporating a standard arbitrage penalty into the loss function, but apply it using a novel, parameter-free weighting scheme based on the signal-to-noise ratio (SNR) that dynamically adjusts the penalty's strength across the diffusion process. We also show a formal analysis of this trade-off and provide a proof of convergence showing that the penalty introduces a small, controllable bias that steers the model toward the manifold of arbitrage-free surfaces while ensuring the generated distribution remains close to the real-world data.",
+        "source_folder": "./vol_surface_source/2511.07571v1",
+        "main_tex_file": "main.tex",
+        "url": "https://arxiv.org/pdf/2511.07571v1"
+    },
+    {
+        "arxiv_id": "1407.0256v3",
+        "title": "To sigmoid-based functional description of the volatility smile",
+        "authors": [
+            "Andrey Itkin"
+        ],
+        "published_date": "2014-07-01 14:31:06+00:00",
+        "abstract": "We propose a new static parameterization of the implied volatility surface which is constructed by using polynomials of sigmoid functions combined with some other terms. This parameterization is flexible enough to fit market implied volatilities which demonstrate smile or skew. An arbitrage-free calibration algorithm is considered that constructs the implied volatility surface as a grid in the strike-expiration space and guarantees a lack of arbitrage at every node of this grid. We also demonstrate how to construct an arbitrage-free interpolation and extrapolation in time, as well as build a local volatility and implied pdf surfaces. Asymptotic behavior of this parameterization is discussed, as well as results on stability of the calibrated parameters are presented. Numerical examples show robustness of the proposed approach in building all these surfaces as well as demonstrate a better quality of the fit as compared with some known models.",
+        "source_folder": "./vol_surface_source/1407.0256v3",
+        "main_tex_file": "parametricVolSmile1.tex",
+        "url": "https://arxiv.org/pdf/1407.0256v3"
+    },
+    {
+        "arxiv_id": "2108.04941v3",
+        "title": "Arbitrage-Free Implied Volatility Surface Generation with Variational Autoencoders",
+        "authors": [
+            "Brian Ning",
+            "Sebastian Jaimungal",
+            "Xiaorong Zhang",
+            "Maxime Bergeron"
+        ],
+        "published_date": "2021-08-10 21:56:19+00:00",
+        "abstract": "We propose a hybrid method for generating arbitrage-free implied volatility (IV) surfaces consistent with historical data by combining model-free Variational Autoencoders (VAEs) with continuous time stochastic differential equation (SDE) driven models. We focus on two classes of SDE models: regime switching models and L\u00e9vy additive processes. By projecting historical surfaces onto the space of SDE model parameters, we obtain a distribution on the parameter subspace faithful to the data on which we then train a VAE. Arbitrage-free IV surfaces are then generated by sampling from the posterior distribution on the latent space, decoding to obtain SDE model parameters, and finally mapping those parameters to IV surfaces. We further refine the VAE model by including conditional features and demonstrate its superior generative out-of-sample performance.",
+        "source_folder": "./vol_surface_source/2108.04941v3",
+        "main_tex_file": "main.tex",
+        "url": "https://arxiv.org/pdf/2108.04941v3"
+    },
+    {
+        "arxiv_id": "1902.04456v3",
+        "title": "Building arbitrage-free implied volatility: Sinkhorn's algorithm and variants",
+        "authors": [
+            "Hadrien De March",
+            "Pierre Henry-Labordere"
+        ],
+        "published_date": "2019-02-12 16:01:20+00:00",
+        "abstract": "We consider the classical problem of building an arbitrage-free implied volatility surface from bid-ask quotes. We design a fast numerical procedure, for which we prove the convergence, based on the Sinkhorn algorithm that has been recently used to solve efficiently (martingale) optimal transport problems.",
+        "source_folder": "./vol_surface_source/1902.04456v3",
+        "main_tex_file": "main.tex",
+        "url": "https://arxiv.org/pdf/1902.04456v3"
+    },
+    {
+        "arxiv_id": "1412.8414v2",
+        "title": "Accounting for Earnings Announcements in the Pricing of Equity Options",
+        "authors": [
+            "Tim Leung",
+            "Marco Santoli"
+        ],
+        "published_date": "2014-12-29 18:30:01+00:00",
+        "abstract": "We study an option pricing framework that accounts for the price impact of an earnings announcement (EA), and analyze the behavior of the implied volatility surface prior to the event. On the announcement date, we incorporate a random jump to the stock price to represent the shock due to earnings. We consider different distributions of the scheduled earnings jump as well as different underlying stock price dynamics before and after the EA date. Our main contributions include analytical option pricing formulas when the underlying stock price follows the Kou model along with a double-exponential or Gaussian EA jump on the announcement date. Furthermore, we derive analytic bounds and asymptotics for the pre-EA implied volatility under various models. The calibration results demonstrate adequate fit of the entire implied volatility surface prior to an announcement. We also compare the risk-neutral distribution of the EA jump to its historical distribution. Finally, we discuss the valuation and exercise strategy of pre-EA American options, and illustrate an analytical approximation and numerical results.",
+        "source_folder": "./vol_surface_source/1412.8414v2",
+        "main_tex_file": "Paper_v50.tex",
+        "url": "https://arxiv.org/pdf/1412.8414v2"
+    },
+    {
+        "arxiv_id": "2009.09713v1",
+        "title": "Model-driven statistical arbitrage on LETF option markets",
+        "authors": [
+            "Sergey Nasekin",
+            "Wolfgang Karl H\u00e4rdle"
+        ],
+        "published_date": "2020-09-21 09:27:05+00:00",
+        "abstract": "In this paper, we study the statistical properties of the moneyness scaling transformation by Leung and Sircar (2015). This transformation adjusts the moneyness coordinate of the implied volatility smile in an attempt to remove the discrepancy between the IV smiles for levered and unlevered ETF options. We construct bootstrap uniform confidence bands which indicate that the implied volatility smiles are statistically different after moneyness scaling has been performed. An empirical application shows that there are trading opportunities possible on the LETF market. A statistical arbitrage type strategy based on a dynamic semiparametric factor model is presented. This strategy presents a statistical decision algorithm which generates trade recommendations based on comparison of model and observed LETF implied volatility surface. It is shown to generate positive returns with a high probability. Extensive econometric analysis of LETF implied volatility process is performed including out-of-sample forecasting based on a semiparametric factor model and uniform confidence bands' study. It provides new insights into the latent dynamics of the implied volatility surface. We also incorporate Heston stochastic volatility into the moneyness scaling method for better tractability of the model.",
+        "source_folder": "./vol_surface_source/2009.09713v1",
+        "main_tex_file": "manuscript.tex",
+        "url": "https://arxiv.org/pdf/2009.09713v1"
+    },
+    {
+        "arxiv_id": "1008.5055v2",
+        "title": "Normalization for Implied Volatility",
+        "authors": [
+            "Masaaki Fukasawa"
+        ],
+        "published_date": "2010-08-30 11:26:47+00:00",
+        "abstract": "We study specific nonlinear transformations of the Black-Scholes implied volatility to show remarkable properties of the volatility surface. Model-free bounds on the implied volatility skew are given. Pricing formulas for the European options which are written in terms of the implied volatility are given. In particular, we prove elegant formulas for the fair strikes of the variance swap and the gamma swap.",
+        "source_folder": "./vol_surface_source/1008.5055v2",
+        "main_tex_file": "main.tex",
+        "url": "https://arxiv.org/pdf/1008.5055v2"
+    },
+    {
+        "arxiv_id": "2102.03945v1",
+        "title": "Variational Autoencoders: A Hands-Off Approach to Volatility",
+        "authors": [
+            "Maxime Bergeron",
+            "Nicholas Fung",
+            "John Hull",
+            "Zissis Poulos"
+        ],
+        "published_date": "2021-02-07 23:31:33+00:00",
+        "abstract": "A volatility surface is an important tool for pricing and hedging derivatives. The surface shows the volatility that is implied by the market price of an option on an asset as a function of the option's strike price and maturity. Often, market data is incomplete and it is necessary to estimate missing points on partially observed surfaces. In this paper, we show how variational autoencoders can be used for this task. The first step is to derive latent variables that can be used to construct synthetic volatility surfaces that are indistinguishable from those observed historically. The second step is to determine the synthetic surface generated by our latent variables that fits available data as closely as possible. As a dividend of our first step, the synthetic surfaces produced can also be used in stress testing, in market simulators for developing quantitative investment strategies, and for the valuation of exotic options. We illustrate our procedure and demonstrate its power using foreign exchange market data.",
+        "source_folder": "./vol_surface_source/2102.03945v1",
+        "main_tex_file": "main.tex",
+        "url": "https://arxiv.org/pdf/2102.03945v1"
+    },
+    {
+        "arxiv_id": "2106.12395v1",
+        "title": "From Bachelier to Dupire via Optimal Transport",
+        "authors": [
+            "Mathias Beiglb\u00f6ck",
+            "Gudmund Pammer",
+            "Walter Schachermayer"
+        ],
+        "published_date": "2021-06-23 13:39:02+00:00",
+        "abstract": "Famously mathematical finance was started by Bachelier in his 1900 PhD thesis where - among many other achievements - he also provides a formal derivation of the Kolmogorov forward equation. This forms also the basis for Dupire's (again formal) solution to the problem of finding an arbitrage free model calibrated to the volatility surface. The later result has rigorous counterparts in the theorems of Kellerer and Lowther. In this survey article we revisit these hallmarks of stochastic finance, highlighting the role played by some optimal transport results in this context.",
+        "source_folder": "./vol_surface_source/2106.12395v1",
+        "main_tex_file": "Draft.tex",
+        "url": "https://arxiv.org/pdf/2106.12395v1"
+    },
+    {
+        "arxiv_id": "2001.03101v2",
+        "title": "Stationary Heston model: Calibration and Pricing of exotics using Product Recursive Quantization",
+        "authors": [
+            "Vincent Lemaire",
+            "Thibaut Montes",
+            "Gilles Pag\u00e8s"
+        ],
+        "published_date": "2020-01-09 17:00:00+00:00",
+        "abstract": "A major drawback of the Standard Heston model is that its implied volatility surface does not produce a steep enough smile when looking at short maturities. For that reason, we introduce the Stationary Heston model where we replace the deterministic initial condition of the volatility by its invariant measure and show, based on calibrated parameters, that this model produce a steeper smile for short maturities than the Standard Heston model. We also present numerical solution based on Product Recursive Quantization for the evaluation of exotic options (Bermudan and Barrier options).",
+        "source_folder": "./vol_surface_source/2001.03101v2",
+        "main_tex_file": "corpus.tex",
+        "url": "https://arxiv.org/pdf/2001.03101v2"
+    },
+    {
+        "arxiv_id": "1906.03119v1",
+        "title": "A comparison principle between rough and non-rough Heston models - with applications to the volatility surface",
+        "authors": [
+            "Martin Keller-Ressel",
+            "Assad Majid"
+        ],
+        "published_date": "2019-06-07 14:17:35+00:00",
+        "abstract": "We present a number of related comparison results, which allow to compare moment explosion times, moment generating functions and critical moments between rough and non-rough Heston models of stochastic volatility. All results are based on a comparison principle for certain non-linear Volterra integral equations. Our upper bound for the moment explosion time is different from the bound introduced by Gerhold, Gerstenecker and Pinter (2018) and tighter for typical parameter values. The results can be directly transferred to a comparison principle for the asymptotic slope of implied volatility between rough and non-rough Heston models. This principle shows that the ratio of implied volatility slopes in the rough vs. the non-rough Heston model increases at least with power-law behavior for small maturities.",
+        "source_folder": "./vol_surface_source/1906.03119v1",
+        "main_tex_file": "rough_Heston_comparison_principle_arxiv.tex",
+        "url": "https://arxiv.org/pdf/1906.03119v1"
+    },
+    {
+        "arxiv_id": "1203.4786v1",
+        "title": "A flexible matrix Libor model with smiles",
+        "authors": [
+            "Jos\u00e9 Da Fonseca",
+            "Alessandro Gnoatto",
+            "Martino Grasselli"
+        ],
+        "published_date": "2012-03-21 17:08:13+00:00",
+        "abstract": "We present a flexible approach for the valuation of interest rate derivatives based on Affine Processes. We extend the methodology proposed in Keller-Ressel et al. (2009) by changing the choice of the state space. We provide semi-closed-form solutions for the pricing of caps and floors. We then show that it is possible to price swaptions in a multifactor setting with a good degree of analytical tractability. This is done via the Edgeworth expansion approach developed in Collin-Dufresne and Goldstein (2002). A numerical exercise illustrates the flexibility of Wishart Libor model in describing the movements of the implied volatility surface.",
+        "source_folder": "./vol_surface_source/1203.4786v1",
+        "main_tex_file": "libor_appendix.tex",
+        "url": "https://arxiv.org/pdf/1203.4786v1"
+    },
+    {
+        "arxiv_id": "1501.03387v4",
+        "title": "The asymptotic smile of a multiscaling stochastic volatility model",
+        "authors": [
+            "Francesco Caravenna",
+            "Jacopo Corbetta"
+        ],
+        "published_date": "2015-01-14 16:10:32+00:00",
+        "abstract": "We consider a stochastic volatility model which captures relevant stylized facts of financial series, including the multi-scaling of moments. The volatility evolves according to a generalized Ornstein-Uhlenbeck processes with super-linear mean reversion.\n  Using large deviations techniques, we determine the asymptotic shape of the implied volatility surface in any regime of small maturity $t \\to 0$ or extreme log-strike $|\u03ba| \\to \\infty$ (with bounded maturity). Even if the price has continuous paths, out-of-the-money implied volatility diverges for small maturity, producing a very pronounced smile.",
+        "source_folder": "./vol_surface_source/1501.03387v4",
+        "main_tex_file": "smile-final.tex",
+        "url": "https://arxiv.org/pdf/1501.03387v4"
+    }
+]

@@ -1,0 +1,167 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{JKRM13}
+
+\bibitem[AJLP17]{jaber2017affine}
+Eduardo Abi~Jaber, Martin Larsson, and Sergio Pulido.
+\newblock Affine {V}olterra processes.
+\newblock {\em arXiv:1708.08796}, 2017.
+
+\bibitem[AP07]{andersen2007moment}
+Leif B.~G. Andersen and Vladimir~V. Piterbarg.
+\newblock Moment explosions in stochastic volatility models.
+\newblock {\em Finance and Stochastics}, 11(1):29--50, Jan 2007.
+
+\bibitem[Bat96]{bates1996jumps}
+David~S. Bates.
+\newblock Jumps and stochastic volatility: Exchange rate processes implicit in
+  deutsche mark options.
+\newblock {\em The Review of Financial Studies}, 9(1):69--107, 1996.
+
+\bibitem[BCC97]{bakshi1997empirical}
+Gurdip Bakshi, Charles Cao, and Zhiwu Chen.
+\newblock Empirical performance of alternative option pricing models.
+\newblock {\em Journal of Finance}, 52(5):2003--49, 1997.
+
+\bibitem[BF09]{benaim2009regular}
+Shalom Benaim and Peter Friz.
+\newblock Regular variation and smile asymptotics.
+\newblock {\em Mathematical Finance: an International Journal of Mathematics,
+  Statistics and Financial Economics}, 19(1):1--12, 2009.
+
+\bibitem[BFG{\etalchar{+}}19]{bayer2019short}
+Christian Bayer, Peter~K Friz, Archil Gulisashvili, Blanka Horvath, and
+  Benjamin Stemper.
+\newblock Short-time near-the-money skew in rough fractional volatility models.
+\newblock {\em Quantitative Finance}, 19(5):779--798, 2019.
+
+\bibitem[BFL09]{benaim2009black}
+Shalom Benaim, Peter Friz, and Roger Lee.
+\newblock On black-scholes implied volatility at extreme strikes.
+\newblock {\em Frontiers in Quantitative Finance: Volatility and Credit Risk
+  Modeling}, pages 19--45, 2009.
+
+\bibitem[B{\"u}h06]{buehler2006volatility}
+Hans B{\"u}hler.
+\newblock {\em Volatility Markets -- Consistent modeling, hedging and practical
+  implementation}.
+\newblock PhD thesis, TU Berlin, 2006.
+
+\bibitem[BW98]{browder1998ordinary}
+Andrew Browder and Wolfgang Walter.
+\newblock {\em Ordinary Differential Equations}.
+\newblock Graduate Texts in Mathematics. Springer New York, 1998.
+
+\bibitem[ER18]{eleuch2018perfect}
+Omar {El Euch} and Mathieu Rosenbaum.
+\newblock Perfect hedging in rough heston models.
+\newblock {\em The Annals of Applied Probability}, 28(6):3813--3856, 2018.
+
+\bibitem[ER19]{eleuch2019characteristic}
+Omar {El Euch} and Mathieu Rosenbaum.
+\newblock The characteristic function of rough heston models.
+\newblock {\em Mathematical Finance}, 29(1):3--38, 2019.
+
+\bibitem[FGS19]{forde2019small}
+Martin Forde, Stefan Gerhold, and Benjamin Smith.
+\newblock Small-time and large-time smile behaviour for the rough heston model.
+\newblock {\em preprint}, 2019.
+
+\bibitem[FKR10]{friz2010encyclopedia}
+Peter Friz and Martin Keller-Ressel.
+\newblock Moment explosions.
+\newblock In Rama Cont, editor, {\em Encyclopedia of Quantitative Finance}.
+  Wiley, 2010.
+
+\bibitem[FTW19]{fukasawa2019volatility}
+Masaaki Fukasawa, Tetsuya Takabatake, and Rebecca Westphal.
+\newblock Is volatility rough?
+\newblock {\em arXiv:1905.04852}, 2019.
+
+\bibitem[Fuk17]{fukasawa2017short}
+Masaaki Fukasawa.
+\newblock Short-time at-the-money skew and rough fractional volatility.
+\newblock {\em Quantitative Finance}, 17(2):189--198, 2017.
+
+\bibitem[FZ17]{forde2017asymptotics}
+Martin Forde and Hongzhong Zhang.
+\newblock Asymptotics for rough stochastic volatility models.
+\newblock {\em SIAM Journal on Financial Mathematics}, 8(1):114--145, 2017.
+
+\bibitem[Gat06]{gatheral2006volatility}
+Jim Gatheral.
+\newblock {\em The Volatility Surface: A Practitioner's Guide}.
+\newblock Wiley Finance. Wiley, 2006.
+
+\bibitem[GGP18]{gerhold2018moment}
+Stefan Gerhold, Christoph Gerstenecker, and Arpad Pinter.
+\newblock Moment explosions in the rough heston model.
+\newblock arXiv:1801.09458, 2018.
+
+\bibitem[GJR18]{gatheral2018volatility}
+Jim Gatheral, Thibault Jaisson, and Mathieu Rosenbaum.
+\newblock Volatility is rough.
+\newblock {\em Quantitative Finance}, 18(6):933--949, 2018.
+
+\bibitem[GJRS18]{guennoun2018asymptotic}
+Hamza Guennoun, Antoine Jacquier, Patrick Roome, and Fangwei Shi.
+\newblock Asymptotic behavior of the fractional heston model.
+\newblock {\em SIAM Journal on Financial Mathematics}, 9(3):1017--1045, 2018.
+
+\bibitem[GKR19]{gatheral2018affine}
+Jim Gatheral and Martin Keller-Ressel.
+\newblock Affine forward variance models.
+\newblock {\em Finance \& Stochastics}, 2019.
+\newblock doi: 10.1007/s00780-019-00392-5.
+
+\bibitem[GLS90]{gripenberg1990volterra}
+G.~Gripenberg, S.~O. Londen, and O.~Staffans.
+\newblock {\em Volterra Integral and Functional Equations}.
+\newblock Encyclopedia of Mathematics and its Applications. Cambridge
+  University Press, 1990.
+
+\bibitem[Hes93]{heston1993closed}
+Steven~L. Heston.
+\newblock A closed-form solution for options with stochastic volatility with
+  applications to bond and currency options.
+\newblock {\em Review of Financial Studies}, 6:327--343, 1993.
+
+\bibitem[HMS11]{haubold2011mittag}
+Hans~J Haubold, Arak~M Mathai, and Ram~K Saxena.
+\newblock {M}ittag-{L}effler functions and their applications.
+\newblock {\em Journal of Applied Mathematics}, 2011.
+
+\bibitem[Hoh98]{hoh1998symbolic}
+Walter Hoh.
+\newblock A symbolic calculus for pseudo-differential operators generating
+  feller semigroups.
+\newblock {\em Osaka journal of mathematics}, 35(4):789--820, 1998.
+
+\bibitem[JKRM13]{jacquier2013large}
+Antoine Jacquier, Martin Keller-Ressel, and Aleksandar Mijatović.
+\newblock Large deviations and stochastic volatility with jumps: asymptotic
+  implied volatility for affine models.
+\newblock {\em Stochastics}, 85(2):321--345, 2013.
+
+\bibitem[KR11]{keller-ressel2011moment}
+Martin Keller-Ressel.
+\newblock Moment explosions and long-term behavior of affine stochastic
+  volatility models.
+\newblock {\em Mathematical Finance}, 21(1):73--98, 2011.
+
+\bibitem[KRLP18]{keller-ressel2018affine}
+Martin Keller-Ressel, Martin Larsson, and Sergio Pulido.
+\newblock Affine rough models.
+\newblock {\em arXiv:1812.08486}, 2018.
+
+\bibitem[KST06]{kilbas2006theory}
+Anatolii~Aleksandrovich Kilbas, Hari~Mohan Srivastava, and Juan~J. Trujillo.
+\newblock {\em Theory and Applications of Fractional Differential Equations,
+  Volume 204 (North-Holland Mathematics Studies)}.
+\newblock Elsevier Science, New York, USA, 2006.
+
+\bibitem[Lee04]{lee2004moment}
+Roger~W. Lee.
+\newblock The moment formula for implied volatility at extreme strikes.
+\newblock {\em Mathematical Finance}, 14(3):469--480, 2004.
+
+\end{thebibliography}

@@ -1,0 +1,267 @@
+\begin{thebibliography}{39}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Ackerer et~al.(2020)Ackerer, Tagasovska, and Vater]{ackerer-2020}
+D.~Ackerer, N.~Tagasovska, and T.~Vater.
+\newblock Deep smoothing of the implied volatiliity surface.
+\newblock \emph{{34th Conference on Neural Information Processing System}},
+  2020.
+
+\bibitem[Annunziato et~al.(2014)Annunziato, Borzi, Nobile, and
+  Tempone]{annunziato-2014}
+M.~Annunziato, A.~Borzi, F.~Nobile, and R.~Tempone.
+\newblock On the connection between the {Hamilton-Jacobi-Bellman} and the
+  {Fokker-Planck} control frameworks.
+\newblock \emph{{Applied Mathematics}}, 5\penalty0 (16):\penalty0 2476--2484,
+  2014.
+\newblock \doi{10.4236/am.2014.516239}.
+
+\bibitem[Bergeron et~al.(2022)Bergeron, Fung, Hull, Poulos, and
+  Veneris]{bergeron-2022}
+Maxime Bergeron, Nicholas Fung, John Hull, Zissis Poulos, and Andreas Veneris.
+\newblock Variational autoencoders: A hands-off approach to volatility.
+\newblock \emph{{The Journal of Financial Data Science}}, 4\penalty0
+  (2):\penalty0 125--138, 2022.
+\newblock \doi{10.3905/jfds.2022.1.093}.
+\newblock URL \url{https://doi.org/10.3905/jfds.2022.1.093}.
+
+\bibitem[Boyle and Thangaraj(2000)]{boyle-2000}
+Phelim~P. Boyle and Draviam. Thangaraj.
+\newblock Volatility estimation from observed option prices.
+\newblock \emph{{Decisions in Economics and Finance}}, 23\penalty0
+  (1):\penalty0 31--52, 2000.
+\newblock \doi{10.1007/s102030050004}.
+\newblock URL \url{https://doi.org/10.1007/s102030050004}.
+
+\bibitem[Brent(1973)]{brent-1973}
+Richard~P. Brent.
+\newblock \emph{Algorithms for minimization without derivatives}.
+\newblock {Prentice Hall}, Upper Saddle River, NJ, 1973.
+
+\bibitem[Carmona(2007)]{carmona-2007}
+Rene~A. Carmona.
+\newblock \emph{HJM: A Unified Approach to Dynamic Models for Fixed Income,
+  Credit and Equity Markets}, pages 1--50.
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 2007.
+\newblock ISBN 978-3-540-73327-0.
+\newblock \doi{10.1007/978-3-540-73327-0_1}.
+\newblock URL \url{https://doi.org/10.1007/978-3-540-73327-0_1}.
+
+\bibitem[Carr and D.B.(2005)]{carr-2005}
+P.~Carr and Madan D.B.
+\newblock A note on sufficient conditions for no arbitrage.
+\newblock \emph{{Finance Research Letters}}, pages 125--130, 2005.
+
+\bibitem[Chataigner et~al.(2020)Chataigner, Crepey, and Dixon]{chataigner-2020}
+M.~Chataigner, S.~Crepey, and M.~Dixon.
+\newblock Deep local volatility.
+\newblock \emph{Risks}, 2020.
+
+\bibitem[Chataigner et~al.(2021)Chataigner, Cousin, Cr\'{e}pey, Dixon, and
+  Gueye]{chataigner-2021}
+Marc Chataigner, Areski Cousin, St\'{e}phane Cr\'{e}pey, Matthew Dixon, and
+  Djibril Gueye.
+\newblock Short communication: {B}eyond surrogate modeling: {L}earning the
+  local volatility via shape constraints.
+\newblock \emph{{SIAM Journal on Financial Mathematics}}, 12\penalty0
+  (3):\penalty0 SC58--SC69, 2021.
+\newblock \doi{10.1137/20M1381538}.
+\newblock URL \url{https://doi.org/10.1137/20M1381538}.
+
+\bibitem[Coleman et~al.(2000)Coleman, Li, and Verma]{coleman-2000}
+Thomas~F. Coleman, Yuying Li, and Arun Verma.
+\newblock Reconstructing the unknown local volatility function.
+\newblock \emph{{Journal of Computational Finance}}, 2\penalty0 (3):\penalty0
+  77--102, 2000.
+\newblock \doi{10.21314/JCF.1999.027}.
+
+\bibitem[Cont and da~Fonseca(2002)]{cont-2002}
+R.~Cont and J.~da~Fonseca.
+\newblock Dynamics of implied volatility surfaces.
+\newblock \emph{{Quatitative Finanace}}, pages 45--60, 2002.
+
+\bibitem[Cont and Vuletic(2022)]{cont-2022}
+Rama Cont and Milena Vuletic.
+\newblock Simulation of arbitrage free implied volatility surfaces.
+\newblock 2022.
+\newblock \doi{http://dx.doi.org/10.2139/ssrn.4299363}.
+
+\bibitem[Cuchiero et~al.(2020)Cuchiero, Khosrawi, and Teichmann]{cuchiero-2020}
+Christa Cuchiero, Wahid Khosrawi, and Josef Teichmann.
+\newblock A generative adversarial network approach to calibration of local
+  stochastic volatility models.
+\newblock \emph{Risks}, 8\penalty0 (4), 2020.
+\newblock ISSN 2227-9091.
+\newblock \doi{10.3390/risks8040101}.
+\newblock URL \url{https://www.mdpi.com/2227-9091/8/4/101}.
+
+\bibitem[Dimitroff et~al.(2018)Dimitroff, Roder, and Fries]{dimitroff-2018}
+G.~Dimitroff, D.~Roder, and C.P. Fries.
+\newblock Volatility model calbitration with convolutional neural networks.
+\newblock \emph{{SSRN}}, 2018.
+
+\bibitem[Dugas et~al.(2001)Dugas, Bengio, Elisle, and Nadeau]{dugas-2001}
+Charles Dugas, Y.~Bengio, Francois Elisle, and Claude Nadeau.
+\newblock Incorporating second-order functional knowledge for better option
+  pricing.
+\newblock \emph{Cirano Working Papers}, 02 2001.
+
+\bibitem[Dunn et~al.(2014)Dunn, Hauser, Seibold, and Gong]{dunn-2014}
+Robin Dunn, Paloma Hauser, Tom Seibold, and Hugh Gong.
+\newblock Estimating option prices with {Heston ’ s} stochastic volatility
+  model.
+\newblock 2014.
+
+\bibitem[Dupire(1994)]{dupire-1994}
+B.~Dupire.
+\newblock Pricing with a smile.
+\newblock \emph{{Risk}}, pages 18--20, 1994.
+
+\bibitem[Durrleman(2008)]{durrleman-2008}
+Valdo Durrleman.
+\newblock Convergence of at-the-money implied volatilities to the spot
+  volatility.
+\newblock \emph{Journal of Applied Probability}, 45\penalty0 (2):\penalty0
+  542--550, 2008.
+\newblock ISSN 00219002.
+\newblock URL \url{http://www.jstor.org/stable/27595963}.
+
+\bibitem[Fang and Oosterlee(2009)]{fang-2009}
+F.~Fang and C.~Oosterlee.
+\newblock A novel pricing method for {E}uropean options based on
+  {F}ourier-cosine series expansions.
+\newblock \emph{{SIAM Journal of Scientific Computing}}, pages 826--848, 2009.
+
+\bibitem[Gatheral and Jacquier(2011)]{gatheral-2011}
+Jim Gatheral and Antoine Jacquier.
+\newblock Convergence of {H}eston to {SVI}.
+\newblock \emph{{Quantitative Finance}}, 11\penalty0 (8):\penalty0 1129--1132,
+  2011.
+\newblock \doi{10.1080/14697688.2010.550931}.
+\newblock URL \url{https://doi.org/10.1080/14697688.2010.550931}.
+
+\bibitem[Gatheral and Jacquier(2014)]{gatheral-2014}
+Jim Gatheral and Antoine Jacquier.
+\newblock Arbitrage-free {SVI} volatility surfaces.
+\newblock \emph{{Quantitative Finance}}, 14\penalty0 (1):\penalty0 59--71,
+  2014.
+\newblock \doi{10.1080/14697688.2013.819986}.
+\newblock URL \url{https://doi.org/10.1080/14697688.2013.819986}.
+
+\bibitem[Gatheral and Lynch(2001{\natexlab{a}})]{gatheral-2001-1}
+Jim Gatheral and Merril. Lynch.
+\newblock Lecture 1: Stochastic volatility and local volatility,
+  2001{\natexlab{a}}.
+
+\bibitem[Gatheral and Lynch(2001{\natexlab{b}})]{gatheral-2001-2}
+Jim Gatheral and Merril. Lynch.
+\newblock Lecture 2: Fitting the volatility skew, 2001{\natexlab{b}}.
+
+\bibitem[Goodfellow et~al.(2016)Goodfellow, Bengio, and
+  Courville]{goodfellow-2016}
+I.~Goodfellow, Y.~Bengio, and A.~Courville.
+\newblock \emph{Deep learning, adaptive computation and machine learning}.
+\newblock {MIT} Press: Cambridge, MA, 2016.
+
+\bibitem[Hernandez(2016)]{hernandez-2016}
+A.~Hernandez.
+\newblock Model calibration with neural networks.
+\newblock \emph{{SSRN}}, 2016.
+
+\bibitem[Heston(1993)]{heston-1993}
+S.L. Heston.
+\newblock A closed-form solution for options with stochastic volatility with
+  applications to bond and currency options.
+\newblock \emph{{Review of Financial Studies}}, pages 327--343, 1993.
+
+\bibitem[Hirsa et~al.(2019)Hirsa, Karatas, and Oskoui]{hirsa-2019}
+A.~Hirsa, T.~Karatas, and A.~Oskoui.
+\newblock Supervised deep neural networks ({DNN}s) for pricing/calibration of
+  vanilla/exotic options under various different processes, 2019.
+
+\bibitem[Horvath et~al.(2021)Horvath, Muguruza, and Tomas]{horvath-2021}
+B.~Horvath, A.~Muguruza, and M.~Tomas.
+\newblock Deep learning volatility: a deep neural network perspective on
+  pricing and calibration in (rough) volatility models.
+\newblock \emph{{Quantitative Finance}}, 21\penalty0 (1):\penalty0 11--27,
+  2021.
+\newblock \doi{10.1080/14697688.2020.1817974}.
+\newblock URL \url{https://doi.org/10.1080/14697688.2020.1817974}.
+
+\bibitem[Itkin(2019)]{itkin-2019}
+A.~Itkin.
+\newblock Deep learning calibration of option pricing models: some pitfalls and
+  solutions.
+\newblock arXiv:1906.03507v1, 2019.
+
+\bibitem[Kingma and Welling(2014)]{kingma-2014-vae}
+Diederik~P. Kingma and Max Welling.
+\newblock Auto-encoding variational bayes.
+\newblock Banff, AB, Canada, 2014. 2nd International Conference on Learning
+  Representations, ICLR.
+
+\bibitem[Kingma and Ba(2017)]{kingma-2014}
+D.P. Kingma and J.~Ba.
+\newblock Adam: A method for stochastic optimization, 2017.
+
+\bibitem[Lee(2005)]{lee-2002}
+Roger~W. Lee.
+\newblock \emph{Implied Volatility: {S}tatics, Dynamics, and Probabilistic
+  Interpretation}, pages 241--268.
+\newblock Springer US, Boston, MA, 2005.
+\newblock ISBN 978-0-387-23394-9.
+\newblock \doi{10.1007/0-387-23394-6_11}.
+\newblock URL \url{https://doi.org/10.1007/0-387-23394-6_11}.
+
+\bibitem[Liu et~al.(2019{\natexlab{a}})Liu, Borovykh, Grzelak, and
+  Oosterlee]{liu-2019-2}
+S.~Liu, A.~Borovykh, L.A. Grzelak, and C.~Oosterlee.
+\newblock A neural network-based framework for financial model calibration.
+\newblock \emph{{Journal of Mathematics in Industry}}, 2019{\natexlab{a}}.
+
+\bibitem[Liu et~al.(2019{\natexlab{b}})Liu, Oosterlee, and Bohte]{liu-2019-1}
+S.~Liu, C.~Oosterlee, and S.M. Bohte.
+\newblock Pricing options and computing implied volatilities using neural
+  networks.
+\newblock \emph{Risks}, 2019{\natexlab{b}}.
+
+\bibitem[Poggio et~al.(2017)Poggio, Mhaskar, Rosasco, Miranda, and
+  Liao]{poggio-2017}
+T.~Poggio, H.~Mhaskar, L.~Rosasco, B.~Miranda, and Q.~Liao.
+\newblock Why and when can deep-but not shallow-networks avoid the curse of
+  dimensionality: {A} review.
+\newblock \emph{{International Journal of Automation and Computing}}, pages
+  503--519, 2017.
+
+\bibitem[Roper(2010)]{roper-2010}
+M.~Roper.
+\newblock Arbitrage free implied volatility surfaces, 2010.
+
+\bibitem[Sidogi et~al.(2022)Sidogi, Mongwe, Mbuvha, and Marwala]{sidogi-2022}
+Thendo Sidogi, Wilson~Tsakane Mongwe, Rendani Mbuvha, and Tshilidzi Marwala.
+\newblock Creating synthetic volatility surfaces using generative adversarial
+  networks with static arbitrage loss conditions.
+\newblock In \emph{2022 IEEE Symposium Series on Computational Intelligence
+  (SSCI)}, pages 1423--1429, 2022.
+\newblock \doi{10.1109/SSCI51031.2022.10022219}.
+
+\bibitem[Spiegeleer et~al.(2018)Spiegeleer, Madan, Reyner, and
+  Schoutens]{spiegeleer-2018}
+J.D. Spiegeleer, D.~Madan, S.~Reyner, and W.~Schoutens.
+\newblock Machine learning for quantitative finance: fast derivative pricing,
+  hedging and fitting.
+\newblock \emph{{Quantitative Finance}}, 18\penalty0 (10):\penalty0 1635--1643,
+  2018.
+
+\bibitem[Vuletic et~al.(2023)Vuletic, Cucuringu, and Prenzel]{vuletic-2023}
+Milena Vuletic, Mihai Cucuringu, and Felix Prenzel.
+\newblock Fin-gan: Forcasting and classifying financial time series via
+  generative adversarial networks.
+\newblock 2023.
+\newblock \doi{http://dx.doi.org/10.2139/ssrn.4328302}.
+
+\end{thebibliography}

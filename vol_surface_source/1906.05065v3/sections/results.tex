@@ -1,0 +1,134 @@
+%!TEX root = ../deepsmooth.tex
+
+\section{Results} \label{sec:results}
+
+The first part presents results on synthetic data where it is easier to study and compare model predictions.
+The second part presents results on real-world data to modeling implied volatility surfaces extracted from S\&P500 options prices.
+The synthetic and market data are described in Appendix~\ref{sec:datasynt} and~\ref{sec:datamkt} respectively.
+We always set $\lambda_4=\lambda_5=\lambda_6=\lambda$ for some $\lambda\ge0$.
+
+
+\subsection{Numerical experiments} \label{sec:numexp}
+
+\begin{figure}
+\centering
+%\vspace{-0.3cm}
+\includegraphics[width=\textwidth]{figures/numexp_fig12.pdf}
+%\vspace{-0.4cm}
+\caption{\label{fig:smoothsynt} Synthetic data and trained model predictions for a specific configuration (scenario 12).}
+%\vspace{-0.4cm}
+\end{figure}
+
+\textbf{Smoothing behavior.}
+\Cref{fig:smoothsynt} displays the trained model on synthetic data with a strong penalty $\lambda=10$.
+A dot indicates the positioning $(k,\tau)$ of an observation used for training on figures in the top row.
+The figures on the first and second rows show that $\ivpr$ does not succeed to reproduce the training data, while $\ivth$ does so perfectly.
+The figures in the last row display $\ivpr$ and $\ivth$ on an extended grid of log moneyness, and also shows the NN correction before the scaling by $\alpha$ (center figure).
+As $\ivpr$ fits at the money (ATM) term structure, $\ivth$ makes little correction to it on the region $k\approx0$.
+On the other hand, $\ivth$ makes important corrections to $\ivpr$ for out of the money options.
+
+The same figure for additional scenarios ($\lambda$ value, prior model, and data limits) can be found in Appendix~\ref{sec:smoothsynt}.
+These additional results show that the model generalization is significantly better with a SSVI prior and with soft-constraints.
+Indeed, the IVS tends to flatten for large log moneyness values with a BS prior, whereas the present data is V shaped.
+Also, it is shown that the absence of soft-constraints can translate into non-realistic and possibly absurd out of sample predictions.
+
+
+%% OLD TEXT
+%A major challenge is the extrapolation of the implied volatility surface to unobserved data points.
+%Flexible non-parametric methods typically fail as they lack the guidance of a parametric model.
+%In \Cref{fig:smoothing} we calibrate ANN models with different loss terms and parameters initialization on a subsample of 100 options with narrow moneyness on the synthetic Bates data. 
+%The three models fit the training set almost perfectly.
+%Yet, we see that the ANN without arbitrage losses, $\lambda_4=\lambda_5=0$, fails extrapolate in a nonsensical way.
+%On the other hand the arbitrage-free model with $\lambda_4=\lambda_5=10$ behaves very smoothly.
+%The last model is initialized with the weights of an ANN model fitted to a Bates model itself fitted on the training set, see Appendix~B.3.
+%It is furthermore penalized so that its weights remain close to its initialization weights with $\lambda_3=1$.
+%This confirms that a regularized learning can produce an extrapolation mimicking the Bates model, with most notable differences in this example for the positive log-moneynesses.
+
+%\begin{figure}
+%  \centering
+%  \input{figures/smoothing}
+%  \vspace{-0.8cm}
+%\caption{Extrapolation with different loss specification and weights initialization.\label{fig:smoothing}}
+%\end{figure}
+
+
+\textbf{Losses and convergence.}
+
+\Cref{fig:convsvi} displays statistics on the losses in~\eqref{eq:loss} for trained models with different number of layers, neurons per layer, and penalty value $\lambda$.
+A total of 50 models with different random seeds for parameter initialization have been trained for 5'000 epochs for each configuration.
+Recall that, with $\lambda=x$, the weight on the soft constraints is $x$ times larger than the loss on the predictions errors.
+We see that increasing the number of layers or of neurons per layers generally decreases the RMSE and MAPE.
+We also see that the arbitrage opportunities vanish as $\lambda$ increases.
+The models prediction errors typically worsen as $\lambda$ increases, but the effect appears stronger for the lesser flexible models.
+We also observe that, when the number of layers is smaller, increasing the neurons per layer without enforcing more strictly the constraints can generate more severe arbitrage opportunities.
+But such opportunities disappear completely when the absence of arbitrage penalty is given a higher weight.
+Additional results can be found in Appendix~\ref{sec:convergence} for the BS prior where,
+in particular, we observe that the prediction errors are worse for this choice of prior model.
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{figures/numexp_nn_ssvi.pdf}
+\caption{\label{fig:convsvi} Losses for different number of layers, neurons per layer, and penalty value.}
+%\vspace{-0.2cm}
+\end{figure}
+
+\textbf{Additional results.}
+In Appendix~\ref{sec:dugasetal} we show that the NN model suggested in~\cite{dugas2001incorporating} cannot capture the IVS on its full range of maturities and moneynesses for the synthetic data.
+We also illustrate the impact of increasing arbitrage opportunities on the losses in Appendix~\ref{sec:numpexpao}.
+
+
+\subsection{Empirical results} \label{sec:empres}
+
+
+\textbf{Smoothing market data.}
+\Cref{fig:smoothmkt} displays S\&P500 options data and trained model predictions with a strong penalty $\lambda=10$ for the April 13-th 2018.
+This market data contains several thousands observations, and the corresponding IVS has a fairly complex shape compared to the previous synthetic data. 
+The first two rows highlight that $\ivpr$ fails to reproduce the market data, but that $\ivth$ is able to make accurate predictions.
+Notice that, because of data noise, the target IVS seem not to be arbitrage-free as some total variance slices cross each others, see upper-left figure.
+Yet, the predictions generated by $\ivth$ are perfectly smooth and the slices do not cross.
+The same figure for additional scenarios can be found in Appendix~\ref{sec:smoothmkt}.
+
+\textbf{Backtests.}
+We perform the following exercise for each day in the sample.
+First, we split the daily sample into a training and a testing set.
+Second, we fit the model on the training set and evaluate its performance on the testing set.
+We use two different configurations for training and testing.
+In the interpolation setting, for each maturity, we randomly select half of the contracts.
+As such, we also sample options that are far out or in the money for training, and the testing error represents the approximation error for the range of moneyness that are actually observed.
+In the extrapolation setting, for each maturity, we select half of the contracts whose log moneyness is between the 10\% and 90\% of the log moneyness in the corresponding slice.
+This second filter therefore contains more observations around the money.
+Thus, we do not select options that are far out or in the money for training, and the testing error measures how well our model extrapolates.
+Finally, we again use three values for $\lambda$ in order to study how the arbitrage-related penalties affect the results.
+
+In~\Cref{tab:bktSSVI} we present our results for model trained daily on the S\&P500 options data between January and April 2018, and for the subprime crisis period between September and December 2008, with a SSVI prior.
+First, we describe the RMSE and MAPE.
+As expected, training errors are generally below testing errors.
+Increasing the no-arbitrage penalty $\lambda$ leads to worse RMSE and MAPE metrics on the training set.
+However, larger $\lambda$ also implies similar or even less RMSE and MAPE metrics on the testing set.
+Note that the RMSE for testing set of the extrapolation appears to be large compared to the MAPE.
+The extrapolation errors are most of the time larger than interpolation errors.
+This suggest that the high RMSE value is likely to be caused by deep out of the money options with large IV values.
+Regarding \ref{cons:mono}--\ref{cons:asym}, we see that the models resulting from $\lambda=1,10$ are essentially arbitrage-free.
+As for the model resulting from no enforcement of the constraints (i.e., $\lambda=0$), it generates arbitrage opportunities both in interpolation and extrapolation.
+Note that 99+ indicates a value larger than 99 which can happen for arbitrage losses when $\lambda=0$.
+
+Additional results for the BS prior, as well as for baselines models (Bates and SSVI models), can be found in Appendix~\ref{sec:backtests}.
+Our approach surpasses the baseline models in terms of prediction accuracy, which should not be a surprise.
+Indeed, in Section~\ref{sec:numexp} we showed that $\ivth$ could reproduce the IVS from a typical Bates model, hence it is likely to be at least as flexible.
+In addition, $\ivth$ with a SSVI prior $\ivpr$ is likely to perform better than the underlying baseline SSVI model.
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth]{figures/empexp_fig12.pdf}
+\caption{\label{fig:smoothmkt} Market data and trained model predictions for a specific configuration (scenario 12).}
+\end{figure}
+
+\input{tables/empexp_backtestSSVI.tex}
+
+
+\textbf{Additional results.}
+In Appendix~\ref{sec:pdflocvol} we display the risk-neutral density and the local volatility corresponding to the scenario 12.
+The experience on Apple options in Appendix~\ref{sec:wshape} shows that our approach can fit complex shape surfaces, such as W-shaped smiles.
+We trained a model on the absolute IV errors weighted by the IV spread in Appendix~\ref{sec:spreadw} which appears to converge faster but fails to learn the IVS shape far out of the money.
+The computational times for the empirical experiments are reported in Appendix~\ref{sec:time} and appear satisfying despite the experimental nature of the implementation.
+

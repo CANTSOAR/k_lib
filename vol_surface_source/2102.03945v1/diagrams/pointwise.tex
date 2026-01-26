@@ -1,0 +1,112 @@
+\documentclass{standalone}
+
+\usepackage{amsmath}
+\usepackage{tikz}
+
+\usetikzlibrary{decorations.pathreplacing}
+\usetikzlibrary{fadings}
+\usetikzlibrary{positioning}
+
+    
+\begin{document}
+	\begin{tikzpicture}[shorten >=1pt, every node/.style={scale=0.8, thick}]
+		\tikzstyle{unit}=[draw,shape=circle,minimum size=1.15cm]
+		\tikzstyle{hidden}=[draw,shape=circle,minimum size=1.15cm]
+		\tikzstyle{every node}=[font=\large]
+ 
+    % Input layer
+		\node[unit, label=left:$z_1$](x0) at (0,3.7){};
+		\node at (0,2.95){\vdots};
+		\node[unit, label=left:$z_d$](x1) at (0,2){};
+		\node[unit, label=left:$T$](x2) at (0,0.8){};
+		\node[unit, label=left:$K$](xd) at (0,-0.4){};
+ 
+    % 1st Hidden layer
+		\node[hidden](h10) at (3,4){};
+		\node[hidden](h11) at (3,2.5){};
+		\node at (3,1.5){\vdots};
+		\node[hidden](h1m) at (3,-0.5){};
+ 
+    % Hidden hidden layers
+		\node(h20) at (5,4){};
+		\node(h21) at (5,2){};
+		\node(h22) at (5,0){};
+		
+		\node(d3) at (6,0){$\ldots$};
+		\node(d2) at (6,2){$\ldots$};
+		\node(d1) at (6,4){$\ldots$};
+ 
+		\node(hL10) at (7,4){};
+		\node(hL11) at (7,2){};
+		\node(hL12) at (7,0){};
+    
+    % L'th hidden layer
+		\node[hidden](hL0) at (9,4){};
+		\node[hidden](hL1) at (9,2.5){};
+		\node at (9,1.5){\vdots};
+		\node[hidden](hLm) at (9,-0.5){};
+ 
+    % Output layer
+		\node[unit, label=right:{$\sigma(T,K; z_1,\ldots,z_d)$}](y2) at (12,1.75){};
+ 
+    % Connections
+		\draw[->] (x0) -- (h10);
+		\draw[->] (x0) -- (h11);
+		\draw[->] (x0) -- (h1m);
+		
+		\draw[->] (x2) -- (h10);
+		\draw[->] (x2) -- (h11);
+		\draw[->] (x2) -- (h1m);
+ 
+		\draw[->] (x1) -- (h10);
+		\draw[->] (x1) -- (h11);
+		\draw[->] (x1) -- (h1m);
+ 
+		\draw[->] (xd) -- (h10);
+		\draw[->] (xd) -- (h11);
+		\draw[->] (xd) -- (h1m);
+ 
+% 		\draw[->] (hL0) -- (y1);
+		\draw[->] (hL0) -- (y2);
+% 		\draw[->] (hL0) -- (yc);
+ 
+% 		\draw[->] (hL1) -- (y1);
+% 		\draw[->] (hL1) -- (yc);
+		\draw[->] (hL1) -- (y2);
+ 
+% 		\draw[->] (hLm) -- (y1);
+		\draw[->] (hLm) -- (y2);
+% 		\draw[->] (hLm) -- (yc);
+ 
+		\draw[->,path fading=east] (h10) -- (h20);
+		\draw[->,path fading=east] (h10) -- (h21);
+		\draw[->,path fading=east] (h10) -- (h22);
+		
+		\draw[->,path fading=east] (h11) -- (h20);
+		\draw[->,path fading=east] (h11) -- (h21);
+		\draw[->,path fading=east] (h11) -- (h22);
+		
+		\draw[->,path fading=east] (h1m) -- (h20);
+		\draw[->,path fading=east] (h1m) -- (h21);
+    	\draw[->,path fading=east] (h1m) -- (h22);
+
+		\draw[->,path fading=west] (hL10) -- (hL0);
+		\draw[->,path fading=west] (hL11) -- (hL0);
+		\draw[->,path fading=west] (hL12) -- (hL0);
+		
+		\draw[->,path fading=west] (hL10) -- (hL1);
+		\draw[->,path fading=west] (hL11) -- (hL1);
+		\draw[->,path fading=west] (hL12) -- (hL1);
+		
+		\draw[->,path fading=west] (hL10) -- (hLm);
+		\draw[->,path fading=west] (hL11) -- (hLm);
+		\draw[->,path fading=west] (hL12) -- (hLm);
+		
+		\node[above of=x0, black]{Input layer};
+% 		\node [above of=h10, black]{$1^{\text{st}}$ Hidden Layer};
+% 		\node [above of=hL0, black]{$L^{\text{th}}$ Hidden Layer};
+		\node[black][above=8mm of y2](out){Output layer};
+
+  \end{tikzpicture}
+
+\end{document}

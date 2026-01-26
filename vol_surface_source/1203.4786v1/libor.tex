@@ -1,0 +1,135 @@
+\documentclass[11pt]{article}
+\usepackage[latin1]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{anysize}
+\usepackage[round]{natbib}
+\usepackage{graphicx}
+\usepackage{lscape}
+%\usepackage{fancyhdr}
+\linespread{1.2}
+%\usepackage{hyperref}
+\usepackage{times}
+\setlength{\parindent}{0pt}
+\usepackage{url}
+\usepackage{multicol}
+\usepackage{color}
+\marginsize{35mm}{30mm}{20mm}{20mm}
+\usepackage{subfig}
+\usepackage{float}
+%\linespread{1.5}
+
+%\marginsize{20mm}{20mm}{20mm}{20mm}
+%--------------------------------------------------------------------
+%\pagestyle{headings}
+%--------------------------------------------------------------------
+
+\theoremstyle{plain}
+\newtheorem{hyp}{Hypothesis}[section]
+
+%%\newtheorem{description}{Description}[section]
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+%\newenvironment{proof}[1][Proof]{\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+\renewcommand{\labelitemi}{$-$}
+
+\newcommand{\tr}{\textup{Tr}}
+\newcommand{\diag}{\textrm{diag}}
+\newcommand{\ad}{\textrm{ad}}
+\newcommand{\wj}{\widehat{J}}
+
+\usepackage{color}
+\newcommand{\cred}{\color{red}} 
+\newcommand{\cblue}{\color{blue}} 
+\newcommand{\cblack}{\color{black}} 
+ 
+%--------------------------------------------------------------------
+%\setlinespacing{1.66}
+%--------------------------------------------------------------------
+
+%\def\PATH{./}
+
+% A inclure systématiquement dans le code pour la mise en page
+\newlength{\larg} % définit la taille des barres de la couverture
+\setlength{\parindent}{0cm} %idem
+\setlength{\larg}{15.5cm} %idem
+
+\begin{document}
+
+
+\thispagestyle{empty}
+
+
+\setcounter{page}{1}
+
+\title{A flexible matrix Libor model with smiles}
+\author{Jos\'{e} Da Fonseca\footnote{Auckland University of Technology, Department of Finance, Private Bag 92006, 1142 Auckland, New Zealand. email: jose.dafonseca@aut.ac.nz.}
+  \and
+\textrm{Alessandro Gnoatto}\thanks{Universit\`{a} degli Studi di Padova, Dipartimento di Matematica Pura ed Applicata, Via Trieste 63, Padova, Italy and Mathematisches Institut der LMU, Theresienstrasse 39, Munich  Germany. E-mail: gnoatto@mathematik.uni-muenchen.de}
+\and
+\textrm{Martino Grasselli}\thanks{Universit\`{a} degli Studi di Padova, Dipartimento di Matematica Pura ed Applicata, Via Trieste 63, Padova, Italy. E-mail: grassell@math.unipd.it and Ecole Sup\'{e}rieure d'Ing\'{e}nieurs L\'{e}onard de Vinci, D\'{e}partement Math\'{e}matiques et Ing\'{e}nierie Financi\`{e}re, 92916 Paris La D\'{e}fense, France.}}
+
+
+
+\date{ \today}
+
+\maketitle
+
+\begin{abstract}
+We present a flexible approach for the valuation of interest rate derivatives based on Affine Processes. We extend the methodology proposed in \cite{article_KRPT2009} by changing the choice of the state space. We provide semi-closed-form solutions for the pricing of caps and floors. We then show that it is possible to price swaptions in a multifactor setting with a good degree of analytical tractability. This is done via the Edgeworth expansion approach developed in \cite{article_CollinDufresneGoldstein2002}. A numerical exercise illustrates the flexibility of Wishart Libor model in describing the movements of the implied volatility surface.
+\end{abstract}
+
+\vspace{7cm}
+\textbf{Keywords:} Affine processes, Wishart process, Libor market model, Fast Fourier Transform, Caps, Floors, Swaptions. \\
+
+\textbf{JEL codes:} G13, C51.\\
+\newpage
+
+\input{libor_introduction}
+\input{libor_affineprocesses}
+\input{libor_model}
+\input{libor_derivatives}
+\input{libor_numericalillustration}
+\input{libor_jumps}
+\input{libor_conclusion}
+
+\clearpage
+\input{libor_appendix}
+\clearpage
+
+%\bibliographystyle{apalike}
+%\bibliographystyle{apa}
+
+%\bibliographystyle{plainnat}
+\bibliographystyle{abbrvnat}
+\bibliography{biblio}
+	
+\addcontentsline{toc}{section}{Bibliography}
+
+
+
+
+
+\end{document}

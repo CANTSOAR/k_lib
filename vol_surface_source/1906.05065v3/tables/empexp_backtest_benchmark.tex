@@ -1,0 +1,23 @@
+\begin{table}
+\caption{\label{tab:bktbench}Backtesting results for the benchmarks (quantiles in \%, Jan-Apr/2018 - Sep-Dec/2008)}
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}[t]{llllllllllllll}
+\toprule
+\multicolumn{1}{c}{ } & \multicolumn{1}{c}{ } & \multicolumn{6}{c}{Interpolation} & \multicolumn{6}{c}{Extrapolation} \\
+\cmidrule(l{3pt}r{3pt}){3-8} \cmidrule(l{3pt}r{3pt}){9-14}
+\multicolumn{1}{c}{ } & \multicolumn{1}{c}{ } & \multicolumn{3}{c}{Train} & \multicolumn{3}{c}{Test} & \multicolumn{3}{c}{Train} & \multicolumn{3}{c}{Test} \\
+\cmidrule(l{3pt}r{3pt}){3-5} \cmidrule(l{3pt}r{3pt}){6-8} \cmidrule(l{3pt}r{3pt}){9-11} \cmidrule(l{3pt}r{3pt}){12-14}
+Benchmark & Loss & $q_{05}$ & $\mu$ & $q_{95}$ & $q_{05}$ & $\mu$ & $q_{95}$ & $q_{05}$ & $\mu$ & $q_{95}$ & $q_{05}$ & $\mu$ & $q_{95}$\\
+\midrule
+ & RMSE & 1.6 / 2.0 & 2.9 / 5.1 & 5.3 / 10.8 & 1.7 / 2.1 & 2.8 / 5.2 & 5.0 / 9.7 & 1.0 / 1.2 & 1.6 / 3.1 & 4.3 / 8.1 & 2.4 / 2.5 & 4.6 / 7.0 & 8.7 / 14.4\\
+\cmidrule{2-14}
+\multirow[t]{-2}{*}{\raggedright\arraybackslash BATES} & MAPE & 3.7 / 3.5 & 6.1 / 5.9 & 11.8 / 11.4 & 3.6 / 3.5 & 6.1 / 6.1 & 11.8 / 11.5 & 3.2 / 2.4 & 5.6 / 4.5 & 20.6 / 12.6 & 4.1 / 4.0 & 6.4 / 7.2 & 18.1 / 15.6\\
+\cmidrule{1-14}
+ & RMSE & 4.0 / 3.1 & 6.7 / 7.3 & 10.8 / 15.0 & 4.0 / 2.9 & 7.0 / 7.3 & 10.6 / 15.7 & 1.5 / 1.8 & 2.2 / 4.6 & 4.0 / 11.3 & 6.6 / 5.0 & 11.2 / 10.8 & 16.2 / 21.4\\
+\cmidrule{2-14}
+\multirow[t]{-2}{*}{\raggedright\arraybackslash SSVI} & MAPE & 5.1 / 4.3 & 7.2 / 8.6 & 9.7 / 13.8 & 5.0 / 4.1 & 7.2 / 8.7 & 9.6 / 13.3 & 3.2 / 2.0 & 4.6 / 6.5 & 7.2 / 11.9 & 6.5 / 5.9 & 8.8 / 9.9 & 11.2 / 14.1\\
+\bottomrule
+\end{tabular}
+}
+\end{table}

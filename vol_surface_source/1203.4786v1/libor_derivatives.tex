@@ -1,0 +1,140 @@
+\section{Pricing of Derivatives}
+
+We now focus on the pricing problem for vanilla options like Caps, Floors and for exotic options like swaptions in the affine Libor model on $S^{++}_d$ introduced in the previous section. We shall see that the pricing of Caps and Floors may be performed using standard Fourier pricing techniques as in \cite{article_KRPT2009}, whereas, for the case of swaptions, we will resort to a quasi closed form solution. In fact, since the moments of the underlying affine process are known through its characteristic function, we can expand the exercise probability via an Edgeworth development, as shown in \cite{article_CollinDufresneGoldstein2002}. This approach will lead to an efficient approximation that will avoid the numerical problems underlying the computation of the exercise probability in  \cite{article_KRPT2009}.
+
+
+\subsection{Caps and Floors}
+A Cap may be thought of as a portfolio of call options on the successive Libor rates, named Caplets, whereas Floors are portfolios of put options named floorlets. These options are usually settled \textit{in arrears}, which means that the caplet with maturity $T_{k}$ is settled at time $T_{k+1}$. The tenor length $\Delta T$ is assumed to be constant. Since the two products are equivalent, we will focus on Caps. A Cap with unit notional has a payoff given by the following:
+\begin{equation}
+\Delta T \left( L(T_{k},T_{k})-K\right)^{+}\hspace{10mm}k=1,...,N-1
+\end{equation}
+We rewrite the payoff of caplets as in \cite{article_KRPT2009}:
+\begin{align}
+\Delta T \left( L(T_{k},T_{k})-K\right)^{+}&= \left(1+ \Delta TL(T_{k},T_{k})-\left(1+\Delta TK\right)\right)^{+}\nonumber\\
+&=\left(\frac{M^{u_{k}}_{T_{k}}}{M^{u_{k+1}}_{T_{k}}}-\mathcal{K} \right)^{+},
+\end{align}
+with $\mathcal{K}:=1+\Delta TK$.
+
+Thus we see that the caplet is equivalent to an option on the forward price. In order to avoid the computation of expectations involving a joint distribution, each single caplet is priced under the corresponding forward measure:
+\begin{align}
+\mathbb{C}\left(T_{k},K\right)&=B(0,T_{k+1})\mathbb{E}^{\mathbb{P}_{T_{k+1}}}\left[\left( \frac{M^{u_{k}}_{T_{k}}}{M^{u_{k+1}}_{T_{k}}}-\mathcal{K} \right)^{+} \right]\nonumber\\
+&=B(0,T_{k+1})\mathbb{E}^{\mathbb{P}_{T_{k+1}}}\left[\left(e^Y-\mathcal{K} \right)^{+} \right],
+\end{align}
+with:
+\begin{align}
+Y:=\log\left(\frac{M^{u_{k}}_{T_{k}}}{M^{u_{k+1}}_{T_{k}}}\right)=A_{T_N-T_k}(u_k,u_{k+1})+\tr\left[B_{T_N-T_k}(u_k,u_{k+1})\Sigma_{T_{k}} \right],
+\end{align}
+for $A_{T_N-T_k}(u_k,u_{k+1})$, $B_{T_N-T_k}(u_k,u_{k+1})$ defined as in \eqref{exponentiallyAB}. The pricing problem can be solved via Fourier techniques through the \cite{article_Carr99} methodology. Hence we have the following proposition, whose standard proof is omitted. %We skip the details of the simple proof and we refer to \cite{article_KRPT2009} for the derivation of the %following 
+\begin{proposition}\label{price_caplet}
+Let $\alpha>0$. The price of a caplet with strike K and maturity $T_{k}$ is given by the formula:
+\begin{align}
+\mathbb{C}\left(T_{k},K\right)&=B(0,T_{k+1})\frac{\exp\left\{-\alpha c \right\}}{2\pi}\nonumber\\
+&\times\int_{-\infty}^{+\infty}{e^{-ivc} \frac{\mathbb{E}^{\mathbb{P}_{T_{k+1}}}\left[e^{i\left( v-\left(\alpha +1 \right)i\right)\left(A_{T_N-T_k}(u_k,u_{k+1})+\tr\left[B_{T_N-T_k}(u_k,u_{k+1})\Sigma_{T_{k}} \right]\right)} \right]}{\left(\alpha +iv\right)\left(1+\alpha +iv\right)}dv},
+\end{align}
+where:
+\begin{align}
+c&=\log\left(1+\Delta TK\right),\nonumber\\
+A_{T_N-T_k}(u_k,u_{k+1})&=-\phi_{T_{N}-T_{k}}(u_{k})+\phi_{T_{N}-T_{k}}(u_{k+1}),\nonumber\\
+B_{T_N-T_k}(u_k,u_{k+1})&=-\psi_{T_{N}-T_{k}}(u_{k})+\psi_{T_{N}-T_{k}}(u_{k+1}).\nonumber
+\end{align}
+\end{proposition}
+
+In other words, pricing a Cap involves the computation of the moment generating function of e.g. the Wishart process, which can be efficiently performed through the linearization of the associated Riccati ODEs as explained in Proposition \ref{proplinearization}. The parameter $\alpha>0$ represents the damping factor introduced by \cite{article_Carr99}. We report in the Appendix B the explicit expression of the characteristic function involved in the pricing procedure.
+
+
+ 
+\subsection{Swaptions}
+The payoff of a receiver (resp. payer) swaption may be seen as a call (resp. put) on a coupon bond with strike price equal to one. We consider a receiver swaption that starts at $T_{i}$ with maturity $T_{m}$, $(i<m\leq N)$. The time-$T_{i}$ value is given by:
+\begin{equation}
+\mathbb{S}_{T_{i}}(K,T_{i},T_{m})=\left(\sum_{k=i+1}^{m}{c_{k}B(T_{i},T_{k})}-1 \right)^{+}
+\end{equation}
+where
+\begin{equation}
+c_{k} = \left\{
+\begin{array}{ll}
+\Delta TK & \text{if } i+1\leq k \leq m-1,\\
+1+\Delta TK & \text{if } k=m.
+\end{array} \right.
+\end{equation}
+Unfortunately, we face some difficulties if we try to adopt the Fourier technique that we employed to price a caplet. To see this we look at the proof of Proposition 7.2. in \cite{article_KRPT2009}, which requires the computation of the Fourier transform of the payoff\footnote{$B(T_{i},T_{k})=\frac{B(T_{i},T_{k})}{B(T_{i},T_{N})}\frac{B(T_{i},T_{N})}{B(T_{i},T_{i})}=\frac{M^{u_k}_{T_i}}{M^{u_i}_{T_i}}=\exp\left\{A_{T_N-T_i}(u_k,u_{i})+\tr\left[B_{T_N-T_i}(u_k,u_{i})\Sigma_{T_i}\right]\right\}$}:
+\begin{align}
+\tilde{f}(z)&=\int_{\mathbb{R}^{\frac{d(d+1)}{2}}}{e^{\tr\left[iz\Sigma_{T_i}\right]}\left(\sum_{k=i+1}^{m}{c_{k}e^{A_{T_N-T_i}(u_k,u_{i})+\tr\left[B_{T_N-T_i}(u_k,u_{i})\Sigma_{T_i} \right]}} -1\right)^{+}dvech(\Sigma_{T_i})},
+\end{align}
+where for a symmetric matrix $A$, $vech(A)$ stands for the vector in $\mathbb{R}^{d(d+1)/2}$ consisting in the columns of the upper-diagonal part of $A$
+including the diagonal.
+The problem is given by the presence of the positive part in the payoff function. To get rid of it, we should be able to find a value $\tilde{\Sigma}$ such that
+\begin{equation}
+\sum_{k=i+1}^{m}{c_{k}e^{A_{T_N-T_i}(u_k,u_{i})+\tr\left[B_{T_N-T_i}(u_k,u_{i})\tilde{\Sigma} \right]}}=1, \label{findBound}
+\end{equation}
+that is we should solve a single equation in $d(d+1)/2$ unknowns (the elements of $\tilde{\Sigma}$), which is highly non trivial when $d>1$.  Thus, pricing swaptions is challenging when we consider multiple factor affine models: this is a well known problem, see e.g. \cite{article_Jam89} and  \cite{article_CollinDufresneGoldstein2002}. \cite{article_KRPT2009} investigate the case $d=1$, that is a Libor model driven by a (univariate) CIR process like in \cite{article_Jam87}. In that case, solving an  equation similar to (\ref{findBound}) is simple and the pricing of a swaption is only slightly more numerically complicated than the pricing of a Cap. As our purpose is to extend their methodology to a process with values in the set of strictly positive definite symmetric matrices we face a numerical difficulty related to the dimension of the state space. In order to solve this difficulty we follow   \cite{article_CollinDufresneGoldstein2002}'s methodology which strongly depends on the affine property of the process used to modelize the rates. As the processes we use have this affine property we can carry out the approximation for the swaption price proposed by these authors. Therefore, we can get around the dimensional difficulties posed by the process.\\
+
+
+
+
+We briefly recall the main results of  \cite{article_CollinDufresneGoldstein2002} to approximate the exercise probabilities for the swaption.
+We define the $T_{i}$-price of a coupon bond, for $i<m\leq N$, as follows:
+\begin{equation}
+CB(T_{i})=\sum_{k=i+1}^{m}{c_{k}B(T_{i},T_{k})}.
+\end{equation}
+
+
+
+ Let us derive the general form of the pricing formula for a receiver swaption, for $0=T_{0}=t <T_{i}$:
+\begin{align}
+\mathbb{S}_{0}(K,T_{i},T_{m})&=\mathbb{E}^{\mathbb{Q}}\left[e^{-\int_{0}^{T_{i}}{r_s ds}}\left(CB(T_{i})-1 \right)^{+} \right]\nonumber\\
+&=\mathbb{E}^{\mathbb{Q}}\left[e^{-\int_{0}^{T_{i}}{r_s ds}}\left(CB(T_{i})\textbf{1}_{\left(CB(T_{i})>1\right)}-\textbf{1}_{\left(CB(T_{i})>1\right)} \right) \right]\nonumber\\
+%&=\sum_{k=i+1}^{m}{c_{k}\mathbb{E}^{\mathbb{Q}}\left[e^{-\int_{0}^{T_{i}}{r_s %ds}}\textbf{1}_{\left(CB(T_{i})>1\right)}B(T_{i},T_{k})\right]}\nonumber\\
+%&-\mathbb{E}^{\mathbb{Q}}\left[e^{-\int_{0}^{T_{i}}{r_s ds}}\textbf{1}_{\left(CB(T_{i})>1\right)}\right]\nonumber\\
+%&=\sum_{k=i+1}^{m}{c_{k}\mathbb{E}^{\mathbb{Q}}\left[e^{-\int_{0}^{T_{i}}{r_s %ds}}\textbf{1}_{\left(CB(T_{i})>1\right)}\mathbb{E}^{\mathbb{Q}}\left[e^{-\int_{T_{i}}^{T_{k}}{r_s ds}}|\mathcal{F}_{T_{i}}\right]\right]}\nonumber\\
+%&-K\mathbb{E}^{\mathbb{Q}}\left[e^{-\int_{0}^{T_{i}}{r_s ds}}\textbf{1}_{\left(CB(T_{i})>1\right)}\right]\nonumber\\
+&=\sum_{k=i+1}^{m}{c_{k}\mathbb{E}^{\mathbb{Q}}\left[e^{-\int_{0}^{T_{k}}{r_s ds}}\textbf{1}_{\left(CB(T_{i})>1\right)}\right]}\nonumber\\
+&-\mathbb{E}^{\mathbb{Q}}\left[e^{-\int_{0}^{T_{i}}{r_s ds}}\textbf{1}_{\left(CB(T_{i})>1\right)}\right].\nonumber
+\end{align}
+We switch to the forward measure as follows:
+\begin{align}
+\mathbb{S}_{0}(K,T_{i},T_{N})&=\sum_{k=i+1}^{m}{c_{k}B(0,T_{k})\mathbb{E}^{\mathbb{Q}}\left[\frac{e^{-\int_{0}^{T_{k}}{r_s ds}}}{B(0,T_{k})}\textbf{1}_{\left(CB(T_{i})>1\right)}\right]}\nonumber\\
+&-B(0,T_{i})\mathbb{E}^{\mathbb{Q}}\left[\frac{e^{-\int_{0}^{T_{i}}{r_s ds}}}{B(0,T_{i})}\textbf{1}_{\left(CB(T_{i})>1\right)}\right]\nonumber\\
+&=\sum_{k=i+1}^{m}{c_{k}B(0,T_{k})\mathbb{E}^{\mathbb{P}_{T_{k}}}\left[\textbf{1}_{\left(CB(T_{i})>1\right)}\right]}\nonumber\\
+&-B(0,T_{i})\mathbb{E}^{\mathbb{P}_{T_{i}}}\left[\textbf{1}_{\left(CB(T_{i})>1\right)}\right]\nonumber\\
+%&=\sum_{k=i+1}^{N}{C_{k}B(t,T_{k})\mathbb{E}^{\mathbb{P}_{T_{k}}}\left[\textbf{1}_{\left(CB(T_{i})>K\right)}|\mathcal{F}_{t}\right]}\nonumber\\
+%&-KB(t,T_{i})\mathbb{E}^{\mathbb{P}_{T_{i}}}\left[\textbf{1}_{\left(CB(T_{i})>K\right)}|\mathcal{F}_{t}\right]\nonumber\\
+&=\sum_{k=i+1}^{m}{c_{k}B(0,T_{k})\mathbb{P}_{T_{k}}\left[\left(CB(T_{i})>1\right)\right]}\nonumber\\
+&-B(0,T_{i})\mathbb{P}_{T_{i}}\left[\left(CB(T_{i})>1\right)\right].\nonumber
+\end{align}
+
+The exercise probabilities $\mathbb{P}_{T_{k}}\left[\left(CB(T_{i})>1\right)\right]$ and $\mathbb{P}_{T_{i}}\left[\left(CB(T_{i})>1\right)\right]$ do not admit in general a closed form expression but can be efficiently approximated thanks to an Edgeworth expansion procedure. Intuitively, the moments of the coupon bonds admit a simple closed-form expression in our affine framework, and these moments uniquely identify the cumulants of the distribution. One can expand the characteristic function in terms of the cumulants and compute the exercise probabilities by Fourier inversion.\\
+
+Using the notation of \cite{article_CollinDufresneGoldstein2002} (their formula (5)) for the $q-th$ power of a coupon bond we notice that, for $i<m\leq N$:
+\begin{align}
+\left( CB(T_{i})\right)^{q}&=\left(c_{i+1}B(T_{i},T_{i+1})+...+c_{m}B(T_{i},T_{m}) \right)^{q}\nonumber\\
+&=\sum_{j_{1},...,j_{q}=i+1}^{m}{\left(c_{j_{1}}\cdot...\cdot c_{j_{q}} \right)\times\left(B(T_{i},T_{j_{1}})\cdot...\cdot B(T_{i},T_{j_{q}}) \right)}.
+\end{align}
+
+Now in our framework we have (see also formula (7.9) in \cite{article_KRPT2009})
+\begin{equation}
+B(T_{i},T_{j_l})=\frac{M^{u_{j_l}}_{T_{i}}}{M^{u_{i}}_{T_{i}}}
+\end{equation}
+for $l=1,...,q$, meaning that we can rewrite the $q-th$ power of the coupon-bond as follows:
+\begin{equation}
+\left( CB(T_{i})\right)^{q}=\sum_{j_{1},...,j_{q}=i+1}^{m}{\left(c_{j_{1}}\cdot...\cdot c_{j_{q}} \right)\times\left(\frac{M^{u_{j_{1}}}_{T_{i}}}{M^{u_i}_{T_{i}}}\cdot...\cdot \frac{M^{u_{j_{q}}}_{T_{i}}}{M^{u_i}_{T_{i}}} \right)}.
+\end{equation}
+Recall, from \eqref{martingale}, that we have
+\begin{equation}
+M^{u_{j_{l}}}_{T_{i}}=\exp \left\{-\phi_{T_{N}-T_{i}}(u_{j_{l}})-\tr\left[ \psi_{T_{N}-T_{i}}(u_{j_{l}})\Sigma_{T_{i}}\right] \right\},
+\end{equation}
+for $l=1,...,q$ and
+\begin{equation}
+M^{u_{i}}_{T_{i}}=\exp \left\{-\phi_{T_{N}-T_{i}}(u_{i})-\tr\left[ \psi_{T_{N}-T_{i}}(u_{i})\Sigma_{T_{i}}\right] \right\}.
+\end{equation}
+
+In conclusion, the $q-th$ moment under $\mathbb{P}_{T_k}$ has the following expression:
+\begin{align}
+&\mathbb{E}^{\mathbb{P}_{T_{k}}}\left[CB(T_{i})^q \right]\nonumber\\
+&=\sum_{j_{1},...,j_{q}=i+1}^{m}\left(c_{j_{1}}\cdot...\cdot c_{j_{q}} \right)\times{\mathbb{E}^{\mathbb{P}_{T_{k}}}\left[\left(\frac{M^{u_{j_{1}}}_{T_{i}}}{M^{u_i}_{T_{i}}}\cdot...\cdot \frac{M^{u_{j_{q}}}_{T_{i}}}{M^{u_i}_{T_{i}}} \right) \right]}\nonumber\\
+&=\sum_{j_{1},...,j_{q}=i+1}^{m}\left(c_{j_{1}}\cdot...\cdot c_{j_{q}} \right)\times\nonumber\\
+&\mathbb{E}^{\mathbb{P}_{T_{k}}}\Bigg[\exp\Bigg\{ \sum_{l=1}^{q}{\Big(-\phi_{T_{N}-T_{i}}(u_{j_{l}})-\tr\left[ \psi_{T_{N}-T_{i}}(u_{j_{l}})\Sigma_{T_{i}}\right]\Big)}\Bigg. \nonumber\\
+&\Bigg.+q\Big( \phi_{T_{N}-T_{i}}(u_{i})+\tr\left[ \psi_{T_{N}-T_{i}}(u_{i})\Sigma_{T_{i}}\right]\Big)\Bigg\}\Bigg]\nonumber\\
+&=\sum_{j_{1},...,j_{q}=i+1}^{m}\left(c_{j_{1}}\cdot...\cdot c_{j_{q}} \right)\times \exp \left\{\left(-\sum_{l=1}^{q}{\phi_{T_{N}-T_{i}}(u_{j_{l}})}\right)+q\phi_{T_{N}-T_{i}}(u_{i}) \right\}\nonumber\\
+&\times \mathbb{E}^{\mathbb{P}_{T_{k}}}\left[\exp\left\{\tr\left[\left(\left(-\sum_{l=1}^{q}{\psi_{T_{N}-T_{i}}(u_{j_{l}})}\right)+q\psi_{T_{N}-T_{i}}(u_{i})\right)\Sigma_{T_{i}} \right] \right\} \right],
+\end{align}
+where the functions $\phi$ and $\psi$ are as usual the solutions of Riccati ODE's of the form \eqref{Riccati_psi}, \eqref{Riccati_phi}. Once the first $m$ moments under the corresponding forward measures are exactly determined, we can estimate the exercise probabilities $\mathbb{P}_{T_{k}}\left[\left(CB(T_{0})>1\right)\right]$ under each forward measure by relying on a cumulant expansion for $\mathbb{P}_{T_{k}}\left[CB(T_{0})\right]$.

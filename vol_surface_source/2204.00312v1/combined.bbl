@@ -1,0 +1,61 @@
+\begin{thebibliography}{10}
+
+\bibitem{antonov2019new}
+Alexandre Antonov, Michael Konikov, and Michael Spector.
+\newblock {A new arbitrage-free parametric volatility surface}.
+\newblock {\em Available at SSRN 3403708}, 2019.
+
+\bibitem{cohen2020detecting}
+Samuel~N Cohen, Christoph Reisinger, and Sheng Wang.
+\newblock {Detecting and repairing arbitrage in traded option prices}.
+\newblock {\em Applied Mathematical Finance}, 27(5):345--373, 2020.
+
+\bibitem{corbetta2019robust}
+Jacopo Corbetta, Pierre Cohort, Ismail Laachir, and Claude Martini.
+\newblock {Robust calibration and arbitrage-free interpolation of SSVI slices}.
+\newblock {\em Decisions in Economics and Finance}, 42(2):665--677, 2019.
+
+\bibitem{fukasawa2012normalizing}
+M.~Fukasawa.
+\newblock {The normalizing transformation of the implied volatility smile}.
+\newblock {\em Mathematical Finance}, 22(4):753--762, 2012.
+
+\bibitem{gatheral2004parsimonious}
+Jim Gatheral.
+\newblock {A parsimonious arbitrage-free implied volatility parameterization
+  with application to the valuation of volatility derivatives}.
+\newblock {\em Presentation at Global Derivatives \& Risk Management, Madrid},
+  2004.
+
+\bibitem{gatheral2014arbitrage}
+Jim Gatheral and Antoine Jacquier.
+\newblock {Arbitrage-free SVI volatility surfaces}.
+\newblock {\em Quantitative Finance}, 14(1):59--71, 2014.
+
+\bibitem{hendriks2019extended}
+Sebas Hendriks and Claude Martini.
+\newblock {The extended SSVI volatility surface}.
+\newblock {\em Journal of Computational finance}, 22(5), 2019.
+
+\bibitem{lee2004moment}
+Roger~W Lee.
+\newblock {The moment formula for implied volatility at extreme strikes}.
+\newblock {\em Mathematical Finance: An International Journal of Mathematics,
+  Statistics and Financial Economics}, 14(3):469--480, 2004.
+
+\bibitem{martini2021explicit}
+Claude Martini and Arianna Mingone.
+\newblock {Explicit no arbitrage domain for sub-SVIs via reparametrization}.
+\newblock {\em arXiv preprint arXiv:2106.02418}, 2021.
+
+\bibitem{martini2021no}
+Claude Martini and Arianna Mingone.
+\newblock {No arbitrage SVI}.
+\newblock {\em Available at SSRN 3594528, to appear in SIFIN 2022}, 2021.
+
+\bibitem{tehranchi2020black}
+Michael~R Tehranchi.
+\newblock {A Black-Scholes inequality: applications and generalizations}.
+\newblock {\em Finance and Stochastics}, 24(1):1--38, 2020.
+
+\end{thebibliography}

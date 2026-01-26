@@ -1,0 +1,108 @@
+%!TEX root = ../deepsmooth.tex
+
+\section{Introduction}
+
+The implied volatility surface (IVS) is a key input for computing margin requirements for brokers, quotes for market makers, prices of exotic derivatives for quants, and strategies positions for traders.
+As a result, tiny predictions errors can lead to dramatic financial losses.
+But standard IVS models often lack the ability to flexibly reproduce market prices and value other instruments without quotes. 
+In this paper, we merge known ideas from different fields, namely machine learning (ML) and mathematical finance, to build a new solution for a non-trivial and relevant financial problem: the interpolation and extrapolation of the IVS.
+More specifically, we use a neural network (NN) to correct the IVS produced by any standard model.
+This lets practitioners plug our method on top of existing approaches while offering an unprecedented trade-off between flexibility and computational complexity.
+This problem was initially brought to us by a financial institution willing to improve its existing solution and a version of this method is being tested in production by a financial institution, where thousands of models are continuously updated throughout the day and used as inputs to various quantitative tools.
+
+Practitioners have a growing interest to leverage NNs as flexible predictors for applications requiring an understanding of the complex dynamics of financial markets. 
+And the ML community continues to build better tools and understanding deep models.
+But leveraging domain expertise about a specific problem is often difficult, and still an active field of research.
+In this paper, we show how knowledge from both ML and mathematical finance can be merged to build a well performing and consistent hybrid model.
+Our application focuses on options, yet, the same approach could be similarly applied to other financial problems.
+%with skills and knowledge of proper development and usage of deep models.
+%For a most rigorous and successful financial ML model, both of these sides are essential.
+%Unfortunately, due to lack of exchange, this gap still remains, and even more so results in wrongfully applied ML techniques [CITE] or although highly accurate over benchmarks, unrealistic pipelines for financial application [CITE].
+
+\textbf{Problem setting and background context.}
+An \emph{option} is a financial contract giving the option holder the right to buy (a call option) or the right to sell (a put option) an asset, such as a stock or a commodity, for a predetermined price (the \emph{strike price}) on a predetermined date (the \emph{expiry} date).
+%Options can be written on various assets such as a stock, an index, a currency, a bond, or a commodity, and have been used since at least the Greek era for risk management and speculation.
+%Nowadays, options are standardized and listed on exchanges where tens of millions of contracts are traded everyday.
+An initial \emph{premium} must be paid to the option seller in order to acquire today the right to buy or sell and asset in the future at, possibly, a preferential price.
+%Intuitively, an option is more valuable when the underlying asset price is more likely to fluctuate, that is its volatility is higher.
+%In seminal papers, Black and Scholes~\cite{black1973pricing} and Merton~\cite{merton1973theory} showed that by actively trading the underlying asset a market participant can replicate the option final payoff at expiry, perfectly and without risk.
+%The so-called Black-Scholes (BS) formula thus allowed to determine the option premium, or price, and its discovery resulted in a burst in option trading activity.
+The standard, textbook approach to model option pricing is based on the so-called Black-Scholes (BS) formula.
+The Black-Scholes formula provides a closed-form formula for option prices for a specific stock price model, the geometric Brownian motion (GBM).
+However, the formula builds on unrealistic assumptions such as continuous price trajectory and trading, absence of market frictions such as bid-ask spread and integer contract size, and normality of log-returns.
+Options are traded on financial exchanges, and their prices typically invalidate the GBM model.
+The Black-Scholes formula is a convenient one-to-one mapping between a price and a volatility parameter that is preferred by practitioners for a variety of reasons.
+For example, it allows them to easily compare the price of options with different contract strike prices and maturities.
+As a consequence, a lot of domain expertise has been developed for the so-called \emph{implied volatility surface (IVS)}: the continuous representation of this volatility parameter expressed as a function of the strike price and of the expiry at a given point in time.
+%Hence, practitioners and academics alike have been passionate to develop new stock price models leading to more realistic option prices, however, in general they come at a higher computational cost and always with some theoretical limitations.
+%Practitioners commonly use the BS formula to price option because of its simplicity, yet they tune the \emph{volatility parameter} so as to express their view on the stock return distribution.
+%As a result, options with different strike prices and maturities may thus be associated with different volatility parameters.
+%The \emph{implied volatility surface (IVS)} is the continuous representation of this volatility parameter expressed as a function of the strike price and of the expiry.
+%The IVS can be used to easily quantify the relative expensiveness of options with different characteristics, and to produce various measures of market-implied future returns.
+%However, the IVS is observable only at a limited number of points.
+However, only a finite number of option prices are observed in practice.
+In addition, quoted option prices should not allow \textit{arbitrage opportunities}, that is, constructing a portfolio that may generate profits at a zero initial cost.
+Therefore the two main challenges when modeling the implied volatility surface are, first, to ensure that the corresponding option prices do not allow arbitrage opportunities and, second, the generalization to an entire surface given a limited number of observations.
+Such a construction allows the IVS to be used as input to price financial derivatives in a consistent way, and that enables effective risk-management.
+It is then worth noting that some commonly used models, such as SABR~\cite{hagan2002managing} and SVI~\cite{gatheral2004parsimonious}, may not be arbitrage-free for some parameters values, see for example~\cite[Section~3]{roper2010arbitrage}, which contradicts real-life scenarios.
+% can we remove the 'some' in the above sentence? I think it makes it sound undetermined, defensive
+
+
+%Moving to the solution we propose, a neural network approach to fitting and predicting IVS, we recall the four pillars of integrity are suggested for developing a trustworthy neural network model: health - the system behaves as expected even under altered or unseen conditions, explainability - interpretation of the model itself or of its predictions is possible, security - robust against novelty and adversary and finally, reproducibility - faithful reproducible results.
+%By leveraging years of research and domain knowledge from finance, in this work we will account for the all of the above points through careful implementation and evaluation study.
+
+\textbf{Short literature review.}
+As neural networks and machine learning in general, prevail almost all aspects in science and industry, finance applications have also been impacted  \citep{hernandez2007garch, genccay2001pricing, hernandez2013gaussian, cao2003support, heaton2017deep}.
+Deep learning have been studied with applications to option pricing in \citep{sirignano2018dgm, han2017overcoming, fujii2017asymptotic, becker2019deep, hutchinson1994nonparametric, liu2019neural, liu2019pricing}.
+These papers exploit the well-known universal approximation property of neural networks~\citep{hornik1989multilayer, hornik1991approximation, leshno1993multilayer}.
+Several applications of NN models for implied volatility smoothing exist, see~\cite{dugas2001incorporating, zheng2018machine, ludwig2015robust, itkin2015sigmoid, yang2017gated} with more details in Appendix~A.
+\cite{zheng2018machine} in his PhD thesis also studied the use of soft constraints to train an arbitrage-free model.
+Extensive domain specific knowledge has been built on the IVS.
+In this work, we will use the no-arbitrage constraints on the IVS derived in~\cite{roper2010arbitrage}, and later refined in~\cite{guo2016generalized}, the moment condition of~\cite{lee2004moment}, and the surface SVI (SSVI) model of~\cite{gatheral2014arbitrage}.
+A more exhaustive literature review is available in Appendix~\ref{sec:litrev}.
+%~\cite{stewart2017label,diligenti2017integrating,muralidhar2018incorporating,marino2019combining,von2020informed}
+
+%%-----------------
+%% contribution:
+%%-----------------
+
+\textbf{Summary of contributions.}
+We present a new methodology to correct, interpolate, and extrapolate the implied volatility surface in an arbitrage-free way.
+We achieve this by modeling the implied total variance as a product of a neural network and a prior model, and by penalizing the loss using soft constraints during training so as to prevent arbitrage opportunities.
+The prior model should be a standard valid model for the total variance that will guide the general shape of the predictions, two examples are the Black-Scholes model and the SSVI model of~\cite{gatheral2014arbitrage}.
+The neural network is thus acting as a corrector of the prior model, enhancing its ability to reproduce observed market prices.
+The soft-constraints specification is guided by theoretical results from mathematical finance.
+The two elements together allow to build a realistic, flexible, and parsimonious model for the IVS.
+%Smart initialization, or transfer, of the neural networks parameters can also be used when only sparse data is available.
+%This can be achieved by first fitting a standard model to market prices and, second, training an ANN without constraints to reproduce the fitted model over an extended range of maturities and moneyness.
+%Alternatively, one may directly use a previously trained ANN.
+%Note that the implied volatility surfaces fluctuates almost continuously, which is one important distinction with standard ANN applications.
+%Indeed, our problem is not high-dimensional but require frequent re-calibration.
+We benchmark our method against standard models and study its performance both on training and testing sets, as well as on synthetic data, and real market prices of contracts on the S\&P~500 index.
+Numerical experiments suggest that our method appropriately captures the features of standard option pricing models.
+We show that increasing model capacity generally leads to better fits, and that the soft constraints generally help decreasing the fitting error and the convergence speed.
+Similar results are obtained when applying our method to real data, where an ablation study shows that constrained learning helps producing better volatility surfaces, both in interpolation and extrapolation.
+
+\textbf{Novelty and significance.}
+Since options and related derivatives are actively exchange traded contracts that are used for risk-management and investment purposes, their fair valuation requires a reliable model for the IVS.
+The main ambition of this work is bridging the existing gap between a traditional challenge in finance and recent developments from the deep learning community, resulting in a trust-worthy, computationally efficient option pricing framework.
+This work is the first peer-reviewed published work to use soft-constraints to guide the training of a deep NN model for the IVS.
+Previous work used hardwired constraints which limits tremendously the neural network flexibility~\cite{dugas2001incorporating}, or used constraints on the option price surface which requires additional transformations at each training step~\cite{ludwig2015robust}.
+This work also appears to be the first suggesting a hybrid model for the IVS combining a neural network component, and a standard model component.
+
+%Yet, these papers differ in that they either focus on modeling the price directly (attempting to hard-wire the absence of arbitrage opportunities directly in the ANN) or build upon a one-layer ANN with option price constraints to prevent arbitrage opportunities.
+%However, hardwired constraints limit tremendously the ANN flexibility, and option price soft constraints require computationally costly and highly nonlinear transformations at each iteration.
+%Instead, we rely on soft constraints involving the first and second derivatives of our ANN models which ease the computational burden.
+%This work is the first to propose an arbitrage-free multilayer ANN construction of the implied volatility surface with easy-to-run no-arbitrage soft constraints.
+
+
+%%-----------------
+%% paper structure:
+%%-----------------
+
+\textbf{Paper structure.}
+\Cref{sec:ivs} reviews background knowledge such as the implied volatility surface, the no-arbitrage conditions, and formulates the modeling problem.
+We describe the methodology in~\Cref{sec:smoo}.
+The numerical experiments and the empirical analysis can be found in~\Cref{sec:results}.
+\Cref{sec:impact} discusses the broader impact. \Cref{sec:ccl} concludes.
+More information on standard option pricing models, on implied volatility models, on the experiments, as well as additional results can be found in the online Appendix.

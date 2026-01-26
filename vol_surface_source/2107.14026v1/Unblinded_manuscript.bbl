@@ -1,0 +1,393 @@
+\begin{thebibliography}{xx}
+
+\harvarditem{Ahn \harvardand\ Horenstein}{2013}{AH13}
+Ahn, S.~C. \harvardand\ Horenstein, A.~R.  \harvardyearleft
+  2013\harvardyearright , `Eigenvalue ratio test for the number of factors',
+  {\em Econometrica} {\bf 81}(3),~1203--1227.
+
+\harvarditem{Akaike}{1974}{Akaike74}
+Akaike, H.  \harvardyearleft 1974\harvardyearright , `A new look at the
+  statistical model identification', {\em IEEE Transactions on Automatic
+  Control} {\bf 19},~716--723.
+
+\harvarditem{Andrews}{1991}{Andrews91}
+Andrews, D.  \harvardyearleft 1991\harvardyearright , `Heteroskedasticity and
+  autocorrelation consistent covariance matrix estimation', {\em Econometrica}
+  {\bf 59},~817--858.
+
+\harvarditem{Armstrong \harvardand\ Collopy}{1992}{AC92}
+Armstrong, J.~S. \harvardand\ Collopy, F.  \harvardyearleft
+  1992\harvardyearright , `{Error measures for generalizing about forecasting
+  methods: Empirical comparisons}', {\em International Journal of Forecasting}
+  {\bf 8}(1),~69--80.
+
+\harvarditem{Audrino}{2014}{Audrino14}
+Audrino, F.  \harvardyearleft 2014\harvardyearright , `Forecasting correlations
+  during the late-2000s financial crisis: The short-run component, the long-run
+  component, and structural breaks', {\em Computational Statistics \& Data
+  Analysis} {\bf 76},~43--60.
+
+\harvarditem{{Bank of International Settlements}}{2016}{BIS16}
+{Bank of International Settlements}  \harvardyearleft 2016\harvardyearright ,
+  {Foreign exchange turnover in April 2016}, Technical report, {Central Bank}.
+\newline\harvardurl{\url{http://www.bis.org/publ/rpfx16fx.pdf}}
+
+\harvarditem{Bartlett}{1950}{Bartlett50}
+Bartlett, M.~S.  \harvardyearleft 1950\harvardyearright , `Periodogram analysis
+  and continuous spectra', {\em Biometrika} {\bf 37},~1--16.
+
+\harvarditem[Bauwens et~al.]{Bauwens, Grigoryeva \harvardand\
+  Ortega}{2016}{BGO16}
+Bauwens, L., Grigoryeva, L. \harvardand\ Ortega, J.-P.  \harvardyearleft
+  2016\harvardyearright , `Estimation and empirical performance of non-scalar
+  dynamic conditional correlation models', {\em Computational Statistics \&
+  Data Analysis} {\bf 100},~17--36.
+
+\harvarditem[Benko et~al.]{Benko, H\"{a}rdle \harvardand\ Kneip}{2009}{BHK09}
+Benko, M., H\"{a}rdle, W. \harvardand\ Kneip, A.  \harvardyearleft
+  2009\harvardyearright , `Common functional principal components', {\em The
+  Annals of Statistics} {\bf 37}(1),~1--34.
+
+\harvarditem{Bernales \harvardand\ Guidolin}{2014}{BG14}
+Bernales, A. \harvardand\ Guidolin, M.  \harvardyearleft 2014\harvardyearright
+  , `{Can we forecast the implied volatility surface dynamics of equity
+  options? Predictability and economic value tests}', {\em Journal of Banking
+  \& Finance} {\bf 46},~326--342.
+
+\harvarditem{Bernales \harvardand\ Guidolin}{2015}{BG15}
+Bernales, A. \harvardand\ Guidolin, M.  \harvardyearleft 2015\harvardyearright
+  , `Learning to smile: Can rational learning explain predictable dynamics in
+  the implied volatility surface?', {\em Journal of Financial Markets} {\bf
+  26},~1--37.
+
+\harvarditem{Bernardi \harvardand\ Catania}{2018}{BC14}
+Bernardi, M. \harvardand\ Catania, L.  \harvardyearleft 2018\harvardyearright ,
+  `{The model confidence set package for R}', {\em International Journal of
+  Computational Economics and Econometrics} {\bf 8}(2),~144--158.
+
+\harvarditem{Black \harvardand\ Scholes}{1973}{BS73}
+Black, F. \harvardand\ Scholes, M.  \harvardyearleft 1973\harvardyearright ,
+  `The pricing of options and corporate liabilities', {\em The Journal of
+  Political Economy} {\bf 81}(3),~637--654.
+
+\harvarditem{Borovkova \harvardand\ Permana}{2009}{BP09}
+Borovkova, S. \harvardand\ Permana, F.~J.  \harvardyearleft
+  2009\harvardyearright , `{Implied volatility in oil markets}', {\em
+  Computational Statistics \& Data Analysis} {\bf 53}(6),~2022--2039.
+
+\harvarditem{Brailsford \harvardand\ Faff}{1996}{BF96}
+Brailsford, T.~J. \harvardand\ Faff, R.~W.  \harvardyearleft
+  1996\harvardyearright , `An evaluation of volatility forecasting techniques',
+  {\em Journal of Banking \& Finance} {\bf 20}(3),~419--438.
+
+\harvarditem{Caporin \harvardand\ McAleer}{2014}{CM14}
+Caporin, M. \harvardand\ McAleer, M.  \harvardyearleft 2014\harvardyearright ,
+  `{Robust ranking of multivariate GARCH models by problem dimension}', {\em
+  Computational Statistics \& Data Analysis} {\bf 76},~172--185.
+
+\harvarditem{Chalamandaris \harvardand\ Tsekrekos}{2010}{CT10}
+Chalamandaris, G. \harvardand\ Tsekrekos, A.~E.  \harvardyearleft
+  2010\harvardyearright , `{Predictable dynamics in implied volatility surface
+  from OTC currency options}', {\em Journal of Banking \& Finance} {\bf
+  34}(6),~1175--1188.
+
+\harvarditem{Chalamandaris \harvardand\ Tsekrekos}{2011}{CT11}
+Chalamandaris, G. \harvardand\ Tsekrekos, A.~E.  \harvardyearleft
+  2011\harvardyearright , `{How important is the term structure in implied
+  volatility surface model? Evidence from foreign exchange options}', {\em
+  Journal of International Money and Finance} {\bf 30},~623--640.
+
+\harvarditem[Chang et~al.]{Chang, Chen \harvardand\ Qiao}{2020}{CCQ20}
+Chang, J., Chen, C. \harvardand\ Qiao, X.  \harvardyearleft
+  2020\harvardyearright , An autocovariance-based learning framework for
+  high-dimensional functional time series, Working paper, ArXiv.
+\newline\harvardurl{\url{https://arxiv.org/abs/2008.12885}}
+
+\harvarditem{Chiou}{2012}{Chiou12}
+Chiou, J.-M.  \harvardyearleft 2012\harvardyearright , `Dynamical functional
+  prediction and classification with application to traffic flow prediction',
+  {\em The Annals of Applied Statistics} {\bf 6}(4),~1588--1614.
+
+\harvarditem[Chiou et~al.]{Chiou, Chen \harvardand\ Yang}{2014}{CCY14}
+Chiou, J.-M., Chen, Y.-T. \harvardand\ Yang, Y.-F.  \harvardyearleft
+  2014\harvardyearright , `{Multivariate functional principal component
+  analysis: A normalization approach}', {\em Statistica Sinica} {\bf
+  24},~1571--1596.
+
+\harvarditem{{Cuesta-Albertos} \harvardand\ {Febrero-Bande}}{2010}{CF10}
+{Cuesta-Albertos}, J.~A. \harvardand\ {Febrero-Bande}, M.  \harvardyearleft
+  2010\harvardyearright , `{A simple multiway ANOVA for functional data}', {\em
+  Test} {\bf 19}(3),~537--557.
+
+\harvarditem{David \harvardand\ Veronesi}{2000}{DV00}
+David, A. \harvardand\ Veronesi, P.  \harvardyearleft 2000\harvardyearright ,
+  {Option prices with uncertain fundamentals: Theory and evidence on the
+  dynamics of implied volatilities}, CRSP Working Paper 485, University of
+  Chicago.
+\newblock Available at SSRN: \url{https://ssrn.com/abstract=199332} or
+  \url{http://dx.doi.org/10.2139/ssrn.199332}.
+
+\harvarditem[Deuskar et~al.]{Deuskar, Gupta \harvardand\
+  Subrahmanyam}{2008}{DGS08}
+Deuskar, P., Gupta, A. \harvardand\ Subrahmanyam, M.~G.  \harvardyearleft
+  2008\harvardyearright , `The economic determinants of interest rate option
+  smiles', {\em Journal of Banking \& Finance} {\bf 32}(5),~714--728.
+
+\harvarditem[Di et~al.]{Di, Crainiceanu, Caffo \harvardand\
+  Punjabi}{2009}{DCC+09}
+Di, C.-Z., Crainiceanu, C.~M., Caffo, B.~S. \harvardand\ Punjabi, N.~M.
+  \harvardyearleft 2009\harvardyearright , `Multilevel functional principal
+  component analysis', {\em The Annals of Applied Statistics} {\bf
+  3}(1),~458--488.
+
+\harvarditem[Fuertes et~al.]{Fuertes, Izzeldin \harvardand\
+  Kalotychou}{2009}{FIK09}
+Fuertes, A.-M., Izzeldin, M. \harvardand\ Kalotychou, E.  \harvardyearleft
+  2009\harvardyearright , `{On forecasting daily stock volatility: the role of
+  intraday information and market conditions}', {\em International Journal of
+  Forecasting} {\bf 25}(2),~259--281.
+
+\harvarditem[Gao et~al.]{Gao, Shang \harvardand\ Yang}{2019}{GSY19}
+Gao, Y., Shang, H.~L. \harvardand\ Yang, Y.  \harvardyearleft
+  2019\harvardyearright , `{High-dimensional functional time series
+  forecasting: An application to age-specific mortality rates}', {\em Journal
+  of Multivariate Analysis} {\bf 170},~232--243.
+
+\harvarditem[Garcia et~al.]{Garcia, Luger \harvardand\ Renault}{2003}{GLR03}
+Garcia, R., Luger, R. \harvardand\ Renault, E.  \harvardyearleft
+  2003\harvardyearright , `Empirical assessment of an intertemporal option
+  pricing model with latent variables', {\em Journal of Econometrics} {\bf
+  116}(1-2),~49--83.
+
+\harvarditem{Garman \harvardand\ Kohlhagen}{1983}{GK83}
+Garman, M.~B. \harvardand\ Kohlhagen, S.~W.  \harvardyearleft
+  1983\harvardyearright , `Foreign currency option values', {\em Journal of
+  International Money and Finance} {\bf 2}(3),~231--237.
+
+\harvarditem{Goncalves \harvardand\ Guidolin}{2006}{GG06}
+Goncalves, S. \harvardand\ Guidolin, M.  \harvardyearleft 2006\harvardyearright
+  , `{Predictable dynamics in the S\&P 500 index options implied volatility
+  surface}', {\em The Journal of Business} {\bf 79}(3),~1591--1635.
+
+\harvarditem{Guidolin \harvardand\ Timmermann}{2003}{GT03}
+Guidolin, M. \harvardand\ Timmermann, A.  \harvardyearleft
+  2003\harvardyearright , `{Option prices under Bayesian learning: Implied
+  volatility dynamics and predictive densities}', {\em Journal of Economic
+  Dynamics and Control} {\bf 27}(5),~717--769.
+
+\harvarditem{Hall}{2011}{Hall11}
+Hall, P.  \harvardyearleft 2011\harvardyearright , {Principal component
+  analysis for functional data: Methodology, theory, and discussion}, {\em in}
+  F.~Ferraty \harvardand\ Y.~Romain, eds, `The Oxford Handbook of Functional
+  Data Analysis', Oxford University Press, New York, pp.~210--234.
+
+\harvarditem{Hall \harvardand\ Vial}{2006}{HV06}
+Hall, P. \harvardand\ Vial, C.  \harvardyearleft 2006\harvardyearright ,
+  `Assessing the finite dimensionality of functional data', {\em Journal of the
+  Royal Statistical Society (Series B)} {\bf 68}(4),~689--705.
+
+\harvarditem[Hansen et~al.]{Hansen, Lunde \harvardand\ Nason}{2011}{HLN11}
+Hansen, P.~R., Lunde, A. \harvardand\ Nason, J.~M.  \harvardyearleft
+  2011\harvardyearright , `The model confidence set', {\em Econometrica} {\bf
+  79}(2),~453--497.
+
+\harvarditem{Hentschel}{2003}{Hentschel03}
+Hentschel, L.  \harvardyearleft 2003\harvardyearright , `Errors in implied
+  volatility estimation', {\em The Journal of Financial and Quantitative
+  Analysis} {\bf 38}(4),~779--810.
+
+\harvarditem[{H\"{o}rmann} et~al.]{{H\"{o}rmann}, Kidzi\'{n}ski \harvardand\
+  Hallin}{2015}{HKH15}
+{H\"{o}rmann}, S., Kidzi\'{n}ski, L. \harvardand\ Hallin, M.  \harvardyearleft
+  2015\harvardyearright , `Dynamic functional principal components', {\em
+  Journal of the Royal Statistical Society: Series B} {\bf 77}(2),~319--348.
+
+\harvarditem[Horv\`{a}th et~al.]{Horv\`{a}th, Kokoszka \harvardand\
+  Reeder}{2013}{HKR13}
+Horv\`{a}th, L., Kokoszka, P. \harvardand\ Reeder, R.  \harvardyearleft
+  2013\harvardyearright , `Estimation of the mean of functional time series and
+  a two sample problem', {\em Journal of the Royal Statistical Society: Series
+  B} {\bf 75}(1),~103--122.
+
+\harvarditem[Horv\`{a}th et~al.]{Horv\`{a}th, Kokoszka \harvardand\
+  Rice}{2014}{HKR14}
+Horv\`{a}th, L., Kokoszka, P. \harvardand\ Rice, G.  \harvardyearleft
+  2014\harvardyearright , `Testing stationarity of functional time series',
+  {\em Journal of Econometrics} {\bf 179}(1),~66--82.
+
+\harvarditem{Hyndman \harvardand\ Khandakar}{2008}{HK08}
+Hyndman, R.~J. \harvardand\ Khandakar, Y.  \harvardyearleft
+  2008\harvardyearright , `{Automatic time series forecasting: the forecast
+  package for R}', {\em Journal of Statistical Software} {\bf 27}(3).
+
+\harvarditem{Hyndman \harvardand\ Shang}{2010}{HS10}
+Hyndman, R.~J. \harvardand\ Shang, H.~L.  \harvardyearleft
+  2010\harvardyearright , `Rainbow plots, bagplots, and boxplots for functional
+  data', {\em Journal of Computational and Graphical Statistics} {\bf
+  19}(1),~29--45.
+
+\harvarditem{Hyndman \harvardand\ Shang}{2020}{HS19}
+Hyndman, R.~J. \harvardand\ Shang, H.~L.  \harvardyearleft
+  2020\harvardyearright , {\em {ftsa: Functional Time Series Analysis}}.
+\newblock R package version 6.0.
+\newline\harvardurl{\url{https://CRAN.R-project.org/package=ftsa}}
+
+\harvarditem{Hyndman \harvardand\ Koehler}{2006}{HK06}
+Hyndman, R. \harvardand\ Koehler, A.  \harvardyearleft 2006\harvardyearright ,
+  `Another look at measures of forecast accuracy', {\em International Journal
+  of Forecasting} {\bf 22}(4),~679--688.
+
+\harvarditem{Karhunen}{1946}{Karhunen46}
+Karhunen, K.  \harvardyearleft 1946\harvardyearright , `Zur spektraltheorie
+  stochastischer prozesse', {\em Annales Academiae Scientiarum Fennicae} {\bf
+  37},~1--37.
+
+\harvarditem[Kearney et~al.]{Kearney, Cummins \harvardand\ Murphy}{2018}{KCM18}
+Kearney, F., Cummins, M. \harvardand\ Murphy, F.  \harvardyearleft
+  2018\harvardyearright , `{Forecasting implied volatility in foreign exchange
+  markets: A functional time series approach}', {\em The European Journal of
+  Finance} {\bf 24}(1),~1--18.
+
+\harvarditem[Kearney et~al.]{Kearney, Murphy \harvardand\ Cummins}{2015}{KMC15}
+Kearney, F., Murphy, F. \harvardand\ Cummins, M.  \harvardyearleft
+  2015\harvardyearright , `{An analysis of implied volatility jump dynamics:
+  Novel functional data representation in crude oil markets}', {\em North
+  American Journal of Economics and Finance} {\bf 33},~199--216.
+
+\harvarditem{Kearney \harvardand\ Shang}{2020}{KS19}
+Kearney, F. \harvardand\ Shang, H.~L.  \harvardyearleft 2020\harvardyearright ,
+  `{Uncovering predictability in the evolution of the WTI oil futures curve}',
+  {\em European Financial Management} {\bf 26}(1),~238--257.
+
+\harvarditem[Konstantinidi et~al.]{Konstantinidi, Skiadopoulos \harvardand\
+  Tzagkaraki}{2008}{KST08}
+Konstantinidi, E., Skiadopoulos, G. \harvardand\ Tzagkaraki, E.
+  \harvardyearleft 2008\harvardyearright , `{Can the evolution of implied
+  volatility be forecasted? Evidence from European and US implied volatility
+  indices}', {\em Journal of Banking \& Finance} {\bf 32}(11),~2401--2411.
+
+\harvarditem{Lo\`{e}ve}{1946}{Loeve46}
+Lo\`{e}ve, M.  \harvardyearleft 1946\harvardyearright , `Fonctions
+  al\'{e}atoires a decomposition orthogonale exponentielle', {\em {La Revue
+  Scientifique}} {\bf 84},~159--162.
+
+\harvarditem[{Mart\'{i}nez-Hern\'{a}ndez} et~al.]{{Mart\'{i}nez-Hern\'{a}ndez},
+  Gonzalo \harvardand\ {Gonz\'{a}lez-Far\'{i}as}}{2020}{MGG20}
+{Mart\'{i}nez-Hern\'{a}ndez}, I., Gonzalo, J. \harvardand\
+  {Gonz\'{a}lez-Far\'{i}as}, G.  \harvardyearleft 2020\harvardyearright ,
+  Nonparametric estimation of functional dynamic factor model, Working paper,
+  ArXiv.
+\newline\harvardurl{\url{https://arxiv.org/abs/2011.01831}}
+
+\harvarditem{Morris \harvardand\ Carroll}{2006}{MC06}
+Morris, J.~S. \harvardand\ Carroll, R.~J.  \harvardyearleft
+  2006\harvardyearright , `Wavelet-based functional mixed models', {\em Journal
+  of Royal Statistical Society Series B} {\bf 68}(2),~179--199.
+
+\harvarditem[Morris et~al.]{Morris, Vannucci, Brown \harvardand\
+  Carroll}{2003}{MVB+03}
+Morris, J.~S., Vannucci, M., Brown, P.~J. \harvardand\ Carroll, R.~J.
+  \harvardyearleft 2003\harvardyearright , `Wavelet-based nonparametric
+  modelling of hierarchical functions in colon carcinogenesis', {\em {Journal
+  of the American Statistical Association: Applications and Case Studies}} {\bf
+  98}(463),~573--583.
+
+\harvarditem[M\"{u}ller et~al.]{M\"{u}ller, Sen \harvardand\
+  Stadm\"{u}ller}{2011}{MSS11}
+M\"{u}ller, H.-G., Sen, R. \harvardand\ Stadm\"{u}ller, U.  \harvardyearleft
+  2011\harvardyearright , `Functional data analysis for volatility', {\em
+  Journal of Econometrics} {\bf 165}(2),~233--245.
+
+\harvarditem{Ord \harvardand\ Fildes}{2013}{OF13}
+Ord, K. \harvardand\ Fildes, R.  \harvardyearleft 2013\harvardyearright , {\em
+  {Principles of Business Forecasting}}, Cengage Learning, Mason, OH, USA.
+
+\harvarditem{Panaretos \harvardand\ Tavakoli}{2013}{PT13}
+Panaretos, V.~M. \harvardand\ Tavakoli, S.  \harvardyearleft
+  2013\harvardyearright , `{Fourier analysis of stationary time series in
+  function space}', {\em The Annals of Statistics} {\bf 41}(2),~568--603.
+
+\harvarditem{Paparoditis \harvardand\ Shang}{2020}{PS20}
+Paparoditis, E. \harvardand\ Shang, H.~L.  \harvardyearleft
+  2020\harvardyearright , Bootstrap prediction bands for functional time
+  series, Working paper, ArXiv.
+\newline\harvardurl{\url{https://arxiv.org/abs/2004.03971}}
+
+\harvarditem{Parzen}{1957}{Parzen57}
+Parzen, E.  \harvardyearleft 1957\harvardyearright , `On consistent estimates
+  of the spectrum of stationary time series', {\em The Annals of Mathematical
+  Statistics} {\bf 28},~329--348.
+
+\harvarditem{Ramsay \harvardand\ Silverman}{2005}{RS05}
+Ramsay, J. \harvardand\ Silverman, B.  \harvardyearleft 2005\harvardyearright ,
+  {\em Functional Data Analysis}, 2nd edn, Springer, New York.
+
+\harvarditem{Rao}{1958}{Rao58}
+Rao, C.~R.  \harvardyearleft 1958\harvardyearright , `Some statistical methods
+  for comparison of growth curves', {\em Biometrics} {\bf 14}(1),~1--17.
+
+\harvarditem{Rice \harvardand\ Shang}{2017}{RS17}
+Rice, G. \harvardand\ Shang, H.~L.  \harvardyearleft 2017\harvardyearright , `A
+  plug-in bandwidth selection procedure for long-run covariance estimation with
+  stationary functional time series', {\em Journal of Time Series Analysis}
+  {\bf 38}(4),~591--609.
+
+\harvarditem[Sermpinis et~al.]{Sermpinis, Stasinakis, Rosillo \harvardand\
+  de~la Fuente}{2017}{SSRF17}
+Sermpinis, G., Stasinakis, C., Rosillo, R. \harvardand\ de~la Fuente, D.
+  \harvardyearleft 2017\harvardyearright , `European exchange trading funds
+  trading with locally weighted support vector regression', {\em European
+  Journal of Operational Research} {\bf 258}(1),~372--384.
+
+\harvarditem{Shang}{2014}{Shang14}
+Shang, H.~L.  \harvardyearleft 2014\harvardyearright , `A survey of functional
+  principal component analysis', {\em AStA Advance in Statistical Analysis}
+  {\bf 98}(2),~121--142.
+
+\harvarditem{Shang}{2016}{Shang16}
+Shang, H.~L.  \harvardyearleft 2016\harvardyearright , `{Mortality and life
+  expectancy forecasting for a group of populations in developed countries: A
+  multilevel functional data method}', {\em The Annals of Applied Statistics}
+  {\bf 10}(3),~1639--1672.
+
+\harvarditem{Shang}{2019}{Shang19}
+Shang, H.~L.  \harvardyearleft 2019\harvardyearright , `{Dynamic principal
+  component regression: Application to age-specific mortality forecasting}',
+  {\em {ASTIN Bulletin: The Journal of the IAA}} {\bf 49}(3),~619--645.
+
+\harvarditem[Shang et~al.]{Shang, Smith, Bijak \harvardand\
+  Wi\'{s}niowski}{2016}{SSB+16}
+Shang, H.~L., Smith, P. W.~F., Bijak, J. \harvardand\ Wi\'{s}niowski, A.
+  \harvardyearleft 2016\harvardyearright , `{A multilevel functional data
+  method for forecasting population, with an application to the United
+  Kingdom}', {\em International Journal of Forecasting} {\bf 32}(3),~629--649.
+
+\harvarditem{Shang \harvardand\ Yang}{2017}{SY17}
+Shang, H.~L. \harvardand\ Yang, Y.  \harvardyearleft 2017\harvardyearright ,
+  {Grouped multivariate functional time series method: An application to
+  mortality forecasting}, {\em in} G.~Aneiros, E.~G. Bongiorno, R.~Cao
+  \harvardand\ P.~Vieu, eds, `Functional Statistics and Related Fields',
+  Springer, pp.~233--241.
+
+\harvarditem[Tavakoli et~al.]{Tavakoli, Nisol \harvardand\ Hallin}{2021}{TNH20}
+Tavakoli, S., Nisol, G. \harvardand\ Hallin, M.  \harvardyearleft
+  2021\harvardyearright , High-dimensional functional factor models, Working
+  paper, ArXiv.
+\newblock Version 4.
+\newline\harvardurl{\url{https://arxiv.org/abs/1905.10325}}
+
+\harvarditem{Tucker}{1958}{Tucker58}
+Tucker, L.~R.  \harvardyearleft 1958\harvardyearright , `Determination of
+  parameters of a functional relation by factor analysis', {\em Psychometrika}
+  {\bf 23}(1),~19--23.
+
+\harvarditem[Wang et~al.]{Wang, Chiou \harvardand\ M\"{u}ller}{2016}{WCM16}
+Wang, J.-L., Chiou, J.-M. \harvardand\ M\"{u}ller, H.-G.  \harvardyearleft
+  2016\harvardyearright , `Functional data analysis', {\em Annual Review of
+  Statistics and its Applications} {\bf 3}(1),~257--295.
+
+\harvarditem{Zivot \harvardand\ Wang}{2006}{ZW06}
+Zivot, E. \harvardand\ Wang, J.  \harvardyearleft 2006\harvardyearright , {\em
+  {Modeling Financial Time Series with S-PLUS}}, Springer, New York.
+
+\end{thebibliography}

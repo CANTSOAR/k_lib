@@ -1,0 +1,186 @@
+% SIAM Shared Information Template
+% This is information that is shared between the main document and any
+% supplement. If no supplement is required, then this information can
+% be included directly in the main document.
+
+
+% Packages and macros go here
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{dsfont}
+\usepackage{amssymb, amsmath,amsfonts}
+\usepackage{bm}
+\usepackage{bbm}
+\usepackage{tikz}
+%\usepackage{biblatex}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+\usepackage{tikz}
+\usepackage{multirow}
+\usetikzlibrary{shapes.geometric, arrows, positioning}
+\usepackage{graphicx}% http://ctan.org/pkg/graphicx
+\usepackage{soul}
+\usepackage{threeparttable}
+\usepackage[algo2e,ruled,vlined,linesnumbered]{algorithm2e}
+
+\usepackage{booktabs}
+
+\usepackage[colorinlistoftodos]{todonotes}
+
+\ifpdf
+  \DeclareGraphicsExtensions{.eps,.pdf,.png,.jpg}
+\else
+  \DeclareGraphicsExtensions{.eps}
+\fi
+
+% Prevent itemized lists from running into the left margin inside theorems and proofs
+\usepackage{enumitem}
+\setlist[enumerate]{leftmargin=.5in}
+\setlist[itemize]{leftmargin=.5in}
+
+% Add a serial/Oxford comma by default.
+\newcommand{\creflastconjunction}{, and~}
+
+% Used for creating new theorem and remark environments
+\newsiamremark{remark}{Remark}
+\newsiamremark{hypothesis}{Hypothesis}
+%\newsiamthm{proposition}{Proposition}
+\crefname{hypothesis}{Hypothesis}{Hypotheses}
+\newsiamthm{claim}{Claim}
+
+% Sets running headers as well as PDF title and authors
+\headers{Implied Volatility with VAEs}{Ning, Jaimungal, Zhang, Bergeron}
+
+% Title. If the supplement option is on, then "Supplementary Material"
+% is automatically inserted before the title.
+\title{Arbitrage-Free Implied Volatility Surface Generation\\ with Variational Autoencoders\thanks{The authors thank Ivan Sergienko for his comments on earlier versions of this work. S.J. acknowledges the support of the Natural Sciences \& Engineering Research council of Canada [ALLRP 550308 - 20].}
+%\funding{%We would like to thank for the usage of data provided by Riskfuel Analytics.
+%}
+}
+
+% \title{Test}
+
+%% % Authors: full names plus addresses.
+\author{Brian (Xin) Ning\thanks{Department of Statistical Sciences, University of Toronto (\email{brian.ning@mail.utoronto.ca},
+\email{sebastian.jaimungal@utoronto.ca}; \url{http://sebastian.statistics.utoronto.ca},
+\email{xiaorong.zhang@mail.utoronto.ca})}\and Sebastian Jaimungal\footnotemark[2]
+\and Xiaorong Zhang\footnotemark[2]\and Maxime Bergeron\thanks{Riskfuel Analytics (\email{mb@riskfuel.com}; \url{http://riskfuel.com})}
+}
+
+%\author{Dianne Doe\thanks{Imagination Corp., Chicago, IL
+%  (\email{ddoe@imag.com}, \url{http://www.imag.com/\string~ddoe/}).}
+%\and Paul T. Frank\thanks{Department of Applied Mathematics, Fictional University, Boise, ID
+%  (\email{ptfrank@fictional.edu}, \email{jesmith@fictional.edu}).}
+%\and Jane E. Smith\footnotemark[3]}
+
+%\author[1]{Brian (Xin) Ning
+%%\footnote{\email{brian.ning@mail.utoronto.ca}}\;
+%}
+%\author[1]{Sebastian Jaimungal
+%%\footnote{\email{sebastian.jaimungal@utoronto.ca};\url{http://sebastian.statistics.utoronto.ca}}\;
+%}
+%\author[1]{Xiaorong Zhang
+%%\footnote{xiaorong.zhang@mail.utoronto.ca}\;
+%}
+%\author[2]{Maxime Bergeron
+%%\footnote{\email{mb@riskfuel.ca};\url{gttp://riskfuel.com}}\;\,
+%}
+%\affil[1]{Department of Statistical Sciences, University of Toronto}
+%
+%\affil[2]{Riskfuel Analytics,
+%Toronto, ON, Canada}
+
+
+
+% \author{
+% % %\normalsize
+% % Brian (Xin) Ning
+% % \thanks{Dept. Statistical Sciences, University of Toronto
+% %   (\email{brian.ning@mail.utoronto.ca}).}
+% % \and
+% % %\normalsize
+% % Sebastian Jaimungal
+% % \thanks{Dept. Statistical Sciences, University of Toronto
+% %   (\email{sebastian.jaimungal@utoronto.ca}, \url{http://sebastian.statistics.utoronto.ca}).}
+% % \and
+% % %\normalsize
+% % Xiaorong Zhang
+% % \thanks{Dept. Statistical Sciences, University of Toronto
+% %   (\email{xiaorong.zhang@mail.utoronto.ca}).}
+% % \and
+% % %\normalsize
+% % Maxime Bergeron
+% % \thanks{Riskfuel Analytics, Toronto, ON, Canada
+% %   (\email{mb@riskfuel.ca},
+% %   \url{gttp://riskfuel.com}).}
+% }
+
+\usepackage{amsopn}
+\DeclareMathOperator{\diag}{diag}
+
+
+%%% Local Variables:
+%%% mode:latex
+%%% TeX-master: "ex_article"
+%%% End:
+
+
+\newcommand{\seb}[1]{\todo[inline,color=blue!10,size=\tiny]{#1}}
+\newcommand{\brian}[1]{\todo[inline,color=green!10,size=\tiny]{#1}}
+\newcommand{\maxime}[1]{\todo[inline,color=orange!10,size=\tiny]{#1}}
+
+
+% \newcommand{\seb}[1]{}
+% \newcommand{\brian}[1]{}
+% \newcommand{\maxime}[1]{}
+
+\renewcommand{\arraystretch}{1.7}
+
+
+\DeclareMathOperator*{\argmin}{argmin}
+\DeclareMathOperator*{\argmax}{argmax}
+\newcommand{\distas}[1]{\mathbin{\overset{#1}{\kern\z@\sim}}}
+\newcommand{\norm}[1]{\big\lVert#1\big\rVert}
+
+
+\newcommand{\N}{{\mathfrak{N}}}
+\newcommand{\K}{{\mathfrak{K}}}
+\newcommand{\G}{{\mathfrak{G}}}
+\newcommand{\Z}{{\mathfrak{Z}}}
+\newcommand{\D}{{\mathfrak{D}}}
+\newcommand{\M}{{\mathfrak{M}}}
+
+\newcommand{\R}{{\mathds{R}}}
+\newcommand{\Q}{{\mathbb{Q}}}
+\newcommand{\E}{{\mathbb{E}}}
+\newcommand{\x}{{\mathbf{x}}}
+\newcommand{\z}{{\mathbf{z}}}
+\newcommand{\y}{{\mathbf{y}}}
+\newcommand{\EQ}{{\E^\Q}}
+\newcommand{\mubar}{\bar{\mu}}
+\newcommand{\tmu}{\tilde{\mu}}
+\newcommand{\tpi}{\tilde{\pi}}
+\newcommand{\tsig}{\tilde{\sigma}}
+\newcommand{\tp}{\tilde{p}}
+
+\newcommand{\Id}{{\mathds{1}}}
+\newcommand{\new}[1]{#1}
+
+
+%% Tikz settings
+\tikzstyle{reward}=[shape=circle,draw=blue!50,fill=blue!10]
+\tikzstyle{action}=[shape=circle,draw=green,fill=green!10]
+\tikzstyle{state}=[shape=circle,draw=red!50,fill=red!10]
+\tikzstyle{gru}=[shape=rectangle,draw=black!50,fill=lime!10]
+\tikzstyle{obs}=[shape=circle,draw=blue!50,fill=blue!10]
+\tikzstyle{lightedge}=[<-,dotted]
+\tikzstyle{mainstate}=[state,thick]
+\tikzstyle{mainedge}=[<-,thick]
+
+\tikzstyle{input} = [rectangle, minimum width=1cm, minimum height=4cm,text centered, draw=black, fill=green!30]
+\tikzstyle{output} = [rectangle, minimum width=1cm, minimum height=4cm,text centered, draw=black, fill=blue!30]
+\tikzstyle{latent} = [rectangle, minimum width=1cm, minimum height=1cm,text centered, draw=black, fill=red!30]
+\tikzstyle{encoder} = [trapezium, trapezium left angle=70, trapezium right angle=70, minimum height=1cm, rotate=270, text centered, draw=black, fill=green!30]
+\tikzstyle{decoder} = [trapezium, trapezium left angle=70, trapezium right angle=70, minimum height=1cm, rotate=90, text centered, draw=black, fill=blue!30]
+\tikzstyle{arrow} = [thick,->,>=stealth] 

@@ -1,0 +1,141 @@
+\begin{thebibliography}{10}
+
+\bibitem{andreasen2013expanded}
+Jesper Andreasen and Brian Huge.
+\newblock Expanded forward volatility.
+\newblock {\em Risk}, 26(1):101, 2013.
+
+\bibitem{avellaneda1998minimum}
+M~Avellaneda.
+\newblock Minimum entropy calibration of asset pricing models, internat.
+\newblock {\em J. Theoret. Appl. Finance}, 1:447472, 1998.
+
+\bibitem{avellaneda2001weighted}
+Marco Avellaneda, Robert Buff, Craig Friedman, Nicolas Grandechamp, Lukasz
+  Kruk, and Joshua Newman.
+\newblock Weighted monte carlo: a new technique for calibrating asset-pricing
+  models.
+\newblock {\em International Journal of Theoretical and Applied Finance},
+  4(01):91--119, 2001.
+
+\bibitem{beck2013convergence}
+Amir Beck and Luba Tetruashvili.
+\newblock On the convergence of block coordinate descent type methods.
+\newblock {\em SIAM journal on Optimization}, 23(4):2037--2060, 2013.
+
+\bibitem{benamou2015iterative}
+Jean-David Benamou, Guillaume Carlier, Marco Cuturi, Luca Nenna, and Gabriel
+  Peyr{\'e}.
+\newblock Iterative bregman projections for regularized transportation
+  problems.
+\newblock {\em SIAM Journal on Scientific Computing}, 37(2):A1111--A1138, 2015.
+
+\bibitem{carr2005note}
+Peter Carr and Dilip~B Madan.
+\newblock A note on sufficient conditions for no arbitrage.
+\newblock {\em Finance Research Letters}, 2(3):125--130, 2005.
+
+\bibitem{cousot2007conditions}
+Laurent Cousot.
+\newblock Conditions on option prices for absence of arbitrage and exact
+  calibration.
+\newblock {\em Journal of Banking \& Finance}, 31(11):3377--3397, 2007.
+
+\bibitem{cuturi2013sinkhorn}
+Marco Cuturi.
+\newblock Sinkhorn distances: Lightspeed computation of optimal transport.
+\newblock In {\em Advances in neural information processing systems}, pages
+  2292--2300, 2013.
+
+\bibitem{de2018entropic}
+Hadrien De~March.
+\newblock Entropic resolution for multi-dimensional optimal transport.
+\newblock {\em arXiv preprint arXiv:1812.11104}, 2018.
+
+\bibitem{dupire1997pricing}
+Bruno Dupire.
+\newblock Pricing and hedging with smiles.
+\newblock {\em Mathematics of derivative securities}, 1(1):103--111, 1997.
+
+\bibitem{friz2015large}
+Peter~K Friz, Jim Gatheral, Archil Gulisashvili, Antoine Jacquier, and Josef
+  Teichmann.
+\newblock {\em Large deviations and asymptotic methods in finance}, volume 110.
+\newblock Springer, 2015.
+
+\bibitem{gatheral2011convergence}
+Jim Gatheral and Antoine Jacquier.
+\newblock Convergence of heston to svi.
+\newblock {\em Quantitative Finance}, 11(8):1129--1132, 2011.
+
+\bibitem{gatheral2014arbitrage}
+Jim Gatheral and Antoine Jacquier.
+\newblock Arbitrage-free svi volatility surfaces.
+\newblock {\em Quantitative Finance}, 14(1):59--71, 2014.
+
+\bibitem{guo2017computational}
+Gaoyue Guo and Jan Obloj.
+\newblock Computational methods for martingale optimal transport problems.
+\newblock {\em arXiv preprint arXiv:1710.07911}, 2017.
+
+\bibitem{henry2008analysis}
+Pierre Henry-Labord{\`e}re.
+\newblock {\em Analysis, geometry, and modeling in finance: Advanced methods in
+  option pricing}.
+\newblock Chapman and Hall/CRC, 2008.
+
+\bibitem{henry2009calibration}
+Pierre Henry-Labordere.
+\newblock Calibration of local stochastic volatility models to market smiles: A
+  monte-carlo approach.
+\newblock 2009.
+
+\bibitem{henry2013explicit}
+Pierre Henry-Labordere and Nizar Touzi.
+\newblock An explicit martingale version of brenier's theorem.
+\newblock 2013.
+
+\bibitem{kallblad2017optimal}
+Sigrid K{\"a}llblad, Xiaolu Tan, Nizar Touzi, et~al.
+\newblock Optimal skorokhod embedding given full marginals and az{\'e}ma--yor
+  peacocks.
+\newblock {\em The Annals of Applied Probability}, 27(2):686--719, 2017.
+
+\bibitem{lipton2011filling}
+Alex Lipton and Artur Sepp.
+\newblock Filling the gaps.
+\newblock 2011.
+
+\bibitem{lipton2002masterclass}
+Alexander Lipton.
+\newblock Masterclass with deutsche bank. the vol smile problem.
+\newblock {\em RISK-LONDON-RISK MAGAZINE LIMITED-}, 15(2):61--66, 2002.
+
+\bibitem{merigot2011multiscale}
+Quentin M{\'e}rigot.
+\newblock A multiscale approach to optimal transport.
+\newblock In {\em Computer Graphics Forum}, volume~30, pages 1583--1592. Wiley
+  Online Library, 2011.
+
+\bibitem{peyre2017computational}
+Gabriel Peyr{\'e}, Marco Cuturi, et~al.
+\newblock Computational optimal transport.
+\newblock Technical report, 2017.
+
+\bibitem{schmitzer2016stabilized}
+Bernhard Schmitzer.
+\newblock Stabilized sparse scaling algorithms for entropy regularized
+  transport problems.
+\newblock {\em arXiv preprint arXiv:1610.06519}, 2016.
+
+\bibitem{sinkhorn1967concerning}
+Richard Sinkhorn and Paul Knopp.
+\newblock Concerning nonnegative matrices and doubly stochastic matrices.
+\newblock {\em Pacific Journal of Mathematics}, 21(2):343--348, 1967.
+
+\bibitem{strassen1965existence}
+Volker Strassen.
+\newblock The existence of probability measures with given marginals.
+\newblock {\em The Annals of Mathematical Statistics}, pages 423--439, 1965.
+
+\end{thebibliography}

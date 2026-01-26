@@ -1,0 +1,130 @@
+\begin{thebibliography}{28}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\selectlanguage}[1]{\relax}
+
+\bibitem[{Abramowitz and Stegun(1948)}]{abramowitz1948handbook}
+Abramowitz, M. and Stegun, I.A., 1948. \textit{Handbook of mathematical
+  functions with formulas, graphs, and mathematical tables}, vol.~55, US
+  Government printing office.
+
+\bibitem[{Azzone and Baviera(2021)}]{azzone2021synthetic}
+Azzone, M. and Baviera, R., 2021. Synthetic forwards and cost of funding in the
+  equity derivative market, \textit{Finance Research Letters}, 41, 101841.
+
+\bibitem[{Azzone and Baviera(2022)}]{ATS}
+Azzone, M. and Baviera, R., 2022. Additive normal tempered stable processes for
+  equity derivatives and power law scaling, \textit{Quantitative Finance},
+  22~(3), 501--518.
+
+\bibitem[{Azzone and Baviera(2023)}]{azzone2023fast}
+Azzone, M. and Baviera, R., 2023. A fast {M}onte {C}arlo scheme for additive
+  processes and option pricing, \textit{Computational Management Science},
+  20~(1), 31.
+
+\bibitem[{Bachelier(1900)}]{bachelier1900jeu}
+Bachelier, L., 1900. {Jeu de speculation (The theory of speculation)},
+  \textit{Ph.D. dissertation}.
+
+\bibitem[{Barndorff-Nielsen(1997)}]{barndorff1997}
+Barndorff-Nielsen, O.E., 1997. Normal inverse {G}aussian distributions and
+  stochastic volatility modelling, \textit{Scandinavian Journal of statistics},
+  24~(1), 1--13.
+
+\bibitem[{Baviera and Massaria(2025)}]{smileWings}
+Baviera, R. and Massaria, M.D., 2025. {Smile asymptotics for Bachelier Implied
+  Volatility}, \textit{arXiv preprint arXiv:2506.08067}.
+
+\bibitem[{Benth \textit{et~al.}(2008)Benth, Benth, and
+  Koekebakker}]{benth2008stochastic}
+Benth, F.E., Benth, J.S., and Koekebakker, S., 2008. \textit{{Stochastic
+  modelling of electricity and related markets}}, vol.~11, World Scientific.
+
+\bibitem[{Black and Scholes(1973)}]{black1973pricing}
+Black, F. and Scholes, M., 1973. The pricing of options and corporate
+  liabilities, \textit{Journal of Political Economy}, 81~(3), 637--654.
+
+\bibitem[{Brigo and Morini(2005)}]{brigo2005empirically}
+Brigo, D. and Morini, M., 2005. {An empirically efficient analytical cascade
+  calibration of the LIBOR Market Model based only on directly quoted swaptions
+  data}, \textit{Available at SSRN 552581}.
+
+\bibitem[{Carr and Torricelli(2021)}]{CarrTorricelli2021}
+Carr, P. and Torricelli, L., 2021. Additive logistic processes in option
+  pricing, \textit{Finance and Stochastics}, 25~(4), 689--724.
+
+\bibitem[{Carr and Wu(2003)}]{carr2003finite}
+Carr, P. and Wu, L., 2003. The finite moment log stable process and option
+  pricing, \textit{The Journal of {F}inance}, 58~(2), 753--777.
+
+\bibitem[{CME(2020)}]{CMEGroup}
+CME, 2020. Switch to {B}achelier options pricing model -- {E}ffective {A}pril
+  22, 2020, \textit{Available at CME,
+  www.cmegroup.com/content/cmegroup/en/notices/clearing/2020/04/Chadv20-171.html},
+  ~(20-171).
+
+\bibitem[{Cont and Tankov(2003)}]{Cont}
+Cont, R. and Tankov, P., 2003. \textit{Financial Modelling with jump
+  processes}, Chapman and Hall/CRC.
+
+\bibitem[{Davis and Etheridge(2006)}]{davis2006}
+Davis, M. and Etheridge, A., 2006. \textit{{Louis Bachelier’s Theory of
+  Speculation: the origins of modern finance}}, Princeton University Press.
+
+\bibitem[{Gatheral(2011)}]{gatheral2011volatility}
+Gatheral, J., 2011. \textit{The volatility surface: a practitioner's guide},
+  vol. 357, John Wiley \& Sons.
+
+\bibitem[{ICE(2020)}]{ICE}
+ICE, 2020. Negative pricing and option model transition, \textit{Available at
+  ICE, www.theice.com/publicdocs/circulars/20057.pdf}, ~(20-057).
+
+\bibitem[{Lee(2004{\natexlab{a}})}]{lee2004moment}
+Lee, R.W., 2004{\natexlab{a}}. The moment formula for implied volatility at
+  extreme strikes, \textit{Mathematical Finance}, 14~(3), 469--480.
+
+\bibitem[{Lee(2004{\natexlab{b}})}]{lee2004option}
+Lee, R.W., 2004{\natexlab{b}}. Option pricing by transform methods: extensions,
+  unification and error control, \textit{Journal of Computational Finance},
+  7~(3), 51--86.
+
+\bibitem[{Lewis(2001)}]{lewis2001}
+Lewis, A.L., 2001. A simple option formula for general jump-diffusion and other
+  exponential {L}{\'e}vy processes, \textit{Available at SSRN, 282110}.
+
+\bibitem[{Lukacs(1972)}]{lukacs1972}
+Lukacs, E., 1972. A survey of the theory of characteristic functions,
+  \textit{Advances in Applied Probability}, 4~(1), 1--37.
+
+\bibitem[{Madan and Seneta(1990)}]{MadanSeneta1990}
+Madan, D.B. and Seneta, E., 1990. The variance gamma ({VG}) model for share
+  market returns, \textit{Journal of business}, 511--524.
+
+\bibitem[{McNeil \textit{et~al.}(2015)McNeil, Frey, and Embrechts}]{mcneil2015}
+McNeil, A.J., Frey, R., and Embrechts, P., 2015. \textit{Quantitative risk
+  management: concepts, techniques and tools}, Princeton University press.
+
+\bibitem[{Medvedev and Scaillet(2006)}]{medvedev}
+Medvedev, A. and Scaillet, O., 2006. Approximation and calibration of
+  short-term implied volatilities under jump-diffusion stochastic volatility,
+  \textit{The Review of Financial Studies}, 20~(2), 427--459.
+
+\bibitem[{Press \textit{et~al.}(1986)Press, Teukolsky, Vetterling, and
+  Flannery}]{teukolsky1992numerical}
+Press, W.H., Teukolsky, S.A., Vetterling, W.T., and Flannery, B.P., 1986.
+  \textit{Numerical recipes in C: The art of scientific computing}, Cambridge
+  University Press.
+
+\bibitem[{Rudin(1976)}]{rudin1976principles}
+Rudin, W., 1976. \textit{Principles of mathematical analysis}, 4.2,
+  McGraw-{H}ill New York.
+
+\bibitem[{Sato(1999)}]{Sato}
+Sato, K.I., 1999. \textit{{L}\'evy processes and infinitely divisible
+  distributions}, Cambridge University Press.
+
+\bibitem[{Shaikh(2021)}]{shaikh2021relation}
+Shaikh, I., 2021. On the relation between the crude oil market and pandemic
+  {C}ovid-19, \textit{European Journal of Management and Business Economics},
+  30~(3), 331--356.
+
+\end{thebibliography}

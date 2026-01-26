@@ -1,0 +1,9 @@
+\section{Conclusion}\label{conclusion}
+
+The computation of the value of non-linear instruments within derivative portfolios poses a challenge, demanding a delicate balance between precision and computational efficiency. In the initial section of this paper, we introduce an approach for PnL calculation that aims to enhance accuracy without incurring excessive computational costs. Subsequently, our performance evaluation encompasses unconditional coverage, independence, conditional coverage, the Diebold-Mariano test, and the Ranking Model. Const Vol and the VIX serve as benchmarks, with Const Vol representing a straightforward overall model and the VIX model simplifying the consideration of volatility.
+
+In our proposed method, we initiate the process by extracting the volatility surface for each day from option prices. Subsequently, volatility shocks are computed based on historical data on the volatility surface, resulting in a database of projected volatility surfaces. Simultaneously, employing Monte Carlo simulation, we generate next-day prices for the underlying asset. These volatility shocks and next-day prices are then input into the Black-Scholes formula pricing model to obtain forecasts for option prices the following day.
+
+Numerical tests reveal the superior performance of the PSP method, particularly at high confidence levels (e.g., 95\%). The DM test emphasizes the effectiveness of localized volatility models over reference volatility, capturing market conditions more accurately. Furthermore, incorporating volatility, regardless of its form (reference or localized), demonstrates potential improvements in forecasting accuracy. 
+
+Lastly, the central component of the PSP method is the historical simulation block. We have incorporated Filtered Historical Simulation (FHS) to enhance accuracy by considering the relative importance of various scenarios through a weighting procedure in the HS block.

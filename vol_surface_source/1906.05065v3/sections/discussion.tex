@@ -1,0 +1,34 @@
+\section{Discussion} \label{sec:discuss}
+
+\subsection{Broader Impact}
+
+\fbox{TODO:} some ideas:
+\begin{itemize}
+\item options can be used as insurance to protect against losses
+\item measures can be built from the options market on the financial health and expectations of the markets, e.g.\ VIX index
+\item model interpretability is important for financial implication, and particularly financial regulation. Hence controlled asymptotic make the application more meaningful.
+\end{itemize}
+
+%\subsection{Extensions}
+%
+%\fbox{TODO:} maybe for the conclusion?
+%
+%The presented approach focuses on a single stock and observations at a single time because this already represents a challenging and relevant practical problem.
+%Still, we discuss how one could approach the modeling of multiple stocks, and the IVS at multiple time points.
+%
+%\textbf{Multi-asset.}
+%It is straightforward to extend the current approach to create a model for multiple IVSs.
+%Indeed, one may consider a model taking as input an input categorical variable that will the volatility surface.
+%This approach would allow to transfer reuse and transfer features learned from on surface to another, which could be highly beneficial in situations where few observations are available for IVS.
+%This advantage typically comes at the cost of building and training a deeper and larger NN for a joint model than for individual models.
+%Note that, additional non-arbitrage constraints may have to be imposed in the specific case of implied volatility surfaces for currency pairs.
+%
+%\textbf{Multi-day.}
+%Modeling the IVS at multiple time points could be useful to transfer information forward from the past, which may be allows to build a more resilient image of the IVS a given time point.
+%This may be achieved in different ways.
+%For example, the parameters $\theta$ of the previous model could be used as initial values for the model to be newly fitted.
+%Alternatively, one may think of propagating forward in time a latent factor as performed in recurrent neural networks.
+%
+%Another application could the construction of a generative model for future IVSs which could be used for risk-management, for example.
+%Such a generative model would be required to simulate entire IVSs given present and past values.
+%Our approach could be used in combination with a generative module to guarantee that the fake IVSs are sensible.

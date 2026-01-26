@@ -1,0 +1,158 @@
+\begin{thebibliography}{10}
+
+\bibitem{ackerer2020deep}
+{\sc D.~Ackerer, N.~Tagasovska, and T.~Vatter}, {\em Deep smoothing of the
+  implied volatility surface}, in Proceedings of the 34th Conference on Neural
+  Information Processing Systems (NeurIPS 2020), 2020.
+
+\bibitem{applebaum2009levy}
+{\sc D.~Applebaum}, {\em L{\'e}vy processes and stochastic calculus}, Cambridge
+  university press, 2009.
+
+\bibitem{bergeron2021autoencoders}
+{\sc M.~Bergeron, N.~Fung, Z.~Poulos, J.~C. Hull, and A.~Veneris}, {\em
+  Variational autoencoders: A hands-off approach to volatility}, Available at
+  SSRN 3827447,  (2021).
+
+\bibitem{boyarchenko2002non}
+{\sc S.~Boyarchenko and S.~Z. Levendorskii}, {\em Non-Gaussian
+  Merton-Black-Scholes Theory}, vol.~9, World Scientific, 2002.
+
+\bibitem{boyarchenko2000option}
+{\sc S.~I. Boyarchenko and S.~Z. Levendorskiǐ}, {\em Option pricing for
+  truncated l{\'e}vy processes}, International journal of theoretical and
+  applied finance, 3 (2000), pp.~549--552.
+
+\bibitem{breeden1978prices}
+{\sc D.~T. Breeden and R.~H. Litzenberger}, {\em Prices of state-contingent
+  claims implicit in option prices}, Journal of business,  (1978),
+  pp.~621--651.
+
+\bibitem{buffington2002regime}
+{\sc J.~Buffington and R.~J. Elliott}, {\em Regime switching and european
+  options}, in Stochastic Theory and Control, Springer, 2002, pp.~73--82.
+
+\bibitem{carmona2012tangent}
+{\sc R.~Carmona and S.~Nadtochiy}, {\em Tangent l{\'e}vy market models},
+  Finance and Stochastics, 16 (2012), pp.~63--104.
+
+\bibitem{carr2002fine}
+{\sc P.~Carr, H.~Geman, D.~B. Madan, and M.~Yor}, {\em The fine structure of
+  asset returns: An empirical investigation}, The Journal of Business, 75
+  (2002), pp.~305--332.
+
+\bibitem{doi:10.1137/20M1381538}
+{\sc M.~Chataigner, A.~Cousin, S.~Crépey, M.~Dixon, and D.~Gueye}, {\em Short
+  communication: Beyond surrogate modeling: Learning the local volatility via
+  shape constraints}, SIAM Journal on Financial Mathematics, 12 (2021),
+  pp.~SC58--SC69, \url{https://doi.org/10.1137/20M1381538},
+  \url{https://doi.org/10.1137/20M1381538},
+  \url{https://arxiv.org/abs/https://doi.org/10.1137/20M1381538}.
+
+\bibitem{cohen2021arbitrage}
+{\sc S.~N. Cohen, C.~Reisinger, and S.~Wang}, {\em Arbitrage-free neural-sde
+  market models}, arXiv e-prints,  (2021), pp.~arXiv--2105.
+
+\bibitem{cont2002calibration}
+{\sc R.~Cont and P.~Tankov}, {\em Calibration of jump-diffusion option pricing
+  models: a robust non-parametric approach}, https://ssrn.com/abstract=332400,
+  (2002).
+
+\bibitem{dupire1994pricing}
+{\sc B.~Dupire et~al.}, {\em Pricing with a smile}, Risk, 7 (1994), pp.~18--20.
+
+\bibitem{vixdata}
+{\sc C.~B.~O. Exchange}, {\em Measure market expectations of near-term
+  volatility conveyed by s\&p 500 stock index option prices.}, tech. report,
+  Wharton Research Data Services, 2020.
+
+\bibitem{ferguson2018deeply}
+{\sc R.~Ferguson and A.~Green}, {\em Deeply learning derivatives}, arXiv
+  preprint arXiv:1809.02233,  (2018).
+
+\bibitem{gramacki2018nonparametric}
+{\sc A.~Gramacki}, {\em Nonparametric kernel density estimation and its
+  computational aspects}, Springer, 2018.
+
+\bibitem{hagan2002managing}
+{\sc P.~S. Hagan, D.~Kumar, A.~S. Lesniewski, and D.~E. Woodward}, {\em
+  Managing smile risk}, Wilmott Magazine, 1 (2002), pp.~249--296.
+
+\bibitem{heston1993closed}
+{\sc S.~L. Heston}, {\em A closed-form solution for options with stochastic
+  volatility with applications to bond and currency options}, The review of
+  financial studies, 6 (1993), pp.~327--343.
+
+\bibitem{higgins2016beta}
+{\sc I.~Higgins, L.~Matthey, A.~Pal, C.~Burgess, X.~Glorot, M.~Botvinick,
+  S.~Mohamed, and A.~Lerchner}, {\em Beta-{VAE}: Learning basic visual concepts
+  with a constrained variational framework}, 5th International Conference on
+  Learning Representations, ICLR,  (2016).
+
+\bibitem{horvath2019deep}
+{\sc B.~Horvath, A.~Muguruza, and M.~Tomas}, {\em Deep learning volatility},
+  arXiv preprint arXiv:1901.09647,  (2019).
+
+\bibitem{jackson2008fourier}
+{\sc K.~R. Jackson, S.~Jaimungal, and V.~Surkov}, {\em Fourier space
+  time-stepping for option pricing with l{\'e}vy models}, Journal of
+  Computational Finance, 12 (2008), p.~1.
+
+\bibitem{kingma2013auto}
+{\sc D.~P. Kingma and M.~Welling}, {\em Auto-encoding variational {B}ayes},
+  arXiv preprint arXiv:1312.6114,  (2013).
+
+\bibitem{kou2004option}
+{\sc S.~G. Kou and H.~Wang}, {\em Option pricing under a double exponential
+  jump diffusion model}, Management science, 50 (2004), pp.~1178--1192.
+
+\bibitem{kratsios2020deep}
+{\sc A.~Kratsios and C.~Hyndman}, {\em Deep arbitrage-free learning in a
+  generalized hjm framework via arbitrage-regularization}, Risks, 8 (2020),
+  p.~40.
+
+\bibitem{lewis2001simple}
+{\sc A.~L. Lewis}, {\em A simple option formula for general jump-diffusion and
+  other exponential l{\'e}vy processes}, Available at SSRN 282110,  (2001).
+
+\bibitem{li2020scalable}
+{\sc X.~Li, T.-K.~L. Wong, R.~T. Chen, and D.~Duvenaud}, {\em Scalable
+  gradients for stochastic differential equations}, in International Conference
+  on Artificial Intelligence and Statistics, PMLR, 2020, pp.~3870--3882.
+
+\bibitem{oring2020autoencoder}
+{\sc A.~Oring, Z.~Yakhini, and Y.~Hel-Or}, {\em Autoencoder image interpolation
+  by shaping the latent space}, arXiv preprint arXiv:2008.01487,  (2020).
+
+\bibitem{reiswich2012fx}
+{\sc D.~Reiswich and W.~Uwe}, {\em Fx volatility smile construction}, Wilmott,
+  2012 (2012), pp.~58--69.
+
+\bibitem{said1999pricing}
+{\sc K.~Said}, {\em Pricing exotics under the smile}, RISK, 12 (1999),
+  pp.~72--75.
+
+\bibitem{sohn2015learning}
+{\sc K.~Sohn, H.~Lee, and X.~Yan}, {\em Learning structured output
+  representation using deep conditional generative models}, Advances in neural
+  information processing systems, 28 (2015), pp.~3483--3491.
+
+\bibitem{vallender1974calculation}
+{\sc S.~Vallender}, {\em Calculation of the wasserstein distance between
+  probability distributions on the line}, Theory of Probability \& Its
+  Applications, 18 (1974), pp.~784--786.
+
+\bibitem{villani2009optimal}
+{\sc C.~Villani}, {\em Optimal transport: old and new}, vol.~338, Springer,
+  2009.
+
+\bibitem{zeng2019online}
+{\sc Y.~Zeng and D.~Klabjan}, {\em Online adaptive machine learning based
+  algorithm for implied volatility surface modeling}, Knowledge-Based Systems,
+  163 (2019), pp.~376-- \\ 391.
+
+\bibitem{zheng2019gated}
+{\sc Y.~Zheng, Y.~Yang, and B.~Chen}, {\em Gated deep neural networks for
+  implied volatility surfaces}, arXiv preprint arXiv:1904.12834,  (2019).
+
+\end{thebibliography}

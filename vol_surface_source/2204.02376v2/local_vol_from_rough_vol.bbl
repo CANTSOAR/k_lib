@@ -1,0 +1,350 @@
+\begin{thebibliography}{10}
+
+\bibitem{AbiJaber2019}
+E.~{Abi Jaber}.
+\newblock Lifting the heston model.
+\newblock {\em Quantitative Finance}, 19(12):1995--2013, 2019.
+
+\bibitem{AlosEtAl2022}
+E.~{Al{\`o}s}, D.~{Garc{\'\i}a-Lorite}, and M.~{Pravosud}.
+\newblock {On the skew and curvature of implied and local volatilities}.
+\newblock arXiv e-prints, \url{https://arxiv.org/pdf/2205.11185.pdf}, 2022.
+
+\bibitem{alos2007short}
+E.~Al{\`o}s, J.~A. Le{\'o}n, and J.~Vives.
+\newblock {On the short-time behavior of the implied volatility for
+  jump-diffusion models with stochastic volatility}.
+\newblock {\em Finance and Stochastics}, 11(4):571--589, 2007.
+
+\bibitem{azencott1985petites}
+R.~Azencott.
+\newblock {Petites perturbations al{\'{e}}atoires des syst{\`e}mes dynamiques:
+  d{\'{e}}veloppements asymptotiques}.
+\newblock {\em Bulletin des sciences math{\'{e}}matiques}, 109(3):253--308,
+  1985.
+
+\bibitem{bally:inria-00071868}
+V.~Bally.
+\newblock {An elementary introduction to Malliavin calculus}.
+\newblock Research Report RR-4718, {INRIA. Available at
+  https://hal.inria.fr/inria-00071868.}, 2003.
+
+\bibitem{bayer2016pricing}
+C.~Bayer, P.~Friz, and J.~Gatheral.
+\newblock {Pricing under rough volatility}.
+\newblock {\em Quantitative Finance}, 16(6):887--904, 2016.
+
+\bibitem{bayer2017regularity}
+C.~Bayer, P.~K. Friz, P.~Gassiat, J.~Martin, and B.~Stemper.
+\newblock {A regularity structure for rough volatility}.
+\newblock {\em Mathematical Finance}, 30(3):782--832, 2020.
+
+\bibitem{bayer2017short}
+C.~Bayer, P.~K. Friz, A.~Gulisashvili, B.~Horvath, and B.~Stemper.
+\newblock {Short-time near-the-money skew in rough fractional volatility
+  models}.
+\newblock {\em Quantitative Finance}, 19(5):779--798, 2019.
+
+\bibitem{bayer2022weak}
+C.~Bayer, M.~Fukasawa, and S.~Nakahara.
+\newblock Short communication: On the weak convergence rate in the
+  discretization of rough volatility models.
+\newblock {\em SIAM Journal on Financial Mathematics}, 13(3), 2022.
+
+\bibitem{bayer2020weak}
+C.~Bayer, E.~J. Hall, and R.~Tempone.
+\newblock Weak error rates for option pricing under the rough bergomi model.
+\newblock {\em arXiv preprint arXiv:2009.01219, and to appear in IJTAF}, 2020.
+
+\bibitem{bayer2020}
+C.~Bayer, C.~B. Hammouda, and R.~Tempone.
+\newblock {Hierarchical adaptive sparse grids and quasi-Monte Carlo for option
+  pricing under the rough Bergomi model}.
+\newblock {\em Quantitative Finance}, 0(0):1--17, 2020.
+
+\bibitem{BHP21}
+C.~Bayer, F.~A. Harang, and P.~Pigato.
+\newblock {Log-Modulated Rough Stochastic Volatility Models}.
+\newblock {\em SIAM Journal on Financial Mathematics}, 12(3):1257--1284, 2021.
+
+\bibitem{bayer2019deep}
+C.~Bayer, B.~Horvath, A.~Muguruza, B.~Stemper, and M.~Tomas.
+\newblock {On deep calibration of (rough) stochastic volatility models}.
+\newblock {\em arXiv preprint arXiv:1908.08806}, 2019.
+
+\bibitem{BLP15}
+M.~Bennedsen, A.~Lunde, and M.~S. Pakkanen.
+\newblock Hybrid scheme for {B}rownian semistationary processes.
+\newblock {\em Finance and Stochastics}, 21(4):931--965, 2017.
+
+\bibitem{BLP16}
+M.~Bennedsen, A.~Lunde, and M.~S. Pakkanen.
+\newblock {Decoupling the Short- and Long-Term Behavior of Stochastic
+  Volatility}.
+\newblock {\em Journal of Financial Econometrics}, 2021.
+
+\bibitem{BBF02}
+H.~Berestycki, J.~Busca, and I.~Florent.
+\newblock {Asymptotics and calibration of local volatility models}.
+\newblock {\em Quantitative Finance}, 2:61--69, 2002.
+
+\bibitem{berestycki2004computing}
+H.~Berestycki, J.~Busca, and I.~Florent.
+\newblock {Computing the implied volatility in stochastic volatility models}.
+\newblock {\em Communications on Pure and Applied Mathematics},
+  57(10):1352--1373, 2004.
+
+\bibitem{BrunickShreve}
+G.~Brunick and S.~Shreve.
+\newblock {Mimicking an It\^{o} process by a solution of a stochastic
+  differential equation}.
+\newblock {\em The Annals of Applied Probability}, 23(4):1584 -- 1628, 2013.
+
+\bibitem{DallAcqua2022}
+E.~Dall'Acqua, R.~Longoni, and A.~Pallavicini.
+\newblock Rough-heston local-volatility model.
+\newblock arXiv e-prints, \url{https://arxiv.org/abs/2206.09220}, 2022.
+
+\bibitem{de2013rational}
+S.~{De Marco}, P.~Friz, and S.~Gerhold.
+\newblock {Rational shapes of local volatility}.
+\newblock {\em Risk}, 26(2):70, 2013.
+
+\bibitem{de2018local}
+S.~De~Marco and P.~K. Friz.
+\newblock {Local Volatility, Conditioned Diffusions, and Varadhan's Formula}.
+\newblock {\em SIAM Journal on Financial Mathematics}, 9(2):835--874, 2018.
+
+\bibitem{Derman96}
+E.~Derman, I.~Kani, and J.~Z. Zou.
+\newblock The local volatility surface: Unlocking the information in index
+  option prices.
+\newblock {\em Financial Analysts Journal}, 52(4):25--36, 1996.
+
+\bibitem{dupire1994pricing}
+B.~Dupire.
+\newblock {Pricing with a smile}.
+\newblock {\em Risk}, 7(1):18--20, 1994.
+
+\bibitem{dupire1996unified}
+B.~Dupire.
+\newblock {A unified theory of volatility}.
+\newblock {\em Derivatives pricing: The classic collection, 2004 (P. Carr,
+  ed.)}, pages 185--196, 1996.
+
+\bibitem{euch2018short}
+O.~El~Euch, M.~Fukasawa, J.~Gatheral, and M.~Rosenbaum.
+\newblock Short-term at-the-money asymptotics under stochastic volatility
+  models.
+\newblock {\em SIAM Journal on Financial Mathematics}, 10(2):491--511, 2019.
+
+\bibitem{el2018microstructural}
+O.~El~Euch, M.~Fukasawa, and M.~Rosenbaum.
+\newblock The microstructural foundations of leverage effect and rough
+  volatility.
+\newblock {\em Finance and Stochastics}, 22(2):241--280, 2018.
+
+\bibitem{euch2016characteristic}
+O.~El~Euch and M.~Rosenbaum.
+\newblock {The characteristic function of rough Heston models}.
+\newblock {\em Mathematical Finance}, 29(1):3--38, 2019.
+
+\bibitem{forde2017asymptotics}
+M.~Forde and H.~Zhang.
+\newblock Asymptotics for rough stochastic volatility models.
+\newblock {\em SIAM Journal on Financial Mathematics}, 8(1):114--145, 2017.
+
+\bibitem{fournie2001applications}
+E.~Fourni{\'e}, J.-M. Lasry, J.~Lebuchoux, and P.-L. Lions.
+\newblock {Applications of Malliavin calculus to Monte-Carlo methods in
+  finance. II}.
+\newblock {\em Finance and Stochastics}, 5(2):201--236, 2001.
+
+\bibitem{friz2022weak}
+P.~Friz, W.~Salkeld, and T.~Wagenhofer.
+\newblock Weak error estimates for rough volatility models.
+\newblock {\em arXiv}, 2022.
+
+\bibitem{friz2018precise1}
+P.~K. Friz, P.~Gassiat, and P.~Pigato.
+\newblock {Precise asymptotics: Robust stochastic volatility models}.
+\newblock {\em The Annals of Applied Probability}, 31(2):896--940, 2021.
+
+\bibitem{friz2021short}
+P.~K. Friz, P.~Gassiat, and P.~Pigato.
+\newblock {Short-dated smile under rough volatility: asymptotics and numerics}.
+\newblock {\em Quantitative Finance}, pages 1--18, 2021.
+
+\bibitem{friz2015large}
+P.~K. Friz, J.~Gatheral, A.~Gulisashvili, A.~Jacquier, and J.~Teichmann.
+\newblock {\em {Large deviations and asymptotic methods in finance}}, volume
+  110.
+\newblock Springer, 2015.
+
+\bibitem{friz2014make}
+P.~K. Friz, S.~Gerhold, and M.~Yor.
+\newblock {How to make Dupire's local volatility work with jumps}.
+\newblock {\em Quantitative Finance}, 14(8):1327--1331, 2014.
+
+\bibitem{friz2020course}
+P.~K. Friz and M.~Hairer.
+\newblock {\em {A Course on Rough Paths. With an introduction to regularity
+  structures.}}
+\newblock Springer, 2020.
+
+\bibitem{fps2020}
+P.~K. Friz, P.~Pigato, and J.~Seibel.
+\newblock {The Step Stochastic Volatility Model}.
+\newblock {\em Risk}, June, 2021.
+
+\bibitem{fukasawa2011asymptotic}
+M.~Fukasawa.
+\newblock {Asymptotic analysis for stochastic volatility: martingale
+  expansion}.
+\newblock {\em Finance and Stochastics}, 15(4):635--654, 2011.
+
+\bibitem{fukasawa2017short}
+M.~Fukasawa.
+\newblock Short-time at-the-money skew and rough fractional volatility.
+\newblock {\em Quantitative Finance}, 17(2):189--198, 2017.
+
+\bibitem{fukasawa2020}
+M.~Fukasawa.
+\newblock Volatility has to be rough.
+\newblock {\em Quantitative Finance}, 21(1):1--8, 2021.
+
+\bibitem{FTW19}
+M.~Fukasawa, T.~Takabatake, and R.~Westphal.
+\newblock {Is Volatility Rough?}
+\newblock {\em arXiv preprint arXiv:1905.04852}, 2019.
+
+\bibitem{gassiat2018martingale}
+P.~Gassiat.
+\newblock On the martingale property in the rough {Bergomi} model.
+\newblock {\em Electron. Commun. Probab.}, 24:9 pp., 2019.
+
+\bibitem{gassiat2022weak}
+P.~Gassiat.
+\newblock Weak error rates of numerical schemes for rough volatility.
+\newblock {\em arXiv preprint arXiv:2203.09298}, 2022.
+
+\bibitem{gatheral2006volatility}
+J.~Gatheral.
+\newblock {\em {The volatility surface: a practitioner's guide}}.
+\newblock John Wiley \& Sons, 2006.
+
+\bibitem{ghlow}
+J.~Gatheral, E.~P. Hsu, P.~Laurence, C.~Ouyang, and T.-H. Wang.
+\newblock {Asymptotics of implied volatility in local volatility models}.
+\newblock {\em Mathematical Finance}, 22(4):591--620, 2012.
+
+\bibitem{gatheral2018volatility}
+J.~Gatheral, T.~Jaisson, and M.~Rosenbaum.
+\newblock Volatility is rough.
+\newblock {\em Quantitative Finance}, pages 1--17, 2018.
+
+\bibitem{gatheral2019affine}
+J.~Gatheral and M.~Keller-Ressel.
+\newblock {Affine forward variance models}.
+\newblock {\em Finance and Stochastics}, 23(3):501--533, 2019.
+
+\bibitem{goudenege}
+L.~Gouden{\`e}ge, A.~Molent, and A.~Zanette.
+\newblock {Machine learning for pricing American options in high-dimensional
+  Markovian and non-Markovian models}.
+\newblock {\em Quantitative Finance}, 20(4):573--591, 2020.
+
+\bibitem{gulisashvili2017large}
+A.~Gulisashvili.
+\newblock Large deviation principle for volterra type fractional stochastic
+  volatility models.
+\newblock {\em SIAM Journal on Financial Mathematics}, 9(3):1102--1136, 2018.
+
+\bibitem{GULISASHVILI20203648}
+A.~Gulisashvili.
+\newblock Gaussian stochastic volatility models: Scaling regimes, large
+  deviations, and moment explosions.
+\newblock {\em Stochastic Processes and their Applications}, 130(6):3648 --
+  3686, 2020.
+
+\bibitem{GHL2012}
+J.~Guyon and P.~Henry-Labord\`{e}re.
+\newblock {Being particular about calibration}.
+\newblock {\em Risk, January}, 2012.
+
+\bibitem{GyongyMimicking}
+I.~Gyongy.
+\newblock {Mimicking the one-dimensional marginal distributions of processes
+  having an It\^{o} differential}.
+\newblock {\em Probab. Th. Rel. Fields}, 71(4):501--516, 1986.
+
+\bibitem{henry2009calibration}
+P.~Henry-Labord\`{e}re.
+\newblock {Calibration of local stochastic volatility models to market smiles:
+  A Monte-Carlo approach}.
+\newblock {\em Risk Magazine, September}, 2009.
+
+\bibitem{henry2019non}
+P.~Henry-Labord\`{e}re.
+\newblock {(Non)-Parametric Regressions: Applications to Local Stochastic
+  Volatility Models}.
+\newblock {\em Available at SSRN 3374875}, 2019.
+
+\bibitem{jost2007}
+C.~Jost.
+\newblock {A note on ergodic transformations of self-similar Volterra Gaussian
+  processes}.
+\newblock {\em Electron. Commun. Probab.}, 12:259--266, 2007.
+
+\bibitem{jourdain2004loss}
+B.~Jourdain.
+\newblock Loss of martingality in asset price models with lognormal stochastic
+  volatility.
+\newblock {\em preprint Cermics}, 267:2004, 2004.
+
+\bibitem{Lee2001}
+R.~W. Lee.
+\newblock Implied and local volatilities under stochastic volatility.
+\newblock {\em International Journal of Theoretical and Applied Finance},
+  4(1):45--89, 2001.
+
+\bibitem{Lee2005}
+R.~W. Lee.
+\newblock Implied volatility: Statics, dynamics, and probabilistic
+  interpretation.
+\newblock {\em Recent Advances in Applied Probability}, pages 241--268, 2005.
+
+\bibitem{McCrickerdPakkanen2018}
+R.~McCrickerd and M.~S. Pakkanen.
+\newblock {Turbocharging Monte Carlo pricing for the rough Bergomi model}.
+\newblock {\em Quantitative Finance}, 18(11):1877--1886, 2018.
+
+\bibitem{Nualart:06}
+D.~Nualart.
+\newblock {\em {The Malliavin calculus and related topics}}, volume 1995.
+\newblock Springer, 2006.
+
+\bibitem{pig19}
+P.~Pigato.
+\newblock {Extreme at-the-money skew in a local volatility model}.
+\newblock {\em Finance and Stochastics}, 23:827--859, 2019.
+
+\bibitem{sin1998complications}
+C.~A. Sin.
+\newblock Complications with stochastic volatility models.
+\newblock {\em Advances in Applied Probability}, 30(1):256--268, 1998.
+
+\bibitem{takanobu1993asymptotic}
+S.~Takanobu.
+\newblock {Asymptotic expansion formulas of the Schilder type for a class of
+  conditional Wiener functional integrations}.
+\newblock In {\em Asymptotic problems in probability theory: Wiener functionals
+  and asymptotics, Proceedings of the Taniguchi International Symposium, Sanda
+  and Kyoto, 1990}, pages 194--241. Longman Sci. Tech., 1993.
+
+\bibitem{tsybakov2008introduction}
+A.~B. Tsybakov.
+\newblock {\em {Introduction to nonparametric estimation}}.
+\newblock Springer Science \& Business Media, 2008.
+
+\end{thebibliography}

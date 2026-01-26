@@ -1,0 +1,77 @@
+\usepackage{amsmath, amssymb}
+\usepackage{dsfont}
+\usepackage[english]{babel}
+\usepackage{verbatim}
+\usepackage{float}
+\usepackage{url}
+\usepackage{subfigure}
+\usepackage{caption}
+\usepackage{appendix}
+\usepackage[comma, compress]{natbib}
+
+%\usepackage[usenames,dvipsnames]{color}
+%\usepackage{graphicx}
+%\usepackage[dvipdfm]{hyperref}
+
+\def\LY{ L{\'e}vy }
+\def\ni{\noindent}
+\def\E{{\mathbb E}}
+\def\bi{\begin{itemize}}     \def\ei{\end{itemize}}
+\def\ben{\begin{enumerate}}   \def\een{\end{enumerate}}
+\def\beq{\begin{equation}}   \def\eeq{\end{equation}}
+\def\bd{\begin{displaymath}} \def\ed{\end{displaymath}}
+\def\bea{\begin{eqnarray}}   \def\beaz{\begin{eqnarray*}}
+\def\eea{\end{eqnarray}}     \def\eeaz{\end{eqnarray*}}
+\def\beac{\begin{eqnarrayc}} \def\eeac{\end{eqnarrayc}}
+\def\nn{\nonumber}           \def\leeq{\lefteqn}
+\def\dsize{\displaystyle}    \def\dfrac#1#2{\frac{\dsize #1}{\dsize #2}}
+\def\sfrac#1#2{\frac{#1}{#2}}
+\newcommand{\dsum}{\displaystyle\sum}
+\newcommand{\bc}{\begin{center}}
+\newcommand{\ec}{\end{center}}
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\bq}{\begin{eqnarray}}
+\newcommand{\eq}{\end{eqnarray}}
+\newcommand{\del}{\bigtriangleup}
+\newcommand{\un}{\underline}
+\newcommand{\Sig}{\Sigma}
+\newcommand{\sig}{\sigma}
+\newcommand{\til}{\tilde}
+\newcommand{\tilC}{\tilde{C}}
+\newcommand{\fp}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\sop}[2]{\frac{\partial^2 #1}{\partial #2^2}}
+\newcommand{\jop}[2]{\frac{\partial^j #1}{\partial #2^j}}
+\newcommand{\cp}[3]{\frac{\partial^2 #1}{\partial #2 \partial #3}}
+\newcommand{\nfp}[3]{\frac{\partial^{#1} #2}{\partial #3^{#1}}}
+\newcommand{\mat}[2][rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr]{\left|
+    \begin{array}{#1}
+    #2\\
+    \end{array}
+    \right|}
+
+\def\EQ{{\mathbb E}_{\mathbb Q}}
+\def\E{{\mathbb E}}
+\renewcommand{\eqref}[1]{Eq.(\ref{#1})}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\newenvironment{proof}[1][Proof]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{definition}[1][Definition]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{example}[1][Example]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+\newenvironment{remark}[1][Remark]{\begin{trivlist}
+\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+
+\newcommand{\qed}{\nobreak \ifvmode \relax \else
+      \ifdim\lastskip<1.5em \hskip-\lastskip
+      \hskip1.5em plus0em minus0.5em \fi \nobreak
+      \vrule height0.75em width0.5em depth0.25em\fi}
+
+\newcommand{\Keywords}[1]{\vspace{0.1in} \par\noindent 
+{\small{\em Keywords\/}: #1}}

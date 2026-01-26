@@ -1,0 +1,98 @@
+%!TEX root = ../deepsmooth.tex
+ 
+\section{Methodology} \label{sec:smoo}
+
+\subsection{Model and loss function} \label{sec:archlearn}
+
+\textbf{Explanatory and target variables.}
+At a given time we observe triplets $(\sigma_i, \, k_i, \, \tau_i)\in\datamkt$
+where $\sigma_i$ is the market implied volatility (the target/response), and $(k_i, \tau_i)$ are the log moneyness and the time to maturity (the features/explanatory variables).
+In addition, we complement the sample with synthetic pairs $(k_i, \, \tau_i)\in \datacalbut \cup\dataasy$ used to control the arbitrage opportunities and the model asymptotic behavior (see~\Cref{sec:noarb}).
+
+\textbf{Implied volatility model.}
+Our model for the total variance and implied volatility is given by
+\begin{align}\label{eq:iv_ann}
+\wth(k,\tau) &= \wnn\big(k,\tau;\theta_1\big) \times \wpr\big(k,\tau;\theta_2\big)  \quad \mbox{and} \quad
+\ivth(k,\tau) = \sqrt{\wth(k,\tau)/\tau}
+\end{align} 
+for the parameters $\theta=\{\theta_1, \theta_2\}$, where
+$\wnn$ and $\wpr$ are the NN and prior models described below.
+
+\textbf{Prior model.}
+$\wpr:\R^2\mapsto\R$ is a prior model with parameters $\theta_2$.
+An implied volatility model without prior is obtained by setting $\wpr\equiv 1$ so that $\wth \equiv \wnn $. 
+The prior model choice is useful to ensure that the model generalization is compliant with a prescribed preferred behavior.
+Essentially, the BS prior is a parameter-free model matching the implied volatility's at-the-money (ATM) term-structure.
+As for the SSVI prior, it improves on the BS model by capturing both the smile and the skew of the surface.
+Both models are described in Appendix~\ref{sec:bsprior} and~\ref{sec:ssviprior} respectively.
+
+\textbf{NN model.}
+$\wnn:\R^2\mapsto\R$ is a standard feedforward multilayer neural network, namely
+\begin{align}
+\wnn(k, \tau;\theta_1) &=  \comp_{i=1}^{n+1} f_i^{W_i, b_i} (k, \tau) \mbox{ with } 
+f_i(x) = \begin{cases} g_i(W_i \, x + b_i) & i< n + 1
+\\ \alpha \left(1 + \tanh \left(W_{n+1} \, x + b_{n+1} \right)\right) & i=n+1 \end{cases} \label{eq:ffnn_def2}
+\end{align}
+with $g_i$ an activation function, $\theta_1=\{W_1,\,b_1,\,W_2,\,b_2,\dots, \alpha\}$ the set of weight matrices and bias vectors, $\alpha$ a scaling parameter letting $\wnn$ take values in $[0, \alpha]$, and $n$ the number of hidden layers.
+The functional choice $1+\tanh$ in the last layer is not critical, yet it appeared to perform slightly better than the sigmoid function on a limited number of trials.
+Note that one can initialize the NN to take output value one, that is no NN correction, by setting $\alpha=1$ and $W_{n+1}=b_{b+1}=0$.
+
+\textbf{Loss function.}
+We fit the network parameters and prior parameters $\theta$ by minimizing the loss function
+\begin{equation}\label{eq:loss}
+\Lcal (\theta) = \Lcal_0(\theta) + \sum_{j=1}^6 \; \lambda_j \, \Lcal_{{\rm C} j}(\theta)
+\end{equation}
+where the term $\Lcal_0(\theta)$ is a prediction error cost, the terms $\Lcal_{{\rm C} j}(\theta)$ for $j=1,\dots,6$ materialize soft constraints aiming to ensure that the shape of $\{\wth(k, \tau);\, (k, \tau) \in\R\times\R_+\}$ is indeed a sensible implied volatility surface, and $\lambda_i$ for $j=1,\dots,6$ are the corresponding penalty weights.
+Note that some parameters of the prior model may also be calibrated.
+
+We let the prediction error be the sum of the root-mean-squared-error (RMSE) and the mean-absolute-percentage-error (MAPE),
+\[
+\Lcal_0(\theta) = \sqrt{1/|\datamkt|\sum_{(\sigma_i,k_i, \tau_i)\in\datamkt} (\sigma_i - \ivth(k_i, \tau_i))^2} + \;1/|\datamkt| \sum_{(\sigma_i,k_i, \tau_i)\in\datamkt}  \vert \sigma_i - \ivth(k_i, \tau_i) \vert/\sigma_i,
+\]
+so as to penalize both absolute and relative errors.
+The IV values far out of the money can take values significantly larger than at the money.
+We found that the above loss function results in general a balanced allocation of prediction errors across the different moneynesses.
+
+\begin{remark}[Soft versus hard constraints]
+An alternative approach to impose shape constraints on the mapping $\wth$ is to hard-wire them into the neural network architecture, as in~\cite{dugas2001incorporating} for example.
+However, hard constraints are difficult to impose on multilayer neural networks, may reduce the neural network's flexibility, and may lead to more challenging leaning routines, see~\cite{marquez2017imposing}.
+\end{remark}
+
+\subsection{No-arbitrage conditions and synthetic grid} \label{sec:noarb}
+
+We explain how each of the constraints/conditions in~\Cref{prop:noAO} can be handled either by refining the architecture of the neural network, or by adding a penalty term to the loss function~\eqref{eq:loss}.
+Note that the conditions \textbf{\ref{cons:posi}--\ref{cons:vmat}} are in principle satisfied by design of the NN.
+The mapping $\wth$ is twice differentiable as long as the activation functions $g_i$ and $g_{n+1}$ (as well as the prior model) are twice differentiable, in which case\textbf{ \ref{cons:smoo}} is satisfied.
+An example of valid activation function is the SoftPlus given by $\ln(1+\exp(x))$\footnote{We conjecture that one could also use ReLU activation functions with adjusted constraint conditions.}.
+Hence we set $\Lcal_{\rm C1} \equiv \Lcal_{\rm C2}\equiv\Lcal_{\rm C3}\equiv 0$.
+
+As for the other three constraints, we control for
+\begin{itemize}
+\item calendar arbitrages with $\Lcal_{\rm C4} (\theta) = 1/|\datacalbut| \sum_{(k_i,\tau_i)\in\datacalbut} \max\left(0, \, - \ell_{\rm cal}(k_i,\,\tau_i) \right),$
+\item butterfly arbitrages with $\Lcal_{\rm C5} (\theta) = 1/|\datacalbut| \sum_{(k_i,\tau_i)\in\datacalbut}  \max\left(0, \, -\ell_{\rm but}(k_i,\,\tau_i)\right)$,
+\item and the asymptotic behavior with $\Lcal_{\rm C6} (\theta) = 1/|\dataasy| \sum_{(k_i,\tau_i)\in\dataasy} \left\lvert \partial^2 \wth(k_i,\tau_i)/\partial k \partial k \right\rvert$,
+\end{itemize}
+where 
+\begin{align*}
+\datacalbut &= \big\{(k,\tau) \, : \, k\in \big\{ x^3 \,:\, x \in \big\lbrack -(-2 k_{\min})^{1/3}, \, (2k_{\max})^{1/3} \big\rbrack_{100} \big\}, \,\tau \in \Tcal\big\} \\
+\dataasy &= \big\{(k,\tau) \, : \, k\in \big\{6k_{\min}, \, 4k_{\min} , \, 4k_{\max}, \, 6k_{\max} \big\}, \,\tau \in \Tcal\big\}\\
+\Tcal &= \big\{ \exp(x) \,:\, x \in \big\lbrack \log(1/365), \, \max( \log(\tau_{\max}+1)) \big\rbrack_{100} \big\}
+\end{align*}
+ $k_{\min} = \min(\datamkt^k)$, $k_{\max} = \max(\datamkt^k)$, $\tau_{\max} = \max(\datamkt^\tau)$, $\lbrack a,b \rbrack_{x}$ indicates an equidistant set of $x$ points between $a$ and $b$, and $\datamkt^\tau$ and $\datamkt^k$ are the sets of unique time to maturity and forward log moneyness in $\datamkt$.
+Note that it should always be that $\min(\datamkt^k)<0$ and $\max(\datamkt^k)>0$.
+The motivation for the above transformations is to obtain a denser grid around the money and for short maturities.
+The particular parametric choices for the above sets do not appear critical as long as they are sufficiently dense and cover the regions of interest.
+
+%As for the other three constraints, we use $\Lcal_{\rm C4} (\theta) = 1/|\datacal| \sum_{(k_i,\tau_i)\in\datacal} \max\left(0, \, - \ell_{\rm cal}(k_i,\,\tau_i) \right)$ to prevent
+% calendar arbitrage,
+%$\Lcal_{\rm C5} (\theta) = 1/|\databut| \sum_{(k_i,\tau_i)\in\databut}  \max\left(0, \, -\ell_{\rm but}(k_i,\,\tau_i)\right)$ for butterfly arbitrage,
+%and $\Lcal_{\rm C6} (\theta) = 1/|\dataasy| \sum_{(k_i,\tau_i)\in\dataasy} \left\lvert \partial^2 \wth(k_i,\tau_i)/\partial k \partial k \right\rvert$ for the large moneyness behavior.
+
+
+Note that the loss $\Lcal_{\rm C6}$ guarantees that $\omega$ is asymptotically linear and should in principle be refined to control the coefficient value to be less than 2, as discussed in~\cite{lee2004moment}.
+However $\Lcal_{\rm C6}$ has better training performance and proved to be compliant with~\ref{cons:asym} in our post training verifications.
+Furthermore, we only work with finite moneyness in practice and imposing an asymptotic condition on large but finite moneyness values may unnecessarily constraint the model.
+
+\subsection{Model training}
+
+The training procedure and the parameters choice are described in details in Appendix~\ref{sec:train}.
