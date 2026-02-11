@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Node
+node_modules/
+dist/
+
+# System
+.DS_Store
+
+# k_lib specific
+backend/chroma_store/
+backend/vol_surface_source/
+backend/quant_knowledge_graph.db
