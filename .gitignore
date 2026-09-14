@@ -16,3 +16,4 @@ dist/
 backend/chroma_store/
 backend/vol_surface_source/
 backend/quant_knowledge_graph.db
+backend/ingest_bucket/
